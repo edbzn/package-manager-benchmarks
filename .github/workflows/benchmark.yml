@@ -27,11 +27,14 @@ jobs:
       - run: /home/runner/.bun/bin/bun -v
       - run: pnpm install
       - run: pnpm run benchmark
-      - name: Commit & Push changes
-        uses: actions-js/push@master
+      - name: Commit changes
+        run: |
+          git config --local user.email "bozonedouard@gmail.com"
+          git config --local user.name "Edouard Bozon"
+          git add .
+          git diff --exit-code || git commit -m "update sponsors" -a
+      - name: Push Changes
+        uses: ad-m/github-push-action@master
         with:
-          author_name: "Edouard Bozon"
-          author_email: "bozonedouard@gmail.com"
           github_token: ${{ secrets.GITHUB_TOKEN }}
-          message: "chore: update benchmarks"
           branch: master
