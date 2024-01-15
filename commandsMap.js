@@ -44,5 +44,13 @@ export default {
     args: [
       'install'
     ]
-  }
+  },
+  bun: {
+    scenario: 'bun',
+    legend: 'Bun',
+    name: '/home/runner/.bun/bin/bun',
+    args: [
+      'install'
+    ]
+  },
 }

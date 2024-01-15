@@ -16,7 +16,8 @@ const TMP = path.join(DIRNAME, '.tmp')
 const lockfileNameByPM = {
   npm: 'package-lock.json',
   pnpm: 'pnpm-lock.yaml',
-  yarn: 'yarn.lock'
+  yarn: 'yarn.lock',
+  bun: 'bun.lockb',
 }
 
 export function createEnv (managersDir) {
@@ -31,7 +32,7 @@ export function createEnv (managersDir) {
 }
 
 function cleanLockfile (pm, cwd, env) {
-  const lockfileName = lockfileNameByPM[pm.name]
+  const lockfileName = lockfileNameByPM[pm.name.includes('bun') ? 'bun' : pm.name]
   rimraf.sync(path.join(cwd, lockfileName))
   if (pm.name === 'yarn') {
     // This ensures yarn berry to install under a nested folder
@@ -122,7 +123,6 @@ export default async function benchmark (pm, fixture, opts) {
         yarnRc += 'nodeLinker: node-modules\n'
                 + 'nmMode: hardlinks-local\n'
                 + 'compressionLevel: 0\n'
-                + 'nodeLinker: pnpm\n'
         break
       case 'yarn_pnp':
         yarnRc += 'nodeLinker: pnp\n'
