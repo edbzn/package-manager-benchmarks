@@ -11,7 +11,6 @@ export default {
       '--cache=cache',
       '--registry=https://registry.npmjs.org/',
       '--legacy-peer-deps',
-      '--install-strategy=linked',
     ]
   },
   pnpm: {
