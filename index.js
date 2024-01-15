@@ -14,7 +14,7 @@ import { fileURLToPath } from 'url'
 
 const DIRNAME = path.dirname(fileURLToPath(import.meta.url))
 const TMP = path.join(DIRNAME, '.tmp')
-const BENCH_IMGS = path.join(DIRNAME, '../static/img/benchmarks')
+const BENCH_IMGS = path.join(DIRNAME, 'img')
 
 const { stripIndents } = commonTags
 const LIMIT_RUNS = 30

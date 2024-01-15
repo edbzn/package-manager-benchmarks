@@ -13,8 +13,9 @@ export default async function (pm, fixture, opts) {
   opts = opts || {}
   const limitRuns = opts.limitRuns || Infinity
 
-  pm.version = getPMVersion(pm.name, opts)
-  const resultsFile = path.join(RESULTS, pm.scenario, pm.version, `${fixture}.yaml`)
+  const pmVersion = spawn.sync(pm.name, ['--version'], { cwd: opts.managersDir, env: createEnv(opts.managersDir) }).stdout.toString()
+  pm.version = pmVersion
+  const resultsFile = path.join(RESULTS, pm.scenario, pmVersion, `${fixture}.yaml`)
   const prevResults = await safeLoadYamlFile(resultsFile) || []
 
   if (prevResults.length >= limitRuns) return prevResults
@@ -26,17 +27,6 @@ export default async function (pm, fixture, opts) {
   const results = [...prevResults, newResults]
   await writeYamlFile(resultsFile, results)
   return results
-}
-
-function getPMVersion (pmName, opts) {
-  const { status, stdout, stderr } = spawn.sync(pmName, ['--version'], {
-    cwd: opts.managersDir,
-    env: createEnv(opts.managersDir),
-  })
-  if (status !== 0) {
-    throw new Error(`Couldn't detect version of ${pmName}. ${stderr?.toString()}`)
-  }
-  return stdout.toString().trim()
 }
 
 async function safeLoadYamlFile (filename) {
