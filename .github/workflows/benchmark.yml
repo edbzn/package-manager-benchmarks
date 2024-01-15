@@ -32,7 +32,7 @@ jobs:
           git config --local user.email "bozonedouard@gmail.com"
           git config --local user.name "Edouard Bozon"
           git add .
-          git diff --exit-code || git commit -m "update sponsors" -a
+          git diff --exit-code || git commit -m "chore: update results" -a
       - name: Push Changes
         uses: ad-m/github-push-action@master
         with:
