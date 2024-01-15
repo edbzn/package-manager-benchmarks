@@ -1,0 +1,39 @@
+name: Benchmark runner
+
+on:
+  push:
+    branches:
+      - master
+  schedule:
+    - cron: '30 2 * * 0'
+  workflow_dispatch:
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+        with:
+          persist-credentials: false # otherwise, the token used is the GITHUB_TOKEN, instead of your personal token
+          fetch-depth: 0
+      - uses: actions/setup-node@v3
+        with:
+          node-version: 20
+      - run: |
+          corepack enable
+          corepack prepare pnpm@next-8 --activate
+          corepack prepare yarn@stable --activate
+      - run: curl https://bun.sh/install | bash
+      - run: /home/runner/.bun/bin/bun -v
+      - run: pnpm install
+      - run: pnpm run benchmark
+      - run: pnpm run benchmark
+      - run: pnpm run benchmark
+      - name: Commit & Push changes
+        uses: actions-js/push@master
+        with:
+          author_name: "Edouard Bozon"
+          author_email: "bozonedouard@gmail.com"
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          message: "chore: update benchmarks"
+          branch: master
