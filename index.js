@@ -20,22 +20,22 @@ const { stripIndents } = commonTags
 const LIMIT_RUNS = 30
 
 const fixtures = [
-  {
-    name: 'react-app',
-    mdDesc: '## React App\n\nThe app\'s `package.json` [here](./fixtures/react-app/package.json)'
-  },
-  {
-    name: 'ember-quickstart',
-    mdDesc: '## Ember App\n\nThe app\'s `package.json` [here](./fixtures/ember-quickstart/package.json)'
-  },
-  {
-    name: 'angular-quickstart',
-    mdDesc: '## Angular App\n\nThe app\'s `package.json` [here](./fixtures/angular-quickstart/package.json)'
-  },
-  {
-    name: 'medium-size-app',
-    mdDesc: '## Medium Size App\n\nThe app\'s `package.json` [here](./fixtures/medium-size-app/package.json)'
-  },
+  // {
+  //   name: 'react-app',
+  //   mdDesc: '## React App\n\nThe app\'s `package.json` [here](./fixtures/react-app/package.json)'
+  // },
+  // {
+  //   name: 'ember-quickstart',
+  //   mdDesc: '## Ember App\n\nThe app\'s `package.json` [here](./fixtures/ember-quickstart/package.json)'
+  // },
+  // {
+  //   name: 'angular-quickstart',
+  //   mdDesc: '## Angular App\n\nThe app\'s `package.json` [here](./fixtures/angular-quickstart/package.json)'
+  // },
+  // {
+  //   name: 'medium-size-app',
+  //   mdDesc: '## Medium Size App\n\nThe app\'s `package.json` [here](./fixtures/medium-size-app/package.json)'
+  // },
   {
     name: 'alotta-files',
     mdDesc: '## Lots of Files\n\nThe app\'s `package.json` [here](https://github.com/pnpm/pnpm.github.io/blob/main/benchmarks/fixtures/alotta-files/package.json)'
