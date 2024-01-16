@@ -23,7 +23,7 @@ jobs:
           corepack enable
           corepack prepare pnpm@next-8 --activate
           corepack prepare yarn@stable --activate
-      - run: curl https://bun.sh/install | bash
+      - uses: oven-sh/setup-bun@v1
       - run: bun -v
       - run: pnpm install
       - run: pnpm run benchmark
