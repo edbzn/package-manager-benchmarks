@@ -47,7 +47,7 @@ export default {
   bun: {
     scenario: 'bun',
     legend: 'Bun',
-    name: 'bun',
+    name: process.env.CI ? '/home/runner/.bun/bin/bun' : 'bun',
     args: [
       'install'
     ]
