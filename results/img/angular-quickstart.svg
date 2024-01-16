@@ -23,7 +23,7 @@
   <text x="92" y="18" class="font s3" text-anchor="middle">v4.0.2</text>
   <circle cx="108" cy="6" r="4" fill="#ff6f00"></circle>
   <text x="108" y="14" class="font s4" text-anchor="middle">Bun</text>
-  <text x="108" y="18" class="font s3" text-anchor="middle">v1.0.22</text>
+  <text x="108" y="18" class="font s3" text-anchor="middle">v1.0.23</text>
   <text x="40" y="28" class="font s5 text" text-anchor="middle">0</text>
   <text x="40" y="368.5" class="font s5 text" text-anchor="middle">0</text>
   <line x1="90" y1="31" x2="90" y2="363.5" class="line width"></line>
@@ -46,17 +46,17 @@
   <rect x="40" y="41.5" width="88" height="6" fill="#fbae00" rx="1" ry="1"></rect>
   <rect x="40" y="48" width="149" height="6" fill="#248ebd" rx="1" ry="1"></rect>
   <rect x="40" y="54.5" width="40" height="6" fill="#40a9ff" rx="1" ry="1"></rect>
-  <rect x="40" y="61" width="34" height="6" fill="#ff6f00" rx="1" ry="1"></rect>
+  <rect x="40" y="61" width="29" height="6" fill="#ff6f00" rx="1" ry="1"></rect>
   <rect x="40" y="71.5" width="15" height="6" fill="#cd3731" rx="1" ry="1"></rect>
   <rect x="40" y="78" width="13" height="6" fill="#fbae00" rx="1" ry="1"></rect>
   <rect x="40" y="84.5" width="19" height="6" fill="#248ebd" rx="1" ry="1"></rect>
   <rect x="40" y="91" width="0" height="6" fill="#40a9ff" rx="1" ry="1"></rect>
-  <rect x="40" y="97.5" width="1" height="6" fill="#ff6f00" rx="1" ry="1"></rect>
+  <rect x="40" y="97.5" width="0" height="6" fill="#ff6f00" rx="1" ry="1"></rect>
   <rect x="40" y="108" width="89" height="6" fill="#cd3731" rx="1" ry="1"></rect>
   <rect x="40" y="114.5" width="28" height="6" fill="#fbae00" rx="1" ry="1"></rect>
   <rect x="40" y="121" width="61" height="6" fill="#248ebd" rx="1" ry="1"></rect>
   <rect x="40" y="127.5" width="16" height="6" fill="#40a9ff" rx="1" ry="1"></rect>
-  <rect x="40" y="134" width="13" height="6" fill="#ff6f00" rx="1" ry="1"></rect>
+  <rect x="40" y="134" width="10" height="6" fill="#ff6f00" rx="1" ry="1"></rect>
   <rect x="40" y="144.5" width="127" height="6" fill="#cd3731" rx="1" ry="1"></rect>
   <rect x="40" y="151" width="66" height="6" fill="#fbae00" rx="1" ry="1"></rect>
   <rect x="40" y="157.5" width="81" height="6" fill="#248ebd" rx="1" ry="1"></rect>
@@ -66,7 +66,7 @@
   <rect x="40" y="187.5" width="55" height="6" fill="#fbae00" rx="1" ry="1"></rect>
   <rect x="40" y="194" width="61" height="6" fill="#248ebd" rx="1" ry="1"></rect>
   <rect x="40" y="200.5" width="16" height="6" fill="#40a9ff" rx="1" ry="1"></rect>
-  <rect x="40" y="207" width="9" height="6" fill="#ff6f00" rx="1" ry="1"></rect>
+  <rect x="40" y="207" width="10" height="6" fill="#ff6f00" rx="1" ry="1"></rect>
   <rect x="40" y="217.5" width="16" height="6" fill="#cd3731" rx="1" ry="1"></rect>
   <rect x="40" y="224" width="26" height="6" fill="#fbae00" rx="1" ry="1"></rect>
   <rect x="40" y="230.5" width="38" height="6" fill="#248ebd" rx="1" ry="1"></rect>
@@ -85,7 +85,7 @@
   <rect x="40" y="327" width="14" height="6" fill="#cd3731" rx="1" ry="1"></rect>
   <rect x="40" y="333.5" width="51" height="6" fill="#fbae00" rx="1" ry="1"></rect>
   <rect x="40" y="340" width="120" height="6" fill="#248ebd" rx="1" ry="1"></rect>
-  <rect x="40" y="346.5" width="40" height="6" fill="#40a9ff" rx="1" ry="1"></rect>
+  <rect x="40" y="346.5" width="38" height="6" fill="#40a9ff" rx="1" ry="1"></rect>
   <rect x="40" y="353" width="0" height="6" fill="#ff6f00" rx="1" ry="1"></rect>
   <line x1="40" y1="31" x2="40" y2="363.5" class="line"></line>
   <text x="38" y="44.5" class="font s4" dominant-baseline="middle" text-anchor="end">clean install</text>
@@ -102,5 +102,5 @@
   <text x="38" y="265.5" class="font s4" dominant-baseline="middle" text-anchor="end">with lockfile</text>
   <text x="38" y="300" class="font s4" dominant-baseline="middle" text-anchor="end">with node_modules</text>
   <text x="38" y="336.5" class="font s4" dominant-baseline="middle" text-anchor="end">update</text>
-  <text x="290" y="375.5" class="font s4 text" text-anchor="end">Tests were run using Node.js v20.10.0 at: Jan 16, 2024, 8:48 AM</text>
+  <text x="290" y="375.5" class="font s4 text" text-anchor="end">Tests were run using Node.js v20.10.0 at: 16 janv. 2024, 09:21</text>
 </svg>
