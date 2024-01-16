@@ -120,7 +120,7 @@ async function run () {
   spawn.sync('pnpm', ['init', '--yes'], { cwd: managersDir })
   spawn.sync('pnpm', ['add', 'npm@latest', 'pnpm@latest'], { cwd: managersDir, stdio: 'inherit' })
   spawn.sync('yarn', ['set', 'version', 'stable'], { cwd: managersDir, stdio: 'inherit' })
-  const formattedNow = new Intl.DateTimeFormat('en-US', { dateStyle: 'medium', timeStyle: 'short' }).format(new Date())
+  const formattedNow = new Intl.DateTimeFormat('fr-FR', { dateStyle: 'medium', timeStyle: 'short' }).format(new Date())
   const pms = [ 'npm', 'pnpm', 'yarn', 'yarn_pnp', 'bun' ]
   const sections = []
   const svgs = []
