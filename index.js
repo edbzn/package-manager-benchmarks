@@ -38,7 +38,7 @@ const fixtures = [
   },
   {
     name: 'alotta-files',
-    mdDesc: '## Lots of Files\n\nThe app\'s `package.json` [here](https://github.com/pnpm/pnpm.github.io/blob/main/benchmarks/fixtures/alotta-files/package.json)'
+    mdDesc: '## Lots of Files\n\nThe app\'s `package.json` [here](./fixtures/alotta-files/package.json)'
   }
 ]
 
@@ -161,7 +161,7 @@ async function run () {
       | install |       |          | ✔           | ${prettyMs(npmRes.withWarmModules)} | ${prettyMs(pnpmRes.withWarmModules)} | ${prettyMs(yarnRes.withWarmModules)} | n/a | ${prettyMs(bunRes.withWarmModules)} |
       | update  | n/a | n/a | n/a | ${prettyMs(npmRes.updatedDependencies)} | ${prettyMs(pnpmRes.updatedDependencies)} | ${prettyMs(yarnRes.updatedDependencies)} | ${prettyMs(yarnPnPRes.updatedDependencies)} | ${prettyMs(bunRes.updatedDependencies)} |
 
-      <img alt="Graph of the ${fixture.name} results" src="/img/benchmarks/${fixture.name}.svg" />
+      <img alt="Graph of the ${fixture.name} results" src="results/img/${fixture.name}.svg" />
     `)
     svgs.push({
       path: path.join(BENCH_IMGS, `${fixture.name}.svg`),
