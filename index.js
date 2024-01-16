@@ -14,7 +14,7 @@ import { fileURLToPath } from 'url'
 
 const DIRNAME = path.dirname(fileURLToPath(import.meta.url))
 const TMP = path.join(DIRNAME, '.tmp')
-const BENCH_IMGS = path.join(DIRNAME, 'img')
+const BENCH_IMGS = path.join(DIRNAME, 'results', 'img')
 
 const { stripIndents } = commonTags
 const LIMIT_RUNS = 30
@@ -204,14 +204,6 @@ async function run () {
   )
 }
 
-function average (benchmarkResults) {
-  const results = {}
-  tests.forEach(test => {
-    results[test] = benchmarkResults.map(res => res[test]).reduce(sum, 0) / benchmarkResults.length
-  })
-  return results
-}
-
 function min (benchmarkResults) {
   const results = {}
   tests.forEach(test => {
@@ -219,8 +211,4 @@ function min (benchmarkResults) {
   })
 
   return results
-}
-
-function sum (a, b) {
-  return a + b
 }

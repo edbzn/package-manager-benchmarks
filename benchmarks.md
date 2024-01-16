@@ -32,7 +32,7 @@ The app's `package.json` [here](./fixtures/react-app/package.json)
 | install |       |          | ✔           | 1.7s | 3.8s | 3s | n/a | 99ms |
 | update  | n/a | n/a | n/a | 1.4s | 4.3s | 14.3s | 3.6s | 58ms |
 
-<img alt="Graph of the react-app results" src="/img/benchmarks/react-app.svg" />
+<img alt="Graph of the react-app results" src="results/img/react-app.svg" />
 
 ## Ember App
 
@@ -50,7 +50,7 @@ The app's `package.json` [here](./fixtures/ember-quickstart/package.json)
 | install |       |          | ✔           | 1.3s | 3.1s | 2.5s | n/a | 47ms |
 | update  | n/a | n/a | n/a | 1.1s | 4s | 9.7s | 3.5s | 43ms |
 
-<img alt="Graph of the ember-quickstart results" src="/img/benchmarks/ember-quickstart.svg" />
+<img alt="Graph of the ember-quickstart results" src="results/img/ember-quickstart.svg" />
 
 ## Angular App
 
@@ -68,7 +68,7 @@ The app's `package.json` [here](./fixtures/angular-quickstart/package.json)
 | install |       |          | ✔           | 1.3s | 4.3s | 3s | n/a | 56ms |
 | update  | n/a | n/a | n/a | 1.1s | 4.1s | 9.6s | 3.3s | 48ms |
 
-<img alt="Graph of the angular-quickstart results" src="/img/benchmarks/angular-quickstart.svg" />
+<img alt="Graph of the angular-quickstart results" src="results/img/angular-quickstart.svg" />
 
 ## Medium Size App
 
@@ -86,7 +86,7 @@ The app's `package.json` [here](./fixtures/medium-size-app/package.json)
 | install |       |          | ✔           | 1.6s | 4.4s | 3.6s | n/a | 56ms |
 | update  | n/a | n/a | n/a | 1.4s | 4.1s | 7.2s | 3s | 57ms |
 
-<img alt="Graph of the medium-size-app results" src="/img/benchmarks/medium-size-app.svg" />
+<img alt="Graph of the medium-size-app results" src="results/img/medium-size-app.svg" />
 
 ## Lots of Files
 
@@ -104,4 +104,4 @@ The app's `package.json` [here](https://github.com/pnpm/pnpm.github.io/blob/main
 | install |       |          | ✔           | 1.8s | 5.6s | 3.8s | n/a | 75ms |
 | update  | n/a | n/a | n/a | 1.5s | 5.2s | 5.5s | 3.8s | 116ms |
 
-<img alt="Graph of the alotta-files results" src="/img/benchmarks/alotta-files.svg" />
+<img alt="Graph of the alotta-files results" src="results/img/alotta-files.svg" />
