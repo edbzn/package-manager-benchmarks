@@ -33,7 +33,7 @@ jobs:
           git config --local user.name "Edouard Bozon"
           git add .
           git status -s
-          git diff --exit-code || git commit -m "chore: update results" -a
+          git diff --exit-code && git commit -m "chore: update results"
       - name: Push Changes
         uses: ad-m/github-push-action@master
         with:
