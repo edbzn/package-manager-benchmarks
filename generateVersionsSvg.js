@@ -115,7 +115,7 @@ const now = new Intl.DateTimeFormat("fr-FR", {
 for (const pm of PMS) {
   getPMResults(pm).then((results) => {
     const svg = generateSvg(
-      results.sort((a, b) => rcompare(a, b)),
+      results.sort(([a], [b]) => rcompare(a, b)),
       pm,
       testDescriptions,
       now
