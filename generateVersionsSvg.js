@@ -141,7 +141,7 @@ const generateSvg = (resultArrays, pm, tests, formattedNow) => {
   const graph = {
     x: offset.left,
     y: offset.top,
-    w: resultArrays.length * 16,
+    w: 250,
     h:
       tests.length * resultArrays.length * (thickness + spacing) +
       (resultArrays.length - 1) * separation +
