@@ -1,0 +1,71 @@
+<svg version="1.1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 88 141">
+  <style>
+    .font { font-family: sans-serif; }
+    .s2 { font-size: 2px; }
+    .s3 { font-size: 3px; }
+    .s4 { font-size: 4px; }
+    .s5 { font-size: 5px; }
+    .line { stroke: #cacaca; }
+    .width { stroke-width: 0.5; }
+    .text { fill: #888; }
+    .bold { font-weight: bold; }
+  </style>
+  <rect x="0" y="0" width="88" height="141" fill="#fff"></rect>
+  <rect x="46" y="10" width="32" height="4" fill="hsl(0, 100%, 45%)" rx="1" ry="1"></rect>
+  <text x="80" y="12" fill="hsl(0, 100%, 20%)" dominant-baseline="middle" class="font s4">2.8s</text>
+  <rect x="46" y="15.5" width="1" height="4" fill="hsl(0, 100%, 45%)" rx="1" ry="1"></rect>
+  <text x="49" y="17.5" fill="hsl(0, 100%, 20%)" dominant-baseline="middle" class="font s4">67ms</text>
+  <rect x="46" y="21" width="8" height="4" fill="hsl(0, 100%, 45%)" rx="1" ry="1"></rect>
+  <text x="56" y="23" fill="hsl(0, 100%, 20%)" dominant-baseline="middle" class="font s4">677ms</text>
+  <rect x="46" y="26.5" width="8" height="4" fill="hsl(0, 100%, 45%)" rx="1" ry="1"></rect>
+  <text x="56" y="28.5" fill="hsl(0, 100%, 20%)" dominant-baseline="middle" class="font s4">679ms</text>
+  <rect x="46" y="32" width="7" height="4" fill="hsl(0, 100%, 45%)" rx="1" ry="1"></rect>
+  <text x="55" y="34" fill="hsl(0, 100%, 20%)" dominant-baseline="middle" class="font s4">669ms</text>
+  <rect x="46" y="37.5" width="1" height="4" fill="hsl(0, 100%, 45%)" rx="1" ry="1"></rect>
+  <text x="49" y="39.5" fill="hsl(0, 100%, 20%)" dominant-baseline="middle" class="font s4">83ms</text>
+  <rect x="46" y="43" width="1" height="4" fill="hsl(0, 100%, 45%)" rx="1" ry="1"></rect>
+  <text x="49" y="45" fill="hsl(0, 100%, 20%)" dominant-baseline="middle" class="font s4">60ms</text>
+  <rect x="46" y="48.5" width="1" height="4" fill="hsl(0, 100%, 45%)" rx="1" ry="1"></rect>
+  <text x="49" y="50.5" fill="hsl(0, 100%, 20%)" dominant-baseline="middle" class="font s4">75ms</text>
+  <rect x="46" y="54" width="1" height="4" fill="hsl(0, 100%, 45%)" rx="1" ry="1"></rect>
+  <text x="49" y="56" fill="hsl(0, 100%, 20%)" dominant-baseline="middle" class="font s4">104ms</text>
+  <rect x="46" y="68.5" width="25" height="4" fill="hsl(180, 100%, 45%)" rx="1" ry="1"></rect>
+  <text x="73" y="70.5" fill="hsl(180, 100%, 20%)" dominant-baseline="middle" class="font s4">2.2s</text>
+  <rect x="46" y="74" width="1" height="4" fill="hsl(180, 100%, 45%)" rx="1" ry="1"></rect>
+  <text x="49" y="76" fill="hsl(180, 100%, 20%)" dominant-baseline="middle" class="font s4">106ms</text>
+  <rect x="46" y="79.5" width="8" height="4" fill="hsl(180, 100%, 45%)" rx="1" ry="1"></rect>
+  <text x="56" y="81.5" fill="hsl(180, 100%, 20%)" dominant-baseline="middle" class="font s4">680ms</text>
+  <rect x="46" y="85" width="8" height="4" fill="hsl(180, 100%, 45%)" rx="1" ry="1"></rect>
+  <text x="56" y="87" fill="hsl(180, 100%, 20%)" dominant-baseline="middle" class="font s4">714ms</text>
+  <rect x="46" y="90.5" width="7" height="4" fill="hsl(180, 100%, 45%)" rx="1" ry="1"></rect>
+  <text x="55" y="92.5" fill="hsl(180, 100%, 20%)" dominant-baseline="middle" class="font s4">668ms</text>
+  <rect x="46" y="96" width="1" height="4" fill="hsl(180, 100%, 45%)" rx="1" ry="1"></rect>
+  <text x="49" y="98" fill="hsl(180, 100%, 20%)" dominant-baseline="middle" class="font s4">81ms</text>
+  <rect x="46" y="101.5" width="1" height="4" fill="hsl(180, 100%, 45%)" rx="1" ry="1"></rect>
+  <text x="49" y="103.5" fill="hsl(180, 100%, 20%)" dominant-baseline="middle" class="font s4">59ms</text>
+  <rect x="46" y="107" width="1" height="4" fill="hsl(180, 100%, 45%)" rx="1" ry="1"></rect>
+  <text x="49" y="109" fill="hsl(180, 100%, 20%)" dominant-baseline="middle" class="font s4">84ms</text>
+  <rect x="46" y="112.5" width="1" height="4" fill="hsl(180, 100%, 45%)" rx="1" ry="1"></rect>
+  <text x="49" y="114.5" fill="hsl(180, 100%, 20%)" dominant-baseline="middle" class="font s4">100ms</text>
+  <text x="48" y="6.5" class="font s5" dominant-baseline="middle" text-anchor="start">bun v1.0.22</text>
+  <text x="44" y="12" class="font s4" dominant-baseline="middle" text-anchor="end">clean install</text>
+  <text x="44" y="17.5" class="font s4" dominant-baseline="middle" text-anchor="end">cache + lockfile + node_modules</text>
+  <text x="44" y="23" class="font s4" dominant-baseline="middle" text-anchor="end">cache + lockfile</text>
+  <text x="44" y="28.5" class="font s4" dominant-baseline="middle" text-anchor="end">cache</text>
+  <text x="44" y="34" class="font s4" dominant-baseline="middle" text-anchor="end">lockfile</text>
+  <text x="44" y="39.5" class="font s4" dominant-baseline="middle" text-anchor="end">cache + node_modules</text>
+  <text x="44" y="45" class="font s4" dominant-baseline="middle" text-anchor="end">node_modules + lockfile</text>
+  <text x="44" y="50.5" class="font s4" dominant-baseline="middle" text-anchor="end">node_modules</text>
+  <text x="44" y="56" class="font s4" dominant-baseline="middle" text-anchor="end">update</text>
+  <text x="48" y="65" class="font s5" dominant-baseline="middle" text-anchor="start">bun v1.0.23</text>
+  <text x="44" y="70.5" class="font s4" dominant-baseline="middle" text-anchor="end">clean install</text>
+  <text x="44" y="76" class="font s4" dominant-baseline="middle" text-anchor="end">cache + lockfile + node_modules</text>
+  <text x="44" y="81.5" class="font s4" dominant-baseline="middle" text-anchor="end">cache + lockfile</text>
+  <text x="44" y="87" class="font s4" dominant-baseline="middle" text-anchor="end">cache</text>
+  <text x="44" y="92.5" class="font s4" dominant-baseline="middle" text-anchor="end">lockfile</text>
+  <text x="44" y="98" class="font s4" dominant-baseline="middle" text-anchor="end">cache + node_modules</text>
+  <text x="44" y="103.5" class="font s4" dominant-baseline="middle" text-anchor="end">node_modules + lockfile</text>
+  <text x="44" y="109" class="font s4" dominant-baseline="middle" text-anchor="end">node_modules</text>
+  <text x="44" y="114.5" class="font s4" dominant-baseline="middle" text-anchor="end">update</text>
+  <text x="78" y="139" class="font s4 text" text-anchor="end">Tests were run using bun with Node.js v20.9.0 at: 2024-01-18T10:45:07.938Z</text>
+</svg>

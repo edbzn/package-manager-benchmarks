@@ -29,3 +29,22 @@ pnpm run benchmark
 
 ![](results/img/medium-size-app.svg)
 
+### NPM
+
+![](results/img/npm.svg)
+
+### Yarn
+
+![](results/img/yarn.svg)
+
+### Yarn PnP
+
+![](results/img/yarn_pnp.svg)
+
+### PnPM
+
+![](results/img/pnpm.svg)
+
+### Bun
+
+![](results/img/bun.svg)
