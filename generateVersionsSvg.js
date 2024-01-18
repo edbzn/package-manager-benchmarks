@@ -3,6 +3,7 @@ import fs, { cpSync } from "fs";
 import { loadYamlFile } from "load-yaml-file";
 import { fileURLToPath } from "url";
 import prettyMs from "pretty-ms";
+import { rcompare } from "semver";
 
 const getHighestNumber = (array) => {
   let highest = 0;
@@ -106,11 +107,19 @@ const getPMResults = async (pm) => {
 };
 
 const PMS = ["npm", "pnpm", "yarn", "yarn_pnp", "bun"];
-const now = new Date().toISOString();
+const now = new Intl.DateTimeFormat("fr-FR", {
+  dateStyle: "medium",
+  timeStyle: "short",
+}).format(new Date());
 
 for (const pm of PMS) {
   getPMResults(pm).then((results) => {
-    const svg = generateSvg(results, pm, testDescriptions, now);
+    const svg = generateSvg(
+      results.sort((a, b) => rcompare(a, b)),
+      pm,
+      testDescriptions,
+      now
+    );
     // write svg to disk
     fs.writeFileSync(path.join(DIRNAME, "results", "img", `${pm}.svg`), svg);
   });
@@ -187,7 +196,6 @@ const generateSvg = (resultArrays, pm, tests, formattedNow) => {
       vb.h
     }" fill="${"#fff"}"></rect>` + "\n";
 
-
   // create graphLines based on the resultArrays
   const graphLines = [];
   const colors = [];
@@ -217,8 +225,11 @@ const generateSvg = (resultArrays, pm, tests, formattedNow) => {
 
       if (!Number.isNaN(result)) {
         svgStr +=
-          `  <rect x="${x}" y="${y}" width="${length === 0 ? 1 : length}" height="${thickness}" fill="${colors[indexA]}" rx="${roundedCorners}" ry="${roundedCorners}"></rect>` +
-          "\n";
+          `  <rect x="${x}" y="${y}" width="${
+            length === 0 ? 1 : length
+          }" height="${thickness}" fill="${
+            colors[indexA]
+          }" rx="${roundedCorners}" ry="${roundedCorners}"></rect>` + "\n";
         // contrasted text color
         const textColor = `hsl(${
           (indexA * 360) / resultArrays.length
