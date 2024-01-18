@@ -43,3 +43,12 @@
   withWarmModulesAndLockfile: 1144
   withWarmModules: 5518
   updatedDependencies: 5992
+- firstInstall: 10253
+  repeatInstall: 1113
+  withWarmCacheAndLockfile: 2743
+  withWarmCache: 6849
+  withLockfile: 6096
+  withWarmCacheAndModules: 2403
+  withWarmModulesAndLockfile: 1154
+  withWarmModules: 6515
+  updatedDependencies: 5561
