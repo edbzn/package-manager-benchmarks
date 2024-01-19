@@ -15,12 +15,12 @@
   <text x="247" y="12" fill="hsl(0, 100%, 20%)" dominant-baseline="middle" class="font s4">2.2s</text>
   <rect x="46" y="15.5" width="6" height="4" fill="hsl(0, 100%, 45%)" rx="1" ry="1"></rect>
   <text x="54" y="17.5" fill="hsl(0, 100%, 20%)" dominant-baseline="middle" class="font s4">65ms</text>
-  <rect x="46" y="21" width="59" height="4" fill="hsl(0, 100%, 45%)" rx="1" ry="1"></rect>
-  <text x="107" y="23" fill="hsl(0, 100%, 20%)" dominant-baseline="middle" class="font s4">679ms</text>
-  <rect x="46" y="26.5" width="61" height="4" fill="hsl(0, 100%, 45%)" rx="1" ry="1"></rect>
-  <text x="109" y="28.5" fill="hsl(0, 100%, 20%)" dominant-baseline="middle" class="font s4">698ms</text>
-  <rect x="46" y="32" width="57" height="4" fill="hsl(0, 100%, 45%)" rx="1" ry="1"></rect>
-  <text x="105" y="34" fill="hsl(0, 100%, 20%)" dominant-baseline="middle" class="font s4">653ms</text>
+  <rect x="46" y="21" width="56" height="4" fill="hsl(0, 100%, 45%)" rx="1" ry="1"></rect>
+  <text x="104" y="23" fill="hsl(0, 100%, 20%)" dominant-baseline="middle" class="font s4">648ms</text>
+  <rect x="46" y="26.5" width="58" height="4" fill="hsl(0, 100%, 45%)" rx="1" ry="1"></rect>
+  <text x="106" y="28.5" fill="hsl(0, 100%, 20%)" dominant-baseline="middle" class="font s4">663ms</text>
+  <rect x="46" y="32" width="56" height="4" fill="hsl(0, 100%, 45%)" rx="1" ry="1"></rect>
+  <text x="104" y="34" fill="hsl(0, 100%, 20%)" dominant-baseline="middle" class="font s4">647ms</text>
   <rect x="46" y="37.5" width="7" height="4" fill="hsl(0, 100%, 45%)" rx="1" ry="1"></rect>
   <text x="55" y="39.5" fill="hsl(0, 100%, 20%)" dominant-baseline="middle" class="font s4">81ms</text>
   <rect x="46" y="43" width="5" height="4" fill="hsl(0, 100%, 45%)" rx="1" ry="1"></rect>
@@ -67,5 +67,5 @@
   <text x="44" y="103.5" class="font s4" dominant-baseline="middle" text-anchor="end">node_modules + lockfile</text>
   <text x="44" y="109" class="font s4" dominant-baseline="middle" text-anchor="end">node_modules</text>
   <text x="44" y="114.5" class="font s4" dominant-baseline="middle" text-anchor="end">update</text>
-  <text x="296" y="139" class="font s4 text" text-anchor="end">Tests were run using bun with Node.js v20.10.0 at: 18 janv. 2024, 14:55</text>
+  <text x="296" y="139" class="font s4 text" text-anchor="end">Tests were run using bun with Node.js v20.10.0 at: 19 janv. 2024, 07:31</text>
 </svg>
