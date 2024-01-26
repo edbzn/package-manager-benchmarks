@@ -17,16 +17,16 @@
   <text x="54" y="17.5" fill="hsl(0, 100%, 20%)" dominant-baseline="middle" class="font s4">1.6s</text>
   <rect x="46" y="21" width="17" height="4" fill="hsl(0, 100%, 45%)" rx="1" ry="1"></rect>
   <text x="65" y="23" fill="hsl(0, 100%, 20%)" dominant-baseline="middle" class="font s4">5.1s</text>
-  <rect x="46" y="26.5" width="24" height="4" fill="hsl(0, 100%, 45%)" rx="1" ry="1"></rect>
-  <text x="72" y="28.5" fill="hsl(0, 100%, 20%)" dominant-baseline="middle" class="font s4">7.1s</text>
+  <rect x="46" y="26.5" width="23" height="4" fill="hsl(0, 100%, 45%)" rx="1" ry="1"></rect>
+  <text x="71" y="28.5" fill="hsl(0, 100%, 20%)" dominant-baseline="middle" class="font s4">6.8s</text>
   <rect x="46" y="32" width="17" height="4" fill="hsl(0, 100%, 45%)" rx="1" ry="1"></rect>
   <text x="65" y="34" fill="hsl(0, 100%, 20%)" dominant-baseline="middle" class="font s4">5.1s</text>
   <rect x="46" y="37.5" width="12" height="4" fill="hsl(0, 100%, 45%)" rx="1" ry="1"></rect>
   <text x="60" y="39.5" fill="hsl(0, 100%, 20%)" dominant-baseline="middle" class="font s4">3.4s</text>
   <rect x="46" y="43" width="6" height="4" fill="hsl(0, 100%, 45%)" rx="1" ry="1"></rect>
   <text x="54" y="45" fill="hsl(0, 100%, 20%)" dominant-baseline="middle" class="font s4">1.6s</text>
-  <rect x="46" y="48.5" width="12" height="4" fill="hsl(0, 100%, 45%)" rx="1" ry="1"></rect>
-  <text x="60" y="50.5" fill="hsl(0, 100%, 20%)" dominant-baseline="middle" class="font s4">3.5s</text>
+  <rect x="46" y="48.5" width="11" height="4" fill="hsl(0, 100%, 45%)" rx="1" ry="1"></rect>
+  <text x="59" y="50.5" fill="hsl(0, 100%, 20%)" dominant-baseline="middle" class="font s4">3.3s</text>
   <rect x="46" y="54" width="17" height="4" fill="hsl(0, 100%, 45%)" rx="1" ry="1"></rect>
   <text x="65" y="56" fill="hsl(0, 100%, 20%)" dominant-baseline="middle" class="font s4">5.1s</text>
   <rect x="46" y="68.5" width="25" height="4" fill="hsl(9.72972972972973, 100%, 45%)" rx="1" ry="1"></rect>
@@ -1026,5 +1026,5 @@
   <text x="44" y="2151" class="font s4" dominant-baseline="middle" text-anchor="end">node_modules + lockfile</text>
   <text x="44" y="2156.5" class="font s4" dominant-baseline="middle" text-anchor="end">node_modules</text>
   <text x="44" y="2162" class="font s4" dominant-baseline="middle" text-anchor="end">update</text>
-  <text x="296" y="2186.5" class="font s4 text" text-anchor="end">Tests were run using yarn with Node.js v20.10.0 at: 25 janv. 2024, 07:32</text>
+  <text x="296" y="2186.5" class="font s4 text" text-anchor="end">Tests were run using yarn with Node.js v20.11.0 at: 26 janv. 2024, 07:30</text>
 </svg>
