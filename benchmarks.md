@@ -1,6 +1,6 @@
 # Benchmarks of JavaScript Package Managers
 
-**Last benchmarked at**: _3 mars 2024, 07:14_ (_daily_ updated).
+**Last benchmarked at**: _4 mars 2024, 07:58_ (_daily_ updated).
 
 This benchmark compares the performance of npm, pnpm, Yarn Classic, Yarn PnP, and Bun (check [Yarn's benchmarks](https://yarnpkg.com/benchmarks) for any other Yarn modes that are not included here).
 
@@ -65,8 +65,8 @@ The app's `package.json` [here](./fixtures/angular-quickstart/package.json)
 | install |       | ✔        |             | 13.2s | 4.1s | 4.8s | 1.2s | 708ms |
 | install | ✔     |          | ✔           | 1.2s | 1.8s | 2.7s | n/a | 50ms |
 | install |       | ✔        | ✔           | 1s | 1s | 1.4s | n/a | 32ms |
-| install |       |          | ✔           | 1.2s | 4.2s | 2.7s | n/a | 52ms |
-| update  | n/a | n/a | n/a | 1s | 3.6s | 8.6s | 2.6s | 38ms |
+| install |       |          | ✔           | 1.2s | 4.2s | 2.7s | n/a | 48ms |
+| update  | n/a | n/a | n/a | 1s | 3.6s | 8.6s | 2.6s | 35ms |
 
 <img alt="Graph of the angular-quickstart results" src="results/img/angular-quickstart.svg" />
 
@@ -77,14 +77,14 @@ The app's `package.json` [here](./fixtures/medium-size-app/package.json)
 | action  | cache | lockfile | node_modules| npm | pnpm | Yarn | Yarn PnP | Bun |
 | ---     | ---   | ---      | ---         | --- | ---  | ---  | ---      | --- |
 | install |       |          |             | 29.2s | 6.1s | 7.8s | 3s | 1.1s |
-| install | ✔     | ✔        | ✔           | 1.4s | 958ms | 1.5s | n/a | 42ms |
+| install | ✔     | ✔        | ✔           | 1.4s | 958ms | 1.5s | n/a | 41ms |
 | install | ✔     | ✔        |             | 6s | 2.1s | 3.7s | 1.2s | 449ms |
 | install | ✔     |          |             | 9.7s | 4.7s | 5.4s | 2.6s | 481ms |
 | install |       | ✔        |             | 12.5s | 4.1s | 3.7s | 1.2s | 435ms |
 | install | ✔     |          | ✔           | 1.5s | 1.8s | 2.8s | n/a | 51ms |
 | install |       | ✔        | ✔           | 1.3s | 1s | 1.5s | n/a | 35ms |
 | install |       |          | ✔           | 1.5s | 4.1s | 2.8s | n/a | 52ms |
-| update  | n/a | n/a | n/a | 1.3s | 3.5s | 5.4s | 2.4s | 47ms |
+| update  | n/a | n/a | n/a | 1.3s | 3.5s | 5.4s | 2.4s | 46ms |
 
 <img alt="Graph of the medium-size-app results" src="results/img/medium-size-app.svg" />
 
