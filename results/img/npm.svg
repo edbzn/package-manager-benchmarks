@@ -11,8 +11,8 @@
     .bold { font-weight: bold; }
   </style>
   <rect x="0" y="0" width="306" height="6225" fill="#fff"></rect>
-  <rect x="46" y="10" width="136" height="4" fill="hsl(0, 100%, 45%)" rx="1" ry="1"></rect>
-  <text x="184" y="12" fill="hsl(0, 100%, 20%)" dominant-baseline="middle" class="font s4">39.4s</text>
+  <rect x="46" y="10" width="135" height="4" fill="hsl(0, 100%, 45%)" rx="1" ry="1"></rect>
+  <text x="183" y="12" fill="hsl(0, 100%, 20%)" dominant-baseline="middle" class="font s4">38.9s</text>
   <rect x="46" y="15.5" width="5" height="4" fill="hsl(0, 100%, 45%)" rx="1" ry="1"></rect>
   <text x="53" y="17.5" fill="hsl(0, 100%, 20%)" dominant-baseline="middle" class="font s4">1.5s</text>
   <rect x="46" y="21" width="26" height="4" fill="hsl(0, 100%, 45%)" rx="1" ry="1"></rect>
@@ -2967,5 +2967,5 @@
   <text x="44" y="6187.5" class="font s4" dominant-baseline="middle" text-anchor="end">node_modules + lockfile</text>
   <text x="44" y="6193" class="font s4" dominant-baseline="middle" text-anchor="end">node_modules</text>
   <text x="44" y="6198.5" class="font s4" dominant-baseline="middle" text-anchor="end">update</text>
-  <text x="296" y="6223" class="font s4 text" text-anchor="end">Tests were run using npm with Node.js v20.11.1 at: 19 mars 2024, 07:32</text>
+  <text x="296" y="6223" class="font s4 text" text-anchor="end">Tests were run using npm with Node.js v20.11.1 at: 20 mars 2024, 07:31</text>
 </svg>
