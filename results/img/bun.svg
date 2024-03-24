@@ -11,222 +11,222 @@
     .bold { font-weight: bold; }
   </style>
   <rect x="0" y="0" width="306" height="726" fill="#fff"></rect>
-  <rect x="46" y="10" width="250" height="4" fill="hsl(0, 100%, 45%)" rx="1" ry="1"></rect>
-  <text x="298" y="12" fill="hsl(0, 100%, 20%)" dominant-baseline="middle" class="font s4">3.3s</text>
+  <rect x="46" y="10" width="191" height="4" fill="hsl(0, 100%, 45%)" rx="1" ry="1"></rect>
+  <text x="239" y="12" fill="hsl(0, 100%, 20%)" dominant-baseline="middle" class="font s4">2.2s</text>
   <rect x="46" y="15.5" width="5" height="4" fill="hsl(0, 100%, 45%)" rx="1" ry="1"></rect>
   <text x="53" y="17.5" fill="hsl(0, 100%, 20%)" dominant-baseline="middle" class="font s4">62ms</text>
-  <rect x="46" y="21" width="54" height="4" fill="hsl(0, 100%, 45%)" rx="1" ry="1"></rect>
-  <text x="102" y="23" fill="hsl(0, 100%, 20%)" dominant-baseline="middle" class="font s4">710ms</text>
-  <rect x="46" y="26.5" width="54" height="4" fill="hsl(0, 100%, 45%)" rx="1" ry="1"></rect>
-  <text x="102" y="28.5" fill="hsl(0, 100%, 20%)" dominant-baseline="middle" class="font s4">719ms</text>
-  <rect x="46" y="32" width="53" height="4" fill="hsl(0, 100%, 45%)" rx="1" ry="1"></rect>
-  <text x="101" y="34" fill="hsl(0, 100%, 20%)" dominant-baseline="middle" class="font s4">702ms</text>
+  <rect x="46" y="21" width="61" height="4" fill="hsl(0, 100%, 45%)" rx="1" ry="1"></rect>
+  <text x="109" y="23" fill="hsl(0, 100%, 20%)" dominant-baseline="middle" class="font s4">710ms</text>
+  <rect x="46" y="26.5" width="61" height="4" fill="hsl(0, 100%, 45%)" rx="1" ry="1"></rect>
+  <text x="109" y="28.5" fill="hsl(0, 100%, 20%)" dominant-baseline="middle" class="font s4">716ms</text>
+  <rect x="46" y="32" width="60" height="4" fill="hsl(0, 100%, 45%)" rx="1" ry="1"></rect>
+  <text x="108" y="34" fill="hsl(0, 100%, 20%)" dominant-baseline="middle" class="font s4">702ms</text>
   <rect x="46" y="37.5" width="7" height="4" fill="hsl(0, 100%, 45%)" rx="1" ry="1"></rect>
-  <text x="55" y="39.5" fill="hsl(0, 100%, 20%)" dominant-baseline="middle" class="font s4">94ms</text>
+  <text x="55" y="39.5" fill="hsl(0, 100%, 20%)" dominant-baseline="middle" class="font s4">83ms</text>
   <rect x="46" y="43" width="5" height="4" fill="hsl(0, 100%, 45%)" rx="1" ry="1"></rect>
-  <text x="53" y="45" fill="hsl(0, 100%, 20%)" dominant-baseline="middle" class="font s4">71ms</text>
-  <rect x="46" y="48.5" width="6" height="4" fill="hsl(0, 100%, 45%)" rx="1" ry="1"></rect>
-  <text x="54" y="50.5" fill="hsl(0, 100%, 20%)" dominant-baseline="middle" class="font s4">77ms</text>
-  <rect x="46" y="54" width="9" height="4" fill="hsl(0, 100%, 45%)" rx="1" ry="1"></rect>
-  <text x="57" y="56" fill="hsl(0, 100%, 20%)" dominant-baseline="middle" class="font s4">120ms</text>
-  <rect x="46" y="68.5" width="163" height="4" fill="hsl(30, 100%, 45%)" rx="1" ry="1"></rect>
-  <text x="211" y="70.5" fill="hsl(30, 100%, 20%)" dominant-baseline="middle" class="font s4">2.1s</text>
-  <rect x="46" y="74" width="4" height="4" fill="hsl(30, 100%, 45%)" rx="1" ry="1"></rect>
-  <text x="52" y="76" fill="hsl(30, 100%, 20%)" dominant-baseline="middle" class="font s4">59ms</text>
-  <rect x="46" y="79.5" width="52" height="4" fill="hsl(30, 100%, 45%)" rx="1" ry="1"></rect>
-  <text x="100" y="81.5" fill="hsl(30, 100%, 20%)" dominant-baseline="middle" class="font s4">694ms</text>
-  <rect x="46" y="85" width="54" height="4" fill="hsl(30, 100%, 45%)" rx="1" ry="1"></rect>
-  <text x="102" y="87" fill="hsl(30, 100%, 20%)" dominant-baseline="middle" class="font s4">712ms</text>
-  <rect x="46" y="90.5" width="52" height="4" fill="hsl(30, 100%, 45%)" rx="1" ry="1"></rect>
-  <text x="100" y="92.5" fill="hsl(30, 100%, 20%)" dominant-baseline="middle" class="font s4">682ms</text>
-  <rect x="46" y="96" width="6" height="4" fill="hsl(30, 100%, 45%)" rx="1" ry="1"></rect>
-  <text x="54" y="98" fill="hsl(30, 100%, 20%)" dominant-baseline="middle" class="font s4">79ms</text>
-  <rect x="46" y="101.5" width="4" height="4" fill="hsl(30, 100%, 45%)" rx="1" ry="1"></rect>
-  <text x="52" y="103.5" fill="hsl(30, 100%, 20%)" dominant-baseline="middle" class="font s4">55ms</text>
-  <rect x="46" y="107" width="6" height="4" fill="hsl(30, 100%, 45%)" rx="1" ry="1"></rect>
-  <text x="54" y="109" fill="hsl(30, 100%, 20%)" dominant-baseline="middle" class="font s4">84ms</text>
-  <rect x="46" y="112.5" width="7" height="4" fill="hsl(30, 100%, 45%)" rx="1" ry="1"></rect>
-  <text x="55" y="114.5" fill="hsl(30, 100%, 20%)" dominant-baseline="middle" class="font s4">97ms</text>
-  <rect x="46" y="127" width="179" height="4" fill="hsl(60, 100%, 45%)" rx="1" ry="1"></rect>
-  <text x="227" y="129" fill="hsl(60, 100%, 20%)" dominant-baseline="middle" class="font s4">2.3s</text>
-  <rect x="46" y="132.5" width="5" height="4" fill="hsl(60, 100%, 45%)" rx="1" ry="1"></rect>
-  <text x="53" y="134.5" fill="hsl(60, 100%, 20%)" dominant-baseline="middle" class="font s4">65ms</text>
-  <rect x="46" y="138" width="54" height="4" fill="hsl(60, 100%, 45%)" rx="1" ry="1"></rect>
-  <text x="102" y="140" fill="hsl(60, 100%, 20%)" dominant-baseline="middle" class="font s4">711ms</text>
-  <rect x="46" y="143.5" width="55" height="4" fill="hsl(60, 100%, 45%)" rx="1" ry="1"></rect>
-  <text x="103" y="145.5" fill="hsl(60, 100%, 20%)" dominant-baseline="middle" class="font s4">722ms</text>
-  <rect x="46" y="149" width="52" height="4" fill="hsl(60, 100%, 45%)" rx="1" ry="1"></rect>
-  <text x="100" y="151" fill="hsl(60, 100%, 20%)" dominant-baseline="middle" class="font s4">691ms</text>
-  <rect x="46" y="154.5" width="6" height="4" fill="hsl(60, 100%, 45%)" rx="1" ry="1"></rect>
-  <text x="54" y="156.5" fill="hsl(60, 100%, 20%)" dominant-baseline="middle" class="font s4">83ms</text>
-  <rect x="46" y="160" width="4" height="4" fill="hsl(60, 100%, 45%)" rx="1" ry="1"></rect>
-  <text x="52" y="162" fill="hsl(60, 100%, 20%)" dominant-baseline="middle" class="font s4">55ms</text>
-  <rect x="46" y="165.5" width="6" height="4" fill="hsl(60, 100%, 45%)" rx="1" ry="1"></rect>
-  <text x="54" y="167.5" fill="hsl(60, 100%, 20%)" dominant-baseline="middle" class="font s4">81ms</text>
-  <rect x="46" y="171" width="8" height="4" fill="hsl(60, 100%, 45%)" rx="1" ry="1"></rect>
-  <text x="56" y="173" fill="hsl(60, 100%, 20%)" dominant-baseline="middle" class="font s4">107ms</text>
-  <rect x="46" y="185.5" width="152" height="4" fill="hsl(90, 100%, 45%)" rx="1" ry="1"></rect>
-  <text x="200" y="187.5" fill="hsl(90, 100%, 20%)" dominant-baseline="middle" class="font s4">2s</text>
-  <rect x="46" y="191" width="4" height="4" fill="hsl(90, 100%, 45%)" rx="1" ry="1"></rect>
-  <text x="52" y="193" fill="hsl(90, 100%, 20%)" dominant-baseline="middle" class="font s4">56ms</text>
-  <rect x="46" y="196.5" width="51" height="4" fill="hsl(90, 100%, 45%)" rx="1" ry="1"></rect>
-  <text x="99" y="198.5" fill="hsl(90, 100%, 20%)" dominant-baseline="middle" class="font s4">676ms</text>
-  <rect x="46" y="202" width="53" height="4" fill="hsl(90, 100%, 45%)" rx="1" ry="1"></rect>
-  <text x="101" y="204" fill="hsl(90, 100%, 20%)" dominant-baseline="middle" class="font s4">702ms</text>
-  <rect x="46" y="207.5" width="51" height="4" fill="hsl(90, 100%, 45%)" rx="1" ry="1"></rect>
-  <text x="99" y="209.5" fill="hsl(90, 100%, 20%)" dominant-baseline="middle" class="font s4">678ms</text>
-  <rect x="46" y="213" width="6" height="4" fill="hsl(90, 100%, 45%)" rx="1" ry="1"></rect>
-  <text x="54" y="215" fill="hsl(90, 100%, 20%)" dominant-baseline="middle" class="font s4">77ms</text>
+  <text x="53" y="45" fill="hsl(0, 100%, 20%)" dominant-baseline="middle" class="font s4">62ms</text>
+  <rect x="46" y="48.5" width="7" height="4" fill="hsl(0, 100%, 45%)" rx="1" ry="1"></rect>
+  <text x="55" y="50.5" fill="hsl(0, 100%, 20%)" dominant-baseline="middle" class="font s4">77ms</text>
+  <rect x="46" y="54" width="10" height="4" fill="hsl(0, 100%, 45%)" rx="1" ry="1"></rect>
+  <text x="58" y="56" fill="hsl(0, 100%, 20%)" dominant-baseline="middle" class="font s4">120ms</text>
+  <rect x="46" y="68.5" width="184" height="4" fill="hsl(30, 100%, 45%)" rx="1" ry="1"></rect>
+  <text x="232" y="70.5" fill="hsl(30, 100%, 20%)" dominant-baseline="middle" class="font s4">2.1s</text>
+  <rect x="46" y="74" width="5" height="4" fill="hsl(30, 100%, 45%)" rx="1" ry="1"></rect>
+  <text x="53" y="76" fill="hsl(30, 100%, 20%)" dominant-baseline="middle" class="font s4">59ms</text>
+  <rect x="46" y="79.5" width="59" height="4" fill="hsl(30, 100%, 45%)" rx="1" ry="1"></rect>
+  <text x="107" y="81.5" fill="hsl(30, 100%, 20%)" dominant-baseline="middle" class="font s4">694ms</text>
+  <rect x="46" y="85" width="61" height="4" fill="hsl(30, 100%, 45%)" rx="1" ry="1"></rect>
+  <text x="109" y="87" fill="hsl(30, 100%, 20%)" dominant-baseline="middle" class="font s4">712ms</text>
+  <rect x="46" y="90.5" width="58" height="4" fill="hsl(30, 100%, 45%)" rx="1" ry="1"></rect>
+  <text x="106" y="92.5" fill="hsl(30, 100%, 20%)" dominant-baseline="middle" class="font s4">682ms</text>
+  <rect x="46" y="96" width="7" height="4" fill="hsl(30, 100%, 45%)" rx="1" ry="1"></rect>
+  <text x="55" y="98" fill="hsl(30, 100%, 20%)" dominant-baseline="middle" class="font s4">79ms</text>
+  <rect x="46" y="101.5" width="5" height="4" fill="hsl(30, 100%, 45%)" rx="1" ry="1"></rect>
+  <text x="53" y="103.5" fill="hsl(30, 100%, 20%)" dominant-baseline="middle" class="font s4">55ms</text>
+  <rect x="46" y="107" width="7" height="4" fill="hsl(30, 100%, 45%)" rx="1" ry="1"></rect>
+  <text x="55" y="109" fill="hsl(30, 100%, 20%)" dominant-baseline="middle" class="font s4">84ms</text>
+  <rect x="46" y="112.5" width="8" height="4" fill="hsl(30, 100%, 45%)" rx="1" ry="1"></rect>
+  <text x="56" y="114.5" fill="hsl(30, 100%, 20%)" dominant-baseline="middle" class="font s4">97ms</text>
+  <rect x="46" y="127" width="202" height="4" fill="hsl(60, 100%, 45%)" rx="1" ry="1"></rect>
+  <text x="250" y="129" fill="hsl(60, 100%, 20%)" dominant-baseline="middle" class="font s4">2.3s</text>
+  <rect x="46" y="132.5" width="6" height="4" fill="hsl(60, 100%, 45%)" rx="1" ry="1"></rect>
+  <text x="54" y="134.5" fill="hsl(60, 100%, 20%)" dominant-baseline="middle" class="font s4">65ms</text>
+  <rect x="46" y="138" width="61" height="4" fill="hsl(60, 100%, 45%)" rx="1" ry="1"></rect>
+  <text x="109" y="140" fill="hsl(60, 100%, 20%)" dominant-baseline="middle" class="font s4">711ms</text>
+  <rect x="46" y="143.5" width="62" height="4" fill="hsl(60, 100%, 45%)" rx="1" ry="1"></rect>
+  <text x="110" y="145.5" fill="hsl(60, 100%, 20%)" dominant-baseline="middle" class="font s4">722ms</text>
+  <rect x="46" y="149" width="59" height="4" fill="hsl(60, 100%, 45%)" rx="1" ry="1"></rect>
+  <text x="107" y="151" fill="hsl(60, 100%, 20%)" dominant-baseline="middle" class="font s4">691ms</text>
+  <rect x="46" y="154.5" width="7" height="4" fill="hsl(60, 100%, 45%)" rx="1" ry="1"></rect>
+  <text x="55" y="156.5" fill="hsl(60, 100%, 20%)" dominant-baseline="middle" class="font s4">83ms</text>
+  <rect x="46" y="160" width="5" height="4" fill="hsl(60, 100%, 45%)" rx="1" ry="1"></rect>
+  <text x="53" y="162" fill="hsl(60, 100%, 20%)" dominant-baseline="middle" class="font s4">55ms</text>
+  <rect x="46" y="165.5" width="7" height="4" fill="hsl(60, 100%, 45%)" rx="1" ry="1"></rect>
+  <text x="55" y="167.5" fill="hsl(60, 100%, 20%)" dominant-baseline="middle" class="font s4">81ms</text>
+  <rect x="46" y="171" width="9" height="4" fill="hsl(60, 100%, 45%)" rx="1" ry="1"></rect>
+  <text x="57" y="173" fill="hsl(60, 100%, 20%)" dominant-baseline="middle" class="font s4">107ms</text>
+  <rect x="46" y="185.5" width="171" height="4" fill="hsl(90, 100%, 45%)" rx="1" ry="1"></rect>
+  <text x="219" y="187.5" fill="hsl(90, 100%, 20%)" dominant-baseline="middle" class="font s4">2s</text>
+  <rect x="46" y="191" width="5" height="4" fill="hsl(90, 100%, 45%)" rx="1" ry="1"></rect>
+  <text x="53" y="193" fill="hsl(90, 100%, 20%)" dominant-baseline="middle" class="font s4">56ms</text>
+  <rect x="46" y="196.5" width="58" height="4" fill="hsl(90, 100%, 45%)" rx="1" ry="1"></rect>
+  <text x="106" y="198.5" fill="hsl(90, 100%, 20%)" dominant-baseline="middle" class="font s4">676ms</text>
+  <rect x="46" y="202" width="60" height="4" fill="hsl(90, 100%, 45%)" rx="1" ry="1"></rect>
+  <text x="108" y="204" fill="hsl(90, 100%, 20%)" dominant-baseline="middle" class="font s4">702ms</text>
+  <rect x="46" y="207.5" width="58" height="4" fill="hsl(90, 100%, 45%)" rx="1" ry="1"></rect>
+  <text x="106" y="209.5" fill="hsl(90, 100%, 20%)" dominant-baseline="middle" class="font s4">678ms</text>
+  <rect x="46" y="213" width="7" height="4" fill="hsl(90, 100%, 45%)" rx="1" ry="1"></rect>
+  <text x="55" y="215" fill="hsl(90, 100%, 20%)" dominant-baseline="middle" class="font s4">77ms</text>
   <rect x="46" y="218.5" width="4" height="4" fill="hsl(90, 100%, 45%)" rx="1" ry="1"></rect>
   <text x="52" y="220.5" fill="hsl(90, 100%, 20%)" dominant-baseline="middle" class="font s4">51ms</text>
   <rect x="46" y="224" width="6" height="4" fill="hsl(90, 100%, 45%)" rx="1" ry="1"></rect>
   <text x="54" y="226" fill="hsl(90, 100%, 20%)" dominant-baseline="middle" class="font s4">75ms</text>
-  <rect x="46" y="229.5" width="8" height="4" fill="hsl(90, 100%, 45%)" rx="1" ry="1"></rect>
-  <text x="56" y="231.5" fill="hsl(90, 100%, 20%)" dominant-baseline="middle" class="font s4">103ms</text>
-  <rect x="46" y="244" width="149" height="4" fill="hsl(120, 100%, 45%)" rx="1" ry="1"></rect>
-  <text x="197" y="246" fill="hsl(120, 100%, 20%)" dominant-baseline="middle" class="font s4">1.9s</text>
+  <rect x="46" y="229.5" width="9" height="4" fill="hsl(90, 100%, 45%)" rx="1" ry="1"></rect>
+  <text x="57" y="231.5" fill="hsl(90, 100%, 20%)" dominant-baseline="middle" class="font s4">103ms</text>
+  <rect x="46" y="244" width="168" height="4" fill="hsl(120, 100%, 45%)" rx="1" ry="1"></rect>
+  <text x="216" y="246" fill="hsl(120, 100%, 20%)" dominant-baseline="middle" class="font s4">1.9s</text>
   <rect x="46" y="249.5" width="5" height="4" fill="hsl(120, 100%, 45%)" rx="1" ry="1"></rect>
   <text x="53" y="251.5" fill="hsl(120, 100%, 20%)" dominant-baseline="middle" class="font s4">61ms</text>
-  <rect x="46" y="255" width="50" height="4" fill="hsl(120, 100%, 45%)" rx="1" ry="1"></rect>
-  <text x="98" y="257" fill="hsl(120, 100%, 20%)" dominant-baseline="middle" class="font s4">658ms</text>
-  <rect x="46" y="260.5" width="51" height="4" fill="hsl(120, 100%, 45%)" rx="1" ry="1"></rect>
-  <text x="99" y="262.5" fill="hsl(120, 100%, 20%)" dominant-baseline="middle" class="font s4">677ms</text>
-  <rect x="46" y="266" width="50" height="4" fill="hsl(120, 100%, 45%)" rx="1" ry="1"></rect>
-  <text x="98" y="268" fill="hsl(120, 100%, 20%)" dominant-baseline="middle" class="font s4">666ms</text>
-  <rect x="46" y="271.5" width="6" height="4" fill="hsl(120, 100%, 45%)" rx="1" ry="1"></rect>
-  <text x="54" y="273.5" fill="hsl(120, 100%, 20%)" dominant-baseline="middle" class="font s4">78ms</text>
-  <rect x="46" y="277" width="4" height="4" fill="hsl(120, 100%, 45%)" rx="1" ry="1"></rect>
-  <text x="52" y="279" fill="hsl(120, 100%, 20%)" dominant-baseline="middle" class="font s4">55ms</text>
+  <rect x="46" y="255" width="56" height="4" fill="hsl(120, 100%, 45%)" rx="1" ry="1"></rect>
+  <text x="104" y="257" fill="hsl(120, 100%, 20%)" dominant-baseline="middle" class="font s4">658ms</text>
+  <rect x="46" y="260.5" width="58" height="4" fill="hsl(120, 100%, 45%)" rx="1" ry="1"></rect>
+  <text x="106" y="262.5" fill="hsl(120, 100%, 20%)" dominant-baseline="middle" class="font s4">677ms</text>
+  <rect x="46" y="266" width="57" height="4" fill="hsl(120, 100%, 45%)" rx="1" ry="1"></rect>
+  <text x="105" y="268" fill="hsl(120, 100%, 20%)" dominant-baseline="middle" class="font s4">666ms</text>
+  <rect x="46" y="271.5" width="7" height="4" fill="hsl(120, 100%, 45%)" rx="1" ry="1"></rect>
+  <text x="55" y="273.5" fill="hsl(120, 100%, 20%)" dominant-baseline="middle" class="font s4">78ms</text>
+  <rect x="46" y="277" width="5" height="4" fill="hsl(120, 100%, 45%)" rx="1" ry="1"></rect>
+  <text x="53" y="279" fill="hsl(120, 100%, 20%)" dominant-baseline="middle" class="font s4">55ms</text>
   <rect x="46" y="282.5" width="6" height="4" fill="hsl(120, 100%, 45%)" rx="1" ry="1"></rect>
   <text x="54" y="284.5" fill="hsl(120, 100%, 20%)" dominant-baseline="middle" class="font s4">76ms</text>
-  <rect x="46" y="288" width="8" height="4" fill="hsl(120, 100%, 45%)" rx="1" ry="1"></rect>
-  <text x="56" y="290" fill="hsl(120, 100%, 20%)" dominant-baseline="middle" class="font s4">100ms</text>
-  <rect x="46" y="302.5" width="174" height="4" fill="hsl(150, 100%, 45%)" rx="1" ry="1"></rect>
-  <text x="222" y="304.5" fill="hsl(150, 100%, 20%)" dominant-baseline="middle" class="font s4">2.3s</text>
-  <rect x="46" y="308" width="5" height="4" fill="hsl(150, 100%, 45%)" rx="1" ry="1"></rect>
-  <text x="53" y="310" fill="hsl(150, 100%, 20%)" dominant-baseline="middle" class="font s4">65ms</text>
-  <rect x="46" y="313.5" width="52" height="4" fill="hsl(150, 100%, 45%)" rx="1" ry="1"></rect>
-  <text x="100" y="315.5" fill="hsl(150, 100%, 20%)" dominant-baseline="middle" class="font s4">689ms</text>
-  <rect x="46" y="319" width="52" height="4" fill="hsl(150, 100%, 45%)" rx="1" ry="1"></rect>
-  <text x="100" y="321" fill="hsl(150, 100%, 20%)" dominant-baseline="middle" class="font s4">687ms</text>
-  <rect x="46" y="324.5" width="51" height="4" fill="hsl(150, 100%, 45%)" rx="1" ry="1"></rect>
-  <text x="99" y="326.5" fill="hsl(150, 100%, 20%)" dominant-baseline="middle" class="font s4">679ms</text>
-  <rect x="46" y="330" width="6" height="4" fill="hsl(150, 100%, 45%)" rx="1" ry="1"></rect>
-  <text x="54" y="332" fill="hsl(150, 100%, 20%)" dominant-baseline="middle" class="font s4">78ms</text>
-  <rect x="46" y="335.5" width="4" height="4" fill="hsl(150, 100%, 45%)" rx="1" ry="1"></rect>
-  <text x="52" y="337.5" fill="hsl(150, 100%, 20%)" dominant-baseline="middle" class="font s4">56ms</text>
+  <rect x="46" y="288" width="9" height="4" fill="hsl(120, 100%, 45%)" rx="1" ry="1"></rect>
+  <text x="57" y="290" fill="hsl(120, 100%, 20%)" dominant-baseline="middle" class="font s4">100ms</text>
+  <rect x="46" y="302.5" width="197" height="4" fill="hsl(150, 100%, 45%)" rx="1" ry="1"></rect>
+  <text x="245" y="304.5" fill="hsl(150, 100%, 20%)" dominant-baseline="middle" class="font s4">2.3s</text>
+  <rect x="46" y="308" width="6" height="4" fill="hsl(150, 100%, 45%)" rx="1" ry="1"></rect>
+  <text x="54" y="310" fill="hsl(150, 100%, 20%)" dominant-baseline="middle" class="font s4">65ms</text>
+  <rect x="46" y="313.5" width="59" height="4" fill="hsl(150, 100%, 45%)" rx="1" ry="1"></rect>
+  <text x="107" y="315.5" fill="hsl(150, 100%, 20%)" dominant-baseline="middle" class="font s4">689ms</text>
+  <rect x="46" y="319" width="59" height="4" fill="hsl(150, 100%, 45%)" rx="1" ry="1"></rect>
+  <text x="107" y="321" fill="hsl(150, 100%, 20%)" dominant-baseline="middle" class="font s4">687ms</text>
+  <rect x="46" y="324.5" width="58" height="4" fill="hsl(150, 100%, 45%)" rx="1" ry="1"></rect>
+  <text x="106" y="326.5" fill="hsl(150, 100%, 20%)" dominant-baseline="middle" class="font s4">679ms</text>
+  <rect x="46" y="330" width="7" height="4" fill="hsl(150, 100%, 45%)" rx="1" ry="1"></rect>
+  <text x="55" y="332" fill="hsl(150, 100%, 20%)" dominant-baseline="middle" class="font s4">78ms</text>
+  <rect x="46" y="335.5" width="5" height="4" fill="hsl(150, 100%, 45%)" rx="1" ry="1"></rect>
+  <text x="53" y="337.5" fill="hsl(150, 100%, 20%)" dominant-baseline="middle" class="font s4">56ms</text>
   <rect x="46" y="341" width="6" height="4" fill="hsl(150, 100%, 45%)" rx="1" ry="1"></rect>
   <text x="54" y="343" fill="hsl(150, 100%, 20%)" dominant-baseline="middle" class="font s4">76ms</text>
-  <rect x="46" y="346.5" width="8" height="4" fill="hsl(150, 100%, 45%)" rx="1" ry="1"></rect>
-  <text x="56" y="348.5" fill="hsl(150, 100%, 20%)" dominant-baseline="middle" class="font s4">103ms</text>
-  <rect x="46" y="361" width="221" height="4" fill="hsl(180, 100%, 45%)" rx="1" ry="1"></rect>
-  <text x="269" y="363" fill="hsl(180, 100%, 20%)" dominant-baseline="middle" class="font s4">2.9s</text>
+  <rect x="46" y="346.5" width="9" height="4" fill="hsl(150, 100%, 45%)" rx="1" ry="1"></rect>
+  <text x="57" y="348.5" fill="hsl(150, 100%, 20%)" dominant-baseline="middle" class="font s4">103ms</text>
+  <rect x="46" y="361" width="250" height="4" fill="hsl(180, 100%, 45%)" rx="1" ry="1"></rect>
+  <text x="298" y="363" fill="hsl(180, 100%, 20%)" dominant-baseline="middle" class="font s4">2.9s</text>
   <rect x="46" y="366.5" width="5" height="4" fill="hsl(180, 100%, 45%)" rx="1" ry="1"></rect>
   <text x="53" y="368.5" fill="hsl(180, 100%, 20%)" dominant-baseline="middle" class="font s4">62ms</text>
-  <rect x="46" y="372" width="53" height="4" fill="hsl(180, 100%, 45%)" rx="1" ry="1"></rect>
-  <text x="101" y="374" fill="hsl(180, 100%, 20%)" dominant-baseline="middle" class="font s4">705ms</text>
-  <rect x="46" y="377.5" width="53" height="4" fill="hsl(180, 100%, 45%)" rx="1" ry="1"></rect>
-  <text x="101" y="379.5" fill="hsl(180, 100%, 20%)" dominant-baseline="middle" class="font s4">697ms</text>
-  <rect x="46" y="383" width="51" height="4" fill="hsl(180, 100%, 45%)" rx="1" ry="1"></rect>
-  <text x="99" y="385" fill="hsl(180, 100%, 20%)" dominant-baseline="middle" class="font s4">676ms</text>
-  <rect x="46" y="388.5" width="7" height="4" fill="hsl(180, 100%, 45%)" rx="1" ry="1"></rect>
-  <text x="55" y="390.5" fill="hsl(180, 100%, 20%)" dominant-baseline="middle" class="font s4">97ms</text>
-  <rect x="46" y="394" width="5" height="4" fill="hsl(180, 100%, 45%)" rx="1" ry="1"></rect>
-  <text x="53" y="396" fill="hsl(180, 100%, 20%)" dominant-baseline="middle" class="font s4">72ms</text>
-  <rect x="46" y="399.5" width="7" height="4" fill="hsl(180, 100%, 45%)" rx="1" ry="1"></rect>
-  <text x="55" y="401.5" fill="hsl(180, 100%, 20%)" dominant-baseline="middle" class="font s4">91ms</text>
-  <rect x="46" y="405" width="9" height="4" fill="hsl(180, 100%, 45%)" rx="1" ry="1"></rect>
-  <text x="57" y="407" fill="hsl(180, 100%, 20%)" dominant-baseline="middle" class="font s4">115ms</text>
-  <rect x="46" y="419.5" width="162" height="4" fill="hsl(210, 100%, 45%)" rx="1" ry="1"></rect>
-  <text x="210" y="421.5" fill="hsl(210, 100%, 20%)" dominant-baseline="middle" class="font s4">2.1s</text>
-  <rect x="46" y="425" width="4" height="4" fill="hsl(210, 100%, 45%)" rx="1" ry="1"></rect>
-  <text x="52" y="427" fill="hsl(210, 100%, 20%)" dominant-baseline="middle" class="font s4">59ms</text>
-  <rect x="46" y="430.5" width="51" height="4" fill="hsl(210, 100%, 45%)" rx="1" ry="1"></rect>
-  <text x="99" y="432.5" fill="hsl(210, 100%, 20%)" dominant-baseline="middle" class="font s4">674ms</text>
-  <rect x="46" y="436" width="52" height="4" fill="hsl(210, 100%, 45%)" rx="1" ry="1"></rect>
-  <text x="100" y="438" fill="hsl(210, 100%, 20%)" dominant-baseline="middle" class="font s4">681ms</text>
-  <rect x="46" y="441.5" width="50" height="4" fill="hsl(210, 100%, 45%)" rx="1" ry="1"></rect>
-  <text x="98" y="443.5" fill="hsl(210, 100%, 20%)" dominant-baseline="middle" class="font s4">659ms</text>
-  <rect x="46" y="447" width="6" height="4" fill="hsl(210, 100%, 45%)" rx="1" ry="1"></rect>
-  <text x="54" y="449" fill="hsl(210, 100%, 20%)" dominant-baseline="middle" class="font s4">82ms</text>
-  <rect x="46" y="452.5" width="4" height="4" fill="hsl(210, 100%, 45%)" rx="1" ry="1"></rect>
-  <text x="52" y="454.5" fill="hsl(210, 100%, 20%)" dominant-baseline="middle" class="font s4">55ms</text>
+  <rect x="46" y="372" width="60" height="4" fill="hsl(180, 100%, 45%)" rx="1" ry="1"></rect>
+  <text x="108" y="374" fill="hsl(180, 100%, 20%)" dominant-baseline="middle" class="font s4">705ms</text>
+  <rect x="46" y="377.5" width="60" height="4" fill="hsl(180, 100%, 45%)" rx="1" ry="1"></rect>
+  <text x="108" y="379.5" fill="hsl(180, 100%, 20%)" dominant-baseline="middle" class="font s4">697ms</text>
+  <rect x="46" y="383" width="58" height="4" fill="hsl(180, 100%, 45%)" rx="1" ry="1"></rect>
+  <text x="106" y="385" fill="hsl(180, 100%, 20%)" dominant-baseline="middle" class="font s4">676ms</text>
+  <rect x="46" y="388.5" width="8" height="4" fill="hsl(180, 100%, 45%)" rx="1" ry="1"></rect>
+  <text x="56" y="390.5" fill="hsl(180, 100%, 20%)" dominant-baseline="middle" class="font s4">97ms</text>
+  <rect x="46" y="394" width="6" height="4" fill="hsl(180, 100%, 45%)" rx="1" ry="1"></rect>
+  <text x="54" y="396" fill="hsl(180, 100%, 20%)" dominant-baseline="middle" class="font s4">72ms</text>
+  <rect x="46" y="399.5" width="8" height="4" fill="hsl(180, 100%, 45%)" rx="1" ry="1"></rect>
+  <text x="56" y="401.5" fill="hsl(180, 100%, 20%)" dominant-baseline="middle" class="font s4">91ms</text>
+  <rect x="46" y="405" width="10" height="4" fill="hsl(180, 100%, 45%)" rx="1" ry="1"></rect>
+  <text x="58" y="407" fill="hsl(180, 100%, 20%)" dominant-baseline="middle" class="font s4">115ms</text>
+  <rect x="46" y="419.5" width="184" height="4" fill="hsl(210, 100%, 45%)" rx="1" ry="1"></rect>
+  <text x="232" y="421.5" fill="hsl(210, 100%, 20%)" dominant-baseline="middle" class="font s4">2.1s</text>
+  <rect x="46" y="425" width="5" height="4" fill="hsl(210, 100%, 45%)" rx="1" ry="1"></rect>
+  <text x="53" y="427" fill="hsl(210, 100%, 20%)" dominant-baseline="middle" class="font s4">59ms</text>
+  <rect x="46" y="430.5" width="58" height="4" fill="hsl(210, 100%, 45%)" rx="1" ry="1"></rect>
+  <text x="106" y="432.5" fill="hsl(210, 100%, 20%)" dominant-baseline="middle" class="font s4">674ms</text>
+  <rect x="46" y="436" width="58" height="4" fill="hsl(210, 100%, 45%)" rx="1" ry="1"></rect>
+  <text x="106" y="438" fill="hsl(210, 100%, 20%)" dominant-baseline="middle" class="font s4">681ms</text>
+  <rect x="46" y="441.5" width="56" height="4" fill="hsl(210, 100%, 45%)" rx="1" ry="1"></rect>
+  <text x="104" y="443.5" fill="hsl(210, 100%, 20%)" dominant-baseline="middle" class="font s4">659ms</text>
+  <rect x="46" y="447" width="7" height="4" fill="hsl(210, 100%, 45%)" rx="1" ry="1"></rect>
+  <text x="55" y="449" fill="hsl(210, 100%, 20%)" dominant-baseline="middle" class="font s4">82ms</text>
+  <rect x="46" y="452.5" width="5" height="4" fill="hsl(210, 100%, 45%)" rx="1" ry="1"></rect>
+  <text x="53" y="454.5" fill="hsl(210, 100%, 20%)" dominant-baseline="middle" class="font s4">55ms</text>
   <rect x="46" y="458" width="6" height="4" fill="hsl(210, 100%, 45%)" rx="1" ry="1"></rect>
   <text x="54" y="460" fill="hsl(210, 100%, 20%)" dominant-baseline="middle" class="font s4">75ms</text>
-  <rect x="46" y="463.5" width="8" height="4" fill="hsl(210, 100%, 45%)" rx="1" ry="1"></rect>
-  <text x="56" y="465.5" fill="hsl(210, 100%, 20%)" dominant-baseline="middle" class="font s4">101ms</text>
-  <rect x="46" y="478" width="142" height="4" fill="hsl(240, 100%, 45%)" rx="1" ry="1"></rect>
-  <text x="190" y="480" fill="hsl(240, 100%, 20%)" dominant-baseline="middle" class="font s4">1.8s</text>
+  <rect x="46" y="463.5" width="9" height="4" fill="hsl(210, 100%, 45%)" rx="1" ry="1"></rect>
+  <text x="57" y="465.5" fill="hsl(210, 100%, 20%)" dominant-baseline="middle" class="font s4">101ms</text>
+  <rect x="46" y="478" width="160" height="4" fill="hsl(240, 100%, 45%)" rx="1" ry="1"></rect>
+  <text x="208" y="480" fill="hsl(240, 100%, 20%)" dominant-baseline="middle" class="font s4">1.8s</text>
   <rect x="46" y="483.5" width="5" height="4" fill="hsl(240, 100%, 45%)" rx="1" ry="1"></rect>
   <text x="53" y="485.5" fill="hsl(240, 100%, 20%)" dominant-baseline="middle" class="font s4">64ms</text>
-  <rect x="46" y="489" width="50" height="4" fill="hsl(240, 100%, 45%)" rx="1" ry="1"></rect>
-  <text x="98" y="491" fill="hsl(240, 100%, 20%)" dominant-baseline="middle" class="font s4">660ms</text>
-  <rect x="46" y="494.5" width="50" height="4" fill="hsl(240, 100%, 45%)" rx="1" ry="1"></rect>
-  <text x="98" y="496.5" fill="hsl(240, 100%, 20%)" dominant-baseline="middle" class="font s4">665ms</text>
-  <rect x="46" y="500" width="49" height="4" fill="hsl(240, 100%, 45%)" rx="1" ry="1"></rect>
-  <text x="97" y="502" fill="hsl(240, 100%, 20%)" dominant-baseline="middle" class="font s4">648ms</text>
-  <rect x="46" y="505.5" width="6" height="4" fill="hsl(240, 100%, 45%)" rx="1" ry="1"></rect>
-  <text x="54" y="507.5" fill="hsl(240, 100%, 20%)" dominant-baseline="middle" class="font s4">81ms</text>
-  <rect x="46" y="511" width="4" height="4" fill="hsl(240, 100%, 45%)" rx="1" ry="1"></rect>
-  <text x="52" y="513" fill="hsl(240, 100%, 20%)" dominant-baseline="middle" class="font s4">55ms</text>
-  <rect x="46" y="516.5" width="5" height="4" fill="hsl(240, 100%, 45%)" rx="1" ry="1"></rect>
-  <text x="53" y="518.5" fill="hsl(240, 100%, 20%)" dominant-baseline="middle" class="font s4">72ms</text>
-  <rect x="46" y="522" width="8" height="4" fill="hsl(240, 100%, 45%)" rx="1" ry="1"></rect>
-  <text x="56" y="524" fill="hsl(240, 100%, 20%)" dominant-baseline="middle" class="font s4">104ms</text>
-  <rect x="46" y="536.5" width="154" height="4" fill="hsl(270, 100%, 45%)" rx="1" ry="1"></rect>
-  <text x="202" y="538.5" fill="hsl(270, 100%, 20%)" dominant-baseline="middle" class="font s4">2s</text>
-  <rect x="46" y="542" width="5" height="4" fill="hsl(270, 100%, 45%)" rx="1" ry="1"></rect>
-  <text x="53" y="544" fill="hsl(270, 100%, 20%)" dominant-baseline="middle" class="font s4">69ms</text>
-  <rect x="46" y="547.5" width="50" height="4" fill="hsl(270, 100%, 45%)" rx="1" ry="1"></rect>
-  <text x="98" y="549.5" fill="hsl(270, 100%, 20%)" dominant-baseline="middle" class="font s4">659ms</text>
-  <rect x="46" y="553" width="51" height="4" fill="hsl(270, 100%, 45%)" rx="1" ry="1"></rect>
-  <text x="99" y="555" fill="hsl(270, 100%, 20%)" dominant-baseline="middle" class="font s4">674ms</text>
-  <rect x="46" y="558.5" width="50" height="4" fill="hsl(270, 100%, 45%)" rx="1" ry="1"></rect>
-  <text x="98" y="560.5" fill="hsl(270, 100%, 20%)" dominant-baseline="middle" class="font s4">659ms</text>
-  <rect x="46" y="564" width="6" height="4" fill="hsl(270, 100%, 45%)" rx="1" ry="1"></rect>
-  <text x="54" y="566" fill="hsl(270, 100%, 20%)" dominant-baseline="middle" class="font s4">83ms</text>
+  <rect x="46" y="489" width="56" height="4" fill="hsl(240, 100%, 45%)" rx="1" ry="1"></rect>
+  <text x="104" y="491" fill="hsl(240, 100%, 20%)" dominant-baseline="middle" class="font s4">660ms</text>
+  <rect x="46" y="494.5" width="57" height="4" fill="hsl(240, 100%, 45%)" rx="1" ry="1"></rect>
+  <text x="105" y="496.5" fill="hsl(240, 100%, 20%)" dominant-baseline="middle" class="font s4">665ms</text>
+  <rect x="46" y="500" width="55" height="4" fill="hsl(240, 100%, 45%)" rx="1" ry="1"></rect>
+  <text x="103" y="502" fill="hsl(240, 100%, 20%)" dominant-baseline="middle" class="font s4">648ms</text>
+  <rect x="46" y="505.5" width="7" height="4" fill="hsl(240, 100%, 45%)" rx="1" ry="1"></rect>
+  <text x="55" y="507.5" fill="hsl(240, 100%, 20%)" dominant-baseline="middle" class="font s4">81ms</text>
+  <rect x="46" y="511" width="5" height="4" fill="hsl(240, 100%, 45%)" rx="1" ry="1"></rect>
+  <text x="53" y="513" fill="hsl(240, 100%, 20%)" dominant-baseline="middle" class="font s4">55ms</text>
+  <rect x="46" y="516.5" width="6" height="4" fill="hsl(240, 100%, 45%)" rx="1" ry="1"></rect>
+  <text x="54" y="518.5" fill="hsl(240, 100%, 20%)" dominant-baseline="middle" class="font s4">72ms</text>
+  <rect x="46" y="522" width="9" height="4" fill="hsl(240, 100%, 45%)" rx="1" ry="1"></rect>
+  <text x="57" y="524" fill="hsl(240, 100%, 20%)" dominant-baseline="middle" class="font s4">104ms</text>
+  <rect x="46" y="536.5" width="174" height="4" fill="hsl(270, 100%, 45%)" rx="1" ry="1"></rect>
+  <text x="222" y="538.5" fill="hsl(270, 100%, 20%)" dominant-baseline="middle" class="font s4">2s</text>
+  <rect x="46" y="542" width="6" height="4" fill="hsl(270, 100%, 45%)" rx="1" ry="1"></rect>
+  <text x="54" y="544" fill="hsl(270, 100%, 20%)" dominant-baseline="middle" class="font s4">69ms</text>
+  <rect x="46" y="547.5" width="56" height="4" fill="hsl(270, 100%, 45%)" rx="1" ry="1"></rect>
+  <text x="104" y="549.5" fill="hsl(270, 100%, 20%)" dominant-baseline="middle" class="font s4">659ms</text>
+  <rect x="46" y="553" width="58" height="4" fill="hsl(270, 100%, 45%)" rx="1" ry="1"></rect>
+  <text x="106" y="555" fill="hsl(270, 100%, 20%)" dominant-baseline="middle" class="font s4">674ms</text>
+  <rect x="46" y="558.5" width="56" height="4" fill="hsl(270, 100%, 45%)" rx="1" ry="1"></rect>
+  <text x="104" y="560.5" fill="hsl(270, 100%, 20%)" dominant-baseline="middle" class="font s4">659ms</text>
+  <rect x="46" y="564" width="7" height="4" fill="hsl(270, 100%, 45%)" rx="1" ry="1"></rect>
+  <text x="55" y="566" fill="hsl(270, 100%, 20%)" dominant-baseline="middle" class="font s4">83ms</text>
   <rect x="46" y="569.5" width="5" height="4" fill="hsl(270, 100%, 45%)" rx="1" ry="1"></rect>
   <text x="53" y="571.5" fill="hsl(270, 100%, 20%)" dominant-baseline="middle" class="font s4">60ms</text>
   <rect x="46" y="575" width="6" height="4" fill="hsl(270, 100%, 45%)" rx="1" ry="1"></rect>
   <text x="54" y="577" fill="hsl(270, 100%, 20%)" dominant-baseline="middle" class="font s4">76ms</text>
-  <rect x="46" y="580.5" width="10" height="4" fill="hsl(270, 100%, 45%)" rx="1" ry="1"></rect>
-  <text x="58" y="582.5" fill="hsl(270, 100%, 20%)" dominant-baseline="middle" class="font s4">127ms</text>
-  <rect x="46" y="595" width="173" height="4" fill="hsl(300, 100%, 45%)" rx="1" ry="1"></rect>
-  <text x="221" y="597" fill="hsl(300, 100%, 20%)" dominant-baseline="middle" class="font s4">2.2s</text>
-  <rect x="46" y="600.5" width="5" height="4" fill="hsl(300, 100%, 45%)" rx="1" ry="1"></rect>
-  <text x="53" y="602.5" fill="hsl(300, 100%, 20%)" dominant-baseline="middle" class="font s4">65ms</text>
-  <rect x="46" y="606" width="49" height="4" fill="hsl(300, 100%, 45%)" rx="1" ry="1"></rect>
-  <text x="97" y="608" fill="hsl(300, 100%, 20%)" dominant-baseline="middle" class="font s4">648ms</text>
-  <rect x="46" y="611.5" width="50" height="4" fill="hsl(300, 100%, 45%)" rx="1" ry="1"></rect>
-  <text x="98" y="613.5" fill="hsl(300, 100%, 20%)" dominant-baseline="middle" class="font s4">663ms</text>
-  <rect x="46" y="617" width="49" height="4" fill="hsl(300, 100%, 45%)" rx="1" ry="1"></rect>
-  <text x="97" y="619" fill="hsl(300, 100%, 20%)" dominant-baseline="middle" class="font s4">647ms</text>
-  <rect x="46" y="622.5" width="6" height="4" fill="hsl(300, 100%, 45%)" rx="1" ry="1"></rect>
-  <text x="54" y="624.5" fill="hsl(300, 100%, 20%)" dominant-baseline="middle" class="font s4">81ms</text>
-  <rect x="46" y="628" width="4" height="4" fill="hsl(300, 100%, 45%)" rx="1" ry="1"></rect>
-  <text x="52" y="630" fill="hsl(300, 100%, 20%)" dominant-baseline="middle" class="font s4">55ms</text>
-  <rect x="46" y="633.5" width="6" height="4" fill="hsl(300, 100%, 45%)" rx="1" ry="1"></rect>
-  <text x="54" y="635.5" fill="hsl(300, 100%, 20%)" dominant-baseline="middle" class="font s4">80ms</text>
-  <rect x="46" y="639" width="8" height="4" fill="hsl(300, 100%, 45%)" rx="1" ry="1"></rect>
-  <text x="56" y="641" fill="hsl(300, 100%, 20%)" dominant-baseline="middle" class="font s4">100ms</text>
-  <rect x="46" y="653.5" width="217" height="4" fill="hsl(330, 100%, 45%)" rx="1" ry="1"></rect>
-  <text x="265" y="655.5" fill="hsl(330, 100%, 20%)" dominant-baseline="middle" class="font s4">2.8s</text>
-  <rect x="46" y="659" width="5" height="4" fill="hsl(330, 100%, 45%)" rx="1" ry="1"></rect>
-  <text x="53" y="661" fill="hsl(330, 100%, 20%)" dominant-baseline="middle" class="font s4">67ms</text>
-  <rect x="46" y="664.5" width="51" height="4" fill="hsl(330, 100%, 45%)" rx="1" ry="1"></rect>
-  <text x="99" y="666.5" fill="hsl(330, 100%, 20%)" dominant-baseline="middle" class="font s4">677ms</text>
-  <rect x="46" y="670" width="51" height="4" fill="hsl(330, 100%, 45%)" rx="1" ry="1"></rect>
-  <text x="99" y="672" fill="hsl(330, 100%, 20%)" dominant-baseline="middle" class="font s4">679ms</text>
-  <rect x="46" y="675.5" width="51" height="4" fill="hsl(330, 100%, 45%)" rx="1" ry="1"></rect>
-  <text x="99" y="677.5" fill="hsl(330, 100%, 20%)" dominant-baseline="middle" class="font s4">669ms</text>
-  <rect x="46" y="681" width="6" height="4" fill="hsl(330, 100%, 45%)" rx="1" ry="1"></rect>
-  <text x="54" y="683" fill="hsl(330, 100%, 20%)" dominant-baseline="middle" class="font s4">83ms</text>
+  <rect x="46" y="580.5" width="11" height="4" fill="hsl(270, 100%, 45%)" rx="1" ry="1"></rect>
+  <text x="59" y="582.5" fill="hsl(270, 100%, 20%)" dominant-baseline="middle" class="font s4">127ms</text>
+  <rect x="46" y="595" width="195" height="4" fill="hsl(300, 100%, 45%)" rx="1" ry="1"></rect>
+  <text x="243" y="597" fill="hsl(300, 100%, 20%)" dominant-baseline="middle" class="font s4">2.2s</text>
+  <rect x="46" y="600.5" width="6" height="4" fill="hsl(300, 100%, 45%)" rx="1" ry="1"></rect>
+  <text x="54" y="602.5" fill="hsl(300, 100%, 20%)" dominant-baseline="middle" class="font s4">65ms</text>
+  <rect x="46" y="606" width="55" height="4" fill="hsl(300, 100%, 45%)" rx="1" ry="1"></rect>
+  <text x="103" y="608" fill="hsl(300, 100%, 20%)" dominant-baseline="middle" class="font s4">648ms</text>
+  <rect x="46" y="611.5" width="57" height="4" fill="hsl(300, 100%, 45%)" rx="1" ry="1"></rect>
+  <text x="105" y="613.5" fill="hsl(300, 100%, 20%)" dominant-baseline="middle" class="font s4">663ms</text>
+  <rect x="46" y="617" width="55" height="4" fill="hsl(300, 100%, 45%)" rx="1" ry="1"></rect>
+  <text x="103" y="619" fill="hsl(300, 100%, 20%)" dominant-baseline="middle" class="font s4">647ms</text>
+  <rect x="46" y="622.5" width="7" height="4" fill="hsl(300, 100%, 45%)" rx="1" ry="1"></rect>
+  <text x="55" y="624.5" fill="hsl(300, 100%, 20%)" dominant-baseline="middle" class="font s4">81ms</text>
+  <rect x="46" y="628" width="5" height="4" fill="hsl(300, 100%, 45%)" rx="1" ry="1"></rect>
+  <text x="53" y="630" fill="hsl(300, 100%, 20%)" dominant-baseline="middle" class="font s4">55ms</text>
+  <rect x="46" y="633.5" width="7" height="4" fill="hsl(300, 100%, 45%)" rx="1" ry="1"></rect>
+  <text x="55" y="635.5" fill="hsl(300, 100%, 20%)" dominant-baseline="middle" class="font s4">80ms</text>
+  <rect x="46" y="639" width="9" height="4" fill="hsl(300, 100%, 45%)" rx="1" ry="1"></rect>
+  <text x="57" y="641" fill="hsl(300, 100%, 20%)" dominant-baseline="middle" class="font s4">100ms</text>
+  <rect x="46" y="653.5" width="245" height="4" fill="hsl(330, 100%, 45%)" rx="1" ry="1"></rect>
+  <text x="293" y="655.5" fill="hsl(330, 100%, 20%)" dominant-baseline="middle" class="font s4">2.8s</text>
+  <rect x="46" y="659" width="6" height="4" fill="hsl(330, 100%, 45%)" rx="1" ry="1"></rect>
+  <text x="54" y="661" fill="hsl(330, 100%, 20%)" dominant-baseline="middle" class="font s4">67ms</text>
+  <rect x="46" y="664.5" width="58" height="4" fill="hsl(330, 100%, 45%)" rx="1" ry="1"></rect>
+  <text x="106" y="666.5" fill="hsl(330, 100%, 20%)" dominant-baseline="middle" class="font s4">677ms</text>
+  <rect x="46" y="670" width="58" height="4" fill="hsl(330, 100%, 45%)" rx="1" ry="1"></rect>
+  <text x="106" y="672" fill="hsl(330, 100%, 20%)" dominant-baseline="middle" class="font s4">679ms</text>
+  <rect x="46" y="675.5" width="57" height="4" fill="hsl(330, 100%, 45%)" rx="1" ry="1"></rect>
+  <text x="105" y="677.5" fill="hsl(330, 100%, 20%)" dominant-baseline="middle" class="font s4">669ms</text>
+  <rect x="46" y="681" width="7" height="4" fill="hsl(330, 100%, 45%)" rx="1" ry="1"></rect>
+  <text x="55" y="683" fill="hsl(330, 100%, 20%)" dominant-baseline="middle" class="font s4">83ms</text>
   <rect x="46" y="686.5" width="5" height="4" fill="hsl(330, 100%, 45%)" rx="1" ry="1"></rect>
   <text x="53" y="688.5" fill="hsl(330, 100%, 20%)" dominant-baseline="middle" class="font s4">60ms</text>
   <rect x="46" y="692" width="6" height="4" fill="hsl(330, 100%, 45%)" rx="1" ry="1"></rect>
   <text x="54" y="694" fill="hsl(330, 100%, 20%)" dominant-baseline="middle" class="font s4">75ms</text>
-  <rect x="46" y="697.5" width="8" height="4" fill="hsl(330, 100%, 45%)" rx="1" ry="1"></rect>
-  <text x="56" y="699.5" fill="hsl(330, 100%, 20%)" dominant-baseline="middle" class="font s4">104ms</text>
+  <rect x="46" y="697.5" width="9" height="4" fill="hsl(330, 100%, 45%)" rx="1" ry="1"></rect>
+  <text x="57" y="699.5" fill="hsl(330, 100%, 20%)" dominant-baseline="middle" class="font s4">104ms</text>
   <text x="48" y="6.5" class="font s5" dominant-baseline="middle" text-anchor="start">bun v1.0.35</text>
   <text x="44" y="12" class="font s4" dominant-baseline="middle" text-anchor="end">clean install</text>
   <text x="44" y="17.5" class="font s4" dominant-baseline="middle" text-anchor="end">cache + lockfile + node_modules</text>
@@ -347,5 +347,5 @@
   <text x="44" y="688.5" class="font s4" dominant-baseline="middle" text-anchor="end">node_modules + lockfile</text>
   <text x="44" y="694" class="font s4" dominant-baseline="middle" text-anchor="end">node_modules</text>
   <text x="44" y="699.5" class="font s4" dominant-baseline="middle" text-anchor="end">update</text>
-  <text x="296" y="724" class="font s4 text" text-anchor="end">Tests were run using bun with Node.js v20.11.1 at: 23 mars 2024, 07:32</text>
+  <text x="296" y="724" class="font s4 text" text-anchor="end">Tests were run using bun with Node.js v20.11.1 at: 24 mars 2024, 07:30</text>
 </svg>
