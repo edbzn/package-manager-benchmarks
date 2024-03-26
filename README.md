@@ -8,6 +8,11 @@ pnpm run benchmark
 ## Results
 
 [See detailed benchmarks](./benchmarks.md)
+[NPM](#npm)
+[Yarn](#yarn)
+[Yarn PnP](#yarn-pnp)
+[PnPM](#pnpm)
+[Bun](#bun)
 
 #### A lot of files
 
