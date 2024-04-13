@@ -13,14 +13,14 @@
   <rect x="0" y="0" width="306" height="6342" fill="#fff"></rect>
   <rect x="46" y="10" width="117" height="4" fill="hsl(0, 100%, 45%)" rx="1" ry="1"></rect>
   <text x="165" y="12" fill="hsl(0, 100%, 20%)" dominant-baseline="middle" class="font s4">33.9s</text>
-  <rect x="46" y="15.5" width="6" height="4" fill="hsl(0, 100%, 45%)" rx="1" ry="1"></rect>
-  <text x="54" y="17.5" fill="hsl(0, 100%, 20%)" dominant-baseline="middle" class="font s4">1.6s</text>
+  <rect x="46" y="15.5" width="5" height="4" fill="hsl(0, 100%, 45%)" rx="1" ry="1"></rect>
+  <text x="53" y="17.5" fill="hsl(0, 100%, 20%)" dominant-baseline="middle" class="font s4">1.5s</text>
   <rect x="46" y="21" width="28" height="4" fill="hsl(0, 100%, 45%)" rx="1" ry="1"></rect>
   <text x="76" y="23" fill="hsl(0, 100%, 20%)" dominant-baseline="middle" class="font s4">8s</text>
   <rect x="46" y="26.5" width="45" height="4" fill="hsl(0, 100%, 45%)" rx="1" ry="1"></rect>
   <text x="93" y="28.5" fill="hsl(0, 100%, 20%)" dominant-baseline="middle" class="font s4">13s</text>
   <rect x="46" y="32" width="41" height="4" fill="hsl(0, 100%, 45%)" rx="1" ry="1"></rect>
-  <text x="89" y="34" fill="hsl(0, 100%, 20%)" dominant-baseline="middle" class="font s4">11.8s</text>
+  <text x="89" y="34" fill="hsl(0, 100%, 20%)" dominant-baseline="middle" class="font s4">11.7s</text>
   <rect x="46" y="37.5" width="6" height="4" fill="hsl(0, 100%, 45%)" rx="1" ry="1"></rect>
   <text x="54" y="39.5" fill="hsl(0, 100%, 20%)" dominant-baseline="middle" class="font s4">1.8s</text>
   <rect x="46" y="43" width="5" height="4" fill="hsl(0, 100%, 45%)" rx="1" ry="1"></rect>
@@ -3023,5 +3023,5 @@
   <text x="44" y="6304.5" class="font s4" dominant-baseline="middle" text-anchor="end">node_modules + lockfile</text>
   <text x="44" y="6310" class="font s4" dominant-baseline="middle" text-anchor="end">node_modules</text>
   <text x="44" y="6315.5" class="font s4" dominant-baseline="middle" text-anchor="end">update</text>
-  <text x="296" y="6340" class="font s4 text" text-anchor="end">Tests were run using npm with Node.js v20.12.1 at: 12 avr. 2024, 07:29</text>
+  <text x="296" y="6340" class="font s4 text" text-anchor="end">Tests were run using npm with Node.js v20.12.1 at: 13 avr. 2024, 07:24</text>
 </svg>
