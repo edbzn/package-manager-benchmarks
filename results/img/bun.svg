@@ -11,12 +11,12 @@
     .bold { font-weight: bold; }
   </style>
   <rect x="0" y="0" width="306" height="1135.5" fill="#fff"></rect>
-  <rect x="46" y="10" width="225" height="4" fill="hsl(0, 100%, 45%)" rx="1" ry="1"></rect>
-  <text x="273" y="12" fill="hsl(0, 100%, 20%)" dominant-baseline="middle" class="font s4">2.6s</text>
+  <rect x="46" y="10" width="146" height="4" fill="hsl(0, 100%, 45%)" rx="1" ry="1"></rect>
+  <text x="194" y="12" fill="hsl(0, 100%, 20%)" dominant-baseline="middle" class="font s4">1.7s</text>
   <rect x="46" y="15.5" width="3" height="4" fill="hsl(0, 100%, 45%)" rx="1" ry="1"></rect>
-  <text x="51" y="17.5" fill="hsl(0, 100%, 20%)" dominant-baseline="middle" class="font s4">39ms</text>
-  <rect x="46" y="21" width="59" height="4" fill="hsl(0, 100%, 45%)" rx="1" ry="1"></rect>
-  <text x="107" y="23" fill="hsl(0, 100%, 20%)" dominant-baseline="middle" class="font s4">696ms</text>
+  <text x="51" y="17.5" fill="hsl(0, 100%, 20%)" dominant-baseline="middle" class="font s4">38ms</text>
+  <rect x="46" y="21" width="56" height="4" fill="hsl(0, 100%, 45%)" rx="1" ry="1"></rect>
+  <text x="104" y="23" fill="hsl(0, 100%, 20%)" dominant-baseline="middle" class="font s4">659ms</text>
   <rect x="46" y="26.5" width="56" height="4" fill="hsl(0, 100%, 45%)" rx="1" ry="1"></rect>
   <text x="104" y="28.5" fill="hsl(0, 100%, 20%)" dominant-baseline="middle" class="font s4">661ms</text>
   <rect x="46" y="32" width="55" height="4" fill="hsl(0, 100%, 45%)" rx="1" ry="1"></rect>
@@ -543,5 +543,5 @@
   <text x="44" y="1098" class="font s4" dominant-baseline="middle" text-anchor="end">node_modules + lockfile</text>
   <text x="44" y="1103.5" class="font s4" dominant-baseline="middle" text-anchor="end">node_modules</text>
   <text x="44" y="1109" class="font s4" dominant-baseline="middle" text-anchor="end">update</text>
-  <text x="296" y="1133.5" class="font s4 text" text-anchor="end">Tests were run using bun with Node.js v20.12.2 at: 27 avr. 2024, 07:14</text>
+  <text x="296" y="1133.5" class="font s4 text" text-anchor="end">Tests were run using bun with Node.js v20.12.2 at: 28 avr. 2024, 07:15</text>
 </svg>
