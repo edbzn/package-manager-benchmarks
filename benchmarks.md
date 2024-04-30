@@ -1,6 +1,6 @@
 # Benchmarks of JavaScript Package Managers
 
-**Last benchmarked at**: _29 avr. 2024, 07:06_ (_daily_ updated).
+**Last benchmarked at**: _30 avr. 2024, 07:07_ (_daily_ updated).
 
 This benchmark compares the performance of npm, pnpm, Yarn Classic, Yarn PnP, and Bun (check [Yarn's benchmarks](https://yarnpkg.com/benchmarks) for any other Yarn modes that are not included here).
 
@@ -24,12 +24,12 @@ The app's `package.json` [here](./fixtures/react-app/package.json)
 | ---     | ---   | ---      | ---         | --- | ---  | ---  | ---      | --- |
 | install |       |          |             | 23s | 6.6s | 10s | 2.8s | 1.7s |
 | install | ✔     | ✔        | ✔           | 1.4s | 981ms | 1.3s | n/a | 34ms |
-| install | ✔     | ✔        |             | 5s | 1.9s | 3.6s | 1s | 468ms |
+| install | ✔     | ✔        |             | 5s | 1.9s | 3.6s | 1s | 443ms |
 | install | ✔     |          |             | 9.3s | 5s | 5.1s | 2.5s | 474ms |
-| install |       | ✔        |             | 8.4s | 3.6s | 3.6s | 1s | 409ms |
+| install |       | ✔        |             | 8.4s | 3.6s | 3.6s | 1s | 400ms |
 | install | ✔     |          | ✔           | 1.6s | 1.9s | 2.7s | n/a | 50ms |
 | install |       | ✔        | ✔           | 1.3s | 963ms | 1.3s | n/a | 31ms |
-| install |       |          | ✔           | 1.6s | 3.8s | 2.8s | n/a | 50ms |
+| install |       |          | ✔           | 1.6s | 3.8s | 2.8s | n/a | 49ms |
 | update  | n/a | n/a | n/a | 1.3s | 3.8s | 13.3s | 3.3s | 32ms |
 
 <img alt="Graph of the react-app results" src="results/img/react-app.svg" />
@@ -42,13 +42,13 @@ The app's `package.json` [here](./fixtures/ember-quickstart/package.json)
 | ---     | ---   | ---      | ---         | --- | ---  | ---  | ---      | --- |
 | install |       |          |             | 19.6s | 5.2s | 6s | 2.4s | 1.2s |
 | install | ✔     | ✔        | ✔           | 1.1s | 858ms | 1.1s | n/a | 27ms |
-| install | ✔     | ✔        |             | 3.8s | 1.6s | 2.8s | 969ms | 344ms |
+| install | ✔     | ✔        |             | 3.8s | 1.6s | 2.8s | 969ms | 339ms |
 | install | ✔     |          |             | 7s | 3.9s | 4s | 2s | 359ms |
 | install |       | ✔        |             | 6.3s | 3s | 2.8s | 959ms | 322ms |
 | install | ✔     |          | ✔           | 1.2s | 1.5s | 2.2s | n/a | 40ms |
-| install |       | ✔        | ✔           | 1s | 871ms | 1.1s | n/a | 26ms |
-| install |       |          | ✔           | 1.2s | 3.1s | 2.2s | n/a | 39ms |
-| update  | n/a | n/a | n/a | 1s | 3s | 11.2s | 3.5s | 28ms |
+| install |       | ✔        | ✔           | 1s | 871ms | 1.1s | n/a | 25ms |
+| install |       |          | ✔           | 1.2s | 3.1s | 2.2s | n/a | 37ms |
+| update  | n/a | n/a | n/a | 1s | 3s | 11.2s | 3.5s | 27ms |
 
 <img alt="Graph of the ember-quickstart results" src="results/img/ember-quickstart.svg" />
 
@@ -59,11 +59,11 @@ The app's `package.json` [here](./fixtures/angular-quickstart/package.json)
 | action  | cache | lockfile | node_modules| npm | pnpm | Yarn | Yarn PnP | Bun |
 | ---     | ---   | ---      | ---         | --- | ---  | ---  | ---      | --- |
 | install |       |          |             | 24.2s | 6.8s | 11.1s | 2.9s | 1.9s |
-| install | ✔     | ✔        | ✔           | 1s | 990ms | 1.5s | n/a | 27ms |
+| install | ✔     | ✔        | ✔           | 1s | 990ms | 1.5s | n/a | 26ms |
 | install | ✔     | ✔        |             | 7.7s | 2.1s | 5.2s | 1.3s | 796ms |
 | install | ✔     |          |             | 12s | 4.8s | 6.6s | 2.4s | 778ms |
-| install |       | ✔        |             | 10.4s | 4.1s | 5.2s | 1.3s | 733ms |
-| install | ✔     |          | ✔           | 1.2s | 1.9s | 2.7s | n/a | 42ms |
+| install |       | ✔        |             | 10.4s | 4.1s | 5.2s | 1.3s | 727ms |
+| install | ✔     |          | ✔           | 1.2s | 1.9s | 2.7s | n/a | 40ms |
 | install |       | ✔        | ✔           | 1s | 1s | 1.5s | n/a | 24ms |
 | install |       |          | ✔           | 1.1s | 4.5s | 2.6s | n/a | 39ms |
 | update  | n/a | n/a | n/a | 1s | 3.6s | 8.4s | 2.6s | 27ms |
@@ -77,11 +77,11 @@ The app's `package.json` [here](./fixtures/medium-size-app/package.json)
 | action  | cache | lockfile | node_modules| npm | pnpm | Yarn | Yarn PnP | Bun |
 | ---     | ---   | ---      | ---         | --- | ---  | ---  | ---      | --- |
 | install |       |          |             | 23.3s | 6.4s | 7.8s | 3s | 1.2s |
-| install | ✔     | ✔        | ✔           | 1.3s | 937ms | 1.5s | n/a | 31ms |
+| install | ✔     | ✔        | ✔           | 1.3s | 937ms | 1.5s | n/a | 30ms |
 | install | ✔     | ✔        |             | 6s | 2.1s | 4.1s | 1.2s | 494ms |
-| install | ✔     |          |             | 9.8s | 4.7s | 5.4s | 2.5s | 532ms |
+| install | ✔     |          |             | 9.8s | 4.7s | 5.4s | 2.5s | 473ms |
 | install |       | ✔        |             | 9s | 4.1s | 4.1s | 1.2s | 453ms |
-| install | ✔     |          | ✔           | 1.5s | 1.9s | 2.8s | n/a | 45ms |
+| install | ✔     |          | ✔           | 1.5s | 1.9s | 2.8s | n/a | 44ms |
 | install |       | ✔        | ✔           | 1.3s | 989ms | 1.5s | n/a | 27ms |
 | install |       |          | ✔           | 1.5s | 4.1s | 2.8s | n/a | 42ms |
 | update  | n/a | n/a | n/a | 1.3s | 3.6s | 5.3s | 2.4s | 37ms |
