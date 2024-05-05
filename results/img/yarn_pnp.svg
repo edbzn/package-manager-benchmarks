@@ -28,7 +28,7 @@
   <rect x="46" y="48.5" width="1" height="4" fill="hsl(0, 100%, 45%)" rx="1" ry="1"></rect>
   <text x="48" y="50.5" fill="hsl(0, 100%, 20%)" dominant-baseline="middle" class="font s4">0ms</text>
   <rect x="46" y="54" width="12" height="4" fill="hsl(0, 100%, 45%)" rx="1" ry="1"></rect>
-  <text x="60" y="56" fill="hsl(0, 100%, 20%)" dominant-baseline="middle" class="font s4">3.1s</text>
+  <text x="60" y="56" fill="hsl(0, 100%, 20%)" dominant-baseline="middle" class="font s4">2.9s</text>
   <rect x="46" y="68.5" width="14" height="4" fill="hsl(13.846153846153847, 100%, 45%)" rx="1" ry="1"></rect>
   <text x="62" y="70.5" fill="hsl(13.846153846153847, 100%, 20%)" dominant-baseline="middle" class="font s4">3.5s</text>
   <rect x="46" y="74" width="1" height="4" fill="hsl(13.846153846153847, 100%, 45%)" rx="1" ry="1"></rect>
@@ -739,5 +739,5 @@
   <text x="44" y="1507.5" class="font s4" dominant-baseline="middle" text-anchor="end">node_modules + lockfile</text>
   <text x="44" y="1513" class="font s4" dominant-baseline="middle" text-anchor="end">node_modules</text>
   <text x="44" y="1518.5" class="font s4" dominant-baseline="middle" text-anchor="end">update</text>
-  <text x="296" y="1543" class="font s4 text" text-anchor="end">Tests were run using yarn_pnp with Node.js v20.12.2 at: 4 mai 2024, 07:20</text>
+  <text x="296" y="1543" class="font s4 text" text-anchor="end">Tests were run using yarn_pnp with Node.js v20.12.2 at: 5 mai 2024, 07:20</text>
 </svg>
