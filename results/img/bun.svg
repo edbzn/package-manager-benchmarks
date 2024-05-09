@@ -28,7 +28,7 @@
   <rect x="46" y="48.5" width="5" height="4" fill="hsl(0, 100%, 45%)" rx="1" ry="1"></rect>
   <text x="53" y="50.5" fill="hsl(0, 100%, 20%)" dominant-baseline="middle" class="font s4">54ms</text>
   <rect x="46" y="54" width="7" height="4" fill="hsl(0, 100%, 45%)" rx="1" ry="1"></rect>
-  <text x="55" y="56" fill="hsl(0, 100%, 20%)" dominant-baseline="middle" class="font s4">86ms</text>
+  <text x="55" y="56" fill="hsl(0, 100%, 20%)" dominant-baseline="middle" class="font s4">83ms</text>
   <rect x="46" y="68.5" width="141" height="4" fill="hsl(17.142857142857142, 100%, 45%)" rx="1" ry="1"></rect>
   <text x="189" y="70.5" fill="hsl(17.142857142857142, 100%, 20%)" dominant-baseline="middle" class="font s4">1.6s</text>
   <rect x="46" y="74" width="3" height="4" fill="hsl(17.142857142857142, 100%, 45%)" rx="1" ry="1"></rect>
@@ -599,5 +599,5 @@
   <text x="44" y="1215" class="font s4" dominant-baseline="middle" text-anchor="end">node_modules + lockfile</text>
   <text x="44" y="1220.5" class="font s4" dominant-baseline="middle" text-anchor="end">node_modules</text>
   <text x="44" y="1226" class="font s4" dominant-baseline="middle" text-anchor="end">update</text>
-  <text x="296" y="1250.5" class="font s4 text" text-anchor="end">Tests were run using bun with Node.js v20.12.2 at: 8 mai 2024, 07:20</text>
+  <text x="296" y="1250.5" class="font s4 text" text-anchor="end">Tests were run using bun with Node.js v20.12.2 at: 9 mai 2024, 07:19</text>
 </svg>
