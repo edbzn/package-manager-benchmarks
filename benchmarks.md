@@ -1,6 +1,6 @@
 # Benchmarks of JavaScript Package Managers
 
-**Last benchmarked at**: _9 mai 2024, 07:06_ (_daily_ updated).
+**Last benchmarked at**: _10 mai 2024, 07:06_ (_daily_ updated).
 
 This benchmark compares the performance of npm, pnpm, Yarn Classic, Yarn PnP, and Bun (check [Yarn's benchmarks](https://yarnpkg.com/benchmarks) for any other Yarn modes that are not included here).
 
@@ -66,7 +66,7 @@ The app's `package.json` [here](./fixtures/angular-quickstart/package.json)
 | install | ✔     |          | ✔           | 1.2s | 1.8s | 2.7s | n/a | 40ms |
 | install |       | ✔        | ✔           | 1s | 988ms | 1.4s | n/a | 22ms |
 | install |       |          | ✔           | 1.2s | 4.5s | 2.7s | n/a | 38ms |
-| update  | n/a | n/a | n/a | 1s | 3.6s | 9s | 2.8s | 26ms |
+| update  | n/a | n/a | n/a | 1s | 3.6s | 9s | 2.7s | 26ms |
 
 <img alt="Graph of the angular-quickstart results" src="results/img/angular-quickstart.svg" />
 
@@ -97,9 +97,9 @@ The app's `package.json` [here](./fixtures/alotta-files/package.json)
 | install |       |          |             | 31.7s | 8s | 10.6s | 3.5s | 2s |
 | install | ✔     | ✔        | ✔           | 1.5s | 1s | 1.6s | n/a | 38ms |
 | install | ✔     | ✔        |             | 7.6s | 2.5s | 5.6s | 1.4s | 670ms |
-| install | ✔     |          |             | 12.6s | 5.7s | 7.3s | 3.1s | 683ms |
+| install | ✔     |          |             | 12.6s | 5.7s | 7.3s | 3s | 683ms |
 | install |       | ✔        |             | 11.4s | 5.1s | 5.7s | 1.4s | 658ms |
-| install | ✔     |          | ✔           | 1.7s | 2.5s | 3.6s | n/a | 57ms |
+| install | ✔     |          | ✔           | 1.7s | 2.5s | 3.5s | n/a | 57ms |
 | install |       | ✔        | ✔           | 1.4s | 1s | 1.6s | n/a | 35ms |
 | install |       |          | ✔           | 1.7s | 5.7s | 3.3s | n/a | 54ms |
 | update  | n/a | n/a | n/a | 1.4s | 4.5s | 5.3s | 2.9s | 83ms |
