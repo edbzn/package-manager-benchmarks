@@ -16,11 +16,11 @@
   <rect x="46" y="15.5" width="3" height="4" fill="hsl(0, 100%, 45%)" rx="1" ry="1"></rect>
   <text x="51" y="17.5" fill="hsl(0, 100%, 20%)" dominant-baseline="middle" class="font s4">38ms</text>
   <rect x="46" y="21" width="57" height="4" fill="hsl(0, 100%, 45%)" rx="1" ry="1"></rect>
-  <text x="105" y="23" fill="hsl(0, 100%, 20%)" dominant-baseline="middle" class="font s4">671ms</text>
+  <text x="105" y="23" fill="hsl(0, 100%, 20%)" dominant-baseline="middle" class="font s4">670ms</text>
   <rect x="46" y="26.5" width="59" height="4" fill="hsl(0, 100%, 45%)" rx="1" ry="1"></rect>
-  <text x="107" y="28.5" fill="hsl(0, 100%, 20%)" dominant-baseline="middle" class="font s4">692ms</text>
-  <rect x="46" y="32" width="57" height="4" fill="hsl(0, 100%, 45%)" rx="1" ry="1"></rect>
-  <text x="105" y="34" fill="hsl(0, 100%, 20%)" dominant-baseline="middle" class="font s4">666ms</text>
+  <text x="107" y="28.5" fill="hsl(0, 100%, 20%)" dominant-baseline="middle" class="font s4">691ms</text>
+  <rect x="46" y="32" width="56" height="4" fill="hsl(0, 100%, 45%)" rx="1" ry="1"></rect>
+  <text x="104" y="34" fill="hsl(0, 100%, 20%)" dominant-baseline="middle" class="font s4">659ms</text>
   <rect x="46" y="37.5" width="5" height="4" fill="hsl(0, 100%, 45%)" rx="1" ry="1"></rect>
   <text x="53" y="39.5" fill="hsl(0, 100%, 20%)" dominant-baseline="middle" class="font s4">56ms</text>
   <rect x="46" y="43" width="3" height="4" fill="hsl(0, 100%, 45%)" rx="1" ry="1"></rect>
@@ -627,5 +627,5 @@
   <text x="44" y="1273.5" class="font s4" dominant-baseline="middle" text-anchor="end">node_modules + lockfile</text>
   <text x="44" y="1279" class="font s4" dominant-baseline="middle" text-anchor="end">node_modules</text>
   <text x="44" y="1284.5" class="font s4" dominant-baseline="middle" text-anchor="end">update</text>
-  <text x="296" y="1309" class="font s4 text" text-anchor="end">Tests were run using bun with Node.js v20.12.2 at: 12 mai 2024, 07:19</text>
+  <text x="296" y="1309" class="font s4 text" text-anchor="end">Tests were run using bun with Node.js v20.12.2 at: 13 mai 2024, 07:20</text>
 </svg>
