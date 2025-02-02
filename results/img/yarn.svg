@@ -16,7 +16,7 @@
   <rect x="46" y="15.5" width="5" height="4" fill="hsl(0, 100%, 45%)" rx="1" ry="1"></rect>
   <text x="53" y="17.5" fill="hsl(0, 100%, 20%)" dominant-baseline="middle" class="font s4">1.5s</text>
   <rect x="46" y="21" width="19" height="4" fill="hsl(0, 100%, 45%)" rx="1" ry="1"></rect>
-  <text x="67" y="23" fill="hsl(0, 100%, 20%)" dominant-baseline="middle" class="font s4">5.6s</text>
+  <text x="67" y="23" fill="hsl(0, 100%, 20%)" dominant-baseline="middle" class="font s4">5.5s</text>
   <rect x="46" y="26.5" width="32" height="4" fill="hsl(0, 100%, 45%)" rx="1" ry="1"></rect>
   <text x="80" y="28.5" fill="hsl(0, 100%, 20%)" dominant-baseline="middle" class="font s4">9.3s</text>
   <rect x="46" y="32" width="19" height="4" fill="hsl(0, 100%, 45%)" rx="1" ry="1"></rect>
@@ -1166,5 +1166,5 @@
   <text x="44" y="2443.5" class="font s4" dominant-baseline="middle" text-anchor="end">node_modules + lockfile</text>
   <text x="44" y="2449" class="font s4" dominant-baseline="middle" text-anchor="end">node_modules</text>
   <text x="44" y="2454.5" class="font s4" dominant-baseline="middle" text-anchor="end">update</text>
-  <text x="296" y="2479" class="font s4 text" text-anchor="end">Tests were run using yarn with Node.js v23.7.0 at: 1 févr. 2025, 19:57</text>
+  <text x="296" y="2479" class="font s4 text" text-anchor="end">Tests were run using yarn with Node.js v23.7.0 at: 2 févr. 2025, 07:20</text>
 </svg>
