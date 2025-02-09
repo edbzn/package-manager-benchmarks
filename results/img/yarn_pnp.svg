@@ -11,8 +11,8 @@
     .bold { font-weight: bold; }
   </style>
   <rect x="0" y="0" width="306" height="1662" fill="#fff"></rect>
-  <rect x="46" y="10" width="22" height="4" fill="hsl(0, 100%, 45%)" rx="1" ry="1"></rect>
-  <text x="70" y="12" fill="hsl(0, 100%, 20%)" dominant-baseline="middle" class="font s4">5.5s</text>
+  <rect x="46" y="10" width="21" height="4" fill="hsl(0, 100%, 45%)" rx="1" ry="1"></rect>
+  <text x="69" y="12" fill="hsl(0, 100%, 20%)" dominant-baseline="middle" class="font s4">5.5s</text>
   <rect x="46" y="15.5" width="1" height="4" fill="hsl(0, 100%, 45%)" rx="1" ry="1"></rect>
   <text x="48" y="17.5" fill="hsl(0, 100%, 20%)" dominant-baseline="middle" class="font s4">0ms</text>
   <rect x="46" y="21" width="5" height="4" fill="hsl(0, 100%, 45%)" rx="1" ry="1"></rect>
@@ -795,5 +795,5 @@
   <text x="44" y="1624.5" class="font s4" dominant-baseline="middle" text-anchor="end">node_modules + lockfile</text>
   <text x="44" y="1630" class="font s4" dominant-baseline="middle" text-anchor="end">node_modules</text>
   <text x="44" y="1635.5" class="font s4" dominant-baseline="middle" text-anchor="end">update</text>
-  <text x="296" y="1660" class="font s4 text" text-anchor="end">Tests were run using yarn_pnp with Node.js v23.7.0 at: 8 févr. 2025, 07:23</text>
+  <text x="296" y="1660" class="font s4 text" text-anchor="end">Tests were run using yarn_pnp with Node.js v23.7.0 at: 9 févr. 2025, 07:19</text>
 </svg>
