@@ -46,7 +46,7 @@
   <rect x="40" y="41.5" width="63" height="6" fill="#fbae00" rx="1" ry="1"></rect>
   <rect x="40" y="48" width="89" height="6" fill="#248ebd" rx="1" ry="1"></rect>
   <rect x="40" y="54.5" width="46" height="6" fill="#40a9ff" rx="1" ry="1"></rect>
-  <rect x="40" y="61" width="16" height="6" fill="#ff6f00" rx="1" ry="1"></rect>
+  <rect x="40" y="61" width="15" height="6" fill="#ff6f00" rx="1" ry="1"></rect>
   <rect x="40" y="71.5" width="13" height="6" fill="#cd3731" rx="1" ry="1"></rect>
   <rect x="40" y="78" width="7" height="6" fill="#fbae00" rx="1" ry="1"></rect>
   <rect x="40" y="84.5" width="14" height="6" fill="#248ebd" rx="1" ry="1"></rect>
@@ -102,5 +102,5 @@
   <text x="38" y="265.5" class="font s4" dominant-baseline="middle" text-anchor="end">with lockfile</text>
   <text x="38" y="300" class="font s4" dominant-baseline="middle" text-anchor="end">with node_modules</text>
   <text x="38" y="336.5" class="font s4" dominant-baseline="middle" text-anchor="end">update</text>
-  <text x="290" y="375.5" class="font s4 text" text-anchor="end">Tests were run using Node.js v23.7.0 at: 9 févr. 2025, 07:06</text>
+  <text x="290" y="375.5" class="font s4 text" text-anchor="end">Tests were run using Node.js v23.7.0 at: 10 févr. 2025, 07:07</text>
 </svg>
