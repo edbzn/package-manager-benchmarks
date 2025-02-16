@@ -1,6 +1,6 @@
 # Benchmarks of JavaScript Package Managers
 
-**Last benchmarked at**: _15 févr. 2025, 07:06_ (_daily_ updated).
+**Last benchmarked at**: _16 févr. 2025, 07:06_ (_daily_ updated).
 
 This benchmark compares the performance of npm, pnpm, Yarn Classic, Yarn PnP, and Bun (check [Yarn's benchmarks](https://yarnpkg.com/benchmarks) for any other Yarn modes that are not included here).
 
@@ -63,7 +63,7 @@ The app's `package.json` [here](./fixtures/angular-quickstart/package.json)
 | install | ✔     | ✔        |             | 7.7s | 1.8s | 5.2s | 1.2s | 868ms |
 | install | ✔     |          |             | 10.7s | 4.4s | 8.1s | 4s | 835ms |
 | install |       | ✔        |             | 9.7s | 3.8s | 5.2s | 1.2s | 835ms |
-| install | ✔     |          | ✔           | 1s | 1.6s | 4.1s | n/a | 29ms |
+| install | ✔     |          | ✔           | 1s | 1.5s | 4.1s | n/a | 29ms |
 | install |       | ✔        | ✔           | 895ms | 765ms | 1.3s | n/a | 27ms |
 | install |       |          | ✔           | 1s | 3.9s | 4.2s | n/a | 27ms |
 | update  | n/a | n/a | n/a | 895ms | 3.2s | 9.8s | 4.2s | 34ms |
@@ -77,7 +77,7 @@ The app's `package.json` [here](./fixtures/medium-size-app/package.json)
 | action  | cache | lockfile | node_modules| npm | pnpm | Yarn | Yarn PnP | Bun |
 | ---     | ---   | ---      | ---         | --- | ---  | ---  | ---      | --- |
 | install |       |          |             | 20.6s | 6s | 8.8s | 4.6s | 1.4s |
-| install | ✔     | ✔        | ✔           | 1.2s | 753ms | 1.3s | n/a | 33ms |
+| install | ✔     | ✔        | ✔           | 1.2s | 751ms | 1.3s | n/a | 33ms |
 | install | ✔     | ✔        |             | 5.9s | 1.9s | 4s | 1.1s | 481ms |
 | install | ✔     |          |             | 8.9s | 4.3s | 7.1s | 4.1s | 465ms |
 | install |       | ✔        |             | 8s | 3.7s | 4s | 1.1s | 456ms |
