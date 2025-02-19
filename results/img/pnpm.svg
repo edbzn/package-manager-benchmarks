@@ -22,11 +22,11 @@
   <rect x="46" y="32" width="31" height="4" fill="hsl(0, 100%, 45%)" rx="1" ry="1"></rect>
   <text x="79" y="34" fill="hsl(0, 100%, 20%)" dominant-baseline="middle" class="font s4">4.9s</text>
   <rect x="46" y="37.5" width="13" height="4" fill="hsl(0, 100%, 45%)" rx="1" ry="1"></rect>
-  <text x="61" y="39.5" fill="hsl(0, 100%, 20%)" dominant-baseline="middle" class="font s4">2.1s</text>
+  <text x="61" y="39.5" fill="hsl(0, 100%, 20%)" dominant-baseline="middle" class="font s4">2s</text>
   <rect x="46" y="43" width="5" height="4" fill="hsl(0, 100%, 45%)" rx="1" ry="1"></rect>
   <text x="53" y="45" fill="hsl(0, 100%, 20%)" dominant-baseline="middle" class="font s4">816ms</text>
-  <rect x="46" y="48.5" width="34" height="4" fill="hsl(0, 100%, 45%)" rx="1" ry="1"></rect>
-  <text x="82" y="50.5" fill="hsl(0, 100%, 20%)" dominant-baseline="middle" class="font s4">5.3s</text>
+  <rect x="46" y="48.5" width="33" height="4" fill="hsl(0, 100%, 45%)" rx="1" ry="1"></rect>
+  <text x="81" y="50.5" fill="hsl(0, 100%, 20%)" dominant-baseline="middle" class="font s4">5.2s</text>
   <rect x="46" y="54" width="26" height="4" fill="hsl(0, 100%, 45%)" rx="1" ry="1"></rect>
   <text x="74" y="56" fill="hsl(0, 100%, 20%)" dominant-baseline="middle" class="font s4">4.1s</text>
   <rect x="46" y="68.5" width="47" height="4" fill="hsl(1.7142857142857142, 100%, 45%)" rx="1" ry="1"></rect>
@@ -5860,5 +5860,5 @@
   <text x="44" y="12271.5" class="font s4" dominant-baseline="middle" text-anchor="end">node_modules + lockfile</text>
   <text x="44" y="12277" class="font s4" dominant-baseline="middle" text-anchor="end">node_modules</text>
   <text x="44" y="12282.5" class="font s4" dominant-baseline="middle" text-anchor="end">update</text>
-  <text x="296" y="12307" class="font s4 text" text-anchor="end">Tests were run using pnpm with Node.js v23.8.0 at: 18 févr. 2025, 07:20</text>
+  <text x="296" y="12307" class="font s4 text" text-anchor="end">Tests were run using pnpm with Node.js v23.8.0 at: 19 févr. 2025, 07:21</text>
 </svg>
