@@ -11,12 +11,12 @@
     .bold { font-weight: bold; }
   </style>
   <rect x="0" y="0" width="306" height="1428" fill="#fff"></rect>
-  <rect x="46" y="10" width="196" height="4" fill="hsl(0, 100%, 45%)" rx="1" ry="1"></rect>
-  <text x="244" y="12" fill="hsl(0, 100%, 20%)" dominant-baseline="middle" class="font s4">2.2s</text>
+  <rect x="46" y="10" width="172" height="4" fill="hsl(0, 100%, 45%)" rx="1" ry="1"></rect>
+  <text x="220" y="12" fill="hsl(0, 100%, 20%)" dominant-baseline="middle" class="font s4">2s</text>
   <rect x="46" y="15.5" width="4" height="4" fill="hsl(0, 100%, 45%)" rx="1" ry="1"></rect>
   <text x="52" y="17.5" fill="hsl(0, 100%, 20%)" dominant-baseline="middle" class="font s4">42ms</text>
-  <rect x="46" y="21" width="63" height="4" fill="hsl(0, 100%, 45%)" rx="1" ry="1"></rect>
-  <text x="111" y="23" fill="hsl(0, 100%, 20%)" dominant-baseline="middle" class="font s4">738ms</text>
+  <rect x="46" y="21" width="62" height="4" fill="hsl(0, 100%, 45%)" rx="1" ry="1"></rect>
+  <text x="110" y="23" fill="hsl(0, 100%, 20%)" dominant-baseline="middle" class="font s4">730ms</text>
   <rect x="46" y="26.5" width="61" height="4" fill="hsl(0, 100%, 45%)" rx="1" ry="1"></rect>
   <text x="109" y="28.5" fill="hsl(0, 100%, 20%)" dominant-baseline="middle" class="font s4">717ms</text>
   <rect x="46" y="32" width="62" height="4" fill="hsl(0, 100%, 45%)" rx="1" ry="1"></rect>
@@ -683,5 +683,5 @@
   <text x="44" y="1390.5" class="font s4" dominant-baseline="middle" text-anchor="end">node_modules + lockfile</text>
   <text x="44" y="1396" class="font s4" dominant-baseline="middle" text-anchor="end">node_modules</text>
   <text x="44" y="1401.5" class="font s4" dominant-baseline="middle" text-anchor="end">update</text>
-  <text x="296" y="1426" class="font s4 text" text-anchor="end">Tests were run using bun with Node.js v23.8.0 at: 24 févr. 2025, 07:21</text>
+  <text x="296" y="1426" class="font s4 text" text-anchor="end">Tests were run using bun with Node.js v23.8.0 at: 25 févr. 2025, 07:21</text>
 </svg>
