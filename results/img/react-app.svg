@@ -54,7 +54,7 @@
   <rect x="40" y="97.5" width="0" height="6" fill="#ff6f00" rx="1" ry="1"></rect>
   <rect x="40" y="108" width="63" height="6" fill="#cd3731" rx="1" ry="1"></rect>
   <rect x="40" y="114.5" width="23" height="6" fill="#fbae00" rx="1" ry="1"></rect>
-  <rect x="40" y="121" width="46" height="6" fill="#248ebd" rx="1" ry="1"></rect>
+  <rect x="40" y="121" width="45" height="6" fill="#248ebd" rx="1" ry="1"></rect>
   <rect x="40" y="127.5" width="13" height="6" fill="#40a9ff" rx="1" ry="1"></rect>
   <rect x="40" y="134" width="6" height="6" fill="#ff6f00" rx="1" ry="1"></rect>
   <rect x="40" y="144.5" width="104" height="6" fill="#cd3731" rx="1" ry="1"></rect>
@@ -85,7 +85,7 @@
   <rect x="40" y="327" width="15" height="6" fill="#cd3731" rx="1" ry="1"></rect>
   <rect x="40" y="333.5" width="43" height="6" fill="#fbae00" rx="1" ry="1"></rect>
   <rect x="40" y="340" width="164" height="6" fill="#248ebd" rx="1" ry="1"></rect>
-  <rect x="40" y="346.5" width="80" height="6" fill="#40a9ff" rx="1" ry="1"></rect>
+  <rect x="40" y="346.5" width="79" height="6" fill="#40a9ff" rx="1" ry="1"></rect>
   <rect x="40" y="353" width="0" height="6" fill="#ff6f00" rx="1" ry="1"></rect>
   <line x1="40" y1="31" x2="40" y2="363.5" class="line"></line>
   <text x="38" y="44.5" class="font s4" dominant-baseline="middle" text-anchor="end">clean install</text>
@@ -102,5 +102,5 @@
   <text x="38" y="265.5" class="font s4" dominant-baseline="middle" text-anchor="end">with lockfile</text>
   <text x="38" y="300" class="font s4" dominant-baseline="middle" text-anchor="end">with node_modules</text>
   <text x="38" y="336.5" class="font s4" dominant-baseline="middle" text-anchor="end">update</text>
-  <text x="290" y="375.5" class="font s4 text" text-anchor="end">Tests were run using Node.js v23.9.0 at: 4 mars 2025, 07:07</text>
+  <text x="290" y="375.5" class="font s4 text" text-anchor="end">Tests were run using Node.js v23.9.0 at: 5 mars 2025, 07:07</text>
 </svg>
