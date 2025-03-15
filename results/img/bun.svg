@@ -14,11 +14,11 @@
   <rect x="46" y="10" width="156" height="4" fill="hsl(0, 100%, 45%)" rx="1" ry="1"></rect>
   <text x="204" y="12" fill="hsl(0, 100%, 20%)" dominant-baseline="middle" class="font s4">1.8s</text>
   <rect x="46" y="15.5" width="4" height="4" fill="hsl(0, 100%, 45%)" rx="1" ry="1"></rect>
-  <text x="52" y="17.5" fill="hsl(0, 100%, 20%)" dominant-baseline="middle" class="font s4">42ms</text>
+  <text x="52" y="17.5" fill="hsl(0, 100%, 20%)" dominant-baseline="middle" class="font s4">41ms</text>
   <rect x="46" y="21" width="62" height="4" fill="hsl(0, 100%, 45%)" rx="1" ry="1"></rect>
   <text x="110" y="23" fill="hsl(0, 100%, 20%)" dominant-baseline="middle" class="font s4">723ms</text>
-  <rect x="46" y="26.5" width="62" height="4" fill="hsl(0, 100%, 45%)" rx="1" ry="1"></rect>
-  <text x="110" y="28.5" fill="hsl(0, 100%, 20%)" dominant-baseline="middle" class="font s4">727ms</text>
+  <rect x="46" y="26.5" width="61" height="4" fill="hsl(0, 100%, 45%)" rx="1" ry="1"></rect>
+  <text x="109" y="28.5" fill="hsl(0, 100%, 20%)" dominant-baseline="middle" class="font s4">718ms</text>
   <rect x="46" y="32" width="61" height="4" fill="hsl(0, 100%, 45%)" rx="1" ry="1"></rect>
   <text x="109" y="34" fill="hsl(0, 100%, 20%)" dominant-baseline="middle" class="font s4">717ms</text>
   <rect x="46" y="37.5" width="4" height="4" fill="hsl(0, 100%, 45%)" rx="1" ry="1"></rect>
@@ -739,5 +739,5 @@
   <text x="44" y="1507.5" class="font s4" dominant-baseline="middle" text-anchor="end">node_modules + lockfile</text>
   <text x="44" y="1513" class="font s4" dominant-baseline="middle" text-anchor="end">node_modules</text>
   <text x="44" y="1518.5" class="font s4" dominant-baseline="middle" text-anchor="end">update</text>
-  <text x="296" y="1543" class="font s4 text" text-anchor="end">Tests were run using bun with Node.js v23.10.0 at: 14 mars 2025, 07:21</text>
+  <text x="296" y="1543" class="font s4 text" text-anchor="end">Tests were run using bun with Node.js v23.10.0 at: 15 mars 2025, 07:20</text>
 </svg>
