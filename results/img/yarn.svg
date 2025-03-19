@@ -12,13 +12,13 @@
   </style>
   <rect x="0" y="0" width="306" height="2539.5" fill="#fff"></rect>
   <rect x="46" y="10" width="39" height="4" fill="hsl(0, 100%, 45%)" rx="1" ry="1"></rect>
-  <text x="87" y="12" fill="hsl(0, 100%, 20%)" dominant-baseline="middle" class="font s4">11.6s</text>
+  <text x="87" y="12" fill="hsl(0, 100%, 20%)" dominant-baseline="middle" class="font s4">11.5s</text>
   <rect x="46" y="15.5" width="5" height="4" fill="hsl(0, 100%, 45%)" rx="1" ry="1"></rect>
   <text x="53" y="17.5" fill="hsl(0, 100%, 20%)" dominant-baseline="middle" class="font s4">1.5s</text>
   <rect x="46" y="21" width="19" height="4" fill="hsl(0, 100%, 45%)" rx="1" ry="1"></rect>
   <text x="67" y="23" fill="hsl(0, 100%, 20%)" dominant-baseline="middle" class="font s4">5.4s</text>
-  <rect x="46" y="26.5" width="32" height="4" fill="hsl(0, 100%, 45%)" rx="1" ry="1"></rect>
-  <text x="80" y="28.5" fill="hsl(0, 100%, 20%)" dominant-baseline="middle" class="font s4">9.3s</text>
+  <rect x="46" y="26.5" width="31" height="4" fill="hsl(0, 100%, 45%)" rx="1" ry="1"></rect>
+  <text x="79" y="28.5" fill="hsl(0, 100%, 20%)" dominant-baseline="middle" class="font s4">9.2s</text>
   <rect x="46" y="32" width="19" height="4" fill="hsl(0, 100%, 45%)" rx="1" ry="1"></rect>
   <text x="67" y="34" fill="hsl(0, 100%, 20%)" dominant-baseline="middle" class="font s4">5.5s</text>
   <rect x="46" y="37.5" width="17" height="4" fill="hsl(0, 100%, 45%)" rx="1" ry="1"></rect>
@@ -1194,5 +1194,5 @@
   <text x="44" y="2502" class="font s4" dominant-baseline="middle" text-anchor="end">node_modules + lockfile</text>
   <text x="44" y="2507.5" class="font s4" dominant-baseline="middle" text-anchor="end">node_modules</text>
   <text x="44" y="2513" class="font s4" dominant-baseline="middle" text-anchor="end">update</text>
-  <text x="296" y="2537.5" class="font s4 text" text-anchor="end">Tests were run using yarn with Node.js v23.10.0 at: 18 mars 2025, 07:20</text>
+  <text x="296" y="2537.5" class="font s4 text" text-anchor="end">Tests were run using yarn with Node.js v23.10.0 at: 19 mars 2025, 07:20</text>
 </svg>
