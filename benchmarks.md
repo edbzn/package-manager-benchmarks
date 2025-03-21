@@ -1,6 +1,6 @@
 # Benchmarks of JavaScript Package Managers
 
-**Last benchmarked at**: _20 mars 2025, 07:07_ (_daily_ updated).
+**Last benchmarked at**: _21 mars 2025, 07:07_ (_daily_ updated).
 
 This benchmark compares the performance of npm, pnpm, Yarn Classic, Yarn PnP, and Bun (check [Yarn's benchmarks](https://yarnpkg.com/benchmarks) for any other Yarn modes that are not included here).
 
@@ -43,7 +43,7 @@ The app's `package.json` [here](./fixtures/ember-quickstart/package.json)
 | install |       |          |             | 20s | 4.7s | 6.4s | 3.6s | 1s |
 | install | ✔     | ✔        | ✔           | 972ms | 692ms | 981ms | n/a | 28ms |
 | install | ✔     | ✔        |             | 3.6s | 1.5s | 2.6s | 852ms | 359ms |
-| install | ✔     |          |             | 6.1s | 3.6s | 5.1s | 3.2s | 361ms |
+| install | ✔     |          |             | 6.1s | 3.5s | 5.1s | 3.2s | 361ms |
 | install |       | ✔        |             | 5.5s | 2.8s | 2.7s | 847ms | 335ms |
 | install | ✔     |          | ✔           | 1s | 1.2s | 3.4s | n/a | 27ms |
 | install |       | ✔        | ✔           | 923ms | 653ms | 987ms | n/a | 25ms |
@@ -60,7 +60,7 @@ The app's `package.json` [here](./fixtures/angular-quickstart/package.json)
 | ---     | ---   | ---      | ---         | --- | ---  | ---  | ---      | --- |
 | install |       |          |             | 19.8s | 6.1s | 11.7s | 4.4s | 1.7s |
 | install | ✔     | ✔        | ✔           | 899ms | 758ms | 1.3s | n/a | 30ms |
-| install | ✔     | ✔        |             | 7.7s | 1.9s | 5.1s | 1.2s | 877ms |
+| install | ✔     | ✔        |             | 7.7s | 1.8s | 5.1s | 1.2s | 877ms |
 | install | ✔     |          |             | 10.6s | 4.2s | 8.1s | 4s | 830ms |
 | install |       | ✔        |             | 9.6s | 3.8s | 5.2s | 1.1s | 839ms |
 | install | ✔     |          | ✔           | 1s | 1.5s | 4.1s | n/a | 29ms |
@@ -76,15 +76,15 @@ The app's `package.json` [here](./fixtures/medium-size-app/package.json)
 
 | action  | cache | lockfile | node_modules| npm | pnpm | Yarn | Yarn PnP | Bun |
 | ---     | ---   | ---      | ---         | --- | ---  | ---  | ---      | --- |
-| install |       |          |             | 21.5s | 6s | 8.8s | 4.6s | 1.3s |
+| install |       |          |             | 21.5s | 5.8s | 8.8s | 4.6s | 1.3s |
 | install | ✔     | ✔        | ✔           | 1.2s | 743ms | 1.3s | n/a | 33ms |
 | install | ✔     | ✔        |             | 5.8s | 1.9s | 3.9s | 1.1s | 479ms |
-| install | ✔     |          |             | 8.9s | 4.6s | 7s | 4.1s | 477ms |
+| install | ✔     |          |             | 8.9s | 4.2s | 7s | 4.1s | 477ms |
 | install |       | ✔        |             | 8s | 3.7s | 4s | 1.1s | 463ms |
 | install | ✔     |          | ✔           | 1.4s | 1.5s | 4.3s | n/a | 32ms |
 | install |       | ✔        | ✔           | 1.1s | 721ms | 1.3s | n/a | 30ms |
 | install |       |          | ✔           | 1.4s | 3.7s | 4.3s | n/a | 30ms |
-| update  | n/a | n/a | n/a | 1.1s | 3.5s | 6.9s | 4.2s | 40ms |
+| update  | n/a | n/a | n/a | 1.1s | 3.2s | 6.9s | 4.2s | 40ms |
 
 <img alt="Graph of the medium-size-app results" src="results/img/medium-size-app.svg" />
 
