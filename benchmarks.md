@@ -1,6 +1,6 @@
 # Benchmarks of JavaScript Package Managers
 
-**Last benchmarked at**: _22 mars 2025, 07:06_ (_daily_ updated).
+**Last benchmarked at**: _23 mars 2025, 07:06_ (_daily_ updated).
 
 This benchmark compares the performance of npm, pnpm, Yarn Classic, Yarn PnP, and Bun (check [Yarn's benchmarks](https://yarnpkg.com/benchmarks) for any other Yarn modes that are not included here).
 
@@ -42,7 +42,7 @@ The app's `package.json` [here](./fixtures/ember-quickstart/package.json)
 | ---     | ---   | ---      | ---         | --- | ---  | ---  | ---      | --- |
 | install |       |          |             | 20s | 4.7s | 6.4s | 3.6s | 1s |
 | install | ✔     | ✔        | ✔           | 972ms | 692ms | 981ms | n/a | 28ms |
-| install | ✔     | ✔        |             | 3.6s | 1.5s | 2.6s | 852ms | 359ms |
+| install | ✔     | ✔        |             | 3.6s | 1.5s | 2.6s | 852ms | 356ms |
 | install | ✔     |          |             | 6.1s | 3.5s | 5.1s | 3.2s | 361ms |
 | install |       | ✔        |             | 5.5s | 2.8s | 2.7s | 847ms | 335ms |
 | install | ✔     |          | ✔           | 1s | 1.2s | 3.4s | n/a | 27ms |
@@ -77,7 +77,7 @@ The app's `package.json` [here](./fixtures/medium-size-app/package.json)
 | action  | cache | lockfile | node_modules| npm | pnpm | Yarn | Yarn PnP | Bun |
 | ---     | ---   | ---      | ---         | --- | ---  | ---  | ---      | --- |
 | install |       |          |             | 21.5s | 5.8s | 8.8s | 4.6s | 1.3s |
-| install | ✔     | ✔        | ✔           | 1.2s | 743ms | 1.3s | n/a | 33ms |
+| install | ✔     | ✔        | ✔           | 1.2s | 740ms | 1.3s | n/a | 33ms |
 | install | ✔     | ✔        |             | 5.8s | 1.9s | 3.9s | 1.1s | 479ms |
 | install | ✔     |          |             | 8.9s | 4.2s | 7s | 4.1s | 477ms |
 | install |       | ✔        |             | 8s | 3.7s | 4s | 1.1s | 463ms |
@@ -95,7 +95,7 @@ The app's `package.json` [here](./fixtures/alotta-files/package.json)
 | action  | cache | lockfile | node_modules| npm | pnpm | Yarn | Yarn PnP | Bun |
 | ---     | ---   | ---      | ---         | --- | ---  | ---  | ---      | --- |
 | install |       |          |             | 30.8s | 7.4s | 11.5s | 5.4s | 1.7s |
-| install | ✔     | ✔        | ✔           | 1.3s | 793ms | 1.5s | n/a | 41ms |
+| install | ✔     | ✔        | ✔           | 1.3s | 789ms | 1.5s | n/a | 41ms |
 | install | ✔     | ✔        |             | 7.4s | 2.3s | 5.4s | 1.3s | 723ms |
 | install | ✔     |          |             | 11.3s | 5.1s | 9.2s | 4.9s | 718ms |
 | install |       | ✔        |             | 10s | 4.7s | 5.5s | 1.3s | 717ms |
