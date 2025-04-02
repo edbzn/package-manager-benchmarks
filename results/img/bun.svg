@@ -13,22 +13,22 @@
   <rect x="0" y="0" width="306" height="1720.5" fill="#fff"></rect>
   <rect x="46" y="10" width="167" height="4" fill="hsl(0, 100%, 45%)" rx="1" ry="1"></rect>
   <text x="215" y="12" fill="hsl(0, 100%, 20%)" dominant-baseline="middle" class="font s4">1.9s</text>
-  <rect x="46" y="15.5" width="4" height="4" fill="hsl(0, 100%, 45%)" rx="1" ry="1"></rect>
-  <text x="52" y="17.5" fill="hsl(0, 100%, 20%)" dominant-baseline="middle" class="font s4">43ms</text>
-  <rect x="46" y="21" width="64" height="4" fill="hsl(0, 100%, 45%)" rx="1" ry="1"></rect>
-  <text x="112" y="23" fill="hsl(0, 100%, 20%)" dominant-baseline="middle" class="font s4">749ms</text>
-  <rect x="46" y="26.5" width="64" height="4" fill="hsl(0, 100%, 45%)" rx="1" ry="1"></rect>
-  <text x="112" y="28.5" fill="hsl(0, 100%, 20%)" dominant-baseline="middle" class="font s4">744ms</text>
-  <rect x="46" y="32" width="63" height="4" fill="hsl(0, 100%, 45%)" rx="1" ry="1"></rect>
-  <text x="111" y="34" fill="hsl(0, 100%, 20%)" dominant-baseline="middle" class="font s4">740ms</text>
-  <rect x="46" y="37.5" width="4" height="4" fill="hsl(0, 100%, 45%)" rx="1" ry="1"></rect>
-  <text x="52" y="39.5" fill="hsl(0, 100%, 20%)" dominant-baseline="middle" class="font s4">42ms</text>
+  <rect x="46" y="15.5" width="3" height="4" fill="hsl(0, 100%, 45%)" rx="1" ry="1"></rect>
+  <text x="51" y="17.5" fill="hsl(0, 100%, 20%)" dominant-baseline="middle" class="font s4">40ms</text>
+  <rect x="46" y="21" width="63" height="4" fill="hsl(0, 100%, 45%)" rx="1" ry="1"></rect>
+  <text x="111" y="23" fill="hsl(0, 100%, 20%)" dominant-baseline="middle" class="font s4">741ms</text>
+  <rect x="46" y="26.5" width="63" height="4" fill="hsl(0, 100%, 45%)" rx="1" ry="1"></rect>
+  <text x="111" y="28.5" fill="hsl(0, 100%, 20%)" dominant-baseline="middle" class="font s4">742ms</text>
+  <rect x="46" y="32" width="62" height="4" fill="hsl(0, 100%, 45%)" rx="1" ry="1"></rect>
+  <text x="110" y="34" fill="hsl(0, 100%, 20%)" dominant-baseline="middle" class="font s4">723ms</text>
+  <rect x="46" y="37.5" width="3" height="4" fill="hsl(0, 100%, 45%)" rx="1" ry="1"></rect>
+  <text x="51" y="39.5" fill="hsl(0, 100%, 20%)" dominant-baseline="middle" class="font s4">40ms</text>
   <rect x="46" y="43" width="3" height="4" fill="hsl(0, 100%, 45%)" rx="1" ry="1"></rect>
-  <text x="51" y="45" fill="hsl(0, 100%, 20%)" dominant-baseline="middle" class="font s4">38ms</text>
+  <text x="51" y="45" fill="hsl(0, 100%, 20%)" dominant-baseline="middle" class="font s4">37ms</text>
   <rect x="46" y="48.5" width="3" height="4" fill="hsl(0, 100%, 45%)" rx="1" ry="1"></rect>
-  <text x="51" y="50.5" fill="hsl(0, 100%, 20%)" dominant-baseline="middle" class="font s4">38ms</text>
+  <text x="51" y="50.5" fill="hsl(0, 100%, 20%)" dominant-baseline="middle" class="font s4">37ms</text>
   <rect x="46" y="54" width="9" height="4" fill="hsl(0, 100%, 45%)" rx="1" ry="1"></rect>
-  <text x="57" y="56" fill="hsl(0, 100%, 20%)" dominant-baseline="middle" class="font s4">107ms</text>
+  <text x="57" y="56" fill="hsl(0, 100%, 20%)" dominant-baseline="middle" class="font s4">103ms</text>
   <rect x="46" y="68.5" width="178" height="4" fill="hsl(12.413793103448276, 100%, 45%)" rx="1" ry="1"></rect>
   <text x="226" y="70.5" fill="hsl(12.413793103448276, 100%, 20%)" dominant-baseline="middle" class="font s4">2s</text>
   <rect x="46" y="74" width="3" height="4" fill="hsl(12.413793103448276, 100%, 45%)" rx="1" ry="1"></rect>
@@ -823,5 +823,5 @@
   <text x="44" y="1683" class="font s4" dominant-baseline="middle" text-anchor="end">node_modules + lockfile</text>
   <text x="44" y="1688.5" class="font s4" dominant-baseline="middle" text-anchor="end">node_modules</text>
   <text x="44" y="1694" class="font s4" dominant-baseline="middle" text-anchor="end">update</text>
-  <text x="296" y="1718.5" class="font s4 text" text-anchor="end">Tests were run using bun with Node.js v23.10.0 at: 1 avr. 2025, 07:21</text>
+  <text x="296" y="1718.5" class="font s4 text" text-anchor="end">Tests were run using bun with Node.js v23.11.0 at: 2 avr. 2025, 07:21</text>
 </svg>
