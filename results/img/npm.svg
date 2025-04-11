@@ -15,12 +15,12 @@
   <text x="154" y="12" fill="hsl(0, 100%, 20%)" dominant-baseline="middle" class="font s4">30.5s</text>
   <rect x="46" y="15.5" width="5" height="4" fill="hsl(0, 100%, 45%)" rx="1" ry="1"></rect>
   <text x="53" y="17.5" fill="hsl(0, 100%, 20%)" dominant-baseline="middle" class="font s4">1.3s</text>
-  <rect x="46" y="21" width="27" height="4" fill="hsl(0, 100%, 45%)" rx="1" ry="1"></rect>
-  <text x="75" y="23" fill="hsl(0, 100%, 20%)" dominant-baseline="middle" class="font s4">7.7s</text>
+  <rect x="46" y="21" width="26" height="4" fill="hsl(0, 100%, 45%)" rx="1" ry="1"></rect>
+  <text x="74" y="23" fill="hsl(0, 100%, 20%)" dominant-baseline="middle" class="font s4">7.5s</text>
   <rect x="46" y="26.5" width="41" height="4" fill="hsl(0, 100%, 45%)" rx="1" ry="1"></rect>
   <text x="89" y="28.5" fill="hsl(0, 100%, 20%)" dominant-baseline="middle" class="font s4">11.9s</text>
   <rect x="46" y="32" width="37" height="4" fill="hsl(0, 100%, 45%)" rx="1" ry="1"></rect>
-  <text x="85" y="34" fill="hsl(0, 100%, 20%)" dominant-baseline="middle" class="font s4">10.6s</text>
+  <text x="85" y="34" fill="hsl(0, 100%, 20%)" dominant-baseline="middle" class="font s4">10.5s</text>
   <rect x="46" y="37.5" width="6" height="4" fill="hsl(0, 100%, 45%)" rx="1" ry="1"></rect>
   <text x="54" y="39.5" fill="hsl(0, 100%, 20%)" dominant-baseline="middle" class="font s4">1.6s</text>
   <rect x="46" y="43" width="5" height="4" fill="hsl(0, 100%, 45%)" rx="1" ry="1"></rect>
@@ -3163,5 +3163,5 @@
   <text x="44" y="6597" class="font s4" dominant-baseline="middle" text-anchor="end">node_modules + lockfile</text>
   <text x="44" y="6602.5" class="font s4" dominant-baseline="middle" text-anchor="end">node_modules</text>
   <text x="44" y="6608" class="font s4" dominant-baseline="middle" text-anchor="end">update</text>
-  <text x="296" y="6632.5" class="font s4 text" text-anchor="end">Tests were run using npm with Node.js v23.11.0 at: 10 avr. 2025, 07:21</text>
+  <text x="296" y="6632.5" class="font s4 text" text-anchor="end">Tests were run using npm with Node.js v23.11.0 at: 11 avr. 2025, 07:20</text>
 </svg>
