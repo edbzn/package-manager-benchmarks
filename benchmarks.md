@@ -1,6 +1,6 @@
 # Benchmarks of JavaScript Package Managers
 
-**Last benchmarked at**: _18 avr. 2025, 07:07_ (_daily_ updated).
+**Last benchmarked at**: _19 avr. 2025, 07:06_ (_daily_ updated).
 
 This benchmark compares the performance of npm, pnpm, Yarn Classic, Yarn PnP, and Bun (check [Yarn's benchmarks](https://yarnpkg.com/benchmarks) for any other Yarn modes that are not included here).
 
@@ -27,10 +27,10 @@ The app's `package.json` [here](./fixtures/react-app/package.json)
 | install | ✔     | ✔        |             | 4.9s | 1.7s | 3.4s | 975ms | 457ms |
 | install | ✔     |          |             | 8.2s | 4.4s | 6.7s | 4.1s | 440ms |
 | install |       | ✔        |             | 7.2s | 3.4s | 3.5s | 981ms | 425ms |
-| install | ✔     |          | ✔           | 1.4s | 1.6s | 4.5s | n/a | 33ms |
+| install | ✔     |          | ✔           | 1.4s | 1.6s | 4.4s | n/a | 33ms |
 | install |       | ✔        | ✔           | 1.2s | 743ms | 1.1s | n/a | 31ms |
 | install |       |          | ✔           | 1.4s | 3.6s | 4.4s | n/a | 31ms |
-| update  | n/a | n/a | n/a | 1.2s | 3.5s | 12.9s | 6.3s | 36ms |
+| update  | n/a | n/a | n/a | 1.2s | 3.5s | 12.9s | 6.3s | 35ms |
 
 <img alt="Graph of the react-app results" src="results/img/react-app.svg" />
 
@@ -46,9 +46,9 @@ The app's `package.json` [here](./fixtures/ember-quickstart/package.json)
 | install | ✔     |          |             | 6.1s | 3.5s | 5.2s | 3.2s | 368ms |
 | install |       | ✔        |             | 5.4s | 2.9s | 2.7s | 837ms | 343ms |
 | install | ✔     |          | ✔           | 1s | 1.2s | 3.4s | n/a | 27ms |
-| install |       | ✔        | ✔           | 909ms | 669ms | 957ms | n/a | 26ms |
-| install |       |          | ✔           | 1s | 2.7s | 3.4s | n/a | 26ms |
-| update  | n/a | n/a | n/a | 899ms | 2.6s | 8.9s | 4.6s | 28ms |
+| install |       | ✔        | ✔           | 909ms | 663ms | 957ms | n/a | 25ms |
+| install |       |          | ✔           | 1s | 2.7s | 3.4s | n/a | 25ms |
+| update  | n/a | n/a | n/a | 899ms | 2.6s | 8.9s | 4.6s | 27ms |
 
 <img alt="Graph of the ember-quickstart results" src="results/img/ember-quickstart.svg" />
 
