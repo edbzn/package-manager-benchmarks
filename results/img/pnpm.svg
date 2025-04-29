@@ -25,8 +25,8 @@
   <text x="61" y="39.5" fill="hsl(0, 100%, 20%)" dominant-baseline="middle" class="font s4">2s</text>
   <rect x="46" y="43" width="5" height="4" fill="hsl(0, 100%, 45%)" rx="1" ry="1"></rect>
   <text x="53" y="45" fill="hsl(0, 100%, 20%)" dominant-baseline="middle" class="font s4">830ms</text>
-  <rect x="46" y="48.5" width="36" height="4" fill="hsl(0, 100%, 45%)" rx="1" ry="1"></rect>
-  <text x="84" y="50.5" fill="hsl(0, 100%, 20%)" dominant-baseline="middle" class="font s4">5.6s</text>
+  <rect x="46" y="48.5" width="34" height="4" fill="hsl(0, 100%, 45%)" rx="1" ry="1"></rect>
+  <text x="82" y="50.5" fill="hsl(0, 100%, 20%)" dominant-baseline="middle" class="font s4">5.3s</text>
   <rect x="46" y="54" width="26" height="4" fill="hsl(0, 100%, 45%)" rx="1" ry="1"></rect>
   <text x="74" y="56" fill="hsl(0, 100%, 20%)" dominant-baseline="middle" class="font s4">4.1s</text>
   <rect x="46" y="68.5" width="50" height="4" fill="hsl(1.6143497757847534, 100%, 45%)" rx="1" ry="1"></rect>
@@ -6224,5 +6224,5 @@
   <text x="44" y="13032" class="font s4" dominant-baseline="middle" text-anchor="end">node_modules + lockfile</text>
   <text x="44" y="13037.5" class="font s4" dominant-baseline="middle" text-anchor="end">node_modules</text>
   <text x="44" y="13043" class="font s4" dominant-baseline="middle" text-anchor="end">update</text>
-  <text x="296" y="13067.5" class="font s4 text" text-anchor="end">Tests were run using pnpm with Node.js v23.11.0 at: 28 avr. 2025, 07:37</text>
+  <text x="296" y="13067.5" class="font s4 text" text-anchor="end">Tests were run using pnpm with Node.js v23.11.0 at: 29 avr. 2025, 07:23</text>
 </svg>
