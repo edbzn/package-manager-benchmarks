@@ -11,8 +11,8 @@
     .bold { font-weight: bold; }
   </style>
   <rect x="0" y="0" width="306" height="13128" fill="#fff"></rect>
-  <rect x="46" y="10" width="50" height="4" fill="hsl(0, 100%, 45%)" rx="1" ry="1"></rect>
-  <text x="98" y="12" fill="hsl(0, 100%, 20%)" dominant-baseline="middle" class="font s4">7.8s</text>
+  <rect x="46" y="10" width="49" height="4" fill="hsl(0, 100%, 45%)" rx="1" ry="1"></rect>
+  <text x="97" y="12" fill="hsl(0, 100%, 20%)" dominant-baseline="middle" class="font s4">7.8s</text>
   <rect x="46" y="15.5" width="5" height="4" fill="hsl(0, 100%, 45%)" rx="1" ry="1"></rect>
   <text x="53" y="17.5" fill="hsl(0, 100%, 20%)" dominant-baseline="middle" class="font s4">803ms</text>
   <rect x="46" y="21" width="15" height="4" fill="hsl(0, 100%, 45%)" rx="1" ry="1"></rect>
@@ -6252,5 +6252,5 @@
   <text x="44" y="13090.5" class="font s4" dominant-baseline="middle" text-anchor="end">node_modules + lockfile</text>
   <text x="44" y="13096" class="font s4" dominant-baseline="middle" text-anchor="end">node_modules</text>
   <text x="44" y="13101.5" class="font s4" dominant-baseline="middle" text-anchor="end">update</text>
-  <text x="296" y="13126" class="font s4 text" text-anchor="end">Tests were run using pnpm with Node.js v23.11.1 at: 20 mai 2025, 07:16</text>
+  <text x="296" y="13126" class="font s4 text" text-anchor="end">Tests were run using pnpm with Node.js v23.11.1 at: 21 mai 2025, 07:16</text>
 </svg>
