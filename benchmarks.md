@@ -1,6 +1,6 @@
 # Benchmarks of JavaScript Package Managers
 
-**Last benchmarked at**: _25 mai 2025, 07:06_ (_daily_ updated).
+**Last benchmarked at**: _26 mai 2025, 07:10_ (_daily_ updated).
 
 This benchmark compares the performance of npm, pnpm, Yarn Classic, Yarn PnP, and Bun (check [Yarn's benchmarks](https://yarnpkg.com/benchmarks) for any other Yarn modes that are not included here).
 
@@ -27,7 +27,7 @@ The app's `package.json` [here](./fixtures/react-app/package.json)
 | install | ✔     | ✔        |             | 4.9s | 1.7s | 3.4s | 974ms | 437ms |
 | install | ✔     |          |             | 8.3s | 4.3s | 6.7s | 4.1s | 417ms |
 | install |       | ✔        |             | 7.3s | 3.4s | 3.5s | 969ms | 414ms |
-| install | ✔     |          | ✔           | 1.5s | 1.6s | 4.4s | n/a | 34ms |
+| install | ✔     |          | ✔           | 1.4s | 1.6s | 4.4s | n/a | 34ms |
 | install |       | ✔        | ✔           | 1.2s | 772ms | 1.1s | n/a | 31ms |
 | install |       |          | ✔           | 1.4s | 3.4s | 4.4s | n/a | 31ms |
 | update  | n/a | n/a | n/a | 1.2s | 3.3s | 12.7s | 6.3s | 35ms |
@@ -46,7 +46,7 @@ The app's `package.json` [here](./fixtures/ember-quickstart/package.json)
 | install | ✔     |          |             | 6.2s | 3.5s | 5.2s | 3.2s | 341ms |
 | install |       | ✔        |             | 5.7s | 2.7s | 2.7s | 837ms | 340ms |
 | install | ✔     |          | ✔           | 1.1s | 1.2s | 3.4s | n/a | 27ms |
-| install |       | ✔        | ✔           | 957ms | 661ms | 957ms | n/a | 25ms |
+| install |       | ✔        | ✔           | 952ms | 661ms | 957ms | n/a | 25ms |
 | install |       |          | ✔           | 1.1s | 2.5s | 3.4s | n/a | 24ms |
 | update  | n/a | n/a | n/a | 939ms | 2.6s | 8.8s | 4.5s | 28ms |
 
@@ -58,7 +58,7 @@ The app's `package.json` [here](./fixtures/angular-quickstart/package.json)
 
 | action  | cache | lockfile | node_modules| npm | pnpm | Yarn | Yarn PnP | Bun |
 | ---     | ---   | ---      | ---         | --- | ---  | ---  | ---      | --- |
-| install |       |          |             | 21.3s | 6s | 11.6s | 4.4s | 1.7s |
+| install |       |          |             | 20s | 6s | 11.6s | 4.4s | 1.7s |
 | install | ✔     | ✔        | ✔           | 901ms | 761ms | 1.3s | n/a | 29ms |
 | install | ✔     | ✔        |             | 7.7s | 1.8s | 5.1s | 1.1s | 857ms |
 | install | ✔     |          |             | 10.7s | 4.2s | 7.9s | 4s | 826ms |
@@ -79,8 +79,8 @@ The app's `package.json` [here](./fixtures/medium-size-app/package.json)
 | install |       |          |             | 22.7s | 5.7s | 8.7s | 4.6s | 1.8s |
 | install | ✔     | ✔        | ✔           | 1.2s | 734ms | 1.3s | n/a | 32ms |
 | install | ✔     | ✔        |             | 5.8s | 1.8s | 3.9s | 1.1s | 489ms |
-| install | ✔     |          |             | 8.8s | 4.2s | 7s | 4.1s | 476ms |
-| install |       | ✔        |             | 8s | 3.7s | 3.9s | 1.1s | 474ms |
+| install | ✔     |          |             | 8.8s | 4.2s | 7s | 4.1s | 474ms |
+| install |       | ✔        |             | 8s | 3.7s | 3.9s | 1.1s | 468ms |
 | install | ✔     |          | ✔           | 1.4s | 1.4s | 4.3s | n/a | 30ms |
 | install |       | ✔        | ✔           | 1.1s | 721ms | 1.3s | n/a | 28ms |
 | install |       |          | ✔           | 1.4s | 3.5s | 4.3s | n/a | 28ms |
