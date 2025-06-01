@@ -1,6 +1,6 @@
 # Benchmarks of JavaScript Package Managers
 
-**Last benchmarked at**: _31 mai 2025, 07:07_ (_daily_ updated).
+**Last benchmarked at**: _1 juin 2025, 07:07_ (_daily_ updated).
 
 This benchmark compares the performance of npm, pnpm, Yarn Classic, Yarn PnP, and Bun (check [Yarn's benchmarks](https://yarnpkg.com/benchmarks) for any other Yarn modes that are not included here).
 
@@ -43,7 +43,7 @@ The app's `package.json` [here](./fixtures/ember-quickstart/package.json)
 | install |       |          |             | 18.7s | 4.5s | 6.3s | 3.6s | 1.4s |
 | install | ✔     | ✔        | ✔           | 950ms | 693ms | 962ms | n/a | 28ms |
 | install | ✔     | ✔        |             | 3.7s | 1.5s | 2.6s | 846ms | 334ms |
-| install | ✔     |          |             | 6.2s | 3.5s | 5.2s | 3.2s | 338ms |
+| install | ✔     |          |             | 6.2s | 3.5s | 5.2s | 3.2s | 336ms |
 | install |       | ✔        |             | 5.7s | 2.7s | 2.7s | 837ms | 343ms |
 | install | ✔     |          | ✔           | 1.1s | 1.2s | 3.4s | n/a | 28ms |
 | install |       | ✔        | ✔           | 949ms | 661ms | 957ms | n/a | 25ms |
@@ -102,6 +102,6 @@ The app's `package.json` [here](./fixtures/alotta-files/package.json)
 | install | ✔     |          | ✔           | 1.5s | 1.9s | 5.1s | n/a | 40ms |
 | install |       | ✔        | ✔           | 1.3s | 779ms | 1.5s | n/a | 36ms |
 | install |       |          | ✔           | 1.6s | 4.9s | 5.1s | n/a | 36ms |
-| update  | n/a | n/a | n/a | 1.2s | 3.9s | 6.2s | 5s | 89ms |
+| update  | n/a | n/a | n/a | 1.2s | 3.9s | 6.2s | 5s | 86ms |
 
 <img alt="Graph of the alotta-files results" src="results/img/alotta-files.svg" />
