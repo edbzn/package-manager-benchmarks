@@ -43,7 +43,7 @@
   <text x="290" y="368.5" class="font s5 text" text-anchor="middle">20</text>
   <text x="290" y="20" class="font s4 text" font-style="italic" text-anchor="end">Installation time in seconds (lower is better)</text>
   <rect x="40" y="35" width="248" height="6" fill="#cd3731" rx="1" ry="1"></rect>
-  <rect x="40" y="41.5" width="80" height="6" fill="#fbae00" rx="1" ry="1"></rect>
+  <rect x="40" y="41.5" width="79" height="6" fill="#fbae00" rx="1" ry="1"></rect>
   <rect x="40" y="48" width="124" height="6" fill="#248ebd" rx="1" ry="1"></rect>
   <rect x="40" y="54.5" width="35" height="6" fill="#40a9ff" rx="1" ry="1"></rect>
   <rect x="40" y="61" width="18" height="6" fill="#ff6f00" rx="1" ry="1"></rect>
@@ -58,7 +58,7 @@
   <rect x="40" y="127.5" width="13" height="6" fill="#40a9ff" rx="1" ry="1"></rect>
   <rect x="40" y="134" width="5" height="6" fill="#ff6f00" rx="1" ry="1"></rect>
   <rect x="40" y="144.5" width="104" height="6" fill="#cd3731" rx="1" ry="1"></rect>
-  <rect x="40" y="151" width="59" height="6" fill="#fbae00" rx="1" ry="1"></rect>
+  <rect x="40" y="151" width="57" height="6" fill="#fbae00" rx="1" ry="1"></rect>
   <rect x="40" y="157.5" width="65" height="6" fill="#248ebd" rx="1" ry="1"></rect>
   <rect x="40" y="164" width="30" height="6" fill="#40a9ff" rx="1" ry="1"></rect>
   <rect x="40" y="170.5" width="5" height="6" fill="#ff6f00" rx="1" ry="1"></rect>
@@ -102,5 +102,5 @@
   <text x="38" y="265.5" class="font s4" dominant-baseline="middle" text-anchor="end">with lockfile</text>
   <text x="38" y="300" class="font s4" dominant-baseline="middle" text-anchor="end">with node_modules</text>
   <text x="38" y="336.5" class="font s4" dominant-baseline="middle" text-anchor="end">update</text>
-  <text x="290" y="375.5" class="font s4 text" text-anchor="end">Tests were run using Node.js v23.11.1 at: 4 juin 2025, 07:08</text>
+  <text x="290" y="375.5" class="font s4 text" text-anchor="end">Tests were run using Node.js v23.11.1 at: 5 juin 2025, 07:08</text>
 </svg>
