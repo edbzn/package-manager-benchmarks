@@ -52,3 +52,12 @@
   withWarmModulesAndLockfile: 0
   withWarmModules: 0
   updatedDependencies: 3272
+- firstInstall: 2782
+  repeatInstall: 0
+  withWarmCacheAndLockfile: 1020
+  withWarmCache: 2623
+  withLockfile: 1016
+  withWarmCacheAndModules: 0
+  withWarmModulesAndLockfile: 0
+  withWarmModules: 0
+  updatedDependencies: 3172
