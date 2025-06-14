@@ -13,20 +13,20 @@
   <rect x="0" y="0" width="306" height="2188.5" fill="#fff"></rect>
   <rect x="46" y="10" width="171" height="4" fill="hsl(0, 100%, 45%)" rx="1" ry="1"></rect>
   <text x="219" y="12" fill="hsl(0, 100%, 20%)" dominant-baseline="middle" class="font s4">1.9s</text>
-  <rect x="46" y="15.5" width="4" height="4" fill="hsl(0, 100%, 45%)" rx="1" ry="1"></rect>
-  <text x="52" y="17.5" fill="hsl(0, 100%, 20%)" dominant-baseline="middle" class="font s4">43ms</text>
+  <rect x="46" y="15.5" width="3" height="4" fill="hsl(0, 100%, 45%)" rx="1" ry="1"></rect>
+  <text x="51" y="17.5" fill="hsl(0, 100%, 20%)" dominant-baseline="middle" class="font s4">40ms</text>
   <rect x="46" y="21" width="62" height="4" fill="hsl(0, 100%, 45%)" rx="1" ry="1"></rect>
   <text x="110" y="23" fill="hsl(0, 100%, 20%)" dominant-baseline="middle" class="font s4">720ms</text>
   <rect x="46" y="26.5" width="62" height="4" fill="hsl(0, 100%, 45%)" rx="1" ry="1"></rect>
-  <text x="110" y="28.5" fill="hsl(0, 100%, 20%)" dominant-baseline="middle" class="font s4">724ms</text>
-  <rect x="46" y="32" width="62" height="4" fill="hsl(0, 100%, 45%)" rx="1" ry="1"></rect>
-  <text x="110" y="34" fill="hsl(0, 100%, 20%)" dominant-baseline="middle" class="font s4">722ms</text>
+  <text x="110" y="28.5" fill="hsl(0, 100%, 20%)" dominant-baseline="middle" class="font s4">723ms</text>
+  <rect x="46" y="32" width="61" height="4" fill="hsl(0, 100%, 45%)" rx="1" ry="1"></rect>
+  <text x="109" y="34" fill="hsl(0, 100%, 20%)" dominant-baseline="middle" class="font s4">717ms</text>
   <rect x="46" y="37.5" width="4" height="4" fill="hsl(0, 100%, 45%)" rx="1" ry="1"></rect>
   <text x="52" y="39.5" fill="hsl(0, 100%, 20%)" dominant-baseline="middle" class="font s4">41ms</text>
   <rect x="46" y="43" width="3" height="4" fill="hsl(0, 100%, 45%)" rx="1" ry="1"></rect>
-  <text x="51" y="45" fill="hsl(0, 100%, 20%)" dominant-baseline="middle" class="font s4">38ms</text>
+  <text x="51" y="45" fill="hsl(0, 100%, 20%)" dominant-baseline="middle" class="font s4">35ms</text>
   <rect x="46" y="48.5" width="3" height="4" fill="hsl(0, 100%, 45%)" rx="1" ry="1"></rect>
-  <text x="51" y="50.5" fill="hsl(0, 100%, 20%)" dominant-baseline="middle" class="font s4">37ms</text>
+  <text x="51" y="50.5" fill="hsl(0, 100%, 20%)" dominant-baseline="middle" class="font s4">36ms</text>
   <rect x="46" y="54" width="8" height="4" fill="hsl(0, 100%, 45%)" rx="1" ry="1"></rect>
   <text x="56" y="56" fill="hsl(0, 100%, 20%)" dominant-baseline="middle" class="font s4">92ms</text>
   <rect x="46" y="68.5" width="142" height="4" fill="hsl(9.72972972972973, 100%, 45%)" rx="1" ry="1"></rect>
@@ -1047,5 +1047,5 @@
   <text x="44" y="2151" class="font s4" dominant-baseline="middle" text-anchor="end">node_modules + lockfile</text>
   <text x="44" y="2156.5" class="font s4" dominant-baseline="middle" text-anchor="end">node_modules</text>
   <text x="44" y="2162" class="font s4" dominant-baseline="middle" text-anchor="end">update</text>
-  <text x="296" y="2186.5" class="font s4 text" text-anchor="end">Tests were run using bun with Node.js v23.11.1 at: 13 juin 2025, 07:20</text>
+  <text x="296" y="2186.5" class="font s4 text" text-anchor="end">Tests were run using bun with Node.js v23.11.1 at: 14 juin 2025, 07:19</text>
 </svg>
