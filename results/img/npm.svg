@@ -16,7 +16,7 @@
   <rect x="46" y="15.5" width="4" height="4" fill="hsl(0, 100%, 45%)" rx="1" ry="1"></rect>
   <text x="52" y="17.5" fill="hsl(0, 100%, 20%)" dominant-baseline="middle" class="font s4">1.2s</text>
   <rect x="46" y="21" width="26" height="4" fill="hsl(0, 100%, 45%)" rx="1" ry="1"></rect>
-  <text x="74" y="23" fill="hsl(0, 100%, 20%)" dominant-baseline="middle" class="font s4">7.6s</text>
+  <text x="74" y="23" fill="hsl(0, 100%, 20%)" dominant-baseline="middle" class="font s4">7.5s</text>
   <rect x="46" y="26.5" width="40" height="4" fill="hsl(0, 100%, 45%)" rx="1" ry="1"></rect>
   <text x="88" y="28.5" fill="hsl(0, 100%, 20%)" dominant-baseline="middle" class="font s4">11.5s</text>
   <rect x="46" y="32" width="36" height="4" fill="hsl(0, 100%, 45%)" rx="1" ry="1"></rect>
@@ -3247,5 +3247,5 @@
   <text x="44" y="6772.5" class="font s4" dominant-baseline="middle" text-anchor="end">node_modules + lockfile</text>
   <text x="44" y="6778" class="font s4" dominant-baseline="middle" text-anchor="end">node_modules</text>
   <text x="44" y="6783.5" class="font s4" dominant-baseline="middle" text-anchor="end">update</text>
-  <text x="296" y="6808" class="font s4 text" text-anchor="end">Tests were run using npm with Node.js v23.11.1 at: 26 juin 2025, 07:21</text>
+  <text x="296" y="6808" class="font s4 text" text-anchor="end">Tests were run using npm with Node.js v23.11.1 at: 27 juin 2025, 07:20</text>
 </svg>
