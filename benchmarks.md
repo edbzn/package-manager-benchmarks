@@ -1,6 +1,6 @@
 # Benchmarks of JavaScript Package Managers
 
-**Last benchmarked at**: _27 juin 2025, 07:08_ (_daily_ updated).
+**Last benchmarked at**: _28 juin 2025, 07:07_ (_daily_ updated).
 
 This benchmark compares the performance of npm, pnpm, Yarn Classic, Yarn PnP, and Bun (check [Yarn's benchmarks](https://yarnpkg.com/benchmarks) for any other Yarn modes that are not included here).
 
@@ -24,13 +24,13 @@ The app's `package.json` [here](./fixtures/react-app/package.json)
 | ---     | ---   | ---      | ---         | --- | ---  | ---  | ---      | --- |
 | install |       |          |             | 19.6s | 6.6s | 9.7s | 2.6s | 1.3s |
 | install | ✔     | ✔        | ✔           | 1.2s | 645ms | 1.2s | n/a | 35ms |
-| install | ✔     | ✔        |             | 5s | 1.8s | 3.6s | 982ms | 451ms |
+| install | ✔     | ✔        |             | 5s | 1.7s | 3.6s | 982ms | 451ms |
 | install | ✔     |          |             | 8.3s | 4.5s | 5s | 2.2s | 428ms |
 | install |       | ✔        |             | 7.3s | 3.5s | 3.6s | 973ms | 428ms |
 | install | ✔     |          | ✔           | 1.4s | 1.5s | 2.5s | n/a | 34ms |
-| install |       | ✔        | ✔           | 1.2s | 695ms | 1.2s | n/a | 30ms |
+| install |       | ✔        | ✔           | 1.2s | 676ms | 1.2s | n/a | 30ms |
 | install |       |          | ✔           | 1.5s | 3.5s | 2.5s | n/a | 30ms |
-| update  | n/a | n/a | n/a | 1.2s | 3.7s | 11.8s | 3s | 35ms |
+| update  | n/a | n/a | n/a | 1.2s | 3.6s | 11.8s | 3s | 35ms |
 
 <img alt="Graph of the react-app results" src="results/img/react-app.svg" />
 
@@ -40,15 +40,15 @@ The app's `package.json` [here](./fixtures/ember-quickstart/package.json)
 
 | action  | cache | lockfile | node_modules| npm | pnpm | Yarn | Yarn PnP | Bun |
 | ---     | ---   | ---      | ---         | --- | ---  | ---  | ---      | --- |
-| install |       |          |             | 17.5s | 5.1s | 5.6s | 2.3s | 1.1s |
+| install |       |          |             | 17.5s | 5.1s | 5.6s | 2.2s | 1.1s |
 | install | ✔     | ✔        | ✔           | 946ms | 580ms | 1s | n/a | 27ms |
 | install | ✔     | ✔        |             | 3.7s | 1.5s | 2.7s | 865ms | 350ms |
-| install | ✔     |          |             | 6.2s | 3.9s | 3.8s | 1.9s | 353ms |
+| install | ✔     |          |             | 6.2s | 3.6s | 3.8s | 1.9s | 353ms |
 | install |       | ✔        |             | 5.6s | 3s | 2.7s | 867ms | 341ms |
 | install | ✔     |          | ✔           | 1s | 1.2s | 2.1s | n/a | 27ms |
-| install |       | ✔        | ✔           | 942ms | 545ms | 1s | n/a | 25ms |
+| install |       | ✔        | ✔           | 942ms | 545ms | 1s | n/a | 24ms |
 | install |       |          | ✔           | 1.1s | 2.6s | 2s | n/a | 24ms |
-| update  | n/a | n/a | n/a | 948ms | 3.3s | 7.8s | 2.7s | 27ms |
+| update  | n/a | n/a | n/a | 948ms | 2.7s | 7.8s | 2.7s | 27ms |
 
 <img alt="Graph of the ember-quickstart results" src="results/img/ember-quickstart.svg" />
 
@@ -58,14 +58,14 @@ The app's `package.json` [here](./fixtures/angular-quickstart/package.json)
 
 | action  | cache | lockfile | node_modules| npm | pnpm | Yarn | Yarn PnP | Bun |
 | ---     | ---   | ---      | ---         | --- | ---  | ---  | ---      | --- |
-| install |       |          |             | 21s | 6.5s | 10.7s | 2.7s | 1.8s |
+| install |       |          |             | 21s | 6.5s | 10.7s | 2.7s | 1.7s |
 | install | ✔     | ✔        | ✔           | 904ms | 666ms | 1.3s | n/a | 30ms |
 | install | ✔     | ✔        |             | 7.7s | 1.8s | 5.2s | 1.2s | 856ms |
 | install | ✔     |          |             | 10.8s | 4.3s | 6.4s | 2.3s | 817ms |
 | install |       | ✔        |             | 9.7s | 3.8s | 5.2s | 1.2s | 835ms |
 | install | ✔     |          | ✔           | 1s | 1.4s | 2.5s | n/a | 29ms |
-| install |       | ✔        | ✔           | 914ms | 640ms | 1.3s | n/a | 26ms |
-| install |       |          | ✔           | 1s | 4.2s | 2.4s | n/a | 26ms |
+| install |       | ✔        | ✔           | 913ms | 640ms | 1.3s | n/a | 26ms |
+| install |       |          | ✔           | 1s | 3.9s | 2.4s | n/a | 26ms |
 | update  | n/a | n/a | n/a | 910ms | 3.4s | 9.1s | 2.5s | 33ms |
 
 <img alt="Graph of the angular-quickstart results" src="results/img/angular-quickstart.svg" />
@@ -78,11 +78,11 @@ The app's `package.json` [here](./fixtures/medium-size-app/package.json)
 | ---     | ---   | ---      | ---         | --- | ---  | ---  | ---      | --- |
 | install |       |          |             | 22.8s | 6.3s | 7.4s | 2.8s | 1.3s |
 | install | ✔     | ✔        | ✔           | 1.2s | 632ms | 1.3s | n/a | 31ms |
-| install | ✔     | ✔        |             | 5.9s | 1.9s | 4s | 1.1s | 477ms |
-| install | ✔     |          |             | 9s | 4.3s | 5.4s | 2.4s | 474ms |
-| install |       | ✔        |             | 8.1s | 3.8s | 4.1s | 1.1s | 464ms |
-| install | ✔     |          | ✔           | 1.4s | 1.5s | 2.7s | n/a | 31ms |
-| install |       | ✔        | ✔           | 1.2s | 616ms | 1.3s | n/a | 28ms |
+| install | ✔     | ✔        |             | 5.9s | 1.8s | 4s | 1.1s | 475ms |
+| install | ✔     |          |             | 9s | 4.3s | 5.4s | 2.4s | 472ms |
+| install |       | ✔        |             | 8.1s | 3.8s | 4.1s | 1.1s | 460ms |
+| install | ✔     |          | ✔           | 1.4s | 1.4s | 2.7s | n/a | 31ms |
+| install |       | ✔        | ✔           | 1.2s | 610ms | 1.3s | n/a | 28ms |
 | install |       |          | ✔           | 1.4s | 3.8s | 2.6s | n/a | 28ms |
 | update  | n/a | n/a | n/a | 1.2s | 3.3s | 5.4s | 2.3s | 40ms |
 
@@ -97,10 +97,10 @@ The app's `package.json` [here](./fixtures/alotta-files/package.json)
 | install |       |          |             | 30.8s | 8s | 9.9s | 3.3s | 1.8s |
 | install | ✔     | ✔        | ✔           | 1.2s | 671ms | 1.5s | n/a | 39ms |
 | install | ✔     | ✔        |             | 7.5s | 2.3s | 5.5s | 1.3s | 702ms |
-| install | ✔     |          |             | 11.5s | 5.7s | 7.2s | 2.8s | 710ms |
+| install | ✔     |          |             | 11.5s | 5.5s | 7.2s | 2.8s | 710ms |
 | install |       | ✔        |             | 10.2s | 4.9s | 5.6s | 1.3s | 713ms |
 | install | ✔     |          | ✔           | 1.5s | 1.8s | 3s | n/a | 39ms |
-| install |       | ✔        | ✔           | 1.2s | 684ms | 1.5s | n/a | 36ms |
+| install |       | ✔        | ✔           | 1.2s | 669ms | 1.5s | n/a | 36ms |
 | install |       |          | ✔           | 1.5s | 5s | 3s | n/a | 36ms |
 | update  | n/a | n/a | n/a | 1.2s | 4.2s | 5.3s | 2.8s | 84ms |
 
