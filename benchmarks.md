@@ -1,6 +1,6 @@
 # Benchmarks of JavaScript Package Managers
 
-**Last benchmarked at**: _1 juil. 2025, 07:08_ (_daily_ updated).
+**Last benchmarked at**: _2 juil. 2025, 07:08_ (_daily_ updated).
 
 This benchmark compares the performance of npm, pnpm, Yarn Classic, Yarn PnP, and Bun (check [Yarn's benchmarks](https://yarnpkg.com/benchmarks) for any other Yarn modes that are not included here).
 
@@ -40,15 +40,15 @@ The app's `package.json` [here](./fixtures/ember-quickstart/package.json)
 
 | action  | cache | lockfile | node_modules| npm | pnpm | Yarn | Yarn PnP | Bun |
 | ---     | ---   | ---      | ---         | --- | ---  | ---  | ---      | --- |
-| install |       |          |             | 17.5s | 4.9s | 5.6s | 2.2s | 1.1s |
-| install | ✔     | ✔        | ✔           | 946ms | 568ms | 1s | n/a | 27ms |
+| install |       |          |             | 17.5s | 4.8s | 5.6s | 2.2s | 1s |
+| install | ✔     | ✔        | ✔           | 945ms | 568ms | 1s | n/a | 27ms |
 | install | ✔     | ✔        |             | 3.7s | 1.5s | 2.7s | 862ms | 334ms |
 | install | ✔     |          |             | 6.1s | 3.6s | 3.8s | 1.9s | 336ms |
-| install |       | ✔        |             | 5.5s | 2.9s | 2.7s | 867ms | 341ms |
+| install |       | ✔        |             | 5.5s | 2.8s | 2.7s | 867ms | 341ms |
 | install | ✔     |          | ✔           | 1s | 1.2s | 2s | n/a | 27ms |
 | install |       | ✔        | ✔           | 931ms | 545ms | 1s | n/a | 24ms |
 | install |       |          | ✔           | 1s | 2.6s | 2s | n/a | 24ms |
-| update  | n/a | n/a | n/a | 943ms | 2.7s | 7.8s | 2.7s | 27ms |
+| update  | n/a | n/a | n/a | 943ms | 2.6s | 7.8s | 2.7s | 27ms |
 
 <img alt="Graph of the ember-quickstart results" src="results/img/ember-quickstart.svg" />
 
