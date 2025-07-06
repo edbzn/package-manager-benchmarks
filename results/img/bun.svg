@@ -13,10 +13,10 @@
   <rect x="0" y="0" width="306" height="2305.5" fill="#fff"></rect>
   <rect x="46" y="10" width="184" height="4" fill="hsl(0, 100%, 45%)" rx="1" ry="1"></rect>
   <text x="232" y="12" fill="hsl(0, 100%, 20%)" dominant-baseline="middle" class="font s4">2.1s</text>
-  <rect x="46" y="15.5" width="7" height="4" fill="hsl(0, 100%, 45%)" rx="1" ry="1"></rect>
-  <text x="55" y="17.5" fill="hsl(0, 100%, 20%)" dominant-baseline="middle" class="font s4">78ms</text>
-  <rect x="46" y="21" width="62" height="4" fill="hsl(0, 100%, 45%)" rx="1" ry="1"></rect>
-  <text x="110" y="23" fill="hsl(0, 100%, 20%)" dominant-baseline="middle" class="font s4">724ms</text>
+  <rect x="46" y="15.5" width="6" height="4" fill="hsl(0, 100%, 45%)" rx="1" ry="1"></rect>
+  <text x="54" y="17.5" fill="hsl(0, 100%, 20%)" dominant-baseline="middle" class="font s4">72ms</text>
+  <rect x="46" y="21" width="61" height="4" fill="hsl(0, 100%, 45%)" rx="1" ry="1"></rect>
+  <text x="109" y="23" fill="hsl(0, 100%, 20%)" dominant-baseline="middle" class="font s4">713ms</text>
   <rect x="46" y="26.5" width="61" height="4" fill="hsl(0, 100%, 45%)" rx="1" ry="1"></rect>
   <text x="109" y="28.5" fill="hsl(0, 100%, 20%)" dominant-baseline="middle" class="font s4">711ms</text>
   <rect x="46" y="32" width="61" height="4" fill="hsl(0, 100%, 45%)" rx="1" ry="1"></rect>
@@ -1103,5 +1103,5 @@
   <text x="44" y="2268" class="font s4" dominant-baseline="middle" text-anchor="end">node_modules + lockfile</text>
   <text x="44" y="2273.5" class="font s4" dominant-baseline="middle" text-anchor="end">node_modules</text>
   <text x="44" y="2279" class="font s4" dominant-baseline="middle" text-anchor="end">update</text>
-  <text x="296" y="2303.5" class="font s4 text" text-anchor="end">Tests were run using bun with Node.js v23.11.1 at: 5 juil. 2025, 07:16</text>
+  <text x="296" y="2303.5" class="font s4 text" text-anchor="end">Tests were run using bun with Node.js v23.11.1 at: 6 juil. 2025, 07:16</text>
 </svg>
