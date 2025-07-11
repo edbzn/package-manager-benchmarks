@@ -1,6 +1,6 @@
 # Benchmarks of JavaScript Package Managers
 
-**Last benchmarked at**: _10 juil. 2025, 07:09_ (_daily_ updated).
+**Last benchmarked at**: _11 juil. 2025, 07:09_ (_daily_ updated).
 
 This benchmark compares the performance of npm, pnpm, Yarn Classic, Yarn PnP, and Bun (check [Yarn's benchmarks](https://yarnpkg.com/benchmarks) for any other Yarn modes that are not included here).
 
@@ -22,7 +22,7 @@ The app's `package.json` [here](./fixtures/react-app/package.json)
 
 | action  | cache | lockfile | node_modules| npm | pnpm | Yarn | Yarn PnP | Bun |
 | ---     | ---   | ---      | ---         | --- | ---  | ---  | ---      | --- |
-| install |       |          |             | 19.6s | 6.4s | 9.6s | 2.6s | 1.5s |
+| install |       |          |             | 19.6s | 6.3s | 9.6s | 2.6s | 1.5s |
 | install | ✔     | ✔        | ✔           | 1.2s | 650ms | 1.2s | n/a | 35ms |
 | install | ✔     | ✔        |             | 5s | 1.7s | 3.6s | 982ms | 453ms |
 | install | ✔     |          |             | 8.3s | 4.6s | 5s | 2.2s | 428ms |
@@ -30,7 +30,7 @@ The app's `package.json` [here](./fixtures/react-app/package.json)
 | install | ✔     |          | ✔           | 1.4s | 1.4s | 2.5s | n/a | 35ms |
 | install |       | ✔        | ✔           | 1.2s | 609ms | 1.2s | n/a | 32ms |
 | install |       |          | ✔           | 1.4s | 3.3s | 2.5s | n/a | 31ms |
-| update  | n/a | n/a | n/a | 1.2s | 3.6s | 11.8s | 3s | 35ms |
+| update  | n/a | n/a | n/a | 1.2s | 3.5s | 11.8s | 3s | 35ms |
 
 <img alt="Graph of the react-app results" src="results/img/react-app.svg" />
 
@@ -48,7 +48,7 @@ The app's `package.json` [here](./fixtures/ember-quickstart/package.json)
 | install | ✔     |          | ✔           | 1s | 1.2s | 2s | n/a | 27ms |
 | install |       | ✔        | ✔           | 931ms | 544ms | 1s | n/a | 24ms |
 | install |       |          | ✔           | 1s | 2.6s | 2s | n/a | 24ms |
-| update  | n/a | n/a | n/a | 936ms | 3s | 7.8s | 2.7s | 27ms |
+| update  | n/a | n/a | n/a | 936ms | 2.8s | 7.8s | 2.7s | 27ms |
 
 <img alt="Graph of the ember-quickstart results" src="results/img/ember-quickstart.svg" />
 
@@ -94,7 +94,7 @@ The app's `package.json` [here](./fixtures/alotta-files/package.json)
 
 | action  | cache | lockfile | node_modules| npm | pnpm | Yarn | Yarn PnP | Bun |
 | ---     | ---   | ---      | ---         | --- | ---  | ---  | ---      | --- |
-| install |       |          |             | 30.8s | 7.9s | 9.9s | 3.3s | 1.8s |
+| install |       |          |             | 30.8s | 7.9s | 9.9s | 3.3s | 1.7s |
 | install | ✔     | ✔        | ✔           | 1.2s | 677ms | 1.5s | n/a | 41ms |
 | install | ✔     | ✔        |             | 7.5s | 2.2s | 5.5s | 1.3s | 712ms |
 | install | ✔     |          |             | 11.5s | 5.4s | 7.2s | 2.8s | 711ms |
