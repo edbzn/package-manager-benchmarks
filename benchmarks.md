@@ -1,6 +1,6 @@
 # Benchmarks of JavaScript Package Managers
 
-**Last benchmarked at**: _15 juil. 2025, 07:10_ (_daily_ updated).
+**Last benchmarked at**: _16 juil. 2025, 07:10_ (_daily_ updated).
 
 This benchmark compares the performance of npm, pnpm, Yarn Classic, Yarn PnP, and Bun (check [Yarn's benchmarks](https://yarnpkg.com/benchmarks) for any other Yarn modes that are not included here).
 
@@ -30,7 +30,7 @@ The app's `package.json` [here](./fixtures/react-app/package.json)
 | install | ✔     |          | ✔           | 1.4s | 1.4s | 2.5s | n/a | 33ms |
 | install |       | ✔        | ✔           | 1.2s | 609ms | 1.2s | n/a | 30ms |
 | install |       |          | ✔           | 1.4s | 3.3s | 2.5s | n/a | 30ms |
-| update  | n/a | n/a | n/a | 1.2s | 3.5s | 11.8s | 3s | 34ms |
+| update  | n/a | n/a | n/a | 1.2s | 3.4s | 11.8s | 3s | 34ms |
 
 <img alt="Graph of the react-app results" src="results/img/react-app.svg" />
 
@@ -97,11 +97,11 @@ The app's `package.json` [here](./fixtures/alotta-files/package.json)
 | install |       |          |             | 30.8s | 7.7s | 9.9s | 3.3s | 1.7s |
 | install | ✔     | ✔        | ✔           | 1.2s | 677ms | 1.5s | n/a | 40ms |
 | install | ✔     | ✔        |             | 7.5s | 2.2s | 5.5s | 1.3s | 712ms |
-| install | ✔     |          |             | 11.5s | 5.4s | 7.2s | 2.8s | 708ms |
+| install | ✔     |          |             | 11.5s | 5.3s | 7.2s | 2.8s | 708ms |
 | install |       | ✔        |             | 10.2s | 4.6s | 5.6s | 1.3s | 708ms |
 | install | ✔     |          | ✔           | 1.5s | 1.8s | 3s | n/a | 39ms |
 | install |       | ✔        | ✔           | 1.2s | 666ms | 1.5s | n/a | 36ms |
 | install |       |          | ✔           | 1.5s | 5s | 3s | n/a | 36ms |
-| update  | n/a | n/a | n/a | 1.2s | 4.1s | 5.3s | 2.8s | 82ms |
+| update  | n/a | n/a | n/a | 1.2s | 4s | 5.3s | 2.8s | 82ms |
 
 <img alt="Graph of the alotta-files results" src="results/img/alotta-files.svg" />
