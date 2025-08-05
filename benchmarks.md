@@ -1,6 +1,6 @@
 # Benchmarks of JavaScript Package Managers
 
-**Last benchmarked at**: _4 août 2025, 07:15_ (_daily_ updated).
+**Last benchmarked at**: _5 août 2025, 07:12_ (_daily_ updated).
 
 This benchmark compares the performance of npm, pnpm, Yarn Classic, Yarn PnP, and Bun (check [Yarn's benchmarks](https://yarnpkg.com/benchmarks) for any other Yarn modes that are not included here).
 
@@ -22,14 +22,14 @@ The app's `package.json` [here](./fixtures/react-app/package.json)
 
 | action  | cache | lockfile | node_modules| npm | pnpm | Yarn | Yarn PnP | Bun |
 | ---     | ---   | ---      | ---         | --- | ---  | ---  | ---      | --- |
-| install |       |          |             | 21.3s | 6.4s | 9.6s | 2.6s | 1.3s |
+| install |       |          |             | 21.1s | 6.4s | 9.6s | 2.6s | 1.3s |
 | install | ✔     | ✔        | ✔           | 1.2s | 661ms | 1.2s | n/a | 34ms |
 | install | ✔     | ✔        |             | 5s | 1.7s | 3.6s | 982ms | 435ms |
 | install | ✔     |          |             | 8.4s | 4.6s | 5s | 2.2s | 413ms |
 | install |       | ✔        |             | 7.4s | 3.4s | 3.6s | 973ms | 416ms |
 | install | ✔     |          | ✔           | 1.5s | 1.4s | 2.5s | n/a | 32ms |
 | install |       | ✔        | ✔           | 1.2s | 649ms | 1.2s | n/a | 30ms |
-| install |       |          | ✔           | 1.5s | 3.5s | 2.5s | n/a | 29ms |
+| install |       |          | ✔           | 1.5s | 3.4s | 2.5s | n/a | 29ms |
 | update  | n/a | n/a | n/a | 1.2s | 3.3s | 11.8s | 3s | 33ms |
 
 <img alt="Graph of the react-app results" src="results/img/react-app.svg" />
