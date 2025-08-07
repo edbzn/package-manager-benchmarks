@@ -1,6 +1,6 @@
 # Benchmarks of JavaScript Package Managers
 
-**Last benchmarked at**: _6 août 2025, 07:12_ (_daily_ updated).
+**Last benchmarked at**: _7 août 2025, 07:12_ (_daily_ updated).
 
 This benchmark compares the performance of npm, pnpm, Yarn Classic, Yarn PnP, and Bun (check [Yarn's benchmarks](https://yarnpkg.com/benchmarks) for any other Yarn modes that are not included here).
 
@@ -40,7 +40,7 @@ The app's `package.json` [here](./fixtures/ember-quickstart/package.json)
 
 | action  | cache | lockfile | node_modules| npm | pnpm | Yarn | Yarn PnP | Bun |
 | ---     | ---   | ---      | ---         | --- | ---  | ---  | ---      | --- |
-| install |       |          |             | 19.6s | 4.8s | 5.6s | 2.2s | 1s |
+| install |       |          |             | 18.6s | 4.8s | 5.6s | 2.2s | 1s |
 | install | ✔     | ✔        | ✔           | 954ms | 584ms | 1s | n/a | 26ms |
 | install | ✔     | ✔        |             | 3.8s | 1.4s | 2.7s | 862ms | 326ms |
 | install | ✔     |          |             | 6.3s | 3.6s | 3.8s | 1.9s | 323ms |
@@ -58,14 +58,14 @@ The app's `package.json` [here](./fixtures/angular-quickstart/package.json)
 
 | action  | cache | lockfile | node_modules| npm | pnpm | Yarn | Yarn PnP | Bun |
 | ---     | ---   | ---      | ---         | --- | ---  | ---  | ---      | --- |
-| install |       |          |             | 21.4s | 6.7s | 10.7s | 2.7s | 1.6s |
+| install |       |          |             | 21.4s | 6.5s | 10.7s | 2.7s | 1.6s |
 | install | ✔     | ✔        | ✔           | 902ms | 678ms | 1.3s | n/a | 29ms |
 | install | ✔     | ✔        |             | 7.6s | 1.8s | 5.2s | 1.2s | 830ms |
 | install | ✔     |          |             | 10.9s | 4.4s | 6.4s | 2.3s | 804ms |
 | install |       | ✔        |             | 9.7s | 3.9s | 5.2s | 1.2s | 807ms |
 | install | ✔     |          | ✔           | 1s | 1.5s | 2.4s | n/a | 27ms |
 | install |       | ✔        | ✔           | 894ms | 655ms | 1.3s | n/a | 25ms |
-| install |       |          | ✔           | 1s | 4.4s | 2.4s | n/a | 25ms |
+| install |       |          | ✔           | 1s | 3.8s | 2.4s | n/a | 25ms |
 | update  | n/a | n/a | n/a | 895ms | 3.1s | 9.1s | 2.5s | 32ms |
 
 <img alt="Graph of the angular-quickstart results" src="results/img/angular-quickstart.svg" />
