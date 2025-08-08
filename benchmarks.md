@@ -1,6 +1,6 @@
 # Benchmarks of JavaScript Package Managers
 
-**Last benchmarked at**: _7 août 2025, 07:12_ (_daily_ updated).
+**Last benchmarked at**: _8 août 2025, 07:12_ (_daily_ updated).
 
 This benchmark compares the performance of npm, pnpm, Yarn Classic, Yarn PnP, and Bun (check [Yarn's benchmarks](https://yarnpkg.com/benchmarks) for any other Yarn modes that are not included here).
 
@@ -44,7 +44,7 @@ The app's `package.json` [here](./fixtures/ember-quickstart/package.json)
 | install | ✔     | ✔        | ✔           | 954ms | 584ms | 1s | n/a | 26ms |
 | install | ✔     | ✔        |             | 3.8s | 1.4s | 2.7s | 862ms | 326ms |
 | install | ✔     |          |             | 6.3s | 3.6s | 3.8s | 1.9s | 323ms |
-| install |       | ✔        |             | 5.7s | 2.7s | 2.7s | 867ms | 331ms |
+| install |       | ✔        |             | 5.7s | 2.7s | 2.7s | 867ms | 330ms |
 | install | ✔     |          | ✔           | 1.1s | 1.2s | 2s | n/a | 26ms |
 | install |       | ✔        | ✔           | 949ms | 554ms | 1s | n/a | 23ms |
 | install |       |          | ✔           | 1.1s | 2.6s | 2s | n/a | 23ms |
@@ -80,7 +80,7 @@ The app's `package.json` [here](./fixtures/medium-size-app/package.json)
 | install | ✔     | ✔        | ✔           | 1.2s | 630ms | 1.3s | n/a | 31ms |
 | install | ✔     | ✔        |             | 6s | 1.8s | 4s | 1.1s | 470ms |
 | install | ✔     |          |             | 9s | 4.4s | 5.4s | 2.4s | 458ms |
-| install |       | ✔        |             | 8.2s | 3.7s | 4.1s | 1.1s | 454ms |
+| install |       | ✔        |             | 8.2s | 3.7s | 4.1s | 1.1s | 452ms |
 | install | ✔     |          | ✔           | 1.4s | 1.5s | 2.7s | n/a | 30ms |
 | install |       | ✔        | ✔           | 1.1s | 618ms | 1.3s | n/a | 28ms |
 | install |       |          | ✔           | 1.4s | 3.6s | 2.6s | n/a | 27ms |
@@ -95,7 +95,7 @@ The app's `package.json` [here](./fixtures/alotta-files/package.json)
 | action  | cache | lockfile | node_modules| npm | pnpm | Yarn | Yarn PnP | Bun |
 | ---     | ---   | ---      | ---         | --- | ---  | ---  | ---      | --- |
 | install |       |          |             | 32.7s | 7.9s | 9.9s | 3.3s | 1.7s |
-| install | ✔     | ✔        | ✔           | 1.2s | 674ms | 1.5s | n/a | 39ms |
+| install | ✔     | ✔        | ✔           | 1.2s | 674ms | 1.5s | n/a | 38ms |
 | install | ✔     | ✔        |             | 7.5s | 2.2s | 5.5s | 1.3s | 698ms |
 | install | ✔     |          |             | 11.6s | 5.4s | 7.2s | 2.8s | 697ms |
 | install |       | ✔        |             | 10.2s | 4.7s | 5.6s | 1.3s | 694ms |
