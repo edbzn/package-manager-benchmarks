@@ -23,7 +23,7 @@
   <text x="92" y="18" class="font s3" text-anchor="middle">v4.9.2</text>
   <circle cx="108" cy="6" r="4" fill="#ff6f00"></circle>
   <text x="108" y="14" class="font s4" text-anchor="middle">Bun</text>
-  <text x="108" y="18" class="font s3" text-anchor="middle">v1.2.19</text>
+  <text x="108" y="18" class="font s3" text-anchor="middle">v1.2.20</text>
   <text x="40" y="28" class="font s5 text" text-anchor="middle">0</text>
   <text x="40" y="368.5" class="font s5 text" text-anchor="middle">0</text>
   <line x1="90" y1="31" x2="90" y2="363.5" class="line width"></line>
@@ -46,7 +46,7 @@
   <rect x="40" y="41.5" width="65" height="6" fill="#fbae00" rx="1" ry="1"></rect>
   <rect x="40" y="48" width="97" height="6" fill="#248ebd" rx="1" ry="1"></rect>
   <rect x="40" y="54.5" width="27" height="6" fill="#40a9ff" rx="1" ry="1"></rect>
-  <rect x="40" y="61" width="14" height="6" fill="#ff6f00" rx="1" ry="1"></rect>
+  <rect x="40" y="61" width="16" height="6" fill="#ff6f00" rx="1" ry="1"></rect>
   <rect x="40" y="71.5" width="12" height="6" fill="#cd3731" rx="1" ry="1"></rect>
   <rect x="40" y="78" width="6" height="6" fill="#fbae00" rx="1" ry="1"></rect>
   <rect x="40" y="84.5" width="12" height="6" fill="#248ebd" rx="1" ry="1"></rect>
@@ -56,7 +56,7 @@
   <rect x="40" y="114.5" width="17" height="6" fill="#fbae00" rx="1" ry="1"></rect>
   <rect x="40" y="121" width="36" height="6" fill="#248ebd" rx="1" ry="1"></rect>
   <rect x="40" y="127.5" width="10" height="6" fill="#40a9ff" rx="1" ry="1"></rect>
-  <rect x="40" y="134" width="4" height="6" fill="#ff6f00" rx="1" ry="1"></rect>
+  <rect x="40" y="134" width="5" height="6" fill="#ff6f00" rx="1" ry="1"></rect>
   <rect x="40" y="144.5" width="85" height="6" fill="#cd3731" rx="1" ry="1"></rect>
   <rect x="40" y="151" width="46" height="6" fill="#fbae00" rx="1" ry="1"></rect>
   <rect x="40" y="157.5" width="50" height="6" fill="#248ebd" rx="1" ry="1"></rect>
@@ -102,5 +102,5 @@
   <text x="38" y="265.5" class="font s4" dominant-baseline="middle" text-anchor="end">with lockfile</text>
   <text x="38" y="300" class="font s4" dominant-baseline="middle" text-anchor="end">with node_modules</text>
   <text x="38" y="336.5" class="font s4" dominant-baseline="middle" text-anchor="end">update</text>
-  <text x="290" y="375.5" class="font s4 text" text-anchor="end">Tests were run using Node.js v23.11.1 at: 10 août 2025, 07:07</text>
+  <text x="290" y="375.5" class="font s4 text" text-anchor="end">Tests were run using Node.js v23.11.1 at: 11 août 2025, 07:11</text>
 </svg>
