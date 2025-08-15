@@ -1,6 +1,6 @@
 # Benchmarks of JavaScript Package Managers
 
-**Last benchmarked at**: _14 août 2025, 07:09_ (_daily_ updated).
+**Last benchmarked at**: _15 août 2025, 07:08_ (_daily_ updated).
 
 This benchmark compares the performance of npm, pnpm, Yarn Classic, Yarn PnP, and Bun (check [Yarn's benchmarks](https://yarnpkg.com/benchmarks) for any other Yarn modes that are not included here).
 
@@ -25,8 +25,8 @@ The app's `package.json` [here](./fixtures/react-app/package.json)
 | install |       |          |             | 21.1s | 6.4s | 9.6s | 2.6s | 1.4s |
 | install | ✔     | ✔        | ✔           | 1.2s | 641ms | 1.2s | n/a | 34ms |
 | install | ✔     | ✔        |             | 5s | 1.6s | 3.6s | 982ms | 445ms |
-| install | ✔     |          |             | 8.4s | 4.6s | 5s | 2.2s | 434ms |
-| install |       | ✔        |             | 7.4s | 3.4s | 3.6s | 973ms | 434ms |
+| install | ✔     |          |             | 8.4s | 4.6s | 5s | 2.2s | 427ms |
+| install |       | ✔        |             | 7.4s | 3.4s | 3.6s | 973ms | 427ms |
 | install | ✔     |          | ✔           | 1.4s | 1.4s | 2.5s | n/a | 34ms |
 | install |       | ✔        | ✔           | 1.2s | 623ms | 1.2s | n/a | 31ms |
 | install |       |          | ✔           | 1.5s | 3.4s | 2.5s | n/a | 31ms |
@@ -42,10 +42,10 @@ The app's `package.json` [here](./fixtures/ember-quickstart/package.json)
 | ---     | ---   | ---      | ---         | --- | ---  | ---  | ---      | --- |
 | install |       |          |             | 18.6s | 4.8s | 5.6s | 2.2s | 1.3s |
 | install | ✔     | ✔        | ✔           | 949ms | 584ms | 1s | n/a | 27ms |
-| install | ✔     | ✔        |             | 3.7s | 1.4s | 2.7s | 862ms | 345ms |
+| install | ✔     | ✔        |             | 3.7s | 1.4s | 2.7s | 862ms | 326ms |
 | install | ✔     |          |             | 6.2s | 3.6s | 3.8s | 1.9s | 353ms |
-| install |       | ✔        |             | 5.6s | 2.7s | 2.7s | 867ms | 333ms |
-| install | ✔     |          | ✔           | 1.1s | 1.2s | 2s | n/a | 28ms |
+| install |       | ✔        |             | 5.6s | 2.7s | 2.7s | 867ms | 324ms |
+| install | ✔     |          | ✔           | 1.1s | 1.2s | 2s | n/a | 27ms |
 | install |       | ✔        | ✔           | 944ms | 554ms | 1s | n/a | 24ms |
 | install |       |          | ✔           | 1.1s | 2.6s | 2s | n/a | 24ms |
 | update  | n/a | n/a | n/a | 941ms | 2.6s | 7.8s | 2.7s | 26ms |
@@ -60,8 +60,8 @@ The app's `package.json` [here](./fixtures/angular-quickstart/package.json)
 | ---     | ---   | ---      | ---         | --- | ---  | ---  | ---      | --- |
 | install |       |          |             | 21.2s | 6.5s | 10.7s | 2.7s | 1.7s |
 | install | ✔     | ✔        | ✔           | 902ms | 677ms | 1.3s | n/a | 29ms |
-| install | ✔     | ✔        |             | 7.6s | 1.8s | 5.2s | 1.2s | 857ms |
-| install | ✔     |          |             | 10.8s | 4.4s | 6.4s | 2.3s | 823ms |
+| install | ✔     | ✔        |             | 7.6s | 1.8s | 5.2s | 1.2s | 839ms |
+| install | ✔     |          |             | 10.8s | 4.4s | 6.4s | 2.3s | 817ms |
 | install |       | ✔        |             | 9.7s | 3.9s | 5.2s | 1.2s | 812ms |
 | install | ✔     |          | ✔           | 1s | 1.5s | 2.4s | n/a | 28ms |
 | install |       | ✔        | ✔           | 894ms | 655ms | 1.3s | n/a | 25ms |
