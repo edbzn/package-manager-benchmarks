@@ -1,6 +1,6 @@
 # Benchmarks of JavaScript Package Managers
 
-**Last benchmarked at**: _22 août 2025, 07:07_ (_daily_ updated).
+**Last benchmarked at**: _23 août 2025, 07:07_ (_daily_ updated).
 
 This benchmark compares the performance of npm, pnpm, Yarn Classic, Yarn PnP, and Bun (check [Yarn's benchmarks](https://yarnpkg.com/benchmarks) for any other Yarn modes that are not included here).
 
@@ -78,11 +78,11 @@ The app's `package.json` [here](./fixtures/medium-size-app/package.json)
 | ---     | ---   | ---      | ---         | --- | ---  | ---  | ---      | --- |
 | install |       |          |             | 22.6s | 6.2s | 7.7s | 2.9s | 1.4s |
 | install | ✔     | ✔        | ✔           | 1.2s | 641ms | 1.3s | n/a | 31ms |
-| install | ✔     | ✔        |             | 6s | 1.8s | 4s | 1.1s | 470ms |
+| install | ✔     | ✔        |             | 6s | 1.8s | 4s | 1.1s | 468ms |
 | install | ✔     |          |             | 9s | 4.7s | 5.5s | 2.5s | 462ms |
 | install |       | ✔        |             | 8.2s | 3.8s | 4.1s | 1.2s | 456ms |
 | install | ✔     |          | ✔           | 1.4s | 1.5s | 2.8s | n/a | 30ms |
-| install |       | ✔        | ✔           | 1.1s | 658ms | 1.3s | n/a | 27ms |
+| install |       | ✔        | ✔           | 1.1s | 650ms | 1.3s | n/a | 27ms |
 | install |       |          | ✔           | 1.4s | 3.7s | 2.7s | n/a | 27ms |
 | update  | n/a | n/a | n/a | 1.2s | 3.3s | 5.4s | 2.4s | 37ms |
 
@@ -94,7 +94,7 @@ The app's `package.json` [here](./fixtures/alotta-files/package.json)
 
 | action  | cache | lockfile | node_modules| npm | pnpm | Yarn | Yarn PnP | Bun |
 | ---     | ---   | ---      | ---         | --- | ---  | ---  | ---      | --- |
-| install |       |          |             | 32.7s | 8.2s | 10.3s | 3.4s | 1.7s |
+| install |       |          |             | 32.7s | 8.2s | 10.2s | 3.4s | 1.7s |
 | install | ✔     | ✔        | ✔           | 1.2s | 704ms | 1.5s | n/a | 40ms |
 | install | ✔     | ✔        |             | 7.5s | 2.2s | 5.6s | 1.3s | 708ms |
 | install | ✔     |          |             | 11.6s | 5.6s | 7.3s | 2.9s | 699ms |
