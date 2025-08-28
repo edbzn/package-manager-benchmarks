@@ -14,7 +14,7 @@
   <rect x="46" y="10" width="52" height="4" fill="hsl(0, 100%, 45%)" rx="1" ry="1"></rect>
   <text x="100" y="12" fill="hsl(0, 100%, 20%)" dominant-baseline="middle" class="font s4">8.2s</text>
   <rect x="46" y="15.5" width="4" height="4" fill="hsl(0, 100%, 45%)" rx="1" ry="1"></rect>
-  <text x="52" y="17.5" fill="hsl(0, 100%, 20%)" dominant-baseline="middle" class="font s4">699ms</text>
+  <text x="52" y="17.5" fill="hsl(0, 100%, 20%)" dominant-baseline="middle" class="font s4">688ms</text>
   <rect x="46" y="21" width="14" height="4" fill="hsl(0, 100%, 45%)" rx="1" ry="1"></rect>
   <text x="62" y="23" fill="hsl(0, 100%, 20%)" dominant-baseline="middle" class="font s4">2.2s</text>
   <rect x="46" y="26.5" width="36" height="4" fill="hsl(0, 100%, 45%)" rx="1" ry="1"></rect>
@@ -24,7 +24,7 @@
   <rect x="46" y="37.5" width="12" height="4" fill="hsl(0, 100%, 45%)" rx="1" ry="1"></rect>
   <text x="60" y="39.5" fill="hsl(0, 100%, 20%)" dominant-baseline="middle" class="font s4">1.8s</text>
   <rect x="46" y="43" width="4" height="4" fill="hsl(0, 100%, 45%)" rx="1" ry="1"></rect>
-  <text x="52" y="45" fill="hsl(0, 100%, 20%)" dominant-baseline="middle" class="font s4">691ms</text>
+  <text x="52" y="45" fill="hsl(0, 100%, 20%)" dominant-baseline="middle" class="font s4">675ms</text>
   <rect x="46" y="48.5" width="32" height="4" fill="hsl(0, 100%, 45%)" rx="1" ry="1"></rect>
   <text x="80" y="50.5" fill="hsl(0, 100%, 20%)" dominant-baseline="middle" class="font s4">5s</text>
   <rect x="46" y="54" width="26" height="4" fill="hsl(0, 100%, 45%)" rx="1" ry="1"></rect>
@@ -6476,5 +6476,5 @@
   <text x="44" y="13558.5" class="font s4" dominant-baseline="middle" text-anchor="end">node_modules + lockfile</text>
   <text x="44" y="13564" class="font s4" dominant-baseline="middle" text-anchor="end">node_modules</text>
   <text x="44" y="13569.5" class="font s4" dominant-baseline="middle" text-anchor="end">update</text>
-  <text x="296" y="13594" class="font s4 text" text-anchor="end">Tests were run using pnpm with Node.js v23.11.1 at: 27 août 2025, 07:20</text>
+  <text x="296" y="13594" class="font s4 text" text-anchor="end">Tests were run using pnpm with Node.js v23.11.1 at: 28 août 2025, 07:21</text>
 </svg>
