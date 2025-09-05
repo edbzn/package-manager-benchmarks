@@ -11,16 +11,16 @@
     .bold { font-weight: bold; }
   </style>
   <rect x="0" y="0" width="306" height="13654.5" fill="#fff"></rect>
-  <rect x="46" y="10" width="56" height="4" fill="hsl(0, 100%, 45%)" rx="1" ry="1"></rect>
-  <text x="104" y="12" fill="hsl(0, 100%, 20%)" dominant-baseline="middle" class="font s4">8.9s</text>
+  <rect x="46" y="10" width="53" height="4" fill="hsl(0, 100%, 45%)" rx="1" ry="1"></rect>
+  <text x="101" y="12" fill="hsl(0, 100%, 20%)" dominant-baseline="middle" class="font s4">8.3s</text>
   <rect x="46" y="15.5" width="4" height="4" fill="hsl(0, 100%, 45%)" rx="1" ry="1"></rect>
-  <text x="52" y="17.5" fill="hsl(0, 100%, 20%)" dominant-baseline="middle" class="font s4">695ms</text>
+  <text x="52" y="17.5" fill="hsl(0, 100%, 20%)" dominant-baseline="middle" class="font s4">693ms</text>
   <rect x="46" y="21" width="14" height="4" fill="hsl(0, 100%, 45%)" rx="1" ry="1"></rect>
   <text x="62" y="23" fill="hsl(0, 100%, 20%)" dominant-baseline="middle" class="font s4">2.2s</text>
   <rect x="46" y="26.5" width="35" height="4" fill="hsl(0, 100%, 45%)" rx="1" ry="1"></rect>
   <text x="83" y="28.5" fill="hsl(0, 100%, 20%)" dominant-baseline="middle" class="font s4">5.6s</text>
-  <rect x="46" y="32" width="31" height="4" fill="hsl(0, 100%, 45%)" rx="1" ry="1"></rect>
-  <text x="79" y="34" fill="hsl(0, 100%, 20%)" dominant-baseline="middle" class="font s4">4.9s</text>
+  <rect x="46" y="32" width="30" height="4" fill="hsl(0, 100%, 45%)" rx="1" ry="1"></rect>
+  <text x="78" y="34" fill="hsl(0, 100%, 20%)" dominant-baseline="middle" class="font s4">4.7s</text>
   <rect x="46" y="37.5" width="12" height="4" fill="hsl(0, 100%, 45%)" rx="1" ry="1"></rect>
   <text x="60" y="39.5" fill="hsl(0, 100%, 20%)" dominant-baseline="middle" class="font s4">1.8s</text>
   <rect x="46" y="43" width="4" height="4" fill="hsl(0, 100%, 45%)" rx="1" ry="1"></rect>
@@ -6504,5 +6504,5 @@
   <text x="44" y="13617" class="font s4" dominant-baseline="middle" text-anchor="end">node_modules + lockfile</text>
   <text x="44" y="13622.5" class="font s4" dominant-baseline="middle" text-anchor="end">node_modules</text>
   <text x="44" y="13628" class="font s4" dominant-baseline="middle" text-anchor="end">update</text>
-  <text x="296" y="13652.5" class="font s4 text" text-anchor="end">Tests were run using pnpm with Node.js v23.11.1 at: 4 sept. 2025, 07:20</text>
+  <text x="296" y="13652.5" class="font s4 text" text-anchor="end">Tests were run using pnpm with Node.js v23.11.1 at: 5 sept. 2025, 07:20</text>
 </svg>
