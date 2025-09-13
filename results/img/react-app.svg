@@ -14,7 +14,7 @@
   <text x="44" y="18" class="font s3" text-anchor="middle">v11.6.0</text>
   <circle cx="60" cy="6" r="4" fill="#fbae00"></circle>
   <text x="60" y="14" class="font s4" text-anchor="middle">pnpm</text>
-  <text x="60" y="18" class="font s3" text-anchor="middle">v10.15.1</text>
+  <text x="60" y="18" class="font s3" text-anchor="middle">v10.16.0</text>
   <circle cx="76" cy="6" r="4" fill="#248ebd"></circle>
   <text x="76" y="14" class="font s4" text-anchor="middle">Yarn</text>
   <text x="76" y="18" class="font s3" text-anchor="middle">v4.9.4</text>
@@ -43,12 +43,12 @@
   <text x="290" y="368.5" class="font s5 text" text-anchor="middle">25</text>
   <text x="290" y="20" class="font s4 text" font-style="italic" text-anchor="end">Installation time in seconds (lower is better)</text>
   <rect x="40" y="35" width="208" height="6" fill="#cd3731" rx="1" ry="1"></rect>
-  <rect x="40" y="41.5" width="65" height="6" fill="#fbae00" rx="1" ry="1"></rect>
+  <rect x="40" y="41.5" width="68" height="6" fill="#fbae00" rx="1" ry="1"></rect>
   <rect x="40" y="48" width="98" height="6" fill="#248ebd" rx="1" ry="1"></rect>
   <rect x="40" y="54.5" width="28" height="6" fill="#40a9ff" rx="1" ry="1"></rect>
   <rect x="40" y="61" width="15" height="6" fill="#ff6f00" rx="1" ry="1"></rect>
   <rect x="40" y="71.5" width="12" height="6" fill="#cd3731" rx="1" ry="1"></rect>
-  <rect x="40" y="78" width="6" height="6" fill="#fbae00" rx="1" ry="1"></rect>
+  <rect x="40" y="78" width="7" height="6" fill="#fbae00" rx="1" ry="1"></rect>
   <rect x="40" y="84.5" width="12" height="6" fill="#248ebd" rx="1" ry="1"></rect>
   <rect x="40" y="91" width="0" height="6" fill="#40a9ff" rx="1" ry="1"></rect>
   <rect x="40" y="97.5" width="0" height="6" fill="#ff6f00" rx="1" ry="1"></rect>
@@ -73,19 +73,19 @@
   <rect x="40" y="237" width="0" height="6" fill="#40a9ff" rx="1" ry="1"></rect>
   <rect x="40" y="243.5" width="0" height="6" fill="#ff6f00" rx="1" ry="1"></rect>
   <rect x="40" y="254" width="12" height="6" fill="#cd3731" rx="1" ry="1"></rect>
-  <rect x="40" y="260.5" width="6" height="6" fill="#fbae00" rx="1" ry="1"></rect>
+  <rect x="40" y="260.5" width="7" height="6" fill="#fbae00" rx="1" ry="1"></rect>
   <rect x="40" y="267" width="12" height="6" fill="#248ebd" rx="1" ry="1"></rect>
   <rect x="40" y="273.5" width="0" height="6" fill="#40a9ff" rx="1" ry="1"></rect>
   <rect x="40" y="280" width="0" height="6" fill="#ff6f00" rx="1" ry="1"></rect>
   <rect x="40" y="290.5" width="15" height="6" fill="#cd3731" rx="1" ry="1"></rect>
-  <rect x="40" y="297" width="34" height="6" fill="#fbae00" rx="1" ry="1"></rect>
+  <rect x="40" y="297" width="36" height="6" fill="#fbae00" rx="1" ry="1"></rect>
   <rect x="40" y="303.5" width="26" height="6" fill="#248ebd" rx="1" ry="1"></rect>
   <rect x="40" y="310" width="0" height="6" fill="#40a9ff" rx="1" ry="1"></rect>
   <rect x="40" y="316.5" width="0" height="6" fill="#ff6f00" rx="1" ry="1"></rect>
   <rect x="40" y="327" width="12" height="6" fill="#cd3731" rx="1" ry="1"></rect>
-  <rect x="40" y="333.5" width="36" height="6" fill="#fbae00" rx="1" ry="1"></rect>
+  <rect x="40" y="333.5" width="38" height="6" fill="#fbae00" rx="1" ry="1"></rect>
   <rect x="40" y="340" width="119" height="6" fill="#248ebd" rx="1" ry="1"></rect>
-  <rect x="40" y="346.5" width="32" height="6" fill="#40a9ff" rx="1" ry="1"></rect>
+  <rect x="40" y="346.5" width="31" height="6" fill="#40a9ff" rx="1" ry="1"></rect>
   <rect x="40" y="353" width="0" height="6" fill="#ff6f00" rx="1" ry="1"></rect>
   <line x1="40" y1="31" x2="40" y2="363.5" class="line"></line>
   <text x="38" y="44.5" class="font s4" dominant-baseline="middle" text-anchor="end">clean install</text>
@@ -102,5 +102,5 @@
   <text x="38" y="265.5" class="font s4" dominant-baseline="middle" text-anchor="end">with lockfile</text>
   <text x="38" y="300" class="font s4" dominant-baseline="middle" text-anchor="end">with node_modules</text>
   <text x="38" y="336.5" class="font s4" dominant-baseline="middle" text-anchor="end">update</text>
-  <text x="290" y="375.5" class="font s4 text" text-anchor="end">Tests were run using Node.js v23.11.1 at: 12 sept. 2025, 07:07</text>
+  <text x="290" y="375.5" class="font s4 text" text-anchor="end">Tests were run using Node.js v23.11.1 at: 13 sept. 2025, 07:06</text>
 </svg>
