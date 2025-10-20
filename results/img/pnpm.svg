@@ -19,14 +19,14 @@
   <text x="62" y="23" fill="hsl(0, 100%, 20%)" dominant-baseline="middle" class="font s4">2.2s</text>
   <rect x="46" y="26.5" width="35" height="4" fill="hsl(0, 100%, 45%)" rx="1" ry="1"></rect>
   <text x="83" y="28.5" fill="hsl(0, 100%, 20%)" dominant-baseline="middle" class="font s4">5.5s</text>
-  <rect x="46" y="32" width="31" height="4" fill="hsl(0, 100%, 45%)" rx="1" ry="1"></rect>
-  <text x="79" y="34" fill="hsl(0, 100%, 20%)" dominant-baseline="middle" class="font s4">4.8s</text>
+  <rect x="46" y="32" width="30" height="4" fill="hsl(0, 100%, 45%)" rx="1" ry="1"></rect>
+  <text x="78" y="34" fill="hsl(0, 100%, 20%)" dominant-baseline="middle" class="font s4">4.7s</text>
   <rect x="46" y="37.5" width="11" height="4" fill="hsl(0, 100%, 45%)" rx="1" ry="1"></rect>
   <text x="59" y="39.5" fill="hsl(0, 100%, 20%)" dominant-baseline="middle" class="font s4">1.8s</text>
   <rect x="46" y="43" width="4" height="4" fill="hsl(0, 100%, 45%)" rx="1" ry="1"></rect>
   <text x="52" y="45" fill="hsl(0, 100%, 20%)" dominant-baseline="middle" class="font s4">676ms</text>
   <rect x="46" y="48.5" width="33" height="4" fill="hsl(0, 100%, 45%)" rx="1" ry="1"></rect>
-  <text x="81" y="50.5" fill="hsl(0, 100%, 20%)" dominant-baseline="middle" class="font s4">5.2s</text>
+  <text x="81" y="50.5" fill="hsl(0, 100%, 20%)" dominant-baseline="middle" class="font s4">5.1s</text>
   <rect x="46" y="54" width="26" height="4" fill="hsl(0, 100%, 45%)" rx="1" ry="1"></rect>
   <text x="74" y="56" fill="hsl(0, 100%, 20%)" dominant-baseline="middle" class="font s4">4s</text>
   <rect x="46" y="68.5" width="52" height="4" fill="hsl(1.4937759336099585, 100%, 45%)" rx="1" ry="1"></rect>
@@ -6728,5 +6728,5 @@
   <text x="44" y="14085" class="font s4" dominant-baseline="middle" text-anchor="end">node_modules + lockfile</text>
   <text x="44" y="14090.5" class="font s4" dominant-baseline="middle" text-anchor="end">node_modules</text>
   <text x="44" y="14096" class="font s4" dominant-baseline="middle" text-anchor="end">update</text>
-  <text x="296" y="14120.5" class="font s4 text" text-anchor="end">Tests were run using pnpm with Node.js v23.11.1 at: 19 oct. 2025, 07:19</text>
+  <text x="296" y="14120.5" class="font s4 text" text-anchor="end">Tests were run using pnpm with Node.js v23.11.1 at: 20 oct. 2025, 07:21</text>
 </svg>
