@@ -13,8 +13,8 @@
   <rect x="0" y="0" width="306" height="7102.5" fill="#fff"></rect>
   <rect x="46" y="10" width="120" height="4" fill="hsl(0, 100%, 45%)" rx="1" ry="1"></rect>
   <text x="168" y="12" fill="hsl(0, 100%, 20%)" dominant-baseline="middle" class="font s4">34.6s</text>
-  <rect x="46" y="15.5" width="5" height="4" fill="hsl(0, 100%, 45%)" rx="1" ry="1"></rect>
-  <text x="53" y="17.5" fill="hsl(0, 100%, 20%)" dominant-baseline="middle" class="font s4">1.3s</text>
+  <rect x="46" y="15.5" width="4" height="4" fill="hsl(0, 100%, 45%)" rx="1" ry="1"></rect>
+  <text x="52" y="17.5" fill="hsl(0, 100%, 20%)" dominant-baseline="middle" class="font s4">1.2s</text>
   <rect x="46" y="21" width="30" height="4" fill="hsl(0, 100%, 45%)" rx="1" ry="1"></rect>
   <text x="78" y="23" fill="hsl(0, 100%, 20%)" dominant-baseline="middle" class="font s4">8.6s</text>
   <rect x="46" y="26.5" width="45" height="4" fill="hsl(0, 100%, 45%)" rx="1" ry="1"></rect>
@@ -3387,5 +3387,5 @@
   <text x="44" y="7065" class="font s4" dominant-baseline="middle" text-anchor="end">node_modules + lockfile</text>
   <text x="44" y="7070.5" class="font s4" dominant-baseline="middle" text-anchor="end">node_modules</text>
   <text x="44" y="7076" class="font s4" dominant-baseline="middle" text-anchor="end">update</text>
-  <text x="296" y="7100.5" class="font s4 text" text-anchor="end">Tests were run using npm with Node.js v23.11.1 at: 20 oct. 2025, 07:21</text>
+  <text x="296" y="7100.5" class="font s4 text" text-anchor="end">Tests were run using npm with Node.js v23.11.1 at: 21 oct. 2025, 07:21</text>
 </svg>
