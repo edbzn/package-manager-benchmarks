@@ -29,7 +29,7 @@ jobs:
       - run: pnpm run benchmark
       - name: Commit changes
         run: |
-          git config --local user.email "bozonedouard@gmail.com"
+          git config --local user.email "-"
           git config --local user.name "Edouard Bozon"
           git add .
           git status -s
