@@ -11,8 +11,8 @@
     .bold { font-weight: bold; }
   </style>
   <rect x="0" y="0" width="306" height="2773.5" fill="#fff"></rect>
-  <rect x="46" y="10" width="186" height="4" fill="hsl(0, 100%, 45%)" rx="1" ry="1"></rect>
-  <text x="234" y="12" fill="hsl(0, 100%, 20%)" dominant-baseline="middle" class="font s4">2.1s</text>
+  <rect x="46" y="10" width="180" height="4" fill="hsl(0, 100%, 45%)" rx="1" ry="1"></rect>
+  <text x="228" y="12" fill="hsl(0, 100%, 20%)" dominant-baseline="middle" class="font s4">2.1s</text>
   <rect x="46" y="15.5" width="6" height="4" fill="hsl(0, 100%, 45%)" rx="1" ry="1"></rect>
   <text x="54" y="17.5" fill="hsl(0, 100%, 20%)" dominant-baseline="middle" class="font s4">71ms</text>
   <rect x="46" y="21" width="60" height="4" fill="hsl(0, 100%, 45%)" rx="1" ry="1"></rect>
@@ -1327,5 +1327,5 @@
   <text x="44" y="2736" class="font s4" dominant-baseline="middle" text-anchor="end">node_modules + lockfile</text>
   <text x="44" y="2741.5" class="font s4" dominant-baseline="middle" text-anchor="end">node_modules</text>
   <text x="44" y="2747" class="font s4" dominant-baseline="middle" text-anchor="end">update</text>
-  <text x="296" y="2771.5" class="font s4 text" text-anchor="end">Tests were run using bun with Node.js v23.11.1 at: 10 nov. 2025, 07:16</text>
+  <text x="296" y="2771.5" class="font s4 text" text-anchor="end">Tests were run using bun with Node.js v23.11.1 at: 11 nov. 2025, 07:16</text>
 </svg>
