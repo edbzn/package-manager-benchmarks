@@ -1474,5 +1474,5 @@
   <text x="44" y="3087" class="font s4" dominant-baseline="middle" text-anchor="end">node_modules + lockfile</text>
   <text x="44" y="3092.5" class="font s4" dominant-baseline="middle" text-anchor="end">node_modules</text>
   <text x="44" y="3098" class="font s4" dominant-baseline="middle" text-anchor="end">update</text>
-  <text x="296" y="3122.5" class="font s4 text" text-anchor="end">Tests were run using yarn with Node.js v23.11.1 at: 20 févr. 2026, 07:25</text>
+  <text x="296" y="3122.5" class="font s4 text" text-anchor="end">Tests were run using yarn with Node.js v23.11.1 at: 21 févr. 2026, 07:17</text>
 </svg>
