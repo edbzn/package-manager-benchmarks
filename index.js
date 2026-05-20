@@ -111,17 +111,21 @@ run()
 
 async function run () {
   const managersDir = path.join(tempy.directory(), 'managers')
+  const managersDirClassic = path.join(tempy.directory(), 'managers-classic')
   await Promise.allSettled([
     rimraf(TMP),
-    // make sure folder exists
+    // make sure folders exist
     fs.promises.mkdir(managersDir, { recursive: true }),
+    fs.promises.mkdir(managersDirClassic, { recursive: true }),
     fs.promises.mkdir(BENCH_IMGS, { recursive: true }),
   ])
   spawn.sync('pnpm', ['init', '--yes'], { cwd: managersDir })
   spawn.sync('pnpm', ['add', 'npm@latest', 'pnpm@latest'], { cwd: managersDir, stdio: 'inherit' })
   spawn.sync('yarn', ['set', 'version', 'stable'], { cwd: managersDir, stdio: 'inherit' })
+  spawn.sync('pnpm', ['init', '--yes'], { cwd: managersDirClassic })
+  spawn.sync('pnpm', ['add', 'yarn@^1'], { cwd: managersDirClassic, stdio: 'inherit' })
   const formattedNow = new Intl.DateTimeFormat('fr-FR', { dateStyle: 'medium', timeStyle: 'short' }).format(new Date())
-  const pms = [ 'npm', 'pnpm', 'yarn', 'yarn_pnp', 'bun' ]
+  const pms = [ 'npm', 'pnpm', 'yarn', 'yarn_pnp', 'yarn_classic', 'bun' ]
   const sections = []
   const svgs = []
   const opts = {
@@ -136,6 +140,10 @@ async function run () {
       ...opts,
       hasNodeModules: false,
     }))
+    const yarnClassicRes = min(await benchmark(cmdsMap.yarn_classic, fixture.name, {
+      ...opts,
+      managersDir: managersDirClassic,
+    }))
     const bunRes = min(await benchmark(cmdsMap.bun, fixture.name, opts))
     const pnpmRes = min(await benchmark(cmdsMap.pnpm, fixture.name, opts))
     const resArray = toArray(pms, {
@@ -143,29 +151,30 @@ async function run () {
       'pnpm': pnpmRes,
       'yarn': yarnRes,
       'yarn_pnp': yarnPnPRes,
+      'yarn_classic': yarnClassicRes,
       'bun': bunRes,
     })
 
     sections.push(stripIndents`
       ${fixture.mdDesc}
 
-      | action  | cache | lockfile | node_modules| npm | pnpm | Yarn | Yarn PnP | Bun |
-      | ---     | ---   | ---      | ---         | --- | ---  | ---  | ---      | --- |
-      | install |       |          |             | ${prettyMs(npmRes.firstInstall)} | ${prettyMs(pnpmRes.firstInstall)} | ${prettyMs(yarnRes.firstInstall)} | ${prettyMs(yarnPnPRes.firstInstall)} | ${prettyMs(bunRes.firstInstall)} |
-      | install | ✔     | ✔        | ✔           | ${prettyMs(npmRes.repeatInstall)} | ${prettyMs(pnpmRes.repeatInstall)} | ${prettyMs(yarnRes.repeatInstall)} | n/a | ${prettyMs(bunRes.repeatInstall)} |
-      | install | ✔     | ✔        |             | ${prettyMs(npmRes.withWarmCacheAndLockfile)} | ${prettyMs(pnpmRes.withWarmCacheAndLockfile)} | ${prettyMs(yarnRes.withWarmCacheAndLockfile)} | ${prettyMs(yarnPnPRes.withWarmCacheAndLockfile)} | ${prettyMs(bunRes.withWarmCacheAndLockfile)} |
-      | install | ✔     |          |             | ${prettyMs(npmRes.withWarmCache)} | ${prettyMs(pnpmRes.withWarmCache)} | ${prettyMs(yarnRes.withWarmCache)} | ${prettyMs(yarnPnPRes.withWarmCache)} | ${prettyMs(bunRes.withWarmCache)} |
-      | install |       | ✔        |             | ${prettyMs(npmRes.withLockfile)} | ${prettyMs(pnpmRes.withLockfile)} | ${prettyMs(yarnRes.withLockfile)} | ${prettyMs(yarnPnPRes.withLockfile)} | ${prettyMs(bunRes.withLockfile)} |
-      | install | ✔     |          | ✔           | ${prettyMs(npmRes.withWarmCacheAndModules)} | ${prettyMs(pnpmRes.withWarmCacheAndModules)} | ${prettyMs(yarnRes.withWarmCacheAndModules)} | n/a | ${prettyMs(bunRes.withWarmCacheAndModules)} |
-      | install |       | ✔        | ✔           | ${prettyMs(npmRes.withWarmModulesAndLockfile)} | ${prettyMs(pnpmRes.withWarmModulesAndLockfile)} | ${prettyMs(yarnRes.withWarmModulesAndLockfile)} | n/a | ${prettyMs(bunRes.withWarmModulesAndLockfile)} |
-      | install |       |          | ✔           | ${prettyMs(npmRes.withWarmModules)} | ${prettyMs(pnpmRes.withWarmModules)} | ${prettyMs(yarnRes.withWarmModules)} | n/a | ${prettyMs(bunRes.withWarmModules)} |
-      | update  | n/a | n/a | n/a | ${prettyMs(npmRes.updatedDependencies)} | ${prettyMs(pnpmRes.updatedDependencies)} | ${prettyMs(yarnRes.updatedDependencies)} | ${prettyMs(yarnPnPRes.updatedDependencies)} | ${prettyMs(bunRes.updatedDependencies)} |
+      | action  | cache | lockfile | node_modules| npm | pnpm | Yarn | Yarn PnP | Yarn Classic | Bun |
+      | ---     | ---   | ---      | ---         | --- | ---  | ---  | ---      | ---          | --- |
+      | install |       |          |             | ${prettyMs(npmRes.firstInstall)} | ${prettyMs(pnpmRes.firstInstall)} | ${prettyMs(yarnRes.firstInstall)} | ${prettyMs(yarnPnPRes.firstInstall)} | ${prettyMs(yarnClassicRes.firstInstall)} | ${prettyMs(bunRes.firstInstall)} |
+      | install | ✔     | ✔        | ✔           | ${prettyMs(npmRes.repeatInstall)} | ${prettyMs(pnpmRes.repeatInstall)} | ${prettyMs(yarnRes.repeatInstall)} | n/a | ${prettyMs(yarnClassicRes.repeatInstall)} | ${prettyMs(bunRes.repeatInstall)} |
+      | install | ✔     | ✔        |             | ${prettyMs(npmRes.withWarmCacheAndLockfile)} | ${prettyMs(pnpmRes.withWarmCacheAndLockfile)} | ${prettyMs(yarnRes.withWarmCacheAndLockfile)} | ${prettyMs(yarnPnPRes.withWarmCacheAndLockfile)} | ${prettyMs(yarnClassicRes.withWarmCacheAndLockfile)} | ${prettyMs(bunRes.withWarmCacheAndLockfile)} |
+      | install | ✔     |          |             | ${prettyMs(npmRes.withWarmCache)} | ${prettyMs(pnpmRes.withWarmCache)} | ${prettyMs(yarnRes.withWarmCache)} | ${prettyMs(yarnPnPRes.withWarmCache)} | ${prettyMs(yarnClassicRes.withWarmCache)} | ${prettyMs(bunRes.withWarmCache)} |
+      | install |       | ✔        |             | ${prettyMs(npmRes.withLockfile)} | ${prettyMs(pnpmRes.withLockfile)} | ${prettyMs(yarnRes.withLockfile)} | ${prettyMs(yarnPnPRes.withLockfile)} | ${prettyMs(yarnClassicRes.withLockfile)} | ${prettyMs(bunRes.withLockfile)} |
+      | install | ✔     |          | ✔           | ${prettyMs(npmRes.withWarmCacheAndModules)} | ${prettyMs(pnpmRes.withWarmCacheAndModules)} | ${prettyMs(yarnRes.withWarmCacheAndModules)} | n/a | ${prettyMs(yarnClassicRes.withWarmCacheAndModules)} | ${prettyMs(bunRes.withWarmCacheAndModules)} |
+      | install |       | ✔        | ✔           | ${prettyMs(npmRes.withWarmModulesAndLockfile)} | ${prettyMs(pnpmRes.withWarmModulesAndLockfile)} | ${prettyMs(yarnRes.withWarmModulesAndLockfile)} | n/a | ${prettyMs(yarnClassicRes.withWarmModulesAndLockfile)} | ${prettyMs(bunRes.withWarmModulesAndLockfile)} |
+      | install |       |          | ✔           | ${prettyMs(npmRes.withWarmModules)} | ${prettyMs(pnpmRes.withWarmModules)} | ${prettyMs(yarnRes.withWarmModules)} | n/a | ${prettyMs(yarnClassicRes.withWarmModules)} | ${prettyMs(bunRes.withWarmModules)} |
+      | update  | n/a | n/a | n/a | ${prettyMs(npmRes.updatedDependencies)} | ${prettyMs(pnpmRes.updatedDependencies)} | ${prettyMs(yarnRes.updatedDependencies)} | ${prettyMs(yarnPnPRes.updatedDependencies)} | ${prettyMs(yarnClassicRes.updatedDependencies)} | ${prettyMs(bunRes.updatedDependencies)} |
 
       <img alt="Graph of the ${fixture.name} results" src="results/img/${fixture.name}.svg" />
     `)
     svgs.push({
       path: path.join(BENCH_IMGS, `${fixture.name}.svg`),
-      file: generateSvg(resArray, [cmdsMap.npm, cmdsMap.pnpm, cmdsMap.yarn, cmdsMap.yarn_pnp, cmdsMap.bun], testDescriptions, formattedNow)
+      file: generateSvg(resArray, [cmdsMap.npm, cmdsMap.pnpm, cmdsMap.yarn, cmdsMap.yarn_pnp, cmdsMap.yarn_classic, cmdsMap.bun], testDescriptions, formattedNow)
     })
   }
 
@@ -174,7 +183,7 @@ async function run () {
 
   **Last benchmarked at**: _${formattedNow}_ (_daily_ updated).
 
-  This benchmark compares the performance of npm, pnpm, Yarn Classic, Yarn PnP, and Bun (check [Yarn's benchmarks](https://yarnpkg.com/benchmarks) for any other Yarn modes that are not included here).
+  This benchmark compares the performance of npm, pnpm, Yarn (node_modules), Yarn PnP, Yarn Classic, and Bun (check [Yarn's benchmarks](https://yarnpkg.com/benchmarks) for any other Yarn modes that are not included here).
   `
 
   const explanation = stripIndents`
