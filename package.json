@@ -1,7 +1,7 @@
 {
   "type": "module",
   "scripts": {
-    "benchmark": "COREPACK_ENABLE_STRICT=0 node ./index.js && node ./generateVersionsSvg.js"
+    "benchmark": "COREPACK_ENABLE_STRICT=0 node ./index.js && node ./generateVersionsSvg.js && node ./generateFixtureSvgs.js"
   },
   "dependencies": {
     "common-tags": "^1.8.2",
