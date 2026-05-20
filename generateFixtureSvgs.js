@@ -62,7 +62,7 @@ const min = (benchmarkResults) => {
 const toArray = (resultsObj) => {
   return tests.map((test) =>
     PMS.map((pm) => resultsObj[pm][test]).map((time) =>
-      Number.isFinite(time) ? Math.round(time / 100) / 10 : 0
+      Number.isFinite(time) ? Math.round(time / 100) / 10 : NaN
     )
   )
 }
