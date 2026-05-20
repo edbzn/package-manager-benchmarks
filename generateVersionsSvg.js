@@ -106,7 +106,7 @@ const getPMResults = async (pm) => {
   return results;
 };
 
-const PMS = ["npm", "pnpm", "yarn", "yarn_pnp", "bun"];
+const PMS = ["npm", "pnpm", "yarn", "yarn_pnp", "yarn_classic", "bun"];
 const now = new Intl.DateTimeFormat("fr-FR", {
   dateStyle: "medium",
   timeStyle: "short",

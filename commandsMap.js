@@ -44,6 +44,18 @@ export default {
       'install'
     ]
   },
+  yarn_classic: {
+    scenario: 'yarn_classic',
+    legend: 'Yarn Classic',
+    name: 'yarn',
+    args: [
+      'install',
+      '--ignore-scripts',
+      '--cache-folder=cache',
+      '--registry=https://registry.npmjs.org/',
+      '--non-interactive',
+    ]
+  },
   bun: {
     scenario: 'bun',
     legend: 'Bun',

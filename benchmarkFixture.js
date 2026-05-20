@@ -34,7 +34,7 @@ export function createEnv (managersDir) {
 function cleanLockfile (pm, cwd, env) {
   const lockfileName = lockfileNameByPM[pm.name.includes('bun') ? 'bun' : pm.name]
   rimraf.sync(path.join(cwd, lockfileName))
-  if (pm.name === 'yarn') {
+  if (pm.name === 'yarn' && pm.scenario !== 'yarn_classic') {
     // This ensures yarn berry to install under a nested folder
     spawnSyncOrThrow({ name: 'nodetouch', args: [lockfileName] }, { env, cwd, stdio: "inherit" })
   }
@@ -70,7 +70,7 @@ export default async function benchmark (pm, fixture, opts) {
 
   cleanLockfile(pm, cwd, env)
 
-  if (pm.name === 'yarn') {
+  if (pm.name === 'yarn' && pm.scenario !== 'yarn_classic') {
     // Disable global mirror that speeds up yarn berry install
     let yarnRc =
       'enableImmutableInstalls: false\n'
