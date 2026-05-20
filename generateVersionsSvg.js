@@ -91,6 +91,7 @@ function min(benchmarkResults) {
 const getPMResults = async (pm) => {
   const results = [];
   const pmDir = getPMDir(pm);
+  if (!fs.existsSync(pmDir)) return results;
   // each test is a directory
   const versions = fs.readdirSync(pmDir);
   for (const version of versions) {
@@ -106,7 +107,7 @@ const getPMResults = async (pm) => {
   return results;
 };
 
-const PMS = ["npm", "pnpm", "yarn", "yarn_pnp", "yarn_classic", "bun"];
+const PMS = ["npm", "pnpm", "pnpm_rust", "yarn", "yarn_pnp", "yarn_classic", "bun"];
 const now = new Intl.DateTimeFormat("fr-FR", {
   dateStyle: "medium",
   timeStyle: "short",
@@ -114,6 +115,7 @@ const now = new Intl.DateTimeFormat("fr-FR", {
 
 for (const pm of PMS) {
   getPMResults(pm).then((results) => {
+    if (results.length === 0) return;
     const svg = generateSvg(
       results.sort(([a], [b]) => rcompare(a, b)),
       pm,
