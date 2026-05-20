@@ -8,12 +8,10 @@ Based on the original benchmark project: https://pnpm.io/benchmarks
 
 ```bash
 pnpm install
-pnpm run benchmark
+pnpm run update-charts
 ```
 
 ## Results
-
-- Full benchmark tables: [benchmarks.md](./benchmarks.md)
 
 ### Fixture snapshots
 

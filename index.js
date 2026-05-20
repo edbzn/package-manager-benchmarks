@@ -2,8 +2,6 @@
 
 import fs from 'fs'
 import rimraf from 'rimraf'
-import commonTags from 'common-tags'
-import prettyMs from 'pretty-ms'
 import tempy from 'tempy'
 import cmdsMap from './commandsMap.js'
 import benchmark from './recordBenchmark.js'
@@ -16,30 +14,14 @@ const DIRNAME = path.dirname(fileURLToPath(import.meta.url))
 const TMP = path.join(DIRNAME, '.tmp')
 const BENCH_IMGS = path.join(DIRNAME, 'results', 'img')
 
-const { stripIndents } = commonTags
 const LIMIT_RUNS = 30
 
 const fixtures = [
-  {
-    name: 'react-app',
-    mdDesc: '## React App\n\nThe app\'s `package.json` [here](./fixtures/react-app/package.json)'
-  },
-  {
-    name: 'ember-quickstart',
-    mdDesc: '## Ember App\n\nThe app\'s `package.json` [here](./fixtures/ember-quickstart/package.json)'
-  },
-  {
-    name: 'angular-quickstart',
-    mdDesc: '## Angular App\n\nThe app\'s `package.json` [here](./fixtures/angular-quickstart/package.json)'
-  },
-  {
-    name: 'medium-size-app',
-    mdDesc: '## Medium Size App\n\nThe app\'s `package.json` [here](./fixtures/medium-size-app/package.json)'
-  },
-  {
-    name: 'alotta-files',
-    mdDesc: '## Lots of Files\n\nThe app\'s `package.json` [here](./fixtures/alotta-files/package.json)'
-  }
+  'react-app',
+  'ember-quickstart',
+  'angular-quickstart',
+  'medium-size-app',
+  'alotta-files',
 ]
 
 const tests = [
@@ -132,7 +114,6 @@ async function run () {
   spawn.sync('pnpm', ['add', 'yarn@^1'], { cwd: managersDirClassic, stdio: 'inherit' })
   const formattedNow = new Intl.DateTimeFormat('fr-FR', { dateStyle: 'medium', timeStyle: 'short' }).format(new Date())
   const pms = [ 'npm', 'pnpm', 'pnpm_rust', 'yarn', 'yarn_pnp', 'yarn_classic', 'bun' ]
-  const sections = []
   const svgs = []
   const opts = {
     limitRuns: LIMIT_RUNS,
@@ -140,19 +121,19 @@ async function run () {
     managersDir,
   }
   for (const fixture of fixtures) {
-    const npmRes = min(await benchmark(cmdsMap.npm, fixture.name, opts))
-    const yarnRes = min(await benchmark(cmdsMap.yarn, fixture.name, opts))
-    const yarnPnPRes = min(await benchmark(cmdsMap.yarn_pnp, fixture.name, {
+    const npmRes = min(await benchmark(cmdsMap.npm, fixture, opts))
+    const yarnRes = min(await benchmark(cmdsMap.yarn, fixture, opts))
+    const yarnPnPRes = min(await benchmark(cmdsMap.yarn_pnp, fixture, {
       ...opts,
       hasNodeModules: false,
     }))
-    const yarnClassicRes = min(await benchmark(cmdsMap.yarn_classic, fixture.name, {
+    const yarnClassicRes = min(await benchmark(cmdsMap.yarn_classic, fixture, {
       ...opts,
       managersDir: managersDirClassic,
     }))
-    const bunRes = min(await benchmark(cmdsMap.bun, fixture.name, opts))
-    const pnpmRes = min(await benchmark(cmdsMap.pnpm, fixture.name, opts))
-    const pnpmRustRes = min(await benchmark(cmdsMap.pnpm_rust, fixture.name, {
+    const bunRes = min(await benchmark(cmdsMap.bun, fixture, opts))
+    const pnpmRes = min(await benchmark(cmdsMap.pnpm, fixture, opts))
+    const pnpmRustRes = min(await benchmark(cmdsMap.pnpm_rust, fixture, {
       ...opts,
       managersDir: managersDirPnpmRust,
     }))
@@ -166,62 +147,12 @@ async function run () {
       'bun': bunRes,
     })
 
-    sections.push(stripIndents`
-      ${fixture.mdDesc}
-
-      | action  | cache | lockfile | node_modules| npm | pnpm | pnpm v12 (rust) | Yarn | Yarn PnP | Yarn Classic | Bun |
-      | ---     | ---   | ---      | ---         | --- | ---  | ---             | ---  | ---      | ---          | --- |
-      | install |       |          |             | ${prettyMs(npmRes.firstInstall)} | ${prettyMs(pnpmRes.firstInstall)} | ${prettyMs(pnpmRustRes.firstInstall)} | ${prettyMs(yarnRes.firstInstall)} | ${prettyMs(yarnPnPRes.firstInstall)} | ${prettyMs(yarnClassicRes.firstInstall)} | ${prettyMs(bunRes.firstInstall)} |
-      | install | ✔     | ✔        | ✔           | ${prettyMs(npmRes.repeatInstall)} | ${prettyMs(pnpmRes.repeatInstall)} | ${prettyMs(pnpmRustRes.repeatInstall)} | ${prettyMs(yarnRes.repeatInstall)} | n/a | ${prettyMs(yarnClassicRes.repeatInstall)} | ${prettyMs(bunRes.repeatInstall)} |
-      | install | ✔     | ✔        |             | ${prettyMs(npmRes.withWarmCacheAndLockfile)} | ${prettyMs(pnpmRes.withWarmCacheAndLockfile)} | ${prettyMs(pnpmRustRes.withWarmCacheAndLockfile)} | ${prettyMs(yarnRes.withWarmCacheAndLockfile)} | ${prettyMs(yarnPnPRes.withWarmCacheAndLockfile)} | ${prettyMs(yarnClassicRes.withWarmCacheAndLockfile)} | ${prettyMs(bunRes.withWarmCacheAndLockfile)} |
-      | install | ✔     |          |             | ${prettyMs(npmRes.withWarmCache)} | ${prettyMs(pnpmRes.withWarmCache)} | ${prettyMs(pnpmRustRes.withWarmCache)} | ${prettyMs(yarnRes.withWarmCache)} | ${prettyMs(yarnPnPRes.withWarmCache)} | ${prettyMs(yarnClassicRes.withWarmCache)} | ${prettyMs(bunRes.withWarmCache)} |
-      | install |       | ✔        |             | ${prettyMs(npmRes.withLockfile)} | ${prettyMs(pnpmRes.withLockfile)} | ${prettyMs(pnpmRustRes.withLockfile)} | ${prettyMs(yarnRes.withLockfile)} | ${prettyMs(yarnPnPRes.withLockfile)} | ${prettyMs(yarnClassicRes.withLockfile)} | ${prettyMs(bunRes.withLockfile)} |
-      | install | ✔     |          | ✔           | ${prettyMs(npmRes.withWarmCacheAndModules)} | ${prettyMs(pnpmRes.withWarmCacheAndModules)} | ${prettyMs(pnpmRustRes.withWarmCacheAndModules)} | ${prettyMs(yarnRes.withWarmCacheAndModules)} | n/a | ${prettyMs(yarnClassicRes.withWarmCacheAndModules)} | ${prettyMs(bunRes.withWarmCacheAndModules)} |
-      | install |       | ✔        | ✔           | ${prettyMs(npmRes.withWarmModulesAndLockfile)} | ${prettyMs(pnpmRes.withWarmModulesAndLockfile)} | ${prettyMs(pnpmRustRes.withWarmModulesAndLockfile)} | ${prettyMs(yarnRes.withWarmModulesAndLockfile)} | n/a | ${prettyMs(yarnClassicRes.withWarmModulesAndLockfile)} | ${prettyMs(bunRes.withWarmModulesAndLockfile)} |
-      | install |       |          | ✔           | ${prettyMs(npmRes.withWarmModules)} | ${prettyMs(pnpmRes.withWarmModules)} | ${prettyMs(pnpmRustRes.withWarmModules)} | ${prettyMs(yarnRes.withWarmModules)} | n/a | ${prettyMs(yarnClassicRes.withWarmModules)} | ${prettyMs(bunRes.withWarmModules)} |
-      | update  | n/a | n/a | n/a | ${prettyMs(npmRes.updatedDependencies)} | ${prettyMs(pnpmRes.updatedDependencies)} | ${prettyMs(pnpmRustRes.updatedDependencies)} | ${prettyMs(yarnRes.updatedDependencies)} | ${prettyMs(yarnPnPRes.updatedDependencies)} | ${prettyMs(yarnClassicRes.updatedDependencies)} | ${prettyMs(bunRes.updatedDependencies)} |
-
-      <img alt="Graph of the ${fixture.name} results" src="results/img/${fixture.name}.svg" />
-    `)
     svgs.push({
-      path: path.join(BENCH_IMGS, `${fixture.name}.svg`),
+      path: path.join(BENCH_IMGS, `${fixture}.svg`),
       file: generateSvg(resArray, [cmdsMap.npm, cmdsMap.pnpm, cmdsMap.pnpm_rust, cmdsMap.yarn, cmdsMap.yarn_pnp, cmdsMap.yarn_classic, cmdsMap.bun], testDescriptions, formattedNow)
     })
   }
-
-  const introduction = stripIndents`
-  # Benchmarks of JavaScript Package Managers
-
-  **Last benchmarked at**: _${formattedNow}_ (_daily_ updated).
-
-  This benchmark compares the performance of npm, pnpm, Yarn (node_modules), Yarn PnP, Yarn Classic, and Bun (check [Yarn's benchmarks](https://yarnpkg.com/benchmarks) for any other Yarn modes that are not included here).
-  `
-
-  const explanation = stripIndents`
-  Here's a quick explanation of how these tests could apply to the real world:
-
-  - \`clean install\`: How long it takes to run a totally fresh install: no lockfile present, no packages in the cache, no \`node_modules\` folder.
-  - \`with cache\`, \`with lockfile\`, \`with node_modules\`: After the first install is done, the install command is run again.
-  - \`with cache\`, \`with lockfile\`: When a repo is fetched by a developer and installation is first run.
-  - \`with cache\`: Same as the one above, but the package manager doesn't have a lockfile to work from.
-  - \`with lockfile\`: When an installation runs on a CI server.
-  - \`with cache\`, \`with node_modules\`: The lockfile is deleted and the install command is run again.
-  - \`with node_modules\`, \`with lockfile\`: The package cache is deleted and the install command is run again.
-  - \`with node_modules\`: The package cache and the lockfile is deleted and the install command is run again.
-  - \`update\`: Updating your dependencies by changing the version in the \`package.json\` and running the install command again.
-`
-
-  await Promise.all(
-    [
-      ...svgs.map((file) => fs.promises.writeFile(file.path, file.file, 'utf-8')),
-      fs.promises.writeFile(path.join(DIRNAME, 'benchmarks.md'), stripIndents`
-        ${introduction}
-
-        ${explanation}
-
-        ${sections.join('\n\n')}`, 'utf8')
-    ]
-  )
+  await Promise.all(svgs.map((file) => fs.promises.writeFile(file.path, file.file, 'utf-8')))
 }
 
 async function writePackageJson (cwd) {

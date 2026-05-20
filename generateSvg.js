@@ -1,18 +1,20 @@
 
 const getHighestNumber = (array) => {
-  // flatten array of arrays of numbers into an array of numbers
-  const flattened = [].concat.apply([], array)
+  // flatten array of arrays of numbers into an array of finite numbers
+  const flattened = []
+    .concat.apply([], array)
+    .filter((value) => Number.isFinite(value))
   // return the highest number
-  return Math.max.apply(null, flattened)
+  return Math.max.apply(null, flattened.length > 0 ? flattened : [1])
 }
 
 const NPM_COLOR = '#cd3731'
 const YARN_COLOR = '#248ebd'
-const YARN_CLASSIC_COLOR = '#2fa84f'
+const YARN_CLASSIC_COLOR = '#16a34a'
 const YARN_PNP_COLOR = '#40a9ff'
 const PNPM_COLOR = '#fbae00'
-const PNPM_RUST_COLOR = '#f27f0c'
-const BUN_COLOR = '#ff6f00'
+const PNPM_RUST_COLOR = '#8e44ad'
+const BUN_COLOR = '#ff6b00'
 
 export default (resultArrays, pms, tests, formattedNow) => {
   let svgStr = ''
@@ -22,7 +24,7 @@ export default (resultArrays, pms, tests, formattedNow) => {
   const offset = {
     left: 40,
     right: 10,
-    top: 35,
+    top: 52,
     bottom: 10
   }
   // thickness of bars
@@ -84,10 +86,13 @@ export default (resultArrays, pms, tests, formattedNow) => {
 
   // draw legend
   pms.forEach((pm, index) => {
+    const itemsPerRow = 4
+    const row = Math.floor(index / itemsPerRow)
+    const col = index % itemsPerRow
     // draw colored circle
     const radius = 4
-    const x = graph.x + radius + (radius * 4) * index
-    const y = vb.y + radius + 2
+    const x = graph.x + 4 + (col * 62)
+    const y = vb.y + radius + 2 + (row * 13)
     svgStr += `  <circle cx="${x}" cy="${y}" r="${radius}" fill="${colors[index]}"></circle>` + '\n'
 
     // add name under circle
@@ -96,7 +101,7 @@ export default (resultArrays, pms, tests, formattedNow) => {
     svgStr += `  <text x="${x}" y="${textY}" class="font s4" text-anchor="${anchor}">${pm.legend}</text>` + '\n'
 
     // add version under name
-    const text = `v${pm.version}`
+    const text = pm.version === 'n/a' ? 'n/a' : `v${pm.version}`
     textY += 4
     svgStr += `  <text x="${x}" y="${textY}" class="font s3" text-anchor="${anchor}">${text}</text>` + '\n'
   })
@@ -158,7 +163,12 @@ export default (resultArrays, pms, tests, formattedNow) => {
         (((thickness + spacing) * pms.length + separation) * indexA)
       const length = Math.round(result * ratio)
       const x = graph.x
-      svgStr += `  <rect x="${x}" y="${y}" width="${length}" height="${thickness}" fill="${colors[indexR]}" rx="${roundedCorners}" ry="${roundedCorners}"></rect>` + '\n'
+      if (Number.isFinite(result)) {
+        svgStr += `  <rect x="${x}" y="${y}" width="${length === 0 ? 1 : length}" height="${thickness}" fill="${colors[indexR]}" rx="${roundedCorners}" ry="${roundedCorners}"></rect>` + '\n'
+      } else {
+        svgStr += `  <rect x="${x}" y="${y}" width="3" height="${thickness}" fill="#b0b0b0" rx="${roundedCorners}" ry="${roundedCorners}"></rect>` + '\n'
+        svgStr += `  <text x="${x + 5}" y="${y + (thickness / 2)}" class="font s4 text" dominant-baseline="middle">n/a</text>` + '\n'
+      }
     })
   })
 
