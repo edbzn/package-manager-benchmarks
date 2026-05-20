@@ -28,6 +28,21 @@ export default {
       '--config.resolution-mode=highest',
     ]
   },
+  pnpm_rust: {
+    scenario: 'pnpm_rust',
+    legend: 'pnpm v12 (rust)',
+    name: 'pnpm',
+    args: [
+      'install',
+      '--ignore-scripts',
+      '--store-dir=cache/store',
+      '--cache-dir=cache/cache',
+      '--registry=https://registry.npmjs.org/',
+      '--no-strict-peer-dependencies',
+      '--config.auto-install-peers=false',
+      '--config.resolution-mode=highest',
+    ]
+  },
   yarn: {
     scenario: 'yarn',
     legend: 'Yarn',

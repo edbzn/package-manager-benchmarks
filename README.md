@@ -12,6 +12,7 @@ pnpm run benchmark
 - [Yarn](#yarn)
 - [Yarn PnP](#yarn-pnp)
 - [PnPM](#pnpm)
+- [PnPM v12 (Rust)](#pnpm-v12-rust)
 - [Bun](#bun)
 
 #### A lot of files
@@ -49,6 +50,10 @@ pnpm run benchmark
 ### PnPM
 
 ![](results/img/pnpm.svg)
+
+### PnPM v12 (Rust)
+
+![](results/img/pnpm_rust.svg)
 
 ### Bun
 
