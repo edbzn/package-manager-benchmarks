@@ -49,7 +49,8 @@ export default {
     legend: 'Bun',
     name: 'bun',
     args: [
-      'install'
+      'install',
+      '--cache-dir=cache',
     ]
   },
 }
