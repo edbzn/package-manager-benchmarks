@@ -126,5 +126,5 @@
   <text x="38" y="343.5" class="font s4" dominant-baseline="middle" text-anchor="end">with lockfile</text>
   <text x="38" y="391" class="font s4" dominant-baseline="middle" text-anchor="end">with node_modules</text>
   <text x="38" y="440.5" class="font s4" dominant-baseline="middle" text-anchor="end">update</text>
-  <text x="290" y="492.5" class="font s4 text" text-anchor="end">Tests were run using Node.js v24.14.1 at: 20 mai 2026, 09:01</text>
+  <text x="290" y="492.5" class="font s4 text" text-anchor="end">Tests were run using Node.js v23.11.1 at: 20 mai 2026, 09:12</text>
 </svg>
