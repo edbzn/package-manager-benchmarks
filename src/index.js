@@ -91,7 +91,24 @@ run()
   .then(() => console.log('done'))
   .catch(err => console.error(err))
 
+function verifyPackageManager (name) {
+  const result = spawn.sync(name, ['--version'], { stdio: 'pipe' })
+  if (result.status !== 0) {
+    throw new Error(`✗ ${name} is not available or failed to run`)
+  }
+  const version = result.stdout.toString().trim()
+  console.log(`✓ ${name}: ${version}`)
+  return version
+}
+
 async function run () {
+  console.log('\n📦 Verifying required package managers...\n')
+  verifyPackageManager('npm')
+  verifyPackageManager('pnpm')
+  verifyPackageManager('yarn')
+  verifyPackageManager('bun')
+  console.log('\n✓ All required package managers are available\n')
+
   const managersDir = path.join(tempy.directory(), 'managers')
   const managersDirClassic = path.join(tempy.directory(), 'managers-classic')
   const managersDirPnpmRust = path.join(tempy.directory(), 'managers-pnpm-rust')
