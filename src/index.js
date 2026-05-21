@@ -91,8 +91,10 @@ run()
   .then(() => console.log('done'))
   .catch(err => console.error(err))
 
-function verifyPackageManager (name) {
-  const result = spawn.sync(name, ['--version'], { stdio: 'pipe' })
+function verifyPackageManager (name, cwd = undefined) {
+  const opts = { stdio: 'pipe' }
+  if (cwd) opts.cwd = cwd
+  const result = spawn.sync(name, ['--version'], opts)
   if (result.status !== 0) {
     throw new Error(`✗ ${name} is not available or failed to run`)
   }
@@ -102,16 +104,10 @@ function verifyPackageManager (name) {
 }
 
 async function run () {
-  console.log('\n📦 Verifying required package managers...\n')
-  verifyPackageManager('npm')
-  verifyPackageManager('pnpm')
-  verifyPackageManager('yarn')
-  verifyPackageManager('bun')
-  console.log('\n✓ All required package managers are available\n')
-
   const managersDir = path.join(tempy.directory(), 'managers')
   const managersDirClassic = path.join(tempy.directory(), 'managers-classic')
   const managersDirPnpmRust = path.join(tempy.directory(), 'managers-pnpm-rust')
+
   await Promise.allSettled([
     rimraf(TMP),
     // make sure folders exist
@@ -125,10 +121,24 @@ async function run () {
     writePackageJson(managersDirClassic),
     writePackageJson(managersDirPnpmRust),
   ])
+
+  // Setup specialized package managers
   spawn.sync('pnpm', ['add', 'npm@latest', 'pnpm@latest'], { cwd: managersDir, stdio: 'inherit' })
   spawn.sync('pnpm', ['add', '@pnpm/exe@latest'], { cwd: managersDirPnpmRust, stdio: 'inherit' })
   spawn.sync('yarn', ['set', 'version', 'stable'], { cwd: managersDir, stdio: 'inherit' })
   spawn.sync('pnpm', ['add', 'yarn@^1'], { cwd: managersDirClassic, stdio: 'inherit' })
+
+  // Verify all package managers
+  console.log('\n📦 Verifying required package managers...\n')
+  verifyPackageManager('npm')
+  verifyPackageManager('pnpm')
+  verifyPackageManager('yarn')
+  verifyPackageManager('bun')
+  console.log('\n  Specialized variants:')
+  verifyPackageManager('pnpm', managersDirPnpmRust)
+  verifyPackageManager('yarn', managersDirClassic)
+  verifyPackageManager('yarn', managersDir)
+  console.log('\n✓ All required package managers are available\n')
   const formattedNow = new Intl.DateTimeFormat('fr-FR', { dateStyle: 'medium', timeStyle: 'short' }).format(new Date())
   const pms = [ 'npm', 'pnpm', 'pnpm_rust', 'yarn', 'yarn_pnp', 'yarn_classic', 'bun' ]
   const svgs = []

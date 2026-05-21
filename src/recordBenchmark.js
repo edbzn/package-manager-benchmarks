@@ -29,9 +29,10 @@ export default async function (pm, fixture, opts) {
 }
 
 function getPMVersion (pmName, opts) {
+  const env = { ...createEnv(opts.managersDir), COREPACK_ENABLE_STRICT: '0' }
   const { status, stdout, stderr } = spawn.sync(pmName, ['--version'], {
     cwd: opts.managersDir,
-    env: createEnv(opts.managersDir),
+    env,
   })
   if (status !== 0) {
     throw new Error(`Couldn't detect version of ${pmName}. ${stderr?.toString()}`)
