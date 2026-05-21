@@ -86,7 +86,7 @@ export default (resultArrays, pms, tests, formattedNow) => {
 
   // draw legend
   pms.forEach((pm, index) => {
-    const itemsPerRow = 4
+    const itemsPerRow = pms.length
     const row = Math.floor(index / itemsPerRow)
     const col = index % itemsPerRow
     // draw colored circle
