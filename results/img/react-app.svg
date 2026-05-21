@@ -9,27 +9,27 @@
     .text { fill: #888; }
   </style>
   <rect x="0" y="0" width="300" height="511.5" fill="#fff"></rect>
-  <circle cx="44" cy="6" r="4" fill="#cd3731"></circle>
-  <text x="44" y="14" class="font s4" text-anchor="middle">npm</text>
-  <text x="44" y="18" class="font s3" text-anchor="middle">v11.14.1</text>
-  <circle cx="106" cy="6" r="4" fill="#fbae00"></circle>
-  <text x="106" y="14" class="font s4" text-anchor="middle">pnpm</text>
-  <text x="106" y="18" class="font s3" text-anchor="middle">v10.33.0</text>
-  <circle cx="168" cy="6" r="4" fill="#8e44ad"></circle>
-  <text x="168" y="14" class="font s4" text-anchor="middle">pnpm v12 (rust)</text>
-  <text x="168" y="18" class="font s3" text-anchor="middle">n/a</text>
-  <circle cx="230" cy="6" r="4" fill="#248ebd"></circle>
-  <text x="230" y="14" class="font s4" text-anchor="middle">Yarn</text>
-  <text x="230" y="18" class="font s3" text-anchor="middle">v4.15.0</text>
-  <circle cx="44" cy="19" r="4" fill="#40a9ff"></circle>
-  <text x="44" y="27" class="font s4" text-anchor="middle">Yarn PnP</text>
-  <text x="44" y="31" class="font s3" text-anchor="middle">v4.15.0</text>
-  <circle cx="106" cy="19" r="4" fill="#16a34a"></circle>
-  <text x="106" y="27" class="font s4" text-anchor="middle">Yarn Classic</text>
-  <text x="106" y="31" class="font s3" text-anchor="middle">v1.22.22</text>
-  <circle cx="168" cy="19" r="4" fill="#ff6b00"></circle>
-  <text x="168" y="27" class="font s4" text-anchor="middle">Bun</text>
-  <text x="168" y="31" class="font s3" text-anchor="middle">v1.3.14</text>
+  <circle cx="74.25" cy="6" r="4" fill="#cd3731"></circle>
+  <text x="74.25" y="14" class="font s4" text-anchor="middle">npm</text>
+  <text x="74.25" y="18" class="font s3" text-anchor="middle">v11.14.1</text>
+  <circle cx="134.75" cy="6" r="4" fill="#fbae00"></circle>
+  <text x="134.75" y="14" class="font s4" text-anchor="middle">pnpm</text>
+  <text x="134.75" y="18" class="font s3" text-anchor="middle">v10.33.0</text>
+  <circle cx="195.25" cy="6" r="4" fill="#8e44ad"></circle>
+  <text x="195.25" y="14" class="font s4" text-anchor="middle">pnpm v12 (rust)</text>
+  <text x="195.25" y="18" class="font s3" text-anchor="middle">n/a</text>
+  <circle cx="255.75" cy="6" r="4" fill="#248ebd"></circle>
+  <text x="255.75" y="14" class="font s4" text-anchor="middle">Yarn</text>
+  <text x="255.75" y="18" class="font s3" text-anchor="middle">v4.15.0</text>
+  <circle cx="74.25" cy="19" r="4" fill="#40a9ff"></circle>
+  <text x="74.25" y="27" class="font s4" text-anchor="middle">Yarn PnP</text>
+  <text x="74.25" y="31" class="font s3" text-anchor="middle">v4.15.0</text>
+  <circle cx="134.75" cy="19" r="4" fill="#16a34a"></circle>
+  <text x="134.75" y="27" class="font s4" text-anchor="middle">Yarn Classic</text>
+  <text x="134.75" y="31" class="font s3" text-anchor="middle">v1.22.22</text>
+  <circle cx="195.25" cy="19" r="4" fill="#ff6b00"></circle>
+  <text x="195.25" y="27" class="font s4" text-anchor="middle">Bun</text>
+  <text x="195.25" y="31" class="font s3" text-anchor="middle">v1.3.14</text>
   <text x="40" y="45" class="font s5 text" text-anchor="middle">0</text>
   <text x="40" y="502.5" class="font s5 text" text-anchor="middle">0</text>
   <line x1="90" y1="48" x2="90" y2="497.5" class="line width"></line>
@@ -135,5 +135,5 @@
   <text x="38" y="360.5" class="font s4" dominant-baseline="middle" text-anchor="end">with lockfile</text>
   <text x="38" y="408" class="font s4" dominant-baseline="middle" text-anchor="end">with node_modules</text>
   <text x="38" y="457.5" class="font s4" dominant-baseline="middle" text-anchor="end">update</text>
-  <text x="290" y="509.5" class="font s4 text" text-anchor="end">Tests were run using Node.js v23.11.1 at: 20 mai 2026, 13:21</text>
+  <text x="290" y="509.5" class="font s4 text" text-anchor="end">Tests were run using Node.js v20.20.2 at: 21 mai 2026, 06:54</text>
 </svg>
