@@ -25,14 +25,11 @@ jobs:
           corepack prepare yarn --activate
       - uses: oven-sh/setup-bun@v2
       - run: bun -v
-      - name: Install yarn classic globally
-        run: npm install -g yarn@^1
       - name: Verify package managers
         run: |
           echo "npm: $(npm --version)"
           echo "pnpm: $(pnpm --version)"
           echo "yarn berry: $(yarn --version)"
-          echo "yarn classic: $(npx -p yarn@^1 yarn --version)"
           echo "bun: $(bun --version)"
       - run: pnpm install
       - run: pnpm run benchmark

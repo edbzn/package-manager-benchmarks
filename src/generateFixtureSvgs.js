@@ -7,7 +7,7 @@ import cmdsMap from './commandsMap.js'
 import generateSvg from './generateSvg.js'
 
 const DIRNAME = path.dirname(fileURLToPath(import.meta.url))
-const RESULTS_DIR = path.join(DIRNAME, 'results')
+const RESULTS_DIR = path.join(DIRNAME, '../results')
 const BENCH_IMGS = path.join(RESULTS_DIR, 'img')
 
 const PMS = ['npm', 'pnpm', 'pnpm_rust', 'yarn', 'yarn_pnp', 'yarn_classic', 'bun']

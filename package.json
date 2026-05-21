@@ -1,8 +1,8 @@
 {
   "type": "module",
   "scripts": {
-    "benchmark": "COREPACK_ENABLE_STRICT=0 node ./index.js && pnpm run update-charts",
-    "update-charts": "node ./generateVersionsSvg.js && node ./generateFixtureSvgs.js"
+    "benchmark": "COREPACK_ENABLE_STRICT=0 node ./src/index.js && pnpm run update-charts",
+    "update-charts": "node ./src/generateVersionsSvg.js && node ./src/generateFixtureSvgs.js"
   },
   "dependencies": {
     "common-tags": "^1.8.2",

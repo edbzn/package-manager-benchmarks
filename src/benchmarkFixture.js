@@ -10,8 +10,8 @@ import { fileURLToPath } from 'url'
 
 const DIRNAME = path.dirname(fileURLToPath(import.meta.url))
 
-const FIXTURES_DIR = path.join(DIRNAME, 'fixtures')
-const TMP = path.join(DIRNAME, '.tmp')
+const FIXTURES_DIR = path.join(DIRNAME, '../fixtures')
+const TMP = path.join(DIRNAME, '../.tmp')
 
 const lockfileNameByPM = {
   npm: 'package-lock.json',

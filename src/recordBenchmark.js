@@ -7,7 +7,7 @@ import { loadYamlFile } from 'load-yaml-file'
 import { fileURLToPath } from 'url'
 
 const DIRNAME = path.dirname(fileURLToPath(import.meta.url))
-const RESULTS = path.join(DIRNAME, 'results')
+const RESULTS = path.join(DIRNAME, '../results')
 
 export default async function (pm, fixture, opts) {
   opts = opts || {}

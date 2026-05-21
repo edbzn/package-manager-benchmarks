@@ -6,7 +6,7 @@ import prettyMs from "pretty-ms";
 import { rcompare } from "semver";
 
 const DIRNAME = path.dirname(fileURLToPath(import.meta.url));
-const BENCH = path.join(DIRNAME, "results");
+const BENCH = path.join(DIRNAME, "../results");
 
 const getPMDir = (pm) => path.join(BENCH, pm);
 
@@ -108,7 +108,7 @@ for (const pm of PMS) {
     const deltas = computeDeltas(sorted);
     if (deltas.length === 0) return;
     const svg = generateDeltaSvg(deltas, pm, testDescriptions, now);
-    fs.writeFileSync(path.join(DIRNAME, "results", "img", `${pm}.svg`), svg);
+    fs.writeFileSync(path.join(DIRNAME, "../results", "img", `${pm}.svg`), svg);
   });
 }
 
