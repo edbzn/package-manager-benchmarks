@@ -16,6 +16,7 @@ const TMP = path.join(DIRNAME, '../.tmp')
 const lockfileNameByPM = {
   npm: 'package-lock.json',
   pnpm: 'pnpm-lock.yaml',
+  pacquet: 'pnpm-lock.yaml',
   yarn: 'yarn.lock',
   bun: 'bun.lockb',
 }
@@ -167,7 +168,7 @@ export default async function benchmark (pm, fixture, opts) {
 
   // update all dependency versions to '*' and install again
   const originalPackageJson = await updateDependenciesInPackageJson(cwd)
-  if (pm.name === 'pnpm') {
+  if (pm.name === 'pnpm' || pm.name === 'pacquet') {
     // This is needed to fix pnpm execution on CI
     pm = {
       ...pm,
