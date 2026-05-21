@@ -91,7 +91,8 @@ export default (resultArrays, pms, tests, formattedNow) => {
     const col = index % itemsPerRow
     // draw colored circle
     const radius = 4
-    const x = graph.x + 4 + (col * 62)
+    const colWidth = (graph.w - 8) / itemsPerRow
+    const x = graph.x + 4 + (col * colWidth) + colWidth / 2
     const y = vb.y + radius + 2 + (row * 13)
     svgStr += `  <circle cx="${x}" cy="${y}" r="${radius}" fill="${colors[index]}"></circle>` + '\n'
 
