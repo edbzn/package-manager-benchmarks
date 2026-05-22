@@ -5,6 +5,7 @@ import path from 'path'
 import writeYamlFile from 'write-yaml-file'
 import { loadYamlFile } from 'load-yaml-file'
 import { fileURLToPath } from 'url'
+import { readFileSync } from 'fs'
 
 const DIRNAME = path.dirname(fileURLToPath(import.meta.url))
 const RESULTS = path.join(DIRNAME, '../results')
@@ -30,11 +31,29 @@ export default async function (pm, fixture, opts) {
 
 function getPMVersion (pmName, opts) {
   const env = { ...createEnv(opts.managersDir), COREPACK_ENABLE_STRICT: '0' }
+  
+  // For pacquet, use a clean home directory to avoid inheriting parent config
+  if (pmName === 'pacquet') {
+    env.PNPM_HOME = opts.managersDir
+    env.NPM_CONFIG_USERCONFIG = path.join(opts.managersDir, '.npmrc')
+  }
+  
   const { status, stdout, stderr } = spawn.sync(pmName, ['--version'], {
     cwd: opts.managersDir,
     env,
+    stdio: ['pipe', 'pipe', 'pipe'], // Capture stderr separately
   })
   if (status !== 0) {
+    // For pacquet, try reading version from package.json as fallback
+    if (pmName === 'pacquet') {
+      try {
+        const pkgJsonPath = path.join(opts.managersDir, 'node_modules', 'pacquet', 'package.json')
+        const pkgJson = JSON.parse(readFileSync(pkgJsonPath, 'utf-8'))
+        return pkgJson.version
+      } catch (e) {
+        // Fall through to error below
+      }
+    }
     throw new Error(`Couldn't detect version of ${pmName}. ${stderr?.toString()}`)
   }
   return stdout.toString().trim()
