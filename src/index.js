@@ -38,7 +38,10 @@ const toArray = (pms, resultsObj) => {
 
 run()
   .then(() => console.log('done'))
-  .catch(err => console.error(err))
+  .catch(err => {
+    console.error(err)
+    process.exit(1)
+  })
 
 function verifyPackageManager (name, cwd = undefined, binDir = undefined) {
   const opts = { stdio: 'pipe' }
@@ -81,6 +84,24 @@ function assertSemverLikeVersion (name, version) {
   console.log(`✓ ${name}: version format looks valid (${match[0]})`)
 }
 
+async function verifyInstallations (managersDir, managersDirClassic, managersDirPnpmRust) {
+  console.log('\n✓ Verifying specialized package managers are installed...\n')
+
+  // Check pacquet installation
+  const pacquetPath = path.join(managersDirPnpmRust, 'node_modules', 'pacquet')
+  if (!fs.existsSync(pacquetPath)) {
+    throw new Error(`✗ pacquet is not installed in ${managersDirPnpmRust}`)
+  }
+  console.log('✓ pacquet is installed')
+
+  // Check yarn@^1 installation
+  const yarnClassicPath = path.join(managersDirClassic, 'node_modules', 'yarn')
+  if (!fs.existsSync(yarnClassicPath)) {
+    throw new Error(`✗ yarn@^1 is not installed in ${managersDirClassic}`)
+  }
+  console.log('✓ yarn@^1 is installed')
+}
+
 function runOrThrow (name, args, opts) {
   const result = spawn.sync(name, args, opts)
   if (result.status !== 0) {
@@ -112,6 +133,9 @@ async function run () {
   runOrThrow('pnpm', ['add', 'pacquet@latest', '--ignore-scripts'], { cwd: managersDirPnpmRust, stdio: 'inherit' })
   runOrThrow('yarn', ['set', 'version', 'stable'], { cwd: managersDir, stdio: 'inherit' })
   runOrThrow('pnpm', ['add', 'yarn@^1', '--ignore-scripts'], { cwd: managersDirClassic, stdio: 'inherit' })
+
+  // Verify installations before running benchmarks
+  await verifyInstallations(managersDir, managersDirClassic, managersDirPnpmRust)
 
   // Verify all package managers
   console.log('\n📦 Verifying required package managers...\n')
