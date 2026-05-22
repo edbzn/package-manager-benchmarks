@@ -40,13 +40,14 @@ run()
   .then(() => console.log('done'))
   .catch(err => console.error(err))
 
-function verifyPackageManager (name, cwd = undefined) {
+function verifyPackageManager (name, cwd = undefined, binDir = undefined) {
   const opts = { stdio: 'pipe' }
   if (cwd) {
     const env = { ...process.env }
     const key = pathKey()
+    const binPath = binDir ? path.join(binDir, 'node_modules/.bin') : path.join(cwd, 'node_modules/.bin')
     env[key] = [
-      path.join(cwd, 'node_modules/.bin'),
+      binPath,
       process.env[key],
     ].filter(Boolean).join(path.delimiter)
     opts.cwd = cwd
@@ -119,9 +120,9 @@ async function run () {
   verifyPackageManager('yarn')
   verifyPackageManager('bun')
   console.log('\n  Specialized variants:')
-  const pnpmRustVersion = verifyPackageManager('pacquet', path.dirname(managersDirPnpmRust))
-  const yarnClassicVersion = verifyPackageManager('yarn', path.dirname(managersDirClassic))
-  verifyPackageManager('yarn', path.dirname(managersDir))
+  const pnpmRustVersion = verifyPackageManager('pacquet', path.dirname(managersDirPnpmRust), managersDirPnpmRust)
+  const yarnClassicVersion = verifyPackageManager('yarn', path.dirname(managersDirClassic), managersDirClassic)
+  verifyPackageManager('yarn', path.dirname(managersDir), managersDir)
 
   console.log('\n  Variant major checks:')
   assertSemverLikeVersion('pnpm_rust (pacquet)', pnpmRustVersion)
