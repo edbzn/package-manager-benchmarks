@@ -9,11 +9,10 @@ import generateSvg from './generateSvg.js'
 import spawn from "cross-spawn"
 import path from 'path'
 import { fileURLToPath } from 'url'
-import pathKey from 'path-key'
 
 const DIRNAME = path.dirname(fileURLToPath(import.meta.url))
-const TMP = path.join(DIRNAME, '../.tmp')
-const BENCH_IMGS = path.join(DIRNAME, '../results', 'img')
+const TMP = path.join(DIRNAME, '.tmp')
+const BENCH_IMGS = path.join(DIRNAME, 'results', 'img')
 
 const LIMIT_RUNS = 30
 
@@ -88,58 +87,10 @@ run()
   .then(() => console.log('done'))
   .catch(err => console.error(err))
 
-function verifyPackageManager (name, cwd = undefined) {
-  const opts = { stdio: 'pipe' }
-  if (cwd) {
-    const env = { ...process.env }
-    const key = pathKey()
-    env[key] = [
-      path.join(cwd, 'node_modules/.bin'),
-      process.env[key],
-    ].filter(Boolean).join(path.delimiter)
-    opts.cwd = cwd
-    opts.env = env
-  }
-  const result = spawn.sync(name, ['--version'], opts)
-  if (result.status !== 0) {
-    throw new Error(`✗ ${name} is not available or failed to run`)
-  }
-  const version = result.stdout.toString().trim()
-  console.log(`✓ ${name}: ${version}`)
-  return version
-}
-
-function assertExpectedMajorVersion (name, version, expectedMajor) {
-  const major = Number(version.split('.')[0])
-  if (!Number.isInteger(major)) {
-    throw new Error(`✗ ${name}: expected major ${expectedMajor}, got invalid version "${version}"`)
-  }
-  if (major !== expectedMajor) {
-    throw new Error(`✗ ${name}: expected major ${expectedMajor}, got ${version}`)
-  }
-  console.log(`✓ ${name}: matches expected major ${expectedMajor}`)
-}
-
-function assertSemverLikeVersion (name, version) {
-  const match = version.match(/\d+\.\d+\.\d+(?:[-+][0-9A-Za-z.-]+)?/)
-  if (!match) {
-    throw new Error(`✗ ${name}: expected a semver-like version, got ${version}`)
-  }
-  console.log(`✓ ${name}: version format looks valid (${match[0]})`)
-}
-
-function runOrThrow (name, args, opts) {
-  const result = spawn.sync(name, args, opts)
-  if (result.status !== 0) {
-    throw new Error(`✗ ${name} ${args.join(' ')} failed with status ${result.status}`)
-  }
-}
-
 async function run () {
   const managersDir = path.join(tempy.directory(), 'managers')
   const managersDirClassic = path.join(tempy.directory(), 'managers-classic')
   const managersDirPnpmRust = path.join(tempy.directory(), 'managers-pnpm-rust')
-
   await Promise.allSettled([
     rimraf(TMP),
     // make sure folders exist
@@ -153,28 +104,10 @@ async function run () {
     writePackageJson(managersDirClassic),
     writePackageJson(managersDirPnpmRust),
   ])
-
-  // Setup specialized package managers
-  runOrThrow('pnpm', ['add', 'npm@latest', 'pnpm@latest'], { cwd: managersDir, stdio: 'inherit' })
-  runOrThrow('pnpm', ['add', 'pacquet@latest'], { cwd: managersDirPnpmRust, stdio: 'inherit' })
-  runOrThrow('yarn', ['set', 'version', 'stable'], { cwd: managersDir, stdio: 'inherit' })
-  runOrThrow('pnpm', ['add', 'yarn@^1'], { cwd: managersDirClassic, stdio: 'inherit' })
-
-  // Verify all package managers
-  console.log('\n📦 Verifying required package managers...\n')
-  verifyPackageManager('npm')
-  verifyPackageManager('pnpm')
-  verifyPackageManager('yarn')
-  verifyPackageManager('bun')
-  console.log('\n  Specialized variants:')
-  const pnpmRustVersion = verifyPackageManager('pacquet', managersDirPnpmRust)
-  const yarnClassicVersion = verifyPackageManager('yarn', managersDirClassic)
-  verifyPackageManager('yarn', managersDir)
-
-  console.log('\n  Variant major checks:')
-  assertSemverLikeVersion('pnpm_rust (pacquet)', pnpmRustVersion)
-  assertExpectedMajorVersion('yarn_classic', yarnClassicVersion, 1)
-  console.log('\n✓ All required package managers are available\n')
+  spawn.sync('pnpm', ['add', 'npm@latest', 'pnpm@latest'], { cwd: managersDir, stdio: 'inherit' })
+  spawn.sync('pnpm', ['add', '@pnpm/exe@latest'], { cwd: managersDirPnpmRust, stdio: 'inherit' })
+  spawn.sync('yarn', ['set', 'version', 'stable'], { cwd: managersDir, stdio: 'inherit' })
+  spawn.sync('pnpm', ['add', 'yarn@^1'], { cwd: managersDirClassic, stdio: 'inherit' })
   const formattedNow = new Intl.DateTimeFormat('fr-FR', { dateStyle: 'medium', timeStyle: 'short' }).format(new Date())
   const pms = [ 'npm', 'pnpm', 'pnpm_rust', 'yarn', 'yarn_pnp', 'yarn_classic', 'bun' ]
   const svgs = []

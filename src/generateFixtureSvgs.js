@@ -11,7 +11,7 @@ const RESULTS_DIR = path.join(DIRNAME, '../results')
 const BENCH_IMGS = path.join(RESULTS_DIR, 'img')
 
 const PMS = ['npm', 'pnpm', 'pnpm_rust', 'yarn', 'yarn_pnp', 'yarn_classic', 'bun']
-const FIXTURES = ['alotta-files', 'angular-quickstart', 'ember-quickstart', 'react-app', 'medium-size-app']
+const FIXTURES = ['alotta-files']
 
 const tests = [
   'firstInstall',

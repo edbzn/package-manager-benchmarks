@@ -30,14 +30,15 @@ export default async function (pm, fixture, opts) {
 }
 
 function getPMVersion (pmName, opts) {
-  const env = { ...createEnv(opts.managersDir), COREPACK_ENABLE_STRICT: '0' }
-  
+  const env = createEnv(opts.managersDir)
+  env.COREPACK_ENABLE_STRICT = '0'
+
   // For pacquet, use a clean home directory to avoid inheriting parent config
   if (pmName === 'pacquet') {
     env.PNPM_HOME = opts.managersDir
     env.NPM_CONFIG_USERCONFIG = path.join(opts.managersDir, '.npmrc')
   }
-  
+
   const { status, stdout, stderr } = spawn.sync(pmName, ['--version'], {
     cwd: opts.managersDir,
     env,
