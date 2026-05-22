@@ -119,9 +119,9 @@ async function run () {
   verifyPackageManager('yarn')
   verifyPackageManager('bun')
   console.log('\n  Specialized variants:')
-  const pnpmRustVersion = verifyPackageManager('pacquet', managersDirPnpmRust)
-  const yarnClassicVersion = verifyPackageManager('yarn', managersDirClassic)
-  verifyPackageManager('yarn', managersDir)
+  const pnpmRustVersion = verifyPackageManager('pacquet', path.dirname(managersDirPnpmRust))
+  const yarnClassicVersion = verifyPackageManager('yarn', path.dirname(managersDirClassic))
+  verifyPackageManager('yarn', path.dirname(managersDir))
 
   console.log('\n  Variant major checks:')
   assertSemverLikeVersion('pnpm_rust (pacquet)', pnpmRustVersion)
