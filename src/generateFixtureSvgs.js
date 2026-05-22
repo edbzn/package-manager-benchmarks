@@ -5,37 +5,11 @@ import { loadYamlFile } from 'load-yaml-file'
 import { rcompare, valid as validSemver } from 'semver'
 import cmdsMap from './commandsMap.js'
 import generateSvg from './generateSvg.js'
+import { pms as PMS, fixtures as FIXTURES, tests, testDescriptions } from './config.js'
 
 const DIRNAME = path.dirname(fileURLToPath(import.meta.url))
 const RESULTS_DIR = path.join(DIRNAME, '../results')
 const BENCH_IMGS = path.join(RESULTS_DIR, 'img')
-
-const PMS = ['npm', 'pnpm', 'pnpm_rust', 'yarn', 'yarn_pnp', 'yarn_classic', 'bun']
-const FIXTURES = ['alotta-files']
-
-const tests = [
-  'firstInstall',
-  'repeatInstall',
-  'withWarmCacheAndLockfile',
-  'withWarmCache',
-  'withLockfile',
-  'withWarmCacheAndModules',
-  'withWarmModulesAndLockfile',
-  'withWarmModules',
-  'updatedDependencies',
-]
-
-const testDescriptions = [
-  ['clean install'],
-  ['with cache', 'with lockfile', 'with node_modules'],
-  ['with cache', 'with lockfile'],
-  ['with cache'],
-  ['with lockfile'],
-  ['with cache', 'with node_modules'],
-  ['with node_modules', 'with lockfile'],
-  ['with node_modules'],
-  ['update'],
-]
 
 const emptyResult = Object.fromEntries(tests.map((test) => [test, NaN]))
 

@@ -10,6 +10,7 @@ import spawn from "cross-spawn"
 import path from 'path'
 import { fileURLToPath } from 'url'
 import pathKey from 'path-key'
+import { pms as PMS, fixtures, tests, testDescriptions } from './config.js'
 
 const DIRNAME = path.dirname(fileURLToPath(import.meta.url))
 const TMP = path.join(DIRNAME, '../.tmp')
@@ -17,56 +18,7 @@ const BENCH_IMGS = path.join(DIRNAME, '../results', 'img')
 
 const LIMIT_RUNS = 30
 
-const fixtures = [
-  'alotta-files',
-]
 
-const tests = [
-  'firstInstall',
-  'repeatInstall',
-  'withWarmCacheAndLockfile',
-  'withWarmCache',
-  'withLockfile',
-  'withWarmCacheAndModules',
-  'withWarmModulesAndLockfile',
-  'withWarmModules',
-  'updatedDependencies'
-]
-
-const testDescriptions = [
-  [ // firstInstall
-    'clean install'
-  ],
-  [ // repeatInstall
-    'with cache',
-    'with lockfile',
-    'with node_modules'
-  ],
-  [ // withWarmCacheAndLockfile
-    'with cache',
-    'with lockfile'
-  ],
-  [ // withWarmCache
-    'with cache'
-  ],
-  [ // withLockfile
-    'with lockfile'
-  ],
-  [ // withWarmCacheAndModules
-    'with cache',
-    'with node_modules'
-  ],
-  [ // withWarmModulesAndLockfile
-    'with node_modules',
-    'with lockfile'
-  ],
-  [ // withWarmModules
-    'with node_modules'
-  ],
-  [ // updatedDependencies
-    'update'
-  ]
-]
 
 const toArray = (pms, resultsObj) => {
   /**
@@ -176,7 +128,7 @@ async function run () {
   assertExpectedMajorVersion('yarn_classic', yarnClassicVersion, 1)
   console.log('\n✓ All required package managers are available\n')
   const formattedNow = new Intl.DateTimeFormat('fr-FR', { dateStyle: 'medium', timeStyle: 'short' }).format(new Date())
-  const pms = [ 'npm', 'pnpm', 'pnpm_rust', 'yarn', 'yarn_pnp', 'yarn_classic', 'bun' ]
+  const pms = PMS
   const svgs = []
   const opts = {
     limitRuns: LIMIT_RUNS,

@@ -10,29 +10,7 @@ const BENCH = path.join(DIRNAME, "../results");
 
 const getPMDir = (pm) => path.join(BENCH, pm);
 
-const tests = [
-  "firstInstall",
-  "repeatInstall",
-  "withWarmCacheAndLockfile",
-  "withWarmCache",
-  "withLockfile",
-  "withWarmCacheAndModules",
-  "withWarmModulesAndLockfile",
-  "withWarmModules",
-  "updatedDependencies",
-];
-
-const testDescriptions = [
-  "clean install",
-  "cache + lockfile + node_modules",
-  "cache + lockfile",
-  "cache",
-  "lockfile",
-  "cache + node_modules",
-  "node_modules + lockfile",
-  "node_modules",
-  "update",
-];
+import { tests, testDescriptionsFlat as testDescriptions } from "./config.js";
 
 function min(benchmarkResults) {
   const results = {};
@@ -95,7 +73,7 @@ function computeDeltas(sortedResults) {
   return deltaResults;
 }
 
-const PMS = ["npm", "pnpm", "pnpm_rust", "yarn", "yarn_pnp", "yarn_classic", "bun"];
+import { pms as PMS } from "./config.js";
 const now = new Intl.DateTimeFormat("fr-FR", {
   dateStyle: "medium",
   timeStyle: "short",
