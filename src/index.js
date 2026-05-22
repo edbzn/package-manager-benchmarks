@@ -107,10 +107,10 @@ async function run () {
   ])
 
   // Setup specialized package managers
-  runOrThrow('pnpm', ['add', 'npm@latest', 'pnpm@latest', '--no-scripts'], { cwd: managersDir, stdio: 'inherit' })
-  runOrThrow('pnpm', ['add', 'pacquet@latest', '--no-scripts'], { cwd: managersDirPnpmRust, stdio: 'inherit' })
+  runOrThrow('pnpm', ['add', 'npm@latest', 'pnpm@latest', '--ignore-scripts'], { cwd: managersDir, stdio: 'inherit' })
+  runOrThrow('pnpm', ['add', 'pacquet@latest', '--ignore-scripts'], { cwd: managersDirPnpmRust, stdio: 'inherit' })
   runOrThrow('yarn', ['set', 'version', 'stable'], { cwd: managersDir, stdio: 'inherit' })
-  runOrThrow('pnpm', ['add', 'yarn@^1', '--no-scripts'], { cwd: managersDirClassic, stdio: 'inherit' })
+  runOrThrow('pnpm', ['add', 'yarn@^1', '--ignore-scripts'], { cwd: managersDirClassic, stdio: 'inherit' })
 
   // Verify all package managers
   console.log('\n📦 Verifying required package managers...\n')
