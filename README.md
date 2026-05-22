@@ -19,18 +19,4 @@ pnpm run benchmarks
 ![](results/img/alotta-files.svg)
 
 ### Version trends by package manager
-
-#### npm
-![](results/img/npm.svg)
-
-#### Yarn
-![](results/img/yarn.svg)
-
-#### Yarn PnP
-![](results/img/yarn_pnp.svg)
-
-#### pnpm
-![](results/img/pnpm.svg)
-
-#### Bun
-![](results/img/bun.svg)
+![](results/img/version-trends.svg)
