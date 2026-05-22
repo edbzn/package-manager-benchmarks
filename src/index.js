@@ -58,7 +58,8 @@ function verifyPackageManager (name, cwd = undefined, binDir = undefined) {
   }
   const result = spawn.sync(name, ['--version'], opts)
   if (result.status !== 0) {
-    throw new Error(`✗ ${name} is not available or failed to run`)
+    const stderr = result.stderr ? result.stderr.toString().trim() : ''
+    throw new Error(`✗ ${name} is not available or failed to run${stderr ? `: ${stderr}` : ''}`)
   }
   const version = result.stdout.toString().trim()
   console.log(`✓ ${name}: ${version}`)
@@ -92,12 +93,20 @@ async function verifyInstallations (managersDir, managersDirClassic, managersDir
   if (!fs.existsSync(pacquetPath)) {
     throw new Error(`✗ pacquet is not installed in ${managersDirPnpmRust}`)
   }
+  const pacquetBinPath = path.join(managersDirPnpmRust, 'node_modules', '.bin', 'pacquet')
+  if (!fs.existsSync(pacquetBinPath)) {
+    throw new Error(`✗ pacquet binary is missing in ${managersDirPnpmRust}/node_modules/.bin`)
+  }
   console.log('✓ pacquet is installed')
 
   // Check yarn@^1 installation
   const yarnClassicPath = path.join(managersDirClassic, 'node_modules', 'yarn')
   if (!fs.existsSync(yarnClassicPath)) {
     throw new Error(`✗ yarn@^1 is not installed in ${managersDirClassic}`)
+  }
+  const yarnClassicBinPath = path.join(managersDirClassic, 'node_modules', '.bin', 'yarn')
+  if (!fs.existsSync(yarnClassicBinPath)) {
+    throw new Error(`✗ yarn@^1 binary is missing in ${managersDirClassic}/node_modules/.bin`)
   }
   console.log('✓ yarn@^1 is installed')
 }
@@ -130,7 +139,7 @@ async function run () {
 
   // Setup specialized package managers
   runOrThrow('pnpm', ['add', 'npm@latest', 'pnpm@latest', '--ignore-scripts'], { cwd: managersDir, stdio: 'inherit' })
-  runOrThrow('pnpm', ['add', 'pacquet@latest', '--ignore-scripts'], { cwd: managersDirPnpmRust, stdio: 'inherit' })
+  runOrThrow('pnpm', ['add', 'pacquet@latest'], { cwd: managersDirPnpmRust, stdio: 'inherit' })
   runOrThrow('yarn', ['set', 'version', 'stable'], { cwd: managersDir, stdio: 'inherit' })
   runOrThrow('pnpm', ['add', 'yarn@^1', '--ignore-scripts'], { cwd: managersDirClassic, stdio: 'inherit' })
 
