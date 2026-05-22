@@ -168,7 +168,7 @@ export default async function benchmark (pm, fixture, opts) {
 
   // update all dependency versions to '*' and install again
   const originalPackageJson = await updateDependenciesInPackageJson(cwd)
-  if (pm.name === 'pnpm' || pm.name === 'pacquet') {
+  if (pm.name === 'pnpm') {
     // This is needed to fix pnpm execution on CI
     pm = {
       ...pm,

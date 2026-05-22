@@ -41,6 +41,8 @@ const toArray = (resultsObj) => {
   )
 }
 
+const isCompleteNumericResult = (result) => tests.every((test) => Number.isFinite(result[test]))
+
 const getLatestFixtureResult = async (pm, fixture) => {
   const pmDir = path.join(RESULTS_DIR, pm)
   if (!fs.existsSync(pmDir)) {
@@ -55,18 +57,32 @@ const getLatestFixtureResult = async (pm, fixture) => {
     .readdirSync(pmDir)
     .sort(compareVersions)
 
+  let fallback = null
+
   for (const version of versions) {
     const fixtureResultPath = path.join(pmDir, version, `${fixture}.yaml`)
     if (!fs.existsSync(fixtureResultPath)) continue
 
-    const benchmarkResults = await loadYamlFile(fixtureResultPath)
+    try {
+      const benchmarkResults = await loadYamlFile(fixtureResultPath)
+      if (!Array.isArray(benchmarkResults) || benchmarkResults.length === 0) continue
 
-    return {
-      pm,
-      version,
-      result: min(benchmarkResults),
+      const result = min(benchmarkResults)
+      const current = { pm, version, result }
+
+      if (isCompleteNumericResult(result)) {
+        return current
+      }
+
+      // Keep most recent partial data as a fallback if no complete result exists.
+      if (!fallback) fallback = current
+    } catch {
+      // Skip unreadable/invalid YAML and try older versions.
+      continue
     }
   }
+
+  if (fallback) return fallback
 
   return {
     pm,

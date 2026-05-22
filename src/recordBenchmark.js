@@ -32,6 +32,7 @@ export default async function (pm, fixture, opts) {
 function getPMVersion (pmName, opts) {
   const env = createEnv(opts.managersDir)
   env.COREPACK_ENABLE_STRICT = '0'
+  const versionCwd = path.dirname(opts.managersDir)
 
   // For pacquet, use a clean home directory to avoid inheriting parent config
   if (pmName === 'pacquet') {
@@ -40,7 +41,9 @@ function getPMVersion (pmName, opts) {
   }
 
   const { status, stdout, stderr } = spawn.sync(pmName, ['--version'], {
-    cwd: opts.managersDir,
+    // Use a neutral cwd so package-manager strict checks from managersDir
+    // (e.g. packageManager: yarn) do not block pnpm version lookup.
+    cwd: versionCwd,
     env,
     stdio: ['pipe', 'pipe', 'pipe'], // Capture stderr separately
   })

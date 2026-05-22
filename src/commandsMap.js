@@ -34,13 +34,6 @@ export default {
     name: 'pacquet',
     args: [
       'install',
-      '--ignore-scripts',
-      '--store-dir=cache/store',
-      '--cache-dir=cache/cache',
-      '--registry=https://registry.npmjs.org/',
-      '--no-strict-peer-dependencies',
-      '--config.auto-install-peers=false',
-      '--config.resolution-mode=highest',
     ]
   },
   yarn: {
