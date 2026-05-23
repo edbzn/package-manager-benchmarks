@@ -3,7 +3,7 @@ import path from 'path'
 import pathKey from 'path-key'
 import spawn from "cross-spawn"
 import fsx from 'fs-extra'
-import { promises as fs } from 'fs'
+import { promises as fs, readFileSync } from 'fs'
 import getFolderSize from 'get-folder-size'
 import rimraf from 'rimraf'
 import { fileURLToPath } from 'url'
@@ -16,7 +16,6 @@ const TMP = path.join(DIRNAME, '../.tmp')
 const lockfileNameByPM = {
   npm: 'package-lock.json',
   pnpm: 'pnpm-lock.yaml',
-  pacquet: 'pnpm-lock.yaml',
   yarn: 'yarn.lock',
   bun: 'bun.lockb',
 }
@@ -67,6 +66,17 @@ export default async function benchmark (pm, fixture, opts) {
   const env = createEnv(opts.managersDir)
   const cwd = path.join(TMP, pm.scenario, fixture)
   fsx.copySync(path.join(FIXTURES_DIR, fixture), cwd)
+
+  if (pm.scenario === 'pnpm_rust') {
+    // Activate the Rust install engine: pnpm 11.2+ delegates fetch/link to
+    // the pacquet binary when @pnpm/pacquet is listed in configDependencies.
+    const pacquetPkgJson = path.join(opts.managersDir, 'node_modules', '.pnpm-config', '@pnpm', 'pacquet', 'package.json')
+    const { version: pacquetVersion } = JSON.parse(readFileSync(pacquetPkgJson, 'utf-8'))
+    await fs.writeFile(
+      path.join(cwd, 'pnpm-workspace.yaml'),
+      `configDependencies:\n  '@pnpm/pacquet': '${pacquetVersion}'\n`
+    )
+  }
   const modules = opts.hasNodeModules ? path.join(cwd, 'node_modules') : null
 
   cleanLockfile(pm, cwd, env)
