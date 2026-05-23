@@ -1,0 +1,102 @@
+<svg version="1.1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 860 380">
+  <style>
+    .font { font-family: sans-serif; }
+    .s3 { font-size: 10px; }
+    .s4 { font-size: 12px; }
+    .s5 { font-size: 14px; }
+    .grid { stroke: #e0e0e0; stroke-width: 1; }
+    .axis { stroke: #b0b0b0; stroke-width: 1; }
+    .text { fill: #666; }
+    .title { fill: #222; font-weight: 600; }
+  </style>
+  <rect x="0" y="0" width="860" height="380" fill="#fff"></rect>
+  <text x="48" y="16" class="font s5 title">Major Version Trends Across Package Managers</text>
+  <text x="48" y="27" class="font s3 text">Metric: clean install (firstInstall), fixture: alotta-files, absolute scale shared by all PMs</text>
+  <line x1="48" y1="342" x2="840" y2="342" class="grid"></line>
+  <text x="42" y="345" class="font s3 text" text-anchor="end">0.0s</text>
+  <line x1="48" y1="279.6" x2="840" y2="279.6" class="grid"></line>
+  <text x="42" y="282.6" class="font s3 text" text-anchor="end">13.0s</text>
+  <line x1="48" y1="217.2" x2="840" y2="217.2" class="grid"></line>
+  <text x="42" y="220.2" class="font s3 text" text-anchor="end">26.0s</text>
+  <line x1="48" y1="154.8" x2="840" y2="154.8" class="grid"></line>
+  <text x="42" y="157.8" class="font s3 text" text-anchor="end">39.0s</text>
+  <line x1="48" y1="92.39999999999998" x2="840" y2="92.39999999999998" class="grid"></line>
+  <text x="42" y="95.39999999999998" class="font s3 text" text-anchor="end">52.0s</text>
+  <line x1="48" y1="30" x2="840" y2="30" class="grid"></line>
+  <text x="42" y="33" class="font s3 text" text-anchor="end">65.0s</text>
+  <line x1="48" y1="30" x2="48" y2="342" class="grid"></line>
+  <text x="48" y="356" class="font s3 text" text-anchor="middle">v1</text>
+  <line x1="127.2" y1="30" x2="127.2" y2="342" class="grid"></line>
+  <text x="127.2" y="356" class="font s3 text" text-anchor="middle">v2</text>
+  <line x1="206.4" y1="30" x2="206.4" y2="342" class="grid"></line>
+  <text x="206.4" y="356" class="font s3 text" text-anchor="middle">v3</text>
+  <line x1="285.6" y1="30" x2="285.6" y2="342" class="grid"></line>
+  <text x="285.6" y="356" class="font s3 text" text-anchor="middle">v4</text>
+  <line x1="364.8" y1="30" x2="364.8" y2="342" class="grid"></line>
+  <text x="364.8" y="356" class="font s3 text" text-anchor="middle">v5</text>
+  <line x1="444" y1="30" x2="444" y2="342" class="grid"></line>
+  <text x="444" y="356" class="font s3 text" text-anchor="middle">v6</text>
+  <line x1="523.2" y1="30" x2="523.2" y2="342" class="grid"></line>
+  <text x="523.2" y="356" class="font s3 text" text-anchor="middle">v7</text>
+  <line x1="602.4" y1="30" x2="602.4" y2="342" class="grid"></line>
+  <text x="602.4" y="356" class="font s3 text" text-anchor="middle">v8</text>
+  <line x1="681.6" y1="30" x2="681.6" y2="342" class="grid"></line>
+  <text x="681.6" y="356" class="font s3 text" text-anchor="middle">v9</text>
+  <line x1="760.8000000000001" y1="30" x2="760.8000000000001" y2="342" class="grid"></line>
+  <text x="760.8000000000001" y="356" class="font s3 text" text-anchor="middle">v10</text>
+  <line x1="840" y1="30" x2="840" y2="342" class="grid"></line>
+  <text x="840" y="356" class="font s3 text" text-anchor="middle">v11</text>
+  <line x1="48" y1="30" x2="48" y2="342" class="axis"></line>
+  <line x1="48" y1="342" x2="840" y2="342" class="axis"></line>
+  <polyline fill="none" stroke="#cd3731" stroke-width="2" points="364.8,210.8016 444,178.77599999999998 523.2,36.12959999999998 602.4,139.3632 681.6,160.95360000000002 760.8000000000001,189.3648 840,175.61759999999998"></polyline>
+  <circle cx="364.8" cy="210.8016" r="2.8" fill="#cd3731"></circle>
+  <circle cx="444" cy="178.77599999999998" r="2.8" fill="#cd3731"></circle>
+  <circle cx="523.2" cy="36.12959999999998" r="2.8" fill="#cd3731"></circle>
+  <circle cx="602.4" cy="139.3632" r="2.8" fill="#cd3731"></circle>
+  <circle cx="681.6" cy="160.95360000000002" r="2.8" fill="#cd3731"></circle>
+  <circle cx="760.8000000000001" cy="189.3648" r="2.8" fill="#cd3731"></circle>
+  <circle cx="840" cy="175.61759999999998" r="2.8" fill="#cd3731"></circle>
+  <polyline fill="none" stroke="#fbae00" stroke-width="2" points="48,238.0464 127.2,256.9248 206.4,252.7536 285.6,220.392 364.8,267.3936 444,276.0528 523.2,247.98239999999998 602.4,301.4928 681.6,301.8912 760.8000000000001,305.2992 840,301.8192"></polyline>
+  <circle cx="48" cy="238.0464" r="2.8" fill="#fbae00"></circle>
+  <circle cx="127.2" cy="256.9248" r="2.8" fill="#fbae00"></circle>
+  <circle cx="206.4" cy="252.7536" r="2.8" fill="#fbae00"></circle>
+  <circle cx="285.6" cy="220.392" r="2.8" fill="#fbae00"></circle>
+  <circle cx="364.8" cy="267.3936" r="2.8" fill="#fbae00"></circle>
+  <circle cx="444" cy="276.0528" r="2.8" fill="#fbae00"></circle>
+  <circle cx="523.2" cy="247.98239999999998" r="2.8" fill="#fbae00"></circle>
+  <circle cx="602.4" cy="301.4928" r="2.8" fill="#fbae00"></circle>
+  <circle cx="681.6" cy="301.8912" r="2.8" fill="#fbae00"></circle>
+  <circle cx="760.8000000000001" cy="305.2992" r="2.8" fill="#fbae00"></circle>
+  <circle cx="840" cy="301.8192" r="2.8" fill="#fbae00"></circle>
+  <polyline fill="none" stroke="#8e44ad" stroke-width="2" points="840,300.9072"></polyline>
+  <circle cx="840" cy="300.9072" r="2.8" fill="#8e44ad"></circle>
+  <polyline fill="none" stroke="#248ebd" stroke-width="2" points="48,235.68959999999998 127.2,47.09280000000001 206.4,244.2912 285.6,278.5824"></polyline>
+  <circle cx="48" cy="235.68959999999998" r="2.8" fill="#248ebd"></circle>
+  <circle cx="127.2" cy="47.09280000000001" r="2.8" fill="#248ebd"></circle>
+  <circle cx="206.4" cy="244.2912" r="2.8" fill="#248ebd"></circle>
+  <circle cx="285.6" cy="278.5824" r="2.8" fill="#248ebd"></circle>
+  <polyline fill="none" stroke="#40a9ff" stroke-width="2" points="48,244.632 127.2,106.3392 206.4,146.4672 285.6,325.1616"></polyline>
+  <circle cx="48" cy="244.632" r="2.8" fill="#40a9ff"></circle>
+  <circle cx="127.2" cy="106.3392" r="2.8" fill="#40a9ff"></circle>
+  <circle cx="206.4" cy="146.4672" r="2.8" fill="#40a9ff"></circle>
+  <circle cx="285.6" cy="325.1616" r="2.8" fill="#40a9ff"></circle>
+  <polyline fill="none" stroke="#16a34a" stroke-width="2" points="48,179.5584"></polyline>
+  <circle cx="48" cy="179.5584" r="2.8" fill="#16a34a"></circle>
+  <polyline fill="none" stroke="#ff6b00" stroke-width="2" points="48,330.5424"></polyline>
+  <circle cx="48" cy="330.5424" r="2.8" fill="#ff6b00"></circle>
+  <circle cx="52" cy="368" r="3" fill="#cd3731"></circle>
+  <text x="58" y="369" class="font s3" dominant-baseline="middle">npm</text>
+  <circle cx="165.14285714285714" cy="368" r="3" fill="#fbae00"></circle>
+  <text x="171.14285714285714" y="369" class="font s3" dominant-baseline="middle">pnpm</text>
+  <circle cx="278.2857142857143" cy="368" r="3" fill="#8e44ad"></circle>
+  <text x="284.2857142857143" y="369" class="font s3" dominant-baseline="middle">pnpm (pacquet)</text>
+  <circle cx="391.42857142857144" cy="368" r="3" fill="#248ebd"></circle>
+  <text x="397.42857142857144" y="369" class="font s3" dominant-baseline="middle">Yarn</text>
+  <circle cx="504.57142857142856" cy="368" r="3" fill="#40a9ff"></circle>
+  <text x="510.57142857142856" y="369" class="font s3" dominant-baseline="middle">Yarn PnP</text>
+  <circle cx="617.7142857142857" cy="368" r="3" fill="#16a34a"></circle>
+  <text x="623.7142857142857" y="369" class="font s3" dominant-baseline="middle">Yarn Classic</text>
+  <circle cx="730.8571428571429" cy="368" r="3" fill="#ff6b00"></circle>
+  <text x="736.8571428571429" y="369" class="font s3" dominant-baseline="middle">Bun</text>
+  <text x="840" y="376" class="font s3 text" text-anchor="end">Node.js v24.11.1 · 23 mai 2026, 07:28</text>
+</svg>
