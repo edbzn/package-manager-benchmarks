@@ -20,6 +20,7 @@ export default {
     args: [
       'install',
       '--ignore-scripts',
+      '--config.strict-dep-builds=false',
       '--store-dir=cache/store',
       '--cache-dir=cache/cache',
       '--registry=https://registry.npmjs.org/',
