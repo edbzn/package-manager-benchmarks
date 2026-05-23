@@ -35,6 +35,8 @@ export default {
     name: 'pnpm',
     args: [
       'install',
+      '--ignore-scripts',
+      '--config.strict-dep-builds=false',
     ]
   },
   yarn: {

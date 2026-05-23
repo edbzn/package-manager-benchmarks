@@ -139,8 +139,8 @@ async function run () {
 
   // Setup specialized package managers
   runOrThrow('pnpm', ['add', 'npm@latest', 'pnpm@latest', '--ignore-scripts', '--config.strict-dep-builds=false'], { cwd: managersDir, stdio: 'inherit' })
-  runOrThrow('pnpm', ['add', 'pnpm@latest'], { cwd: managersDirPnpmRust, stdio: 'inherit' })
-  runOrThrow('pnpm', ['add', '@pnpm/pacquet', '--config'], { cwd: managersDirPnpmRust, stdio: 'inherit' })
+  runOrThrow('pnpm', ['add', 'pnpm@latest', '--ignore-scripts', '--config.strict-dep-builds=false'], { cwd: managersDirPnpmRust, stdio: 'inherit' })
+  runOrThrow('pnpm', ['add', '@pnpm/pacquet', '--config', '--ignore-scripts', '--config.strict-dep-builds=false'], { cwd: managersDirPnpmRust, stdio: 'inherit' })
   runOrThrow('yarn', ['set', 'version', 'stable'], { cwd: managersDir, stdio: 'inherit' })
   runOrThrow('pnpm', ['add', 'yarn@^1', '--ignore-scripts', '--config.strict-dep-builds=false'], { cwd: managersDirClassic, stdio: 'inherit' })
 
