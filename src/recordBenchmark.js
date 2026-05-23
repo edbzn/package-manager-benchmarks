@@ -51,7 +51,7 @@ function getPMVersion (pmName, opts) {
     // For pacquet, try reading version from package.json as fallback
     if (pmName === 'pacquet') {
       try {
-        const pkgJsonPath = path.join(opts.managersDir, 'node_modules', 'pacquet', 'package.json')
+        const pkgJsonPath = path.join(opts.managersDir, 'node_modules', '@pnpm', 'pacquet', 'package.json')
         const pkgJson = JSON.parse(readFileSync(pkgJsonPath, 'utf-8'))
         return pkgJson.version
       } catch (e) {

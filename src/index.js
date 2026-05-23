@@ -88,16 +88,16 @@ function assertSemverLikeVersion (name, version) {
 async function verifyInstallations (managersDir, managersDirClassic, managersDirPnpmRust) {
   console.log('\n✓ Verifying specialized package managers are installed...\n')
 
-  // Check pacquet installation
-  const pacquetPath = path.join(managersDirPnpmRust, 'node_modules', 'pacquet')
+  // Check pacquet config installation
+  const pacquetPath = path.join(managersDirPnpmRust, 'node_modules', '.pnpm-config', '@pnpm', 'pacquet')
   if (!fs.existsSync(pacquetPath)) {
-    throw new Error(`✗ pacquet is not installed in ${managersDirPnpmRust}`)
+    throw new Error(`✗ @pnpm/pacquet config is not installed in ${managersDirPnpmRust}`)
   }
-  const pacquetBinPath = path.join(managersDirPnpmRust, 'node_modules', '.bin', 'pacquet')
-  if (!fs.existsSync(pacquetBinPath)) {
-    throw new Error(`✗ pacquet binary is missing in ${managersDirPnpmRust}/node_modules/.bin`)
+  const pnpmRustBinPath = path.join(managersDirPnpmRust, 'node_modules', '.bin', 'pnpm')
+  if (!fs.existsSync(pnpmRustBinPath)) {
+    throw new Error(`✗ pnpm binary is missing in ${managersDirPnpmRust}/node_modules/.bin`)
   }
-  console.log('✓ pacquet is installed')
+  console.log('✓ @pnpm/pacquet config is installed')
 
   // Check yarn@^1 installation
   const yarnClassicPath = path.join(managersDirClassic, 'node_modules', 'yarn')
@@ -139,7 +139,8 @@ async function run () {
 
   // Setup specialized package managers
   runOrThrow('pnpm', ['add', 'npm@latest', 'pnpm@latest', '--ignore-scripts'], { cwd: managersDir, stdio: 'inherit' })
-  runOrThrow('pnpm', ['add', 'pacquet@latest'], { cwd: managersDirPnpmRust, stdio: 'inherit' })
+  runOrThrow('pnpm', ['add', 'pnpm@11.2.2'], { cwd: managersDirPnpmRust, stdio: 'inherit' })
+  runOrThrow('pnpm', ['add', '@pnpm/pacquet', '--config'], { cwd: managersDirPnpmRust, stdio: 'inherit' })
   runOrThrow('yarn', ['set', 'version', 'stable'], { cwd: managersDir, stdio: 'inherit' })
   runOrThrow('pnpm', ['add', 'yarn@^1', '--ignore-scripts'], { cwd: managersDirClassic, stdio: 'inherit' })
 
@@ -153,7 +154,7 @@ async function run () {
   verifyPackageManager('yarn')
   verifyPackageManager('bun')
   console.log('\n  Specialized variants:')
-  const pnpmRustVersion = verifyPackageManager('pacquet', path.dirname(managersDirPnpmRust), managersDirPnpmRust)
+  const pnpmRustVersion = verifyPackageManager('pnpm', path.dirname(managersDirPnpmRust), managersDirPnpmRust)
   const yarnClassicVersion = verifyPackageManager('yarn', path.dirname(managersDirClassic), managersDirClassic)
   verifyPackageManager('yarn', path.dirname(managersDir), managersDir)
 
