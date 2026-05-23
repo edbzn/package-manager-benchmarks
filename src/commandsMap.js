@@ -31,7 +31,7 @@ export default {
   },
   pnpm_rust: {
     scenario: 'pnpm_rust',
-    legend: 'pnpm (pacquet)',
+    legend: 'pnpm v12 (rust)',
     name: 'pnpm',
     args: [
       'install',

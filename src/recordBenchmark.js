@@ -14,7 +14,7 @@ export default async function (pm, fixture, opts) {
   opts = opts || {}
   const limitRuns = opts.limitRuns || Infinity
 
-  pm.version = getPMVersion(pm.name, opts)
+  pm.version = getPMVersion(pm, opts)
   const resultsFile = path.join(RESULTS, pm.scenario, pm.version, `${fixture}.yaml`)
   const prevResults = await safeLoadYamlFile(resultsFile) || []
 
@@ -29,36 +29,32 @@ export default async function (pm, fixture, opts) {
   return results
 }
 
-function getPMVersion (pmName, opts) {
+function getPMVersion (pm, opts) {
+  // For pnpm_rust, report the @pnpm/pacquet package version rather than the
+  // pnpm binary version (which would be identical to the regular pnpm entry).
+  if (pm.scenario === 'pnpm_rust') {
+    const pkgJsonPath = path.join(opts.managersDir, 'node_modules', '.pnpm-config', '@pnpm', 'pacquet', 'package.json')
+    try {
+      const pkgJson = JSON.parse(readFileSync(pkgJsonPath, 'utf-8'))
+      return pkgJson.version
+    } catch (e) {
+      throw new Error(`Couldn't read @pnpm/pacquet version from ${pkgJsonPath}: ${e.message}`)
+    }
+  }
+
   const env = createEnv(opts.managersDir)
   env.COREPACK_ENABLE_STRICT = '0'
   const versionCwd = path.dirname(opts.managersDir)
 
-  // For pacquet, use a clean home directory to avoid inheriting parent config
-  if (pmName === 'pacquet') {
-    env.PNPM_HOME = opts.managersDir
-    env.NPM_CONFIG_USERCONFIG = path.join(opts.managersDir, '.npmrc')
-  }
-
-  const { status, stdout, stderr } = spawn.sync(pmName, ['--version'], {
+  const { status, stdout, stderr } = spawn.sync(pm.name, ['--version'], {
     // Use a neutral cwd so package-manager strict checks from managersDir
     // (e.g. packageManager: yarn) do not block pnpm version lookup.
     cwd: versionCwd,
     env,
-    stdio: ['pipe', 'pipe', 'pipe'], // Capture stderr separately
+    stdio: ['pipe', 'pipe', 'pipe'],
   })
   if (status !== 0) {
-    // For pacquet, try reading version from package.json as fallback
-    if (pmName === 'pacquet') {
-      try {
-        const pkgJsonPath = path.join(opts.managersDir, 'node_modules', '@pnpm', 'pacquet', 'package.json')
-        const pkgJson = JSON.parse(readFileSync(pkgJsonPath, 'utf-8'))
-        return pkgJson.version
-      } catch (e) {
-        // Fall through to error below
-      }
-    }
-    throw new Error(`Couldn't detect version of ${pmName}. ${stderr?.toString()}`)
+    throw new Error(`Couldn't detect version of ${pm.name}. ${stderr?.toString()}`)
   }
   return stdout.toString().trim()
 }
