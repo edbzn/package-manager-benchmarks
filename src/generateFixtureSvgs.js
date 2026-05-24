@@ -13,6 +13,60 @@ const BENCH_IMGS = path.join(RESULTS_DIR, 'img')
 
 const emptyResult = Object.fromEntries(tests.map((test) => [test, NaN]))
 
+const METRICS = [
+  {
+    key: 'durationSeconds',
+    requiresTelemetry: false,
+    fileSuffix: '',
+    chartTitleForFixture: (fixture) => fixture === 'alotta-files'
+      ? 'A lot of files benchmark'
+      : `${fixture} benchmark`,
+    chartSubtitleForFixture: (fixture) => fixture === 'alotta-files'
+      ? 'Latest available versions across install scenarios (lower is better)'
+      : 'Latest available versions across install scenarios',
+    read: (entry, test) => entry?.[test],
+    normalize: (value) => Number.isFinite(value) ? Math.round((value / 1000) * 10) / 10 : NaN,
+  },
+  {
+    key: 'memoryMb',
+    requiresTelemetry: true,
+    fileSuffix: '-memory',
+    chartTitleForFixture: (fixture) => fixture === 'alotta-files'
+      ? 'A lot of files benchmark (peak memory)'
+      : `${fixture} benchmark (peak memory)`,
+    chartSubtitleForFixture: () => 'Peak RSS in MB (GNU time, lower is generally better)',
+    read: (entry, test) => entry?.installMetrics?.[test]?.maxRssKb,
+    normalize: (value) => Number.isFinite(value) ? Math.round((value / 1024) * 10) / 10 : NaN,
+  },
+  {
+    key: 'cpuPercent',
+    requiresTelemetry: true,
+    fileSuffix: '-cpu',
+    chartTitleForFixture: (fixture) => fixture === 'alotta-files'
+      ? 'A lot of files benchmark (CPU usage)'
+      : `${fixture} benchmark (CPU usage)`,
+    chartSubtitleForFixture: () => 'Process CPU utilization in % (GNU time)',
+    read: (entry, test) => entry?.installMetrics?.[test]?.cpuPercent,
+    normalize: (value) => Number.isFinite(value) ? Math.round(value * 10) / 10 : NaN,
+  },
+  {
+    key: 'ioOps',
+    requiresTelemetry: true,
+    fileSuffix: '-iops',
+    chartTitleForFixture: (fixture) => fixture === 'alotta-files'
+      ? 'A lot of files benchmark (disk I/O)'
+      : `${fixture} benchmark (disk I/O)`,
+    chartSubtitleForFixture: () => 'Filesystem I/O operations (%I + %O, GNU time, lower is generally better)',
+    read: (entry, test) => {
+      const fsInputs = entry?.installMetrics?.[test]?.fsInputs
+      const fsOutputs = entry?.installMetrics?.[test]?.fsOutputs
+      if (!Number.isFinite(fsInputs) || !Number.isFinite(fsOutputs)) return NaN
+      return fsInputs + fsOutputs
+    },
+    normalize: (value) => Number.isFinite(value) ? Math.round(value) : NaN,
+  },
+]
+
 const compareVersions = (a, b) => {
   const aValid = validSemver(a)
   const bValid = validSemver(b)
@@ -33,15 +87,63 @@ const min = (benchmarkResults) => {
   return results
 }
 
-const toArray = (resultsObj) => {
+const aggregateBestResult = (benchmarkResults) => {
+  const fallback = {
+    ...emptyResult,
+    installMetrics: {},
+  }
+
+  if (!Array.isArray(benchmarkResults) || benchmarkResults.length === 0) return fallback
+
+  const best = min(benchmarkResults)
+  const installMetrics = {}
+
+  tests.forEach((test) => {
+    const validRuns = benchmarkResults.filter((run) => Number.isFinite(run?.[test]))
+    if (validRuns.length === 0) return
+
+    const fastest = validRuns.reduce((currentBest, current) => {
+      if (!currentBest) return current
+      return current[test] < currentBest[test] ? current : currentBest
+    }, null)
+
+    const runsWithMetrics = validRuns.filter((run) => {
+      const metricEntry = run?.installMetrics?.[test]
+      if (!metricEntry || typeof metricEntry !== 'object') return false
+      return Object.values(metricEntry).some((value) => Number.isFinite(value))
+    })
+
+    const fastestWithMetrics = runsWithMetrics.reduce((currentBest, current) => {
+      if (!currentBest) return current
+      return current[test] < currentBest[test] ? current : currentBest
+    }, null)
+
+    const candidateMetrics = fastestWithMetrics?.installMetrics?.[test] || fastest?.installMetrics?.[test]
+    if (candidateMetrics && Object.values(candidateMetrics).some((value) => Number.isFinite(value))) {
+      installMetrics[test] = candidateMetrics
+    }
+  })
+
+  return {
+    ...best,
+    installMetrics,
+  }
+}
+
+const toArray = (resultsObj, metric) => {
   return tests.map((test) =>
-    PMS.map((pm) => resultsObj[pm][test]).map((time) =>
-      Number.isFinite(time) ? Math.round(time / 100) / 10 : NaN
+    PMS.map((pm) => metric.read(resultsObj[pm], test)).map((value) =>
+      metric.normalize(value)
     )
   )
 }
 
 const isCompleteNumericResult = (result) => tests.every((test) => Number.isFinite(result[test]))
+
+const hasMetricData = (result, metric) => {
+  if (!metric.requiresTelemetry) return true
+  return tests.some((test) => Number.isFinite(metric.read(result, test)))
+}
 
 const getCandidateVersions = (pm, pmDir) => {
   let versions = fs
@@ -86,7 +188,7 @@ const getLatestFixtureResult = async (pm, fixture) => {
       const benchmarkResults = await loadYamlFile(fixtureResultPath)
       if (!Array.isArray(benchmarkResults) || benchmarkResults.length === 0) continue
 
-      const result = min(benchmarkResults)
+      const result = aggregateBestResult(benchmarkResults)
       const current = { pm, version, result }
 
       if (isCompleteNumericResult(result)) {
@@ -110,6 +212,43 @@ const getLatestFixtureResult = async (pm, fixture) => {
   }
 }
 
+const getLatestFixtureResultForMetric = async (pm, fixture, metric) => {
+  if (!metric.requiresTelemetry) {
+    return getLatestFixtureResult(pm, fixture)
+  }
+
+  const pmDir = path.join(RESULTS_DIR, pm)
+  if (!fs.existsSync(pmDir)) {
+    return {
+      pm,
+      version: 'n/a',
+      result: emptyResult,
+    }
+  }
+
+  const versions = getCandidateVersions(pm, pmDir)
+
+  for (const version of versions) {
+    const fixtureResultPath = path.join(pmDir, version, `${fixture}.yaml`)
+    if (!fs.existsSync(fixtureResultPath)) continue
+
+    try {
+      const benchmarkResults = await loadYamlFile(fixtureResultPath)
+      if (!Array.isArray(benchmarkResults) || benchmarkResults.length === 0) continue
+
+      const result = aggregateBestResult(benchmarkResults)
+      if (hasMetricData(result, metric)) {
+        return { pm, version, result }
+      }
+    } catch {
+      continue
+    }
+  }
+
+  // If nothing has telemetry for this metric yet, keep duration-based fallback.
+  return getLatestFixtureResult(pm, fixture)
+}
+
 run().catch((err) => {
   console.error(err)
   process.exitCode = 1
@@ -124,7 +263,8 @@ async function run () {
   }).format(new Date())
 
   for (const fixture of FIXTURES) {
-    const latestResults = await Promise.all(PMS.map((pm) => getLatestFixtureResult(pm, fixture)))
+    const durationMetric = METRICS[0]
+    const latestResults = await Promise.all(PMS.map((pm) => getLatestFixtureResultForMetric(pm, fixture, durationMetric)))
 
     const pmResultMap = {}
     const pmsWithVersions = []
@@ -146,7 +286,7 @@ async function run () {
       : 'Latest available versions across install scenarios'
 
     const svg = generateSvg(
-      toArray(pmResultMap),
+      toArray(pmResultMap, durationMetric),
       pmsWithVersions,
       testDescriptions,
       formattedNow,
@@ -155,5 +295,29 @@ async function run () {
     )
 
     await fs.promises.writeFile(path.join(BENCH_IMGS, `${fixture}.svg`), svg, 'utf8')
+
+    for (const metric of METRICS.slice(1)) {
+      const metricLatestResults = await Promise.all(PMS.map((pm) => getLatestFixtureResultForMetric(pm, fixture, metric)))
+      const metricPmResultMap = {}
+      const metricPmsWithVersions = []
+
+      metricLatestResults.forEach(({ pm, version, result }) => {
+        metricPmResultMap[pm] = result
+        metricPmsWithVersions.push({
+          ...cmdsMap[pm],
+          version,
+        })
+      })
+
+      const metricSvg = generateSvg(
+        toArray(metricPmResultMap, metric),
+        metricPmsWithVersions,
+        testDescriptions,
+        formattedNow,
+        metric.chartTitleForFixture(fixture),
+        metric.chartSubtitleForFixture(fixture)
+      )
+      await fs.promises.writeFile(path.join(BENCH_IMGS, `${fixture}${metric.fileSuffix}.svg`), metricSvg, 'utf8')
+    }
   }
 }

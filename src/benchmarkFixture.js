@@ -20,6 +20,63 @@ const lockfileNameByPM = {
   bun: 'bun.lockb',
 }
 
+const GNU_TIME_BINARY_CANDIDATES = ['/usr/bin/time', 'gtime']
+const GNU_TIME_MARKER = '__BENCH_STATS__'
+
+function parseNumberOrNaN (value) {
+  if (typeof value !== 'string' && typeof value !== 'number') return NaN
+  const normalized = String(value)
+    .trim()
+    .replace('%', '')
+    .replace(',', '.')
+  const parsed = Number(normalized)
+  return Number.isFinite(parsed) ? parsed : NaN
+}
+
+function detectGnuTimeBinary (env, cwd) {
+  for (const binary of GNU_TIME_BINARY_CANDIDATES) {
+    const result = spawn.sync(binary, ['--version'], {
+      env,
+      cwd,
+      stdio: 'pipe',
+    })
+    if (result.status === 0) {
+      const stdout = result.stdout ? result.stdout.toString() : ''
+      const stderr = result.stderr ? result.stderr.toString() : ''
+      const output = `${stdout}\n${stderr}`
+      if (output.toLowerCase().includes('gnu time')) {
+        return binary
+      }
+    }
+  }
+
+  return null
+}
+
+function parseGnuTimeLine (line) {
+  const prefix = `${GNU_TIME_MARKER}|`
+  if (!line.startsWith(prefix)) return null
+
+  const [, rssKbRaw, cpuPercentRaw, fsInputsRaw, fsOutputsRaw] = line.split('|')
+  return {
+    maxRssKb: parseNumberOrNaN(rssKbRaw),
+    cpuPercent: parseNumberOrNaN(cpuPercentRaw),
+    fsInputs: parseNumberOrNaN(fsInputsRaw),
+    fsOutputs: parseNumberOrNaN(fsOutputsRaw),
+  }
+}
+
+function readTimingMetricsFromResult (result) {
+  const stderr = result.stderr ? result.stderr.toString() : ''
+  const lines = stderr.split(/\r?\n/)
+  for (let index = lines.length - 1; index >= 0; index--) {
+    const parsed = parseGnuTimeLine(lines[index])
+    if (parsed) return parsed
+  }
+
+  return null
+}
+
 export function createEnv (managersDir) {
   const pathEnv = pathKey()
   const env = Object.create(process.env)
@@ -64,6 +121,7 @@ async function updateDependenciesInPackageJson (cwd) {
 
 export default async function benchmark (pm, fixture, opts) {
   const env = createEnv(opts.managersDir)
+  const gnuTimeBinary = detectGnuTimeBinary(env, path.dirname(process.execPath))
   const cwd = path.join(TMP, pm.scenario, fixture)
   fsx.copySync(path.join(FIXTURES_DIR, fixture), cwd)
 
@@ -106,22 +164,27 @@ export default async function benchmark (pm, fixture, opts) {
 
   console.log(`# first install`)
 
-  const firstInstall = measureInstall(pm, cwd, env)
+  const firstInstallStats = measureInstall(pm, cwd, env, gnuTimeBinary)
+  const firstInstall = firstInstallStats.durationMs
 
   let repeatInstall
+  let repeatInstallStats
   if (modules) {
     console.log(`# repeat install`)
 
-    repeatInstall = measureInstall(pm, cwd, env)
+    repeatInstallStats = measureInstall(pm, cwd, env, gnuTimeBinary)
+    repeatInstall = repeatInstallStats.durationMs
 
     rimraf.sync(modules)
   } else {
     repeatInstall = 0
+    repeatInstallStats = null
   }
 
   console.log(`# with warm cache and lockfile`)
 
-  const withWarmCacheAndLockfile = measureInstall(pm, cwd, env)
+  const withWarmCacheAndLockfileStats = measureInstall(pm, cwd, env, gnuTimeBinary)
+  const withWarmCacheAndLockfile = withWarmCacheAndLockfileStats.durationMs
 
   if (modules) {
     rimraf.sync(modules)
@@ -131,7 +194,8 @@ export default async function benchmark (pm, fixture, opts) {
 
   console.log('# with warm cache')
 
-  const withWarmCache = measureInstall(pm, cwd, env)
+  const withWarmCacheStats = measureInstall(pm, cwd, env, gnuTimeBinary)
+  const withWarmCache = withWarmCacheStats.durationMs
 
   if (modules) {
     rimraf.sync(modules)
@@ -140,37 +204,47 @@ export default async function benchmark (pm, fixture, opts) {
 
   console.log('# with lockfile')
 
-  const withLockfile = measureInstall(pm, cwd, env)
+  const withLockfileStats = measureInstall(pm, cwd, env, gnuTimeBinary)
+  const withLockfile = withLockfileStats.durationMs
 
   cleanLockfile(pm, cwd)
 
   let withWarmCacheAndModules
   let withWarmModulesAndLockfile
   let withWarmModules
+  let withWarmCacheAndModulesStats
+  let withWarmModulesAndLockfileStats
+  let withWarmModulesStats
   let size
   if (modules) {
     console.log('# with warm cache and modules')
 
-    withWarmCacheAndModules = measureInstall(pm, cwd, env)
+    withWarmCacheAndModulesStats = measureInstall(pm, cwd, env, gnuTimeBinary)
+    withWarmCacheAndModules = withWarmCacheAndModulesStats.durationMs
 
     rimraf.sync(path.join(cwd, 'cache'))
 
     console.log('# with warm modules and lockfile')
 
-    withWarmModulesAndLockfile = measureInstall(pm, cwd, env)
+    withWarmModulesAndLockfileStats = measureInstall(pm, cwd, env, gnuTimeBinary)
+    withWarmModulesAndLockfile = withWarmModulesAndLockfileStats.durationMs
 
     rimraf.sync(path.join(cwd, 'cache'))
     cleanLockfile(pm, cwd)
 
     console.log('# with warm modules')
 
-    withWarmModules = measureInstall(pm, cwd, env)
+    withWarmModulesStats = measureInstall(pm, cwd, env, gnuTimeBinary)
+    withWarmModules = withWarmModulesStats.durationMs
 
     size = await getFolderSize(modules).size
   } else {
     withWarmCacheAndModules =
       withWarmModulesAndLockfile =
       withWarmModules = 0
+    withWarmCacheAndModulesStats =
+      withWarmModulesAndLockfileStats =
+      withWarmModulesStats = null
     size = await getFolderSize(path.join(cwd, 'cache')).size
   }
 
@@ -185,12 +259,26 @@ export default async function benchmark (pm, fixture, opts) {
       args: [...pm.args, '--no-frozen-lockfile'],
     }
   }
-  const updatedDependencies = measureInstall(pm, cwd, env)
+  const updatedDependenciesStats = measureInstall(pm, cwd, env, gnuTimeBinary)
+  const updatedDependencies = updatedDependenciesStats.durationMs
 
   // revert `package.json` back to its original state, just in case
   await fs.writeFile(path.join(cwd, 'package.json'), originalPackageJson)
 
   rimraf.sync(cwd)
+
+  const installMetrics = {
+    firstInstall: firstInstallStats,
+    repeatInstall: repeatInstallStats,
+    withWarmCacheAndLockfile: withWarmCacheAndLockfileStats,
+    withWarmCache: withWarmCacheStats,
+    withLockfile: withLockfileStats,
+    withWarmCacheAndModules: withWarmCacheAndModulesStats,
+    withWarmModulesAndLockfile: withWarmModulesAndLockfileStats,
+    withWarmModules: withWarmModulesStats,
+    updatedDependencies: updatedDependenciesStats,
+  }
+
   return {
     firstInstall,
     repeatInstall,
@@ -201,19 +289,52 @@ export default async function benchmark (pm, fixture, opts) {
     withWarmModulesAndLockfile,
     withWarmModules,
     updatedDependencies,
+    installMetrics,
     size
   }
 }
 
-function measureInstall (cmd, cwd, env) {
+function measureInstall (cmd, cwd, env, gnuTimeBinary) {
   const startTime = Date.now()
 
   console.log(`> ${cmd.name} ${cmd.args.join(' ')}`)
-  spawnSyncOrThrow(cmd, { env, cwd, stdio: "inherit" });
+  let metrics = null
+
+  if (gnuTimeBinary) {
+    const metricFormat = `${GNU_TIME_MARKER}|%M|%P|%I|%O`
+    const shellCommand = [
+      JSON.stringify(gnuTimeBinary),
+      '-f',
+      JSON.stringify(metricFormat),
+      JSON.stringify(cmd.name),
+      ...cmd.args.map((arg) => JSON.stringify(arg)),
+    ].join(' ')
+
+    const timed = spawn.sync('sh', ['-lc', shellCommand], {
+      env,
+      cwd,
+      stdio: ['inherit', 'inherit', 'pipe'],
+    })
+
+    const stderr = timed.stderr ? timed.stderr.toString() : ''
+    if (stderr) process.stderr.write(stderr)
+    if (timed.status !== 0) {
+      throw new Error(`'${cmd.name}' failed with status ${timed.status}`)
+    }
+    metrics = readTimingMetricsFromResult(timed)
+  } else {
+    spawnSyncOrThrow(cmd, { env, cwd, stdio: "inherit" })
+  }
 
   const endTime = Date.now()
 
-  return endTime - startTime
+  return {
+    durationMs: endTime - startTime,
+    maxRssKb: metrics?.maxRssKb ?? NaN,
+    cpuPercent: metrics?.cpuPercent ?? NaN,
+    fsInputs: metrics?.fsInputs ?? NaN,
+    fsOutputs: metrics?.fsOutputs ?? NaN,
+  }
 }
 
 function spawnSyncOrThrow (cmd, opts) {
