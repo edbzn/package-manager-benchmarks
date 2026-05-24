@@ -43,6 +43,27 @@ const toArray = (resultsObj) => {
 
 const isCompleteNumericResult = (result) => tests.every((test) => Number.isFinite(result[test]))
 
+const getCandidateVersions = (pm, pmDir) => {
+  let versions = fs
+    .readdirSync(pmDir)
+    .sort(compareVersions)
+
+  if (pm === 'pnpm_rust') {
+    const pnpmDir = path.join(RESULTS_DIR, 'pnpm')
+    if (fs.existsSync(pnpmDir)) {
+      const pnpmVersions = new Set(fs.readdirSync(pnpmDir))
+      const pacquetLikeVersions = versions.filter((version) => !pnpmVersions.has(version))
+      // Filter stale pnpm-version folders from pnpm_rust when dedicated
+      // pacquet-version folders are available.
+      if (pacquetLikeVersions.length > 0) {
+        versions = pacquetLikeVersions
+      }
+    }
+  }
+
+  return versions
+}
+
 const getLatestFixtureResult = async (pm, fixture) => {
   const pmDir = path.join(RESULTS_DIR, pm)
   if (!fs.existsSync(pmDir)) {
@@ -53,9 +74,7 @@ const getLatestFixtureResult = async (pm, fixture) => {
     }
   }
 
-  const versions = fs
-    .readdirSync(pmDir)
-    .sort(compareVersions)
+  const versions = getCandidateVersions(pm, pmDir)
 
   let fallback = null
 
