@@ -1,0 +1,153 @@
+<svg version="1.1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 507.5">
+  <style>
+    .font { font-family: sans-serif; }
+    .s3 { font-size: 3px; }
+    .s4 { font-size: 4px; }
+    .s5 { font-size: 5px; }
+    .s6 { font-size: 6px; }
+    .title { fill: #222; font-weight: 600; }
+    .line { stroke: #cacaca; }
+    .lineMinor { stroke: #e6e6e6; }
+    .width { stroke-width: 0.5; }
+    .text { fill: #888; }
+  </style>
+  <rect x="0" y="0" width="300" height="507.5" fill="#fff"></rect>
+  <text x="40" y="6" class="font s6 title">A lot of files benchmark (peak memory)</text>
+  <text x="40" y="12" class="font s3 text">Peak RSS in MB (GNU time, lower is generally better)</text>
+  <circle cx="61.285714285714285" cy="17" r="4" fill="#cd3731"></circle>
+  <text x="61.285714285714285" y="25" class="font s4" text-anchor="middle">npm</text>
+  <text x="61.285714285714285" y="29" class="font s3" text-anchor="middle">v11.15.0</text>
+  <circle cx="95.85714285714286" cy="17" r="4" fill="#fbae00"></circle>
+  <text x="95.85714285714286" y="25" class="font s4" text-anchor="middle">pnpm</text>
+  <text x="95.85714285714286" y="29" class="font s3" text-anchor="middle">v11.2.2</text>
+  <circle cx="130.42857142857142" cy="17" r="4" fill="#8e44ad"></circle>
+  <text x="130.42857142857142" y="25" class="font s4" text-anchor="middle">pnpm v12 (rust)</text>
+  <text x="130.42857142857142" y="29" class="font s3" text-anchor="middle">v0.2.7</text>
+  <circle cx="165" cy="17" r="4" fill="#248ebd"></circle>
+  <text x="165" y="25" class="font s4" text-anchor="middle">Yarn</text>
+  <text x="165" y="29" class="font s3" text-anchor="middle">v4.15.0</text>
+  <circle cx="199.57142857142856" cy="17" r="4" fill="#40a9ff"></circle>
+  <text x="199.57142857142856" y="25" class="font s4" text-anchor="middle">Yarn PnP</text>
+  <text x="199.57142857142856" y="29" class="font s3" text-anchor="middle">v4.15.0</text>
+  <circle cx="234.1428571428571" cy="17" r="4" fill="#16a34a"></circle>
+  <text x="234.1428571428571" y="25" class="font s4" text-anchor="middle">Yarn Classic</text>
+  <text x="234.1428571428571" y="29" class="font s3" text-anchor="middle">v1.22.22</text>
+  <circle cx="268.7142857142857" cy="17" r="4" fill="#ff6b00"></circle>
+  <text x="268.7142857142857" y="25" class="font s4" text-anchor="middle">Bun</text>
+  <text x="268.7142857142857" y="29" class="font s3" text-anchor="middle">v1.3.14</text>
+  <text x="40" y="41" class="font s4 text" text-anchor="middle">0</text>
+  <text x="40" y="498.5" class="font s4 text" text-anchor="middle">0</text>
+  <line x1="65" y1="44" x2="65" y2="493.5" class="lineMinor width"></line>
+  <text x="65" y="41" class="font s4 text" text-anchor="middle">168.5</text>
+  <text x="65" y="498.5" class="font s4 text" text-anchor="middle">168.5</text>
+  <line x1="90" y1="44" x2="90" y2="493.5" class="line width"></line>
+  <text x="90" y="41" class="font s4 text" text-anchor="middle">337</text>
+  <text x="90" y="498.5" class="font s4 text" text-anchor="middle">337</text>
+  <line x1="114.99999999999999" y1="44" x2="114.99999999999999" y2="493.5" class="lineMinor width"></line>
+  <text x="114.99999999999999" y="41" class="font s4 text" text-anchor="middle">505.5</text>
+  <text x="114.99999999999999" y="498.5" class="font s4 text" text-anchor="middle">505.5</text>
+  <line x1="140" y1="44" x2="140" y2="493.5" class="line width"></line>
+  <text x="140" y="41" class="font s4 text" text-anchor="middle">674</text>
+  <text x="140" y="498.5" class="font s4 text" text-anchor="middle">674</text>
+  <line x1="165" y1="44" x2="165" y2="493.5" class="lineMinor width"></line>
+  <text x="165" y="41" class="font s4 text" text-anchor="middle">842.5</text>
+  <text x="165" y="498.5" class="font s4 text" text-anchor="middle">842.5</text>
+  <line x1="189.99999999999997" y1="44" x2="189.99999999999997" y2="493.5" class="line width"></line>
+  <text x="189.99999999999997" y="41" class="font s4 text" text-anchor="middle">1011</text>
+  <text x="189.99999999999997" y="498.5" class="font s4 text" text-anchor="middle">1011</text>
+  <line x1="214.99999999999997" y1="44" x2="214.99999999999997" y2="493.5" class="lineMinor width"></line>
+  <text x="214.99999999999997" y="41" class="font s4 text" text-anchor="middle">1179.5</text>
+  <text x="214.99999999999997" y="498.5" class="font s4 text" text-anchor="middle">1179.5</text>
+  <line x1="240" y1="44" x2="240" y2="493.5" class="line width"></line>
+  <text x="240" y="41" class="font s4 text" text-anchor="middle">1348</text>
+  <text x="240" y="498.5" class="font s4 text" text-anchor="middle">1348</text>
+  <line x1="265" y1="44" x2="265" y2="493.5" class="lineMinor width"></line>
+  <text x="265" y="41" class="font s4 text" text-anchor="middle">1516.5</text>
+  <text x="265" y="498.5" class="font s4 text" text-anchor="middle">1516.5</text>
+  <line x1="290" y1="44" x2="290" y2="493.5" class="line width"></line>
+  <text x="290" y="41" class="font s4 text" text-anchor="middle">1685</text>
+  <text x="290" y="498.5" class="font s4 text" text-anchor="middle">1685</text>
+  <rect x="40" y="48" width="81" height="6" fill="#cd3731" rx="1" ry="1"></rect>
+  <rect x="40" y="54.5" width="150" height="6" fill="#fbae00" rx="1" ry="1"></rect>
+  <rect x="40" y="61" width="99" height="6" fill="#8e44ad" rx="1" ry="1"></rect>
+  <rect x="40" y="67.5" width="250" height="6" fill="#248ebd" rx="1" ry="1"></rect>
+  <rect x="40" y="74" width="83" height="6" fill="#40a9ff" rx="1" ry="1"></rect>
+  <rect x="40" y="80.5" width="93" height="6" fill="#16a34a" rx="1" ry="1"></rect>
+  <rect x="40" y="87" width="40" height="6" fill="#ff6b00" rx="1" ry="1"></rect>
+  <rect x="40" y="97.5" width="26" height="6" fill="#cd3731" rx="1" ry="1"></rect>
+  <rect x="40" y="104" width="21" height="6" fill="#fbae00" rx="1" ry="1"></rect>
+  <rect x="40" y="110.5" width="19" height="6" fill="#8e44ad" rx="1" ry="1"></rect>
+  <rect x="40" y="117" width="36" height="6" fill="#248ebd" rx="1" ry="1"></rect>
+  <rect x="40" y="123.5" width="3" height="6" fill="#b0b0b0" rx="1" ry="1"></rect>
+  <text x="45" y="126.5" class="font s4 text" dominant-baseline="middle">n/a</text>
+  <rect x="40" y="130" width="20" height="6" fill="#16a34a" rx="1" ry="1"></rect>
+  <rect x="40" y="136.5" width="4" height="6" fill="#ff6b00" rx="1" ry="1"></rect>
+  <rect x="40" y="147" width="126" height="6" fill="#cd3731" rx="1" ry="1"></rect>
+  <rect x="40" y="153.5" width="64" height="6" fill="#fbae00" rx="1" ry="1"></rect>
+  <rect x="40" y="160" width="21" height="6" fill="#8e44ad" rx="1" ry="1"></rect>
+  <rect x="40" y="166.5" width="95" height="6" fill="#248ebd" rx="1" ry="1"></rect>
+  <rect x="40" y="173" width="31" height="6" fill="#40a9ff" rx="1" ry="1"></rect>
+  <rect x="40" y="179.5" width="57" height="6" fill="#16a34a" rx="1" ry="1"></rect>
+  <rect x="40" y="186" width="8" height="6" fill="#ff6b00" rx="1" ry="1"></rect>
+  <rect x="40" y="196.5" width="150" height="6" fill="#cd3731" rx="1" ry="1"></rect>
+  <rect x="40" y="203" width="77" height="6" fill="#fbae00" rx="1" ry="1"></rect>
+  <rect x="40" y="209.5" width="57" height="6" fill="#8e44ad" rx="1" ry="1"></rect>
+  <rect x="40" y="216" width="109" height="6" fill="#248ebd" rx="1" ry="1"></rect>
+  <rect x="40" y="222.5" width="58" height="6" fill="#40a9ff" rx="1" ry="1"></rect>
+  <rect x="40" y="229" width="78" height="6" fill="#16a34a" rx="1" ry="1"></rect>
+  <rect x="40" y="235.5" width="8" height="6" fill="#ff6b00" rx="1" ry="1"></rect>
+  <rect x="40" y="246" width="78" height="6" fill="#cd3731" rx="1" ry="1"></rect>
+  <rect x="40" y="252.5" width="134" height="6" fill="#fbae00" rx="1" ry="1"></rect>
+  <rect x="40" y="259" width="22" height="6" fill="#8e44ad" rx="1" ry="1"></rect>
+  <rect x="40" y="265.5" width="95" height="6" fill="#248ebd" rx="1" ry="1"></rect>
+  <rect x="40" y="272" width="31" height="6" fill="#40a9ff" rx="1" ry="1"></rect>
+  <rect x="40" y="278.5" width="68" height="6" fill="#16a34a" rx="1" ry="1"></rect>
+  <rect x="40" y="285" width="23" height="6" fill="#ff6b00" rx="1" ry="1"></rect>
+  <rect x="40" y="295.5" width="28" height="6" fill="#cd3731" rx="1" ry="1"></rect>
+  <rect x="40" y="302" width="114" height="6" fill="#fbae00" rx="1" ry="1"></rect>
+  <rect x="40" y="308.5" width="19" height="6" fill="#8e44ad" rx="1" ry="1"></rect>
+  <rect x="40" y="315" width="57" height="6" fill="#248ebd" rx="1" ry="1"></rect>
+  <rect x="40" y="321.5" width="3" height="6" fill="#b0b0b0" rx="1" ry="1"></rect>
+  <text x="45" y="324.5" class="font s4 text" dominant-baseline="middle">n/a</text>
+  <rect x="40" y="328" width="77" height="6" fill="#16a34a" rx="1" ry="1"></rect>
+  <rect x="40" y="334.5" width="4" height="6" fill="#ff6b00" rx="1" ry="1"></rect>
+  <rect x="40" y="345" width="26" height="6" fill="#cd3731" rx="1" ry="1"></rect>
+  <rect x="40" y="351.5" width="21" height="6" fill="#fbae00" rx="1" ry="1"></rect>
+  <rect x="40" y="358" width="19" height="6" fill="#8e44ad" rx="1" ry="1"></rect>
+  <rect x="40" y="364.5" width="36" height="6" fill="#248ebd" rx="1" ry="1"></rect>
+  <rect x="40" y="371" width="3" height="6" fill="#b0b0b0" rx="1" ry="1"></rect>
+  <text x="45" y="374" class="font s4 text" dominant-baseline="middle">n/a</text>
+  <rect x="40" y="377.5" width="20" height="6" fill="#16a34a" rx="1" ry="1"></rect>
+  <rect x="40" y="384" width="4" height="6" fill="#ff6b00" rx="1" ry="1"></rect>
+  <rect x="40" y="394.5" width="28" height="6" fill="#cd3731" rx="1" ry="1"></rect>
+  <rect x="40" y="401" width="148" height="6" fill="#fbae00" rx="1" ry="1"></rect>
+  <rect x="40" y="407.5" width="19" height="6" fill="#8e44ad" rx="1" ry="1"></rect>
+  <rect x="40" y="414" width="56" height="6" fill="#248ebd" rx="1" ry="1"></rect>
+  <rect x="40" y="420.5" width="3" height="6" fill="#b0b0b0" rx="1" ry="1"></rect>
+  <text x="45" y="423.5" class="font s4 text" dominant-baseline="middle">n/a</text>
+  <rect x="40" y="427" width="92" height="6" fill="#16a34a" rx="1" ry="1"></rect>
+  <rect x="40" y="433.5" width="4" height="6" fill="#ff6b00" rx="1" ry="1"></rect>
+  <rect x="40" y="444" width="26" height="6" fill="#cd3731" rx="1" ry="1"></rect>
+  <rect x="40" y="450.5" width="82" height="6" fill="#fbae00" rx="1" ry="1"></rect>
+  <rect x="40" y="457" width="105" height="6" fill="#8e44ad" rx="1" ry="1"></rect>
+  <rect x="40" y="463.5" width="182" height="6" fill="#248ebd" rx="1" ry="1"></rect>
+  <rect x="40" y="470" width="82" height="6" fill="#40a9ff" rx="1" ry="1"></rect>
+  <rect x="40" y="476.5" width="75" height="6" fill="#16a34a" rx="1" ry="1"></rect>
+  <rect x="40" y="483" width="22" height="6" fill="#ff6b00" rx="1" ry="1"></rect>
+  <line x1="40" y1="44" x2="40" y2="493.5" class="line"></line>
+  <text x="38" y="57.5" class="font s4" dominant-baseline="middle" text-anchor="end">clean install</text>
+  <text x="38" y="103" class="font s4" dominant-baseline="middle" text-anchor="end">with cache</text>
+  <text x="38" y="107" class="font s4" dominant-baseline="middle" text-anchor="end">with lockfile</text>
+  <text x="38" y="111" class="font s4" dominant-baseline="middle" text-anchor="end">with node_modules</text>
+  <text x="38" y="154.5" class="font s4" dominant-baseline="middle" text-anchor="end">with cache</text>
+  <text x="38" y="158.5" class="font s4" dominant-baseline="middle" text-anchor="end">with lockfile</text>
+  <text x="38" y="206" class="font s4" dominant-baseline="middle" text-anchor="end">with cache</text>
+  <text x="38" y="255.5" class="font s4" dominant-baseline="middle" text-anchor="end">with lockfile</text>
+  <text x="38" y="303" class="font s4" dominant-baseline="middle" text-anchor="end">with cache</text>
+  <text x="38" y="307" class="font s4" dominant-baseline="middle" text-anchor="end">with node_modules</text>
+  <text x="38" y="352.5" class="font s4" dominant-baseline="middle" text-anchor="end">with node_modules</text>
+  <text x="38" y="356.5" class="font s4" dominant-baseline="middle" text-anchor="end">with lockfile</text>
+  <text x="38" y="404" class="font s4" dominant-baseline="middle" text-anchor="end">with node_modules</text>
+  <text x="38" y="453.5" class="font s4" dominant-baseline="middle" text-anchor="end">update</text>
+  <text x="290" y="505.5" class="font s4 text" text-anchor="end">Tests were run using Node.js v24.11.1 at: 24 mai 2026, 07:54</text>
+</svg>
