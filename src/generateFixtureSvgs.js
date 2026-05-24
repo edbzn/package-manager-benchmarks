@@ -137,7 +137,22 @@ async function run () {
       })
     })
 
-    const svg = generateSvg(toArray(pmResultMap), pmsWithVersions, testDescriptions, formattedNow)
+    const chartTitle = fixture === 'alotta-files'
+      ? 'A lot of files benchmark'
+      : `${fixture} benchmark`
+
+    const chartSubtitle = fixture === 'alotta-files'
+      ? 'Latest available versions across install scenarios (lower is better)'
+      : 'Latest available versions across install scenarios'
+
+    const svg = generateSvg(
+      toArray(pmResultMap),
+      pmsWithVersions,
+      testDescriptions,
+      formattedNow,
+      chartTitle,
+      chartSubtitle
+    )
 
     await fs.promises.writeFile(path.join(BENCH_IMGS, `${fixture}.svg`), svg, 'utf8')
   }

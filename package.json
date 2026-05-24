@@ -1,7 +1,7 @@
 {
   "type": "module",
   "scripts": {
-    "benchmark": "COREPACK_ENABLE_STRICT=0 node ./src/index.js && pnpm run update-charts",
+    "benchmark": "node ./src/runBenchmark.js",
     "update-charts": "node ./src/generateVersionsSvg.js && node ./src/generateFixtureSvgs.js"
   },
   "dependencies": {

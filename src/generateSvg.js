@@ -16,15 +16,32 @@ const PNPM_COLOR = '#fbae00'
 const PNPM_RUST_COLOR = '#8e44ad'
 const BUN_COLOR = '#ff6b00'
 
-export default (resultArrays, pms, tests, formattedNow) => {
+const PM_COLORS = {
+  npm: NPM_COLOR,
+  pnpm: PNPM_COLOR,
+  pnpm_rust: PNPM_RUST_COLOR,
+  yarn: YARN_COLOR,
+  yarn_pnp: YARN_PNP_COLOR,
+  yarn_classic: YARN_CLASSIC_COLOR,
+  bun: BUN_COLOR,
+}
+
+export default (
+  resultArrays,
+  pms,
+  tests,
+  formattedNow,
+  chartTitle = 'Package Manager Benchmarks',
+  chartSubtitle = ''
+) => {
   let svgStr = ''
   // colors taken from logos (where possible)
-  const colors = [ NPM_COLOR, PNPM_COLOR, PNPM_RUST_COLOR, YARN_COLOR, YARN_PNP_COLOR, YARN_CLASSIC_COLOR, BUN_COLOR ]
+  const colors = pms.map((pm, index) => PM_COLORS[pm.scenario] || PM_COLORS[pm.name] || Object.values(PM_COLORS)[index] || '#888')
   // empty areas next to the graph
   const offset = {
     left: 40,
     right: 10,
-    top: 52,
+    top: 48,
     bottom: 10
   }
   // thickness of bars
@@ -63,7 +80,10 @@ export default (resultArrays, pms, tests, formattedNow) => {
     s3: '.s3 { font-size: 3px; }',
     s4: '.s4 { font-size: 4px; }',
     s5: '.s5 { font-size: 5px; }',
+    s6: '.s6 { font-size: 6px; }',
+    title: '.title { fill: #222; font-weight: 600; }',
     line: '.line { stroke: #cacaca; }',
+    lineMinor: '.lineMinor { stroke: #e6e6e6; }',
     width: '.width { stroke-width: 0.5; }',
     text: '.text { fill: #888; }'
   }
@@ -84,6 +104,17 @@ export default (resultArrays, pms, tests, formattedNow) => {
   // uncomment to color the entire view box for debugging
   // svgStr += `<rect x="${vb.x}" y="${vb.y}" width="${vb.w}" height="${vb.h}" fill="${'#eaeaea'}"></rect>` + '\n'
 
+  // add chart title
+  ;(() => {
+    const x = graph.x
+    const y = vb.y + 6
+    svgStr += `  <text x="${x}" y="${y}" class="font s6 title">${chartTitle}</text>` + '\n'
+
+    if (chartSubtitle) {
+      svgStr += `  <text x="${x}" y="12" class="font s3 text">${chartSubtitle}</text>` + '\n'
+    }
+  })()
+
   // draw legend
   pms.forEach((pm, index) => {
     const itemsPerRow = pms.length
@@ -93,7 +124,7 @@ export default (resultArrays, pms, tests, formattedNow) => {
     const radius = 4
     const colWidth = (graph.w - 8) / itemsPerRow
     const x = graph.x + 4 + (col * colWidth) + colWidth / 2
-    const y = vb.y + radius + 2 + (row * 13)
+    const y = vb.y + radius + 13 + (row * 13)
     svgStr += `  <circle cx="${x}" cy="${y}" r="${radius}" fill="${colors[index]}"></circle>` + '\n'
 
     // add name under circle
@@ -107,22 +138,22 @@ export default (resultArrays, pms, tests, formattedNow) => {
     svgStr += `  <text x="${x}" y="${textY}" class="font s3" text-anchor="${anchor}">${text}</text>` + '\n'
   })
 
-  const graphLines = [
-    graph.x + limit * ratio * 0,
-    graph.x + limit * ratio * 0.2,
-    graph.x + limit * ratio * 0.4,
-    graph.x + limit * ratio * 0.6,
-    graph.x + limit * ratio * 0.8,
-    graph.x + limit * ratio * 1
-  ]
+  const graphLineCount = 11
+  const graphLines = Array.from({ length: graphLineCount }, (_, index) => {
+    const progress = index / (graphLineCount - 1)
+    return graph.x + limit * ratio * progress
+  })
   let baseGraphLine = ''
 
   // draw graph lines
   graphLines.forEach((graphLine, index) => {
     const isBaseLine = index === 0
+    const isMajorLine = index % 2 === 0
     const compositeClass = isBaseLine
       ? 'line'
-      : 'line width'
+      : isMajorLine
+        ? 'line width'
+        : 'lineMinor width'
     const y1 = graph.y - separation
     const y2 = y1 + graph.h
     const line = `  <line x1="${graphLine}" y1="${y1}" x2="${graphLine}" y2="${y2}" class="${compositeClass}"></line>` + '\n'
@@ -138,22 +169,12 @@ export default (resultArrays, pms, tests, formattedNow) => {
     const x = graphLine
     let y = graph.y - 7
     const number = limit * (index / (graphLines.length - 1))
-    svgStr += `  <text x="${x}" y="${y}" class="font s5 text" text-anchor="${anchor}">${number}</text>` + '\n'
+    svgStr += `  <text x="${x}" y="${y}" class="font s4 text" text-anchor="${anchor}">${number}</text>` + '\n'
 
     // add numbers below the graph lines
     y = y2 + 5
-    svgStr += `  <text x="${x}" y="${y}" class="font s5 text" text-anchor="${anchor}">${number}</text>` + '\n'
+    svgStr += `  <text x="${x}" y="${y}" class="font s4 text" text-anchor="${anchor}">${number}</text>` + '\n'
   })
-
-  // add axis explanation
-  ;(() => {
-    const text = 'Installation time in seconds (lower is better)'
-    const anchor = 'end'
-    const fontStyle = 'italic'
-    const x = graph.x + graph.w
-    const y = graph.y - 15
-    svgStr += `  <text x="${x}" y="${y}" class="font s4 text" font-style="${fontStyle}" text-anchor="${anchor}">${text}</text>` + '\n'
-  })()
 
   // draw results as bars
   resultArrays.forEach((results, indexA) => {
