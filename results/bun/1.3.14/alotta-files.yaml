@@ -153,3 +153,67 @@
       cpuPercent: 162
       fsInputs: 0
       fsOutputs: 18512
+- firstInstall: 2371
+  repeatInstall: 48
+  withWarmCacheAndLockfile: 732
+  withWarmCache: 729
+  withLockfile: 1316
+  withWarmCacheAndModules: 48
+  withWarmModulesAndLockfile: 48
+  withWarmModules: 44
+  updatedDependencies: 356
+  installMetrics:
+    firstInstall:
+      durationMs: 2371
+      maxRssKb: 268628
+      cpuPercent: 203
+      fsInputs: 0
+      fsOutputs: 904856
+    repeatInstall:
+      durationMs: 48
+      maxRssKb: 24676
+      cpuPercent: 107
+      fsInputs: 0
+      fsOutputs: 0
+    withWarmCacheAndLockfile:
+      durationMs: 732
+      maxRssKb: 51648
+      cpuPercent: 97
+      fsInputs: 0
+      fsOutputs: 0
+    withWarmCache:
+      durationMs: 729
+      maxRssKb: 51684
+      cpuPercent: 97
+      fsInputs: 0
+      fsOutputs: 0
+    withLockfile:
+      durationMs: 1316
+      maxRssKb: 159880
+      cpuPercent: 280
+      fsInputs: 0
+      fsOutputs: 846000
+    withWarmCacheAndModules:
+      durationMs: 48
+      maxRssKb: 24500
+      cpuPercent: 112
+      fsInputs: 0
+      fsOutputs: 0
+    withWarmModulesAndLockfile:
+      durationMs: 48
+      maxRssKb: 24640
+      cpuPercent: 110
+      fsInputs: 0
+      fsOutputs: 0
+    withWarmModules:
+      durationMs: 44
+      maxRssKb: 24512
+      cpuPercent: 111
+      fsInputs: 0
+      fsOutputs: 0
+    updatedDependencies:
+      durationMs: 356
+      maxRssKb: 136728
+      cpuPercent: 126
+      fsInputs: 0
+      fsOutputs: 18520
