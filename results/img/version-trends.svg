@@ -50,15 +50,15 @@
   <text x="840" y="356" class="font s3 text" text-anchor="middle">v11</text>
   <line x1="48" y1="30" x2="48" y2="342" class="axis"></line>
   <line x1="48" y1="342" x2="840" y2="342" class="axis"></line>
-  <polyline fill="none" stroke="#cd3731" stroke-width="2" points="408,210.8016 479.99999999999994,178.77599999999998 552,36.12959999999998 624,139.3632 696,160.95360000000002 768,189.3648 840,213.5328"></polyline>
+  <polyline fill="none" stroke="#cd3731" stroke-width="2" points="408,210.8016 479.99999999999994,178.77599999999998 552,36.12959999999998 624,139.3632 696,160.95360000000002 768,189.3648 840,179.88"></polyline>
   <circle cx="408" cy="210.8016" r="2.8" fill="#cd3731"></circle>
   <circle cx="479.99999999999994" cy="178.77599999999998" r="2.8" fill="#cd3731"></circle>
   <circle cx="552" cy="36.12959999999998" r="2.8" fill="#cd3731"></circle>
   <circle cx="624" cy="139.3632" r="2.8" fill="#cd3731"></circle>
   <circle cx="696" cy="160.95360000000002" r="2.8" fill="#cd3731"></circle>
   <circle cx="768" cy="189.3648" r="2.8" fill="#cd3731"></circle>
-  <circle cx="840" cy="213.5328" r="2.8" fill="#cd3731"></circle>
-  <polyline fill="none" stroke="#fbae00" stroke-width="2" points="120,238.0464 192,256.9248 264,252.7536 336,220.392 408,267.3936 479.99999999999994,276.0528 552,247.98239999999998 624,301.4928 696,301.8912 768,305.2992 840,308.1936"></polyline>
+  <circle cx="840" cy="179.88" r="2.8" fill="#cd3731"></circle>
+  <polyline fill="none" stroke="#fbae00" stroke-width="2" points="120,238.0464 192,256.9248 264,252.7536 336,220.392 408,267.3936 479.99999999999994,276.0528 552,247.98239999999998 624,301.4928 696,301.8912 768,305.2992 840,305.04"></polyline>
   <circle cx="120" cy="238.0464" r="2.8" fill="#fbae00"></circle>
   <circle cx="192" cy="256.9248" r="2.8" fill="#fbae00"></circle>
   <circle cx="264" cy="252.7536" r="2.8" fill="#fbae00"></circle>
@@ -69,7 +69,7 @@
   <circle cx="624" cy="301.4928" r="2.8" fill="#fbae00"></circle>
   <circle cx="696" cy="301.8912" r="2.8" fill="#fbae00"></circle>
   <circle cx="768" cy="305.2992" r="2.8" fill="#fbae00"></circle>
-  <circle cx="840" cy="308.1936" r="2.8" fill="#fbae00"></circle>
+  <circle cx="840" cy="305.04" r="2.8" fill="#fbae00"></circle>
   <polyline fill="none" stroke="#8e44ad" stroke-width="2" points="48,308.7216"></polyline>
   <circle cx="48" cy="308.7216" r="2.8" fill="#8e44ad"></circle>
   <polyline fill="none" stroke="#248ebd" stroke-width="2" points="120,235.68959999999998 192,47.09280000000001 264,244.2912 336,279.2448"></polyline>
@@ -100,5 +100,5 @@
   <text x="623.7142857142857" y="369" class="font s3" dominant-baseline="middle">Yarn Classic</text>
   <circle cx="730.8571428571429" cy="368" r="3" fill="#ff6b00"></circle>
   <text x="736.8571428571429" y="369" class="font s3" dominant-baseline="middle">Bun</text>
-  <text x="840" y="376" class="font s3 text" text-anchor="end">Node.js v24.11.1 · 28 mai 2026, 08:30</text>
+  <text x="840" y="376" class="font s3 text" text-anchor="end">Node.js v24.11.1 · 29 mai 2026, 08:28</text>
 </svg>
