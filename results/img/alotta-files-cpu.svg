@@ -22,7 +22,7 @@
   <text x="95.85714285714286" y="29" class="font s3" text-anchor="middle">v11.5.1</text>
   <circle cx="130.42857142857142" cy="17" r="4" fill="#8e44ad"></circle>
   <text x="130.42857142857142" y="25" class="font s4" text-anchor="middle">pnpm v12 (rust)</text>
-  <text x="130.42857142857142" y="29" class="font s3" text-anchor="middle">v0.2.13</text>
+  <text x="130.42857142857142" y="29" class="font s3" text-anchor="middle">v0.2.14</text>
   <circle cx="165" cy="17" r="4" fill="#248ebd"></circle>
   <text x="165" y="25" class="font s4" text-anchor="middle">Yarn</text>
   <text x="165" y="29" class="font s3" text-anchor="middle">v4.16.0</text>
@@ -69,36 +69,36 @@
   <text x="290" y="498.5" class="font s4 text" text-anchor="middle">300</text>
   <rect x="40" y="48" width="48" height="6" fill="#cd3731" rx="1" ry="1"></rect>
   <rect x="40" y="54.5" width="182" height="6" fill="#fbae00" rx="1" ry="1"></rect>
-  <rect x="40" y="61" width="154" height="6" fill="#8e44ad" rx="1" ry="1"></rect>
-  <rect x="40" y="67.5" width="173" height="6" fill="#248ebd" rx="1" ry="1"></rect>
+  <rect x="40" y="61" width="138" height="6" fill="#8e44ad" rx="1" ry="1"></rect>
+  <rect x="40" y="67.5" width="175" height="6" fill="#248ebd" rx="1" ry="1"></rect>
   <rect x="40" y="74" width="126" height="6" fill="#40a9ff" rx="1" ry="1"></rect>
   <rect x="40" y="80.5" width="123" height="6" fill="#16a34a" rx="1" ry="1"></rect>
   <rect x="40" y="87" width="195" height="6" fill="#ff6b00" rx="1" ry="1"></rect>
   <rect x="40" y="97.5" width="113" height="6" fill="#cd3731" rx="1" ry="1"></rect>
-  <rect x="40" y="104" width="116" height="6" fill="#fbae00" rx="1" ry="1"></rect>
+  <rect x="40" y="104" width="113" height="6" fill="#fbae00" rx="1" ry="1"></rect>
   <rect x="40" y="110.5" width="91" height="6" fill="#8e44ad" rx="1" ry="1"></rect>
-  <rect x="40" y="117" width="118" height="6" fill="#248ebd" rx="1" ry="1"></rect>
+  <rect x="40" y="117" width="116" height="6" fill="#248ebd" rx="1" ry="1"></rect>
   <rect x="40" y="123.5" width="3" height="6" fill="#b0b0b0" rx="1" ry="1"></rect>
   <text x="45" y="126.5" class="font s4 text" dominant-baseline="middle">n/a</text>
   <rect x="40" y="130" width="108" height="6" fill="#16a34a" rx="1" ry="1"></rect>
   <rect x="40" y="136.5" width="88" height="6" fill="#ff6b00" rx="1" ry="1"></rect>
   <rect x="40" y="147" width="153" height="6" fill="#cd3731" rx="1" ry="1"></rect>
-  <rect x="40" y="153.5" width="187" height="6" fill="#fbae00" rx="1" ry="1"></rect>
-  <rect x="40" y="160" width="168" height="6" fill="#8e44ad" rx="1" ry="1"></rect>
+  <rect x="40" y="153.5" width="185" height="6" fill="#fbae00" rx="1" ry="1"></rect>
+  <rect x="40" y="160" width="158" height="6" fill="#8e44ad" rx="1" ry="1"></rect>
   <rect x="40" y="166.5" width="145" height="6" fill="#248ebd" rx="1" ry="1"></rect>
   <rect x="40" y="173" width="116" height="6" fill="#40a9ff" rx="1" ry="1"></rect>
   <rect x="40" y="179.5" width="118" height="6" fill="#16a34a" rx="1" ry="1"></rect>
   <rect x="40" y="186" width="81" height="6" fill="#ff6b00" rx="1" ry="1"></rect>
   <rect x="40" y="196.5" width="153" height="6" fill="#cd3731" rx="1" ry="1"></rect>
   <rect x="40" y="203" width="156" height="6" fill="#fbae00" rx="1" ry="1"></rect>
-  <rect x="40" y="209.5" width="133" height="6" fill="#8e44ad" rx="1" ry="1"></rect>
+  <rect x="40" y="209.5" width="108" height="6" fill="#8e44ad" rx="1" ry="1"></rect>
   <rect x="40" y="216" width="143" height="6" fill="#248ebd" rx="1" ry="1"></rect>
-  <rect x="40" y="222.5" width="116" height="6" fill="#40a9ff" rx="1" ry="1"></rect>
+  <rect x="40" y="222.5" width="113" height="6" fill="#40a9ff" rx="1" ry="1"></rect>
   <rect x="40" y="229" width="103" height="6" fill="#16a34a" rx="1" ry="1"></rect>
   <rect x="40" y="235.5" width="82" height="6" fill="#ff6b00" rx="1" ry="1"></rect>
   <rect x="40" y="246" width="145" height="6" fill="#cd3731" rx="1" ry="1"></rect>
   <rect x="40" y="252.5" width="178" height="6" fill="#fbae00" rx="1" ry="1"></rect>
-  <rect x="40" y="259" width="169" height="6" fill="#8e44ad" rx="1" ry="1"></rect>
+  <rect x="40" y="259" width="164" height="6" fill="#8e44ad" rx="1" ry="1"></rect>
   <rect x="40" y="265.5" width="143" height="6" fill="#248ebd" rx="1" ry="1"></rect>
   <rect x="40" y="272" width="115" height="6" fill="#40a9ff" rx="1" ry="1"></rect>
   <rect x="40" y="278.5" width="131" height="6" fill="#16a34a" rx="1" ry="1"></rect>
@@ -106,7 +106,7 @@
   <rect x="40" y="295.5" width="97" height="6" fill="#cd3731" rx="1" ry="1"></rect>
   <rect x="40" y="302" width="92" height="6" fill="#fbae00" rx="1" ry="1"></rect>
   <rect x="40" y="308.5" width="98" height="6" fill="#8e44ad" rx="1" ry="1"></rect>
-  <rect x="40" y="315" width="118" height="6" fill="#248ebd" rx="1" ry="1"></rect>
+  <rect x="40" y="315" width="114" height="6" fill="#248ebd" rx="1" ry="1"></rect>
   <rect x="40" y="321.5" width="3" height="6" fill="#b0b0b0" rx="1" ry="1"></rect>
   <text x="45" y="324.5" class="font s4 text" dominant-baseline="middle">n/a</text>
   <rect x="40" y="328" width="56" height="6" fill="#16a34a" rx="1" ry="1"></rect>
@@ -121,7 +121,7 @@
   <rect x="40" y="384" width="88" height="6" fill="#ff6b00" rx="1" ry="1"></rect>
   <rect x="40" y="394.5" width="98" height="6" fill="#cd3731" rx="1" ry="1"></rect>
   <rect x="40" y="401" width="121" height="6" fill="#fbae00" rx="1" ry="1"></rect>
-  <rect x="40" y="407.5" width="99" height="6" fill="#8e44ad" rx="1" ry="1"></rect>
+  <rect x="40" y="407.5" width="98" height="6" fill="#8e44ad" rx="1" ry="1"></rect>
   <rect x="40" y="414" width="115" height="6" fill="#248ebd" rx="1" ry="1"></rect>
   <rect x="40" y="420.5" width="3" height="6" fill="#b0b0b0" rx="1" ry="1"></rect>
   <text x="45" y="423.5" class="font s4 text" dominant-baseline="middle">n/a</text>
@@ -129,7 +129,7 @@
   <rect x="40" y="433.5" width="86" height="6" fill="#ff6b00" rx="1" ry="1"></rect>
   <rect x="40" y="444" width="108" height="6" fill="#cd3731" rx="1" ry="1"></rect>
   <rect x="40" y="450.5" width="161" height="6" fill="#fbae00" rx="1" ry="1"></rect>
-  <rect x="40" y="457" width="108" height="6" fill="#8e44ad" rx="1" ry="1"></rect>
+  <rect x="40" y="457" width="93" height="6" fill="#8e44ad" rx="1" ry="1"></rect>
   <rect x="40" y="463.5" width="158" height="6" fill="#248ebd" rx="1" ry="1"></rect>
   <rect x="40" y="470" width="118" height="6" fill="#40a9ff" rx="1" ry="1"></rect>
   <rect x="40" y="476.5" width="66" height="6" fill="#16a34a" rx="1" ry="1"></rect>
@@ -149,5 +149,5 @@
   <text x="38" y="356.5" class="font s4" dominant-baseline="middle" text-anchor="end">with lockfile</text>
   <text x="38" y="404" class="font s4" dominant-baseline="middle" text-anchor="end">with node_modules</text>
   <text x="38" y="453.5" class="font s4" dominant-baseline="middle" text-anchor="end">update</text>
-  <text x="290" y="505.5" class="font s4 text" text-anchor="end">Tests were run using Node.js v24.11.1 at: 3 juin 2026, 08:49</text>
+  <text x="290" y="505.5" class="font s4 text" text-anchor="end">Tests were run using Node.js v24.11.1 at: 4 juin 2026, 08:37</text>
 </svg>
