@@ -77,11 +77,11 @@
   <circle cx="192" cy="47.09280000000001" r="2.8" fill="#248ebd"></circle>
   <circle cx="264" cy="244.2912" r="2.8" fill="#248ebd"></circle>
   <circle cx="336" cy="276.984" r="2.8" fill="#248ebd"></circle>
-  <polyline fill="none" stroke="#40a9ff" stroke-width="2" points="120,244.632 192,106.3392 264,146.4672 336,324.9504"></polyline>
+  <polyline fill="none" stroke="#40a9ff" stroke-width="2" points="120,244.632 192,106.3392 264,146.4672 336,325.0272"></polyline>
   <circle cx="120" cy="244.632" r="2.8" fill="#40a9ff"></circle>
   <circle cx="192" cy="106.3392" r="2.8" fill="#40a9ff"></circle>
   <circle cx="264" cy="146.4672" r="2.8" fill="#40a9ff"></circle>
-  <circle cx="336" cy="324.9504" r="2.8" fill="#40a9ff"></circle>
+  <circle cx="336" cy="325.0272" r="2.8" fill="#40a9ff"></circle>
   <polyline fill="none" stroke="#16a34a" stroke-width="2" points="120,214.50240000000002"></polyline>
   <circle cx="120" cy="214.50240000000002" r="2.8" fill="#16a34a"></circle>
   <polyline fill="none" stroke="#ff6b00" stroke-width="2" points="120,331.9344"></polyline>
@@ -100,5 +100,5 @@
   <text x="623.7142857142857" y="369" class="font s3" dominant-baseline="middle">Yarn Classic</text>
   <circle cx="730.8571428571429" cy="368" r="3" fill="#ff6b00"></circle>
   <text x="736.8571428571429" y="369" class="font s3" dominant-baseline="middle">Bun</text>
-  <text x="840" y="376" class="font s3 text" text-anchor="end">Node.js v24.11.1 · 7 juin 2026, 08:20</text>
+  <text x="840" y="376" class="font s3 text" text-anchor="end">Node.js v24.11.1 · 8 juin 2026, 08:46</text>
 </svg>
