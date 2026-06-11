@@ -70,8 +70,8 @@
   <circle cx="696" cy="301.8912" r="2.8" fill="#fbae00"></circle>
   <circle cx="768" cy="305.2992" r="2.8" fill="#fbae00"></circle>
   <circle cx="840" cy="306.8976" r="2.8" fill="#fbae00"></circle>
-  <polyline fill="none" stroke="#8e44ad" stroke-width="2" points="48,304.9824"></polyline>
-  <circle cx="48" cy="304.9824" r="2.8" fill="#8e44ad"></circle>
+  <polyline fill="none" stroke="#8e44ad" stroke-width="2" points="48,292.2576"></polyline>
+  <circle cx="48" cy="292.2576" r="2.8" fill="#8e44ad"></circle>
   <polyline fill="none" stroke="#248ebd" stroke-width="2" points="120,235.68959999999998 192,47.09280000000001 264,244.2912 336,276.984"></polyline>
   <circle cx="120" cy="235.68959999999998" r="2.8" fill="#248ebd"></circle>
   <circle cx="192" cy="47.09280000000001" r="2.8" fill="#248ebd"></circle>
@@ -100,5 +100,5 @@
   <text x="623.7142857142857" y="369" class="font s3" dominant-baseline="middle">Yarn Classic</text>
   <circle cx="730.8571428571429" cy="368" r="3" fill="#ff6b00"></circle>
   <text x="736.8571428571429" y="369" class="font s3" dominant-baseline="middle">Bun</text>
-  <text x="840" y="376" class="font s3 text" text-anchor="end">Node.js v24.11.1 · 10 juin 2026, 08:33</text>
+  <text x="840" y="376" class="font s3 text" text-anchor="end">Node.js v24.11.1 · 11 juin 2026, 08:43</text>
 </svg>
