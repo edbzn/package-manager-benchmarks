@@ -58,7 +58,7 @@
   <circle cx="696" cy="160.95360000000002" r="2.8" fill="#cd3731"></circle>
   <circle cx="768" cy="189.3648" r="2.8" fill="#cd3731"></circle>
   <circle cx="840" cy="183.09599999999998" r="2.8" fill="#cd3731"></circle>
-  <polyline fill="none" stroke="#fbae00" stroke-width="2" points="120,238.0464 192,256.9248 264,252.7536 336,220.392 408,267.3936 479.99999999999994,276.0528 552,247.98239999999998 624,301.4928 696,301.8912 768,305.2992 840,304.6272"></polyline>
+  <polyline fill="none" stroke="#fbae00" stroke-width="2" points="120,238.0464 192,256.9248 264,252.7536 336,220.392 408,267.3936 479.99999999999994,276.0528 552,247.98239999999998 624,301.4928 696,301.8912 768,305.2992 840,306.76800000000003"></polyline>
   <circle cx="120" cy="238.0464" r="2.8" fill="#fbae00"></circle>
   <circle cx="192" cy="256.9248" r="2.8" fill="#fbae00"></circle>
   <circle cx="264" cy="252.7536" r="2.8" fill="#fbae00"></circle>
@@ -69,19 +69,19 @@
   <circle cx="624" cy="301.4928" r="2.8" fill="#fbae00"></circle>
   <circle cx="696" cy="301.8912" r="2.8" fill="#fbae00"></circle>
   <circle cx="768" cy="305.2992" r="2.8" fill="#fbae00"></circle>
-  <circle cx="840" cy="304.6272" r="2.8" fill="#fbae00"></circle>
-  <polyline fill="none" stroke="#8e44ad" stroke-width="2" points="48,301.5456"></polyline>
-  <circle cx="48" cy="301.5456" r="2.8" fill="#8e44ad"></circle>
-  <polyline fill="none" stroke="#248ebd" stroke-width="2" points="120,235.68959999999998 192,47.09280000000001 264,244.2912 336,276.984"></polyline>
+  <circle cx="840" cy="306.76800000000003" r="2.8" fill="#fbae00"></circle>
+  <polyline fill="none" stroke="#8e44ad" stroke-width="2" points="48,304.488"></polyline>
+  <circle cx="48" cy="304.488" r="2.8" fill="#8e44ad"></circle>
+  <polyline fill="none" stroke="#248ebd" stroke-width="2" points="120,235.68959999999998 192,47.09280000000001 264,244.2912 336,272.5392"></polyline>
   <circle cx="120" cy="235.68959999999998" r="2.8" fill="#248ebd"></circle>
   <circle cx="192" cy="47.09280000000001" r="2.8" fill="#248ebd"></circle>
   <circle cx="264" cy="244.2912" r="2.8" fill="#248ebd"></circle>
-  <circle cx="336" cy="276.984" r="2.8" fill="#248ebd"></circle>
-  <polyline fill="none" stroke="#40a9ff" stroke-width="2" points="120,244.632 192,106.3392 264,146.4672 336,325.0272"></polyline>
+  <circle cx="336" cy="272.5392" r="2.8" fill="#248ebd"></circle>
+  <polyline fill="none" stroke="#40a9ff" stroke-width="2" points="120,244.632 192,106.3392 264,146.4672 336,324.7296"></polyline>
   <circle cx="120" cy="244.632" r="2.8" fill="#40a9ff"></circle>
   <circle cx="192" cy="106.3392" r="2.8" fill="#40a9ff"></circle>
   <circle cx="264" cy="146.4672" r="2.8" fill="#40a9ff"></circle>
-  <circle cx="336" cy="325.0272" r="2.8" fill="#40a9ff"></circle>
+  <circle cx="336" cy="324.7296" r="2.8" fill="#40a9ff"></circle>
   <polyline fill="none" stroke="#16a34a" stroke-width="2" points="120,214.50240000000002"></polyline>
   <circle cx="120" cy="214.50240000000002" r="2.8" fill="#16a34a"></circle>
   <polyline fill="none" stroke="#ff6b00" stroke-width="2" points="120,332.616"></polyline>
@@ -100,5 +100,5 @@
   <text x="623.7142857142857" y="369" class="font s3" dominant-baseline="middle">Yarn Classic</text>
   <circle cx="730.8571428571429" cy="368" r="3" fill="#ff6b00"></circle>
   <text x="736.8571428571429" y="369" class="font s3" dominant-baseline="middle">Bun</text>
-  <text x="840" y="376" class="font s3 text" text-anchor="end">Node.js v24.11.1 · 14 juin 2026, 08:33</text>
+  <text x="840" y="376" class="font s3 text" text-anchor="end">Node.js v24.11.1 · 15 juin 2026, 09:22</text>
 </svg>

@@ -22,13 +22,13 @@
   <text x="95.85714285714286" y="29" class="font s3" text-anchor="middle">v11.6.0</text>
   <circle cx="130.42857142857142" cy="17" r="4" fill="#8e44ad"></circle>
   <text x="130.42857142857142" y="25" class="font s4" text-anchor="middle">pnpm v12 (rust)</text>
-  <text x="130.42857142857142" y="29" class="font s3" text-anchor="middle">v0.11.6</text>
+  <text x="130.42857142857142" y="29" class="font s3" text-anchor="middle">v0.11.7</text>
   <circle cx="165" cy="17" r="4" fill="#248ebd"></circle>
   <text x="165" y="25" class="font s4" text-anchor="middle">Yarn</text>
-  <text x="165" y="29" class="font s3" text-anchor="middle">v4.16.0</text>
+  <text x="165" y="29" class="font s3" text-anchor="middle">v4.17.0</text>
   <circle cx="199.57142857142856" cy="17" r="4" fill="#40a9ff"></circle>
   <text x="199.57142857142856" y="25" class="font s4" text-anchor="middle">Yarn PnP</text>
-  <text x="199.57142857142856" y="29" class="font s3" text-anchor="middle">v4.16.0</text>
+  <text x="199.57142857142856" y="29" class="font s3" text-anchor="middle">v4.17.0</text>
   <circle cx="234.1428571428571" cy="17" r="4" fill="#16a34a"></circle>
   <text x="234.1428571428571" y="25" class="font s4" text-anchor="middle">Yarn Classic</text>
   <text x="234.1428571428571" y="29" class="font s3" text-anchor="middle">v1.22.22</text>
@@ -38,38 +38,38 @@
   <text x="40" y="41" class="font s4 text" text-anchor="middle">0</text>
   <text x="40" y="498.5" class="font s4 text" text-anchor="middle">0</text>
   <line x1="65" y1="44" x2="65" y2="493.5" class="lineMinor width"></line>
-  <text x="65" y="41" class="font s4 text" text-anchor="middle">279286.5</text>
-  <text x="65" y="498.5" class="font s4 text" text-anchor="middle">279286.5</text>
+  <text x="65" y="41" class="font s4 text" text-anchor="middle">279918.5</text>
+  <text x="65" y="498.5" class="font s4 text" text-anchor="middle">279918.5</text>
   <line x1="90" y1="44" x2="90" y2="493.5" class="line width"></line>
-  <text x="90" y="41" class="font s4 text" text-anchor="middle">558573</text>
-  <text x="90" y="498.5" class="font s4 text" text-anchor="middle">558573</text>
+  <text x="90" y="41" class="font s4 text" text-anchor="middle">559837</text>
+  <text x="90" y="498.5" class="font s4 text" text-anchor="middle">559837</text>
   <line x1="115" y1="44" x2="115" y2="493.5" class="lineMinor width"></line>
-  <text x="115" y="41" class="font s4 text" text-anchor="middle">837859.5</text>
-  <text x="115" y="498.5" class="font s4 text" text-anchor="middle">837859.5</text>
+  <text x="115" y="41" class="font s4 text" text-anchor="middle">839755.5</text>
+  <text x="115" y="498.5" class="font s4 text" text-anchor="middle">839755.5</text>
   <line x1="140" y1="44" x2="140" y2="493.5" class="line width"></line>
-  <text x="140" y="41" class="font s4 text" text-anchor="middle">1117146</text>
-  <text x="140" y="498.5" class="font s4 text" text-anchor="middle">1117146</text>
+  <text x="140" y="41" class="font s4 text" text-anchor="middle">1119674</text>
+  <text x="140" y="498.5" class="font s4 text" text-anchor="middle">1119674</text>
   <line x1="165" y1="44" x2="165" y2="493.5" class="lineMinor width"></line>
-  <text x="165" y="41" class="font s4 text" text-anchor="middle">1396432.5</text>
-  <text x="165" y="498.5" class="font s4 text" text-anchor="middle">1396432.5</text>
+  <text x="165" y="41" class="font s4 text" text-anchor="middle">1399592.5</text>
+  <text x="165" y="498.5" class="font s4 text" text-anchor="middle">1399592.5</text>
   <line x1="190" y1="44" x2="190" y2="493.5" class="line width"></line>
-  <text x="190" y="41" class="font s4 text" text-anchor="middle">1675719</text>
-  <text x="190" y="498.5" class="font s4 text" text-anchor="middle">1675719</text>
+  <text x="190" y="41" class="font s4 text" text-anchor="middle">1679511</text>
+  <text x="190" y="498.5" class="font s4 text" text-anchor="middle">1679511</text>
   <line x1="215" y1="44" x2="215" y2="493.5" class="lineMinor width"></line>
-  <text x="215" y="41" class="font s4 text" text-anchor="middle">1955005.4999999998</text>
-  <text x="215" y="498.5" class="font s4 text" text-anchor="middle">1955005.4999999998</text>
+  <text x="215" y="41" class="font s4 text" text-anchor="middle">1959429.4999999998</text>
+  <text x="215" y="498.5" class="font s4 text" text-anchor="middle">1959429.4999999998</text>
   <line x1="240" y1="44" x2="240" y2="493.5" class="line width"></line>
-  <text x="240" y="41" class="font s4 text" text-anchor="middle">2234292</text>
-  <text x="240" y="498.5" class="font s4 text" text-anchor="middle">2234292</text>
+  <text x="240" y="41" class="font s4 text" text-anchor="middle">2239348</text>
+  <text x="240" y="498.5" class="font s4 text" text-anchor="middle">2239348</text>
   <line x1="265" y1="44" x2="265" y2="493.5" class="lineMinor width"></line>
-  <text x="265" y="41" class="font s4 text" text-anchor="middle">2513578.5</text>
-  <text x="265" y="498.5" class="font s4 text" text-anchor="middle">2513578.5</text>
+  <text x="265" y="41" class="font s4 text" text-anchor="middle">2519266.5</text>
+  <text x="265" y="498.5" class="font s4 text" text-anchor="middle">2519266.5</text>
   <line x1="290" y1="44" x2="290" y2="493.5" class="line width"></line>
-  <text x="290" y="41" class="font s4 text" text-anchor="middle">2792865</text>
-  <text x="290" y="498.5" class="font s4 text" text-anchor="middle">2792865</text>
-  <rect x="40" y="48" width="121" height="6" fill="#cd3731" rx="1" ry="1"></rect>
-  <rect x="40" y="54.5" width="104" height="6" fill="#fbae00" rx="1" ry="1"></rect>
-  <rect x="40" y="61" width="111" height="6" fill="#8e44ad" rx="1" ry="1"></rect>
+  <text x="290" y="41" class="font s4 text" text-anchor="middle">2799185</text>
+  <text x="290" y="498.5" class="font s4 text" text-anchor="middle">2799185</text>
+  <rect x="40" y="48" width="120" height="6" fill="#cd3731" rx="1" ry="1"></rect>
+  <rect x="40" y="54.5" width="94" height="6" fill="#fbae00" rx="1" ry="1"></rect>
+  <rect x="40" y="61" width="96" height="6" fill="#8e44ad" rx="1" ry="1"></rect>
   <rect x="40" y="67.5" width="250" height="6" fill="#248ebd" rx="1" ry="1"></rect>
   <rect x="40" y="74" width="2" height="6" fill="#40a9ff" rx="1" ry="1"></rect>
   <rect x="40" y="80.5" width="162" height="6" fill="#16a34a" rx="1" ry="1"></rect>
@@ -91,13 +91,13 @@
   <rect x="40" y="186" width="1" height="6" fill="#ff6b00" rx="1" ry="1"></rect>
   <rect x="40" y="196.5" width="76" height="6" fill="#cd3731" rx="1" ry="1"></rect>
   <rect x="40" y="203" width="5" height="6" fill="#fbae00" rx="1" ry="1"></rect>
-  <rect x="40" y="209.5" width="31" height="6" fill="#8e44ad" rx="1" ry="1"></rect>
+  <rect x="40" y="209.5" width="1" height="6" fill="#8e44ad" rx="1" ry="1"></rect>
   <rect x="40" y="216" width="74" height="6" fill="#248ebd" rx="1" ry="1"></rect>
   <rect x="40" y="222.5" width="1" height="6" fill="#40a9ff" rx="1" ry="1"></rect>
   <rect x="40" y="229" width="75" height="6" fill="#16a34a" rx="1" ry="1"></rect>
   <rect x="40" y="235.5" width="1" height="6" fill="#ff6b00" rx="1" ry="1"></rect>
   <rect x="40" y="246" width="89" height="6" fill="#cd3731" rx="1" ry="1"></rect>
-  <rect x="40" y="252.5" width="96" height="6" fill="#fbae00" rx="1" ry="1"></rect>
+  <rect x="40" y="252.5" width="90" height="6" fill="#fbae00" rx="1" ry="1"></rect>
   <rect x="40" y="259" width="1" height="6" fill="#8e44ad" rx="1" ry="1"></rect>
   <rect x="40" y="265.5" width="74" height="6" fill="#248ebd" rx="1" ry="1"></rect>
   <rect x="40" y="272" width="1" height="6" fill="#40a9ff" rx="1" ry="1"></rect>
@@ -128,9 +128,9 @@
   <rect x="40" y="427" width="162" height="6" fill="#16a34a" rx="1" ry="1"></rect>
   <rect x="40" y="433.5" width="1" height="6" fill="#ff6b00" rx="1" ry="1"></rect>
   <rect x="40" y="444" width="1" height="6" fill="#cd3731" rx="1" ry="1"></rect>
-  <rect x="40" y="450.5" width="89" height="6" fill="#fbae00" rx="1" ry="1"></rect>
-  <rect x="40" y="457" width="29" height="6" fill="#8e44ad" rx="1" ry="1"></rect>
-  <rect x="40" y="463.5" width="105" height="6" fill="#248ebd" rx="1" ry="1"></rect>
+  <rect x="40" y="450.5" width="88" height="6" fill="#fbae00" rx="1" ry="1"></rect>
+  <rect x="40" y="457" width="1" height="6" fill="#8e44ad" rx="1" ry="1"></rect>
+  <rect x="40" y="463.5" width="98" height="6" fill="#248ebd" rx="1" ry="1"></rect>
   <rect x="40" y="470" width="1" height="6" fill="#40a9ff" rx="1" ry="1"></rect>
   <rect x="40" y="476.5" width="65" height="6" fill="#16a34a" rx="1" ry="1"></rect>
   <rect x="40" y="483" width="2" height="6" fill="#ff6b00" rx="1" ry="1"></rect>
@@ -149,5 +149,5 @@
   <text x="38" y="356.5" class="font s4" dominant-baseline="middle" text-anchor="end">with lockfile</text>
   <text x="38" y="404" class="font s4" dominant-baseline="middle" text-anchor="end">with node_modules</text>
   <text x="38" y="453.5" class="font s4" dominant-baseline="middle" text-anchor="end">update</text>
-  <text x="290" y="505.5" class="font s4 text" text-anchor="end">Tests were run using Node.js v24.11.1 at: 14 juin 2026, 08:33</text>
+  <text x="290" y="505.5" class="font s4 text" text-anchor="end">Tests were run using Node.js v24.11.1 at: 15 juin 2026, 09:22</text>
 </svg>
